@@ -313,6 +313,51 @@
     }
     .bbj-link:hover { background: rgba(212,175,55,0.18); box-shadow: 0 0 14px rgba(212,175,55,0.2); }
 
+    /* ── Tournaments ── */
+    .tournaments-section { margin-bottom: 32px; }
+    .tourney-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 14px;
+    }
+    .tourney-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .tourney-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.45);
+    }
+    .tourney-card.featured-card { border-color: rgba(139,32,32,0.5); }
+    .tc-stripe { height: 4px; }
+    .wed-stripe   { background: #2563a8; }
+    .sun-stripe   { background: #b07d2c; }
+    .sun550-stripe{ background: #2e7d52; }
+    .main-stripe  { background: #8b2020; }
+    .tc-body { padding: 16px; flex: 1; display: flex; flex-direction: column; gap: 5px; }
+    .tc-day {
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 2px;
+    }
+    .tc-buyin {
+      font-family: 'Oswald', sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1.1;
+    }
+    .tc-buyin span { font-size: 14px; color: var(--muted); font-weight: 400; }
+    .tc-detail { font-size: 12px; color: var(--text); }
+    .tc-detail.muted { color: var(--muted); font-size: 11px; margin-top: 2px; }
+
     /* ── Footer ── */
     footer { text-align: center; font-size: 12px; color: var(--muted); }
     footer a { color: var(--gold3); text-decoration: none; }
@@ -443,6 +488,61 @@
         <div class="game-row"><span class="game-stakes">20/40 · 50/100 · 100/200 Limit</span><span class="avail-badge demand">On Demand</span></div>
       </div>
 
+    </div>
+  </div>
+
+  <!-- Tournaments -->
+  <p class="section-title">Tournaments</p>
+  <div class="tournaments-section">
+    <div class="tourney-grid">
+
+      <div class="tourney-card">
+        <div class="tc-stripe wed-stripe"></div>
+        <div class="tc-body">
+          <div class="tc-day">Every Wednesday</div>
+          <div class="tc-buyin">$300 <span>Buy-in</span></div>
+          <div class="tc-detail">NL Hold'em · 12:30 PM</div>
+          <div class="tc-detail">Re-entry to end of 1st break</div>
+          <div class="tc-detail muted">Blackout dates may apply</div>
+        </div>
+      </div>
+
+      <div class="tourney-card">
+        <div class="tc-stripe sun-stripe"></div>
+        <div class="tc-body">
+          <div class="tc-day">Every Sunday</div>
+          <div class="tc-buyin">$400 <span>Buy-in</span></div>
+          <div class="tc-detail">NL Hold'em · 12:30 PM</div>
+          <div class="tc-detail">Unlimited re-entry to end of 1st break</div>
+          <div class="tc-detail muted">Blackout: Last Sunday of month &amp; multi-day event weeks</div>
+        </div>
+      </div>
+
+      <div class="tourney-card">
+        <div class="tc-stripe sun550-stripe"></div>
+        <div class="tc-body">
+          <div class="tc-day">Last Sunday of the Month</div>
+          <div class="tc-buyin">$550 <span>Buy-in</span></div>
+          <div class="tc-detail">NL Hold'em · 12:30 PM</div>
+          <div class="tc-detail">Unlimited re-entry to end of 2nd break</div>
+          <div class="tc-detail muted">Replaces regular Sunday tournament</div>
+        </div>
+      </div>
+
+      <div class="tourney-card featured-card">
+        <div class="tc-stripe main-stripe"></div>
+        <div class="tc-body">
+          <div class="tc-day">Seasonal · Multi-Day</div>
+          <div class="tc-buyin">$1,200 <span>Buy-in</span></div>
+          <div class="tc-detail">Main Event NL Hold'em · 12:30 PM</div>
+          <div class="tc-detail">Unlimited re-entry to end of 2nd break (flights only)</div>
+          <div class="tc-detail muted">Held once per season — check calendar for dates</div>
+        </div>
+      </div>
+
+    </div>
+    <div style="text-align:center; margin-top:18px;">
+      <a class="bbj-link" href="calendar.html">📅 View Full Tournament Calendar →</a>
     </div>
   </div>
 
