@@ -302,6 +302,83 @@
     .tourney.hl-pinned     { opacity: 1 !important; filter: brightness(1.5); box-shadow: 0 0 0 2px currentColor, 0 0 18px rgba(255,255,255,0.3); }
     .detail-card.hl-pinned { opacity: 1 !important; }
 
+    /* ── 2026 Results table ── */
+    .results-section { margin-top: 48px; }
+    .results-section h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 14px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .results-table-wrap {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow-x: auto;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+    }
+    .results-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    .results-table thead tr {
+      background: rgba(212,175,55,0.1);
+      border-bottom: 1px solid var(--border);
+    }
+    .results-table thead th {
+      padding: 12px 16px;
+      font-family: 'Oswald', sans-serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      white-space: nowrap;
+      text-align: right;
+    }
+    .results-table thead th.th-left { text-align: left; }
+    .results-table tbody tr {
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      transition: background 0.15s;
+    }
+    .results-table tbody tr:last-child { border-bottom: none; }
+    .results-table tbody tr:hover { background: rgba(255,255,255,0.035); }
+    .results-table td {
+      padding: 11px 16px;
+      white-space: nowrap;
+      text-align: right;
+    }
+    .results-table td.td-left { text-align: left; }
+    .rt-date { color: var(--muted); font-size: 12px; }
+    .rt-type {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .rt-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .rt-entries { color: var(--text); font-weight: 600; font-variant-numeric: tabular-nums; }
+    .rt-pool    { color: var(--gold); font-weight: 600; font-variant-numeric: tabular-nums; }
+    .rt-first   { color: #6fcf97;    font-weight: 600; font-variant-numeric: tabular-nums; }
+    .rt-winner  { color: var(--text); }
+    .rt-unknown { color: var(--muted); font-style: italic; }
+    .results-source {
+      font-size: 11px;
+      color: var(--muted);
+      text-align: right;
+      margin-top: 10px;
+      font-style: italic;
+    }
+    .results-source a { color: var(--gold3); text-decoration: none; }
+    .results-source a:hover { text-decoration: underline; }
+
     /* ── Responsive ── */
     @media (max-width: 640px) {
       .cal-cell { min-height: 80px; padding: 6px 4px; }
@@ -489,6 +566,124 @@
       </div>
 
     </div>
+  </div>
+
+  <!-- 2026 Results -->
+  <div class="results-section">
+    <h2>2026 Results</h2>
+    <div class="results-table-wrap">
+      <table class="results-table">
+        <thead>
+          <tr>
+            <th class="th-left">Date</th>
+            <th class="th-left">Tournament</th>
+            <th>Entries</th>
+            <th>Prize Pool</th>
+            <th>1st Place</th>
+            <th class="th-left">Winner</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td-left rt-date">Jan 4</td>
+            <td class="td-left"><span class="rt-type"><span class="rt-dot" style="background:var(--sun)"></span>Sunday $400 NLH</span></td>
+            <td class="rt-entries">85</td>
+            <td class="rt-pool">C$29,270</td>
+            <td class="rt-first">C$9,439</td>
+            <td class="td-left rt-winner">Ronald Smith</td>
+          </tr>
+          <tr>
+            <td class="td-left rt-date">Jan 7</td>
+            <td class="td-left"><span class="rt-type"><span class="rt-dot" style="background:var(--wed)"></span>Wednesday $300 NLH</span></td>
+            <td class="rt-entries">96</td>
+            <td class="rt-pool">C$23,746</td>
+            <td class="rt-first">C$7,533</td>
+            <td class="td-left rt-winner">Timothy Baiden</td>
+          </tr>
+          <tr>
+            <td class="td-left rt-date">Jan 11</td>
+            <td class="td-left"><span class="rt-type"><span class="rt-dot" style="background:var(--sun)"></span>Sunday $400 NLH</span></td>
+            <td class="rt-entries">57</td>
+            <td class="rt-pool">C$19,628</td>
+            <td class="rt-first">C$7,065</td>
+            <td class="td-left rt-winner">Alfredo Matira</td>
+          </tr>
+          <tr>
+            <td class="td-left rt-date">Jan 14</td>
+            <td class="td-left"><span class="rt-type"><span class="rt-dot" style="background:var(--wed)"></span>Wednesday $300 NLH</span></td>
+            <td class="rt-entries">106</td>
+            <td class="rt-pool">C$26,219</td>
+            <td class="rt-first">C$7,866</td>
+            <td class="td-left rt-winner">Michael Tieu</td>
+          </tr>
+          <tr>
+            <td class="td-left rt-date">Jan 18</td>
+            <td class="td-left"><span class="rt-type"><span class="rt-dot" style="background:var(--sun)"></span>Sunday $400 NLH</span></td>
+            <td class="rt-entries">56</td>
+            <td class="rt-pool">C$19,284</td>
+            <td class="rt-first">C$7,135</td>
+            <td class="td-left rt-winner">Paolo Zambito</td>
+          </tr>
+          <tr>
+            <td class="td-left rt-date">Jan 21</td>
+            <td class="td-left"><span class="rt-type"><span class="rt-dot" style="background:var(--wed)"></span>Wednesday $300 NLH</span></td>
+            <td class="rt-entries">89</td>
+            <td class="rt-pool">C$22,015</td>
+            <td class="rt-first">C$6,984</td>
+            <td class="td-left rt-winner">Daniel Lebel</td>
+          </tr>
+          <tr>
+            <td class="td-left rt-date">Jan 25</td>
+            <td class="td-left"><span class="rt-type"><span class="rt-dot" style="background:var(--sun550)"></span>Last Sunday $550 NLH</span></td>
+            <td class="rt-entries">61</td>
+            <td class="rt-pool">C$29,585</td>
+            <td class="rt-first">C$10,651</td>
+            <td class="td-left rt-winner">Senthuran Vijayaratnam</td>
+          </tr>
+          <tr>
+            <td class="td-left rt-date">Jan 28</td>
+            <td class="td-left"><span class="rt-type"><span class="rt-dot" style="background:var(--wed)"></span>Wednesday $300 NLH</span></td>
+            <td class="rt-entries">98</td>
+            <td class="rt-pool">C$24,241</td>
+            <td class="rt-first">C$7,393</td>
+            <td class="td-left rt-winner">Robert Schram</td>
+          </tr>
+          <tr>
+            <td class="td-left rt-date">Feb 1</td>
+            <td class="td-left"><span class="rt-type"><span class="rt-dot" style="background:var(--sun)"></span>Sunday $400 NLH</span></td>
+            <td class="rt-entries">77</td>
+            <td class="rt-pool">C$26,515</td>
+            <td class="rt-first">C$9,015</td>
+            <td class="td-left rt-winner">Dmytro Klimov</td>
+          </tr>
+          <tr>
+            <td class="td-left rt-date">Feb 4</td>
+            <td class="td-left"><span class="rt-type"><span class="rt-dot" style="background:var(--wed)"></span>Wednesday $300 NLH</span></td>
+            <td class="rt-entries">140</td>
+            <td class="rt-pool">C$34,629</td>
+            <td class="rt-first">C$9,678</td>
+            <td class="td-left rt-winner">Peter Bodnar</td>
+          </tr>
+          <tr>
+            <td class="td-left rt-date">Feb 8</td>
+            <td class="td-left"><span class="rt-type"><span class="rt-dot" style="background:var(--sun)"></span>Sunday $400 NLH</span></td>
+            <td class="rt-entries">53</td>
+            <td class="rt-pool">C$18,251</td>
+            <td class="rt-first">C$6,753</td>
+            <td class="td-left rt-winner">Curtis Medina</td>
+          </tr>
+          <tr>
+            <td class="td-left rt-date">Feb 11</td>
+            <td class="td-left"><span class="rt-type"><span class="rt-dot" style="background:var(--wed)"></span>Wednesday $300 NLH</span></td>
+            <td class="rt-entries">135</td>
+            <td class="rt-pool">C$33,393</td>
+            <td class="rt-first">C$9,432</td>
+            <td class="td-left rt-unknown">—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="results-source">Source: <a href="https://pokerdb.thehendonmob.com/festival.php?a=r&n=67599" target="_blank">The Hendon Mob</a> · Static snapshot, updated 2026-02-20</p>
   </div>
 
   <footer>
