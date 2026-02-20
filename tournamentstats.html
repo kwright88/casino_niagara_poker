@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casino Niagara — Tournament Stats 2026</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:    #0d1b2a;
+      --navy2:   #162032;
+      --navy3:   #1e2d40;
+      --gold:    #d4af37;
+      --gold2:   #f0d060;
+      --gold3:   #c8982c;
+      --amber:   #e8a020;
+      --green:   #6fcf97;
+      --text:    #e8e0cf;
+      --muted:   #8a9bb0;
+      --border:  rgba(212,175,55,0.22);
+      --radius:  14px;
+      --card-bg: rgba(22,32,50,0.88);
+      --wed:     #2563a8;
+      --sun:     #b07d2c;
+      --sun550:  #2e7d52;
+    }
+
+    body { background: var(--navy); color: var(--text); font-family: 'Inter', sans-serif; min-height: 100vh; }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        repeating-linear-gradient(45deg, transparent, transparent 2px, rgba(255,255,255,0.012) 2px, rgba(255,255,255,0.012) 4px),
+        radial-gradient(ellipse at 20% 20%, #1a2d45 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 80%, #1a2535 0%, transparent 60%),
+        var(--navy);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    main { position: relative; z-index: 1; max-width: 1100px; margin: 0 auto; padding: 40px 16px 60px; }
+
+    /* ── Header ── */
+    header { text-align: center; margin-bottom: 40px; }
+    .casino-label { font-family: 'Oswald', sans-serif; font-size: 12px; letter-spacing: 4px; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+    header h1 { font-family: 'Oswald', sans-serif; font-size: clamp(22px, 4vw, 38px); font-weight: 700; color: var(--gold); letter-spacing: 2px; text-shadow: 0 0 30px rgba(212,175,55,0.35); }
+    .divider { display: flex; align-items: center; gap: 14px; margin: 14px auto 0; max-width: 320px; }
+    .divider::before, .divider::after { content: ''; flex: 1; height: 1px; }
+    .divider::before { background: linear-gradient(to right, transparent, var(--gold3)); }
+    .divider::after  { background: linear-gradient(to left,  transparent, var(--gold3)); }
+    .divider span { color: var(--gold3); font-size: 16px; }
+
+    /* ── Nav ── */
+    .nav-links { display: flex; justify-content: center; gap: 12px; margin-bottom: 36px; flex-wrap: wrap; }
+    .nav-link { display: inline-flex; align-items: center; gap: 7px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 30px; padding: 8px 18px; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); text-decoration: none; transition: background 0.2s, box-shadow 0.2s; }
+    .nav-link:hover { background: rgba(212,175,55,0.1); box-shadow: 0 0 12px rgba(212,175,55,0.2); }
+
+    /* ── Section title ── */
+    .section-title { font-family: 'Oswald', sans-serif; font-size: 14px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+
+    /* ── Results table ── */
+    .results-wrap { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); overflow-x: auto; backdrop-filter: blur(8px); box-shadow: 0 8px 40px rgba(0,0,0,0.5); margin-bottom: 8px; }
+    .results-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .results-table thead tr { background: rgba(212,175,55,0.1); border-bottom: 1px solid var(--border); }
+    .results-table thead th { padding: 12px 16px; font-family: 'Oswald', sans-serif; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); white-space: nowrap; text-align: right; }
+    .results-table thead th.th-l { text-align: left; }
+    .results-table tbody tr { border-bottom: 1px solid rgba(255,255,255,0.04); transition: background 0.15s; }
+    .results-table tbody tr:last-child { border-bottom: none; }
+    .results-table tbody tr:hover { background: rgba(255,255,255,0.035); }
+    .results-table td { padding: 11px 16px; white-space: nowrap; text-align: right; }
+    .results-table td.td-l { text-align: left; }
+    .rt-date { color: var(--muted); font-size: 12px; }
+    .rt-type { display: inline-flex; align-items: center; gap: 7px; }
+    .rt-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .rt-entries { color: var(--text); font-weight: 600; }
+    .rt-pool { color: var(--gold); font-weight: 600; }
+    .rt-first { color: var(--green); font-weight: 600; }
+    .rt-link { color: var(--gold3); text-decoration: none; transition: color 0.15s; }
+    .rt-link:hover { color: var(--gold2); text-decoration: underline; }
+    .rt-winner-link { color: var(--text); text-decoration: none; border-bottom: 1px dotted rgba(212,175,55,0.35); transition: color 0.15s; }
+    .rt-winner-link:hover { color: var(--gold2); }
+    .results-source { font-size: 11px; color: var(--muted); text-align: right; margin-top: 10px; margin-bottom: 40px; font-style: italic; }
+    .results-source a { color: var(--gold3); text-decoration: none; }
+    .results-source a:hover { text-decoration: underline; }
+
+    /* ── Awards ── */
+    .awards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; margin-bottom: 40px; }
+    .award-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; display: flex; flex-direction: column; gap: 6px; transition: border-color 0.2s, box-shadow 0.2s; }
+    .award-card:hover { border-color: rgba(212,175,55,0.45); box-shadow: 0 0 20px rgba(212,175,55,0.1); }
+    .award-icon { font-size: 26px; line-height: 1; margin-bottom: 4px; }
+    .award-title { font-family: 'Oswald', sans-serif; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); }
+    .award-winner { font-size: 15px; font-weight: 700; color: var(--gold); }
+    .award-winner a { color: var(--gold); text-decoration: none; border-bottom: 1px dotted rgba(212,175,55,0.4); }
+    .award-winner a:hover { color: var(--gold2); }
+    .award-detail { font-size: 12px; color: var(--muted); }
+
+    /* ── Leaderboard ── */
+    .lb-wrap { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); overflow-x: auto; backdrop-filter: blur(8px); box-shadow: 0 8px 40px rgba(0,0,0,0.5); }
+    #lb-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    #lb-table thead tr { background: rgba(212,175,55,0.1); border-bottom: 1px solid var(--border); }
+    #lb-table thead th { padding: 12px 16px; font-family: 'Oswald', sans-serif; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); white-space: nowrap; cursor: pointer; user-select: none; transition: background 0.15s; position: relative; text-align: right; }
+    #lb-table thead th.th-l { text-align: left; }
+    #lb-table thead th:hover { background: rgba(212,175,55,0.08); }
+    #lb-table thead th.sort-asc::after  { content: ' ▲'; font-size: 9px; color: var(--gold2); }
+    #lb-table thead th.sort-desc::after { content: ' ▼'; font-size: 9px; color: var(--gold2); }
+    #lb-table tbody tr { border-bottom: 1px solid rgba(255,255,255,0.04); transition: background 0.15s; }
+    #lb-table tbody tr:last-child { border-bottom: none; }
+    #lb-table tbody tr:hover { background: rgba(255,255,255,0.035); }
+    #lb-table td { padding: 10px 16px; white-space: nowrap; text-align: right; }
+    #lb-table td.td-l { text-align: left; }
+    .lb-rank { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+    .lb-name-cell { display: flex; align-items: center; gap: 8px; }
+    .lb-flag { font-size: 14px; }
+    .lb-name-link { color: var(--text); text-decoration: none; border-bottom: 1px dotted rgba(212,175,55,0.3); transition: color 0.15s; }
+    .lb-name-link:hover { color: var(--gold2); }
+    .lb-cashes { color: var(--text); font-weight: 600; }
+    .lb-wins { color: var(--green); font-weight: 600; }
+    .lb-wins.zero { color: var(--muted); font-weight: 400; }
+    .lb-money { color: var(--gold); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+    /* ── Footer ── */
+    footer { text-align: center; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); line-height: 1.8; }
+    footer a { color: var(--gold3); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      .awards-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 400px) {
+      .awards-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<main>
+
+  <div class="nav-links">
+    <a class="nav-link" href="index.html">🎰 Bad Beat Tracker</a>
+    <a class="nav-link" href="calendar.html">📅 Calendar</a>
+    <a class="nav-link" href="pokerroom.html">🃏 Poker Room</a>
+  </div>
+
+  <header>
+    <p class="casino-label">Casino Niagara · Poker Room</p>
+    <h1>Tournament Stats 2026</h1>
+    <div class="divider"><span>♠</span></div>
+  </header>
+
+  <!-- Results -->
+  <p class="section-title">2026 Results</p>
+  <div class="results-wrap">
+    <table class="results-table">
+      <thead>
+        <tr>
+          <th class="th-l">Date</th>
+          <th class="th-l">Tournament</th>
+          <th>Entries</th>
+          <th>Prize Pool</th>
+          <th>1st Place</th>
+          <th class="th-l">Winner</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="td-l rt-date">Jan 4</td>
+          <td class="td-l"><span class="rt-type"><span class="rt-dot" style="background:var(--sun)"></span><a class="rt-link" href="https://pokerdb.thehendonmob.com/event.php?a=r&n=1330323" target="_blank">Sunday $400 NLH</a></span></td>
+          <td class="rt-entries">85</td><td class="rt-pool">C$29,270</td><td class="rt-first">C$9,439</td>
+          <td class="td-l">🇨🇦 <a class="rt-winner-link" href="https://pokerdb.thehendonmob.com/player.php?a=r&n=1368085" target="_blank">Ronald Smith</a></td>
+        </tr>
+        <tr>
+          <td class="td-l rt-date">Jan 7</td>
+          <td class="td-l"><span class="rt-type"><span class="rt-dot" style="background:var(--wed)"></span><a class="rt-link" href="https://pokerdb.thehendonmob.com/event.php?a=r&n=1330335" target="_blank">Wednesday $300 NLH</a></span></td>
+          <td class="rt-entries">96</td><td class="rt-pool">C$23,746</td><td class="rt-first">C$7,533</td>
+          <td class="td-l">🇨🇦 <a class="rt-winner-link" href="https://pokerdb.thehendonmob.com/player.php?a=r&n=695855" target="_blank">Timothy Baiden</a></td>
+        </tr>
+        <tr>
+          <td class="td-l rt-date">Jan 11</td>
+          <td class="td-l"><span class="rt-type"><span class="rt-dot" style="background:var(--sun)"></span><a class="rt-link" href="https://pokerdb.thehendonmob.com/event.php?a=r&n=1330325" target="_blank">Sunday $400 NLH</a></span></td>
+          <td class="rt-entries">57</td><td class="rt-pool">C$19,628</td><td class="rt-first">C$7,065</td>
+          <td class="td-l">🇨🇦 <a class="rt-winner-link" href="https://pokerdb.thehendonmob.com/player.php?a=r&n=1207295" target="_blank">Alfredo Matira</a></td>
+        </tr>
+        <tr>
+          <td class="td-l rt-date">Jan 14</td>
+          <td class="td-l"><span class="rt-type"><span class="rt-dot" style="background:var(--wed)"></span><a class="rt-link" href="https://pokerdb.thehendonmob.com/event.php?a=r&n=1330337" target="_blank">Wednesday $300 NLH</a></span></td>
+          <td class="rt-entries">106</td><td class="rt-pool">C$26,219</td><td class="rt-first">C$7,866</td>
+          <td class="td-l">🇨🇦 <a class="rt-winner-link" href="https://pokerdb.thehendonmob.com/player.php?a=r&n=406680" target="_blank">Michael Tieu</a></td>
+        </tr>
+        <tr>
+          <td class="td-l rt-date">Jan 18</td>
+          <td class="td-l"><span class="rt-type"><span class="rt-dot" style="background:var(--sun)"></span><a class="rt-link" href="https://pokerdb.thehendonmob.com/event.php?a=r&n=1330327" target="_blank">Sunday $400 NLH</a></span></td>
+          <td class="rt-entries">56</td><td class="rt-pool">C$19,284</td><td class="rt-first">C$7,135</td>
+          <td class="td-l">🇨🇦 <a class="rt-winner-link" href="https://pokerdb.thehendonmob.com/player.php?a=r&n=329676" target="_blank">Paolo Zambito</a></td>
+        </tr>
+        <tr>
+          <td class="td-l rt-date">Jan 21</td>
+          <td class="td-l"><span class="rt-type"><span class="rt-dot" style="background:var(--wed)"></span><a class="rt-link" href="https://pokerdb.thehendonmob.com/event.php?a=r&n=1330339" target="_blank">Wednesday $300 NLH</a></span></td>
+          <td class="rt-entries">89</td><td class="rt-pool">C$22,015</td><td class="rt-first">C$6,984</td>
+          <td class="td-l">🇨🇦 <a class="rt-winner-link" href="https://pokerdb.thehendonmob.com/player.php?a=r&n=144560" target="_blank">Daniel Lebel</a></td>
+        </tr>
+        <tr>
+          <td class="td-l rt-date">Jan 25</td>
+          <td class="td-l"><span class="rt-type"><span class="rt-dot" style="background:var(--sun550)"></span><a class="rt-link" href="https://pokerdb.thehendonmob.com/event.php?a=r&n=1330307" target="_blank">Last Sunday $550 NLH</a></span></td>
+          <td class="rt-entries">61</td><td class="rt-pool">C$29,585</td><td class="rt-first">C$10,651</td>
+          <td class="td-l">🇨🇦 <a class="rt-winner-link" href="https://pokerdb.thehendonmob.com/player.php?a=r&n=294737" target="_blank">Senthuran Vijayaratnam</a></td>
+        </tr>
+        <tr>
+          <td class="td-l rt-date">Jan 28</td>
+          <td class="td-l"><span class="rt-type"><span class="rt-dot" style="background:var(--wed)"></span><a class="rt-link" href="https://pokerdb.thehendonmob.com/event.php?a=r&n=1330341" target="_blank">Wednesday $300 NLH</a></span></td>
+          <td class="rt-entries">98</td><td class="rt-pool">C$24,241</td><td class="rt-first">C$7,393</td>
+          <td class="td-l">🇨🇦 <a class="rt-winner-link" href="https://pokerdb.thehendonmob.com/player.php?a=r&n=1341541" target="_blank">Robert Schram</a></td>
+        </tr>
+        <tr>
+          <td class="td-l rt-date">Feb 1</td>
+          <td class="td-l"><span class="rt-type"><span class="rt-dot" style="background:var(--sun)"></span><a class="rt-link" href="https://pokerdb.thehendonmob.com/event.php?a=r&n=1330329" target="_blank">Sunday $400 NLH</a></span></td>
+          <td class="rt-entries">77</td><td class="rt-pool">C$26,515</td><td class="rt-first">C$9,015</td>
+          <td class="td-l">🇺🇦 <a class="rt-winner-link" href="https://pokerdb.thehendonmob.com/player.php?a=r&n=744397" target="_blank">Dmytro Klimov</a></td>
+        </tr>
+        <tr>
+          <td class="td-l rt-date">Feb 4</td>
+          <td class="td-l"><span class="rt-type"><span class="rt-dot" style="background:var(--wed)"></span><a class="rt-link" href="https://pokerdb.thehendonmob.com/event.php?a=r&n=1330343" target="_blank">Wednesday $300 NLH</a></span></td>
+          <td class="rt-entries">140</td><td class="rt-pool">C$34,629</td><td class="rt-first">C$9,678</td>
+          <td class="td-l">🇨🇦 <a class="rt-winner-link" href="https://pokerdb.thehendonmob.com/player.php?a=r&n=244023" target="_blank">Peter Bodnar</a></td>
+        </tr>
+        <tr>
+          <td class="td-l rt-date">Feb 8</td>
+          <td class="td-l"><span class="rt-type"><span class="rt-dot" style="background:var(--sun)"></span><a class="rt-link" href="https://pokerdb.thehendonmob.com/event.php?a=r&n=1330331" target="_blank">Sunday $400 NLH</a></span></td>
+          <td class="rt-entries">53</td><td class="rt-pool">C$18,251</td><td class="rt-first">C$6,753</td>
+          <td class="td-l">🇨🇦 <a class="rt-winner-link" href="https://pokerdb.thehendonmob.com/player.php?a=r&n=169432" target="_blank">Curtis Medina</a></td>
+        </tr>
+        <tr>
+          <td class="td-l rt-date">Feb 11</td>
+          <td class="td-l"><span class="rt-type"><span class="rt-dot" style="background:var(--wed)"></span><a class="rt-link" href="https://pokerdb.thehendonmob.com/event.php?a=r&n=1344701" target="_blank">Wednesday $300 NLH</a></span></td>
+          <td class="rt-entries">135</td><td class="rt-pool">C$33,393</td><td class="rt-first">C$9,432</td>
+          <td class="td-l" style="color:var(--muted);font-style:italic;">—</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="results-source">Source: <a href="https://pokerdb.thehendonmob.com/festival.php?a=r&n=67599" target="_blank">The Hendon Mob</a> · Static snapshot, updated 2026-02-20</p>
+
+  <!-- Awards -->
+  <p class="section-title">Awards</p>
+  <div class="awards-grid">
+
+    <div class="award-card">
+      <div class="award-icon">🏆</div>
+      <div class="award-title">Most Cashes</div>
+      <div class="award-winner"><a href="https://pokerdb.thehendonmob.com/player.php?a=r&n=1183651" target="_blank">Benjamin Smith</a></div>
+      <div class="award-detail">4 cashes in 2026</div>
+    </div>
+
+    <div class="award-card">
+      <div class="award-icon">💰</div>
+      <div class="award-title">Most Money Won</div>
+      <div class="award-winner"><a href="https://pokerdb.thehendonmob.com/player.php?a=r&n=144560" target="_blank">Daniel Lebel</a></div>
+      <div class="award-detail">C$12,638 across 3 cashes</div>
+    </div>
+
+    <div class="award-card">
+      <div class="award-icon">🎯</div>
+      <div class="award-title">Biggest Single Score</div>
+      <div class="award-winner"><a href="https://pokerdb.thehendonmob.com/player.php?a=r&n=294737" target="_blank">Senthuran Vijayaratnam</a></div>
+      <div class="award-detail">C$10,651 — Jan 25 $550 Sunday</div>
+    </div>
+
+    <div class="award-card">
+      <div class="award-icon">📈</div>
+      <div class="award-title">Best Average Cash</div>
+      <div class="award-winner"><a href="https://pokerdb.thehendonmob.com/player.php?a=r&n=1207295" target="_blank">Alfredo Matira</a></div>
+      <div class="award-detail">C$4,957 avg · 2 cashes, 1 win</div>
+    </div>
+
+    <div class="award-card">
+      <div class="award-icon">☀️</div>
+      <div class="award-title">Sunday Specialist</div>
+      <div class="award-winner"><a href="https://pokerdb.thehendonmob.com/player.php?a=r&n=1183651" target="_blank">Benjamin Smith</a></div>
+      <div class="award-detail">3 Sunday final tables</div>
+    </div>
+
+    <div class="award-card">
+      <div class="award-icon">📋</div>
+      <div class="award-title">Largest Field Conquered</div>
+      <div class="award-winner"><a href="https://pokerdb.thehendonmob.com/player.php?a=r&n=244023" target="_blank">Peter Bodnar</a></div>
+      <div class="award-detail">Won with 140 entries — Feb 4</div>
+    </div>
+
+    <div class="award-card">
+      <div class="award-icon">🌍</div>
+      <div class="award-title">International Winner</div>
+      <div class="award-winner">🇺🇦 <a href="https://pokerdb.thehendonmob.com/player.php?a=r&n=744397" target="_blank">Dmytro Klimov</a></div>
+      <div class="award-detail">Only non-Canadian winner in 2026</div>
+    </div>
+
+    <div class="award-card">
+      <div class="award-icon">🔰</div>
+      <div class="award-title">First Winner of 2026</div>
+      <div class="award-winner"><a href="https://pokerdb.thehendonmob.com/player.php?a=r&n=1368085" target="_blank">Ronald Smith</a></div>
+      <div class="award-detail">Jan 4 — opened the year</div>
+    </div>
+
+  </div>
+
+  <!-- Leaderboard -->
+  <p class="section-title">Player Leaderboard</p>
+  <div class="lb-wrap">
+    <table id="lb-table">
+      <thead>
+        <tr>
+          <th class="th-l" data-col="rank">#</th>
+          <th class="th-l" data-col="name">Player</th>
+          <th data-col="cashes">Cashes</th>
+          <th data-col="wins">Wins</th>
+          <th data-col="money" class="sort-desc">Money Won</th>
+        </tr>
+      </thead>
+      <tbody id="lb-body"></tbody>
+    </table>
+  </div>
+
+  <footer>
+    <p>Source: <a href="https://pokerdb.thehendonmob.com/festival.php?a=r&n=67599" target="_blank">The Hendon Mob</a></p>
+    <p>Static snapshot · Updated 2026-02-20 · Players with unidentified Hendon Mob profiles excluded</p>
+  </footer>
+
+</main>
+
+<script>
+// ── Player data ──
+// [id, name, flag, url, cashes, wins, totalCAD]
+const PLAYERS = [
+  [144560,  "Daniel Lebel",           "🇨🇦", 1, 3, 1, 12638],
+  [1183651, "Benjamin Smith",         "🇨🇦", 1, 4, 0, 10947],
+  [294737,  "Senthuran Vijayaratnam", "🇨🇦", 1, 1, 1, 10651],
+  [1193375, "James Haupert",          "🇨🇦", 1, 2, 0, 10110],
+  [1207295, "Alfredo Matira",         "🇨🇦", 1, 2, 1,  9914],
+  [695855,  "Timothy Baiden",         "🇨🇦", 1, 3, 1,  9832],
+  [244023,  "Peter Bodnar",           "🇨🇦", 1, 1, 1,  9678],
+  [1368085, "Ronald Smith",           "🇨🇦", 1, 1, 1,  9439],
+  [744397,  "Dmytro Klimov",          "🇺🇦", 1, 1, 1,  9015],
+  [1341541, "Robert Schram",          "🇨🇦", 1, 2, 1,  8599],
+  [329676,  "Paolo Zambito",          "🇨🇦", 1, 2, 1,  7905],
+  [406680,  "Michael Tieu",           "🇨🇦", 1, 1, 1,  7866],
+  [169432,  "Curtis Medina",          "🇨🇦", 1, 1, 1,  6753],
+  [244298,  "Brian Bond",             "🇨🇦", 1, 2, 0,  6572],
+  [471233,  "Michael Arcaro",         "🇨🇦", 1, 1, 0,  6257],
+  [108593,  "Leo Bourgeois",          "🇨🇦", 1, 3, 0,  6047],
+  [692343,  "Alan Nacinovic",         "🇨🇦", 1, 1, 0,  5969],
+  [790655,  "Fawaz Siddiqui",         "🇨🇦", 1, 2, 0,  5687],
+  [767639,  "Dmytro Kachin",          "🇨🇦", 1, 2, 0,  5305],
+  [530167,  "Maurizio Russo",         "🇨🇦", 1, 2, 0,  4886],
+  [681711,  "Scott Macewen",          "🇨🇦", 1, 1, 0,  4545],
+  [339823,  "Tedde Ballanger",        "🇨🇦", 1, 1, 0,  4512],
+  [787189,  "Samir Khail",            "🇨🇦", 1, 2, 0,  4445],
+  [1198779, "Vladimir Perovic",       "🇨🇦", 1, 1, 0,  4242],
+  [295099,  "Renmei Liu",             "🇨🇦", 1, 3, 0,  3358],
+  [59527,   "Art Demmerley",          "🇺🇸", 1, 1, 0,  3549],
+  [1376555, "Wuji Zhang",             "🇨🇦", 1, 1, 0,  3235],
+  [936763,  "Bin Hua",                "🇨🇦", 1, 1, 0,  3540],
+  [244487,  "Donovan Obrien",         "🇨🇦", 1, 1, 0,  3619],
+  [582970,  "Igor Tregoubov",         "🇨🇦", 1, 1, 0,  2603],
+  [366591,  "Joshua Wittenberg",      "🇺🇸", 1, 1, 0,  2910],
+  [1464389, "Lucas Silvestri",        "🇨🇦", 1, 1, 0,  2601],
+  [1215745, "Adam Poitras",           "🇨🇦", 1, 1, 0,  2182],
+  [708995,  "Dale Green",             "🇨🇦", 1, 1, 0,  2170],
+  [1466295, "Johnny Pham",            "🇨🇦", 1, 1, 0,  2071],
+  [1463849, "Lokesh Mehta",           "🇨🇦", 1, 2, 0,  2856],
+  [282655,  "Walter Metella",         "🇨🇦", 1, 1, 0,  1767],
+  [286856,  "William Schuster",       "🇨🇦", 1, 2, 0,  2568],
+  [1204167, "Kenneth Ranalli",        "🇨🇦", 1, 1, 0,  2464],
+  [260634,  "Anesti Kocini",          "🇨🇦", 1, 2, 0,  2264],
+  [147835,  "Raymond Williams",       "🇺🇸", 1, 2, 0,  2661],
+  [695885,  "Richard Wilkinson",      "🇨🇦", 1, 1, 0,  2400],
+  [1038147, "Mukul Puri",             "🇨🇦", 1, 1, 0,  1468],
+  [1389599, "Thi Nguyen",             "🇨🇦", 1, 1, 0,  1829],
+  [929191,  "Peter Napolitano",       "🇺🇸", 1, 1, 0,  1706],
+  [1434647, "Mohammad Ali",           "🇨🇦", 1, 2, 0,  1799],
+  [1464391, "Macon Doublet",          "🇨🇦", 1, 1, 0,  1374],
+  [1474193, "Justin Barnes",          "🇨🇦", 1, 1, 0,  1369],
+  [1413839, "Sabbir Ahmed",           "🇨🇦", 1, 1, 0,  1818],
+  [88255,   "Colin Hughes",           "🇨🇦", 1, 1, 0,  1418],
+  [678721,  "Glenn Grandy",           "🇨🇦", 1, 1, 0,  1420],
+  [1464385, "Mark Pellegrino",        "🇺🇸", 1, 1, 0,  1446],
+  [1085449, "Than Tran",              "🇨🇦", 1, 1, 0,  1229],
+  [423005,  "Mardy Fransen",          "🇨🇦", 1, 1, 0,  1219],
+  [494133,  "Sladjana Micevski",      "🇨🇦", 1, 1, 0,  1080],
+  [544450,  "Lin Cui",                "🇨🇦", 1, 1, 0,  1157],
+  [562112,  "Omar Nasrallah",         "🇨🇦", 1, 1, 0,  1093],
+  [1068823, "Andrew Schneider",       "🇨🇦", 1, 1, 0,   735],
+  [513483,  "Terence Caulcutt",       "🇨🇦", 1, 1, 0,  1065],
+  [1118021, "Georgees Zero",          "🇨🇦", 1, 1, 0,  1326],
+  [1187569, "Glenn McCleary",         "🇨🇦", 1, 1, 0,  1061],
+  [189596,  "Peter DeSantis Jr.",     "🇨🇦", 1, 1, 0,  1167],
+  [17495,   "Bruce Librock",          "🇨🇦", 1, 1, 0,  1128],
+  [697951,  "Joshua Greville",        "🇨🇦", 1, 1, 0,  1133],
+  [1464387, "Karl Santiago",          "🇨🇦", 1, 2, 0,  1464],
+  [671526,  "Domenico Greco",         "🇨🇦", 1, 2, 0,  1523],
+  [1468435, "Minsu Kim",              "🇨🇦", 1, 2, 0,  1373],
+  [724141,  "Daniel Losowski",        "🇺🇸", 1, 1, 0,  1215],
+  [1023583, "Kiril Gadzovski",        "🇨🇦", 1, 1, 0,   881],
+  [1112429, "Faiz Sattar",            "🇨🇦", 1, 1, 0,   883],
+  [1157481, "Aaron Hall",             "🇨🇦", 1, 1, 0,   831],
+  [101664,  "Domenic Salciccia",      "🇨🇦", 1, 1, 0,   950],
+  [136819,  "Jason James",            "🇨🇦", 1, 1, 0,   689],
+  [450690,  "Eddi Miklavcic",         "🇨🇦", 1, 1, 0,   944],
+  [954183,  "Xavier Ochangco",        "🇨🇦", 1, 1, 0,   641],
+  [340617,  "Robert Forbes",          "🇺🇸", 1, 1, 0,   699],
+  [308144,  "Cuong Le",               "🇨🇦", 1, 1, 0,   739],
+  [497795,  "Zahir Gilani",           "🇨🇦", 1, 1, 0,   868],
+  [1183629, "Ryan Gal",               "🇨🇦", 1, 1, 0,   891],
+  [1463851, "James St-Germain",       "🇨🇦", 1, 1, 0,   878],
+  [373931,  "Ryan Martin",            "🇨🇦", 1, 1, 0,   594],
+  [1417289, "Shane Papa",             "🇨🇦", 1, 1, 0,   594],
+  [692323,  "Vincenzo Gallucci",      "🇨🇦", 1, 1, 0,   667],
+  [418665,  "Brad Copestake",         "🇨🇦", 1, 1, 0,   667],
+  [530134,  "Gregory March",          "🇨🇦", 1, 1, 0,   707],
+  [709439,  "Robert Patterson",       "🇨🇦", 1, 1, 0,   820],
+  [729407,  "Francis Schunk",         "🇨🇦", 1, 1, 0,   695],
+  [491633,  "Theodore Papageorgiou",  "🇨🇦", 1, 1, 0,   821],
+  [340611,  "David Wiles",            "🇺🇸", 1, 1, 0,   848],
+  [68784,   "Jair Beltran",           "🇨🇦", 1, 1, 0,   835],
+  [1474197, "Michael Schiavo",        "🇨🇦", 1, 1, 0,   835],
+  [1040379, "Kevin Hendriks",         "🇨🇦", 1, 1, 0,   835],
+  [1474195, "Mark Vona",              "🇺🇸", 1, 1, 0,   632],
+  [167034,  "William Hamilton",       "🇨🇦", 1, 1, 0,   632],
+  [1193367, "Alice Rooney",           "🇨🇦", 1, 1, 0,   632],
+  [1316903, "Kin Wong",               "🇨🇦", 1, 1, 0,   736],
+  [445636,  "Joseph Biamonte",        "🇨🇦", 1, 1, 0,   736],
+  [1189113, "Fkadu Zeremariam",       "🇨🇦", 1, 1, 0,   606],
+  [1196115, "Sarah Boyle",            "🇨🇦", 1, 1, 0,   551],
+  [557512,  "Brian Lee",              "🇨🇦", 1, 1, 0,   643],
+  [695631,  "John Cayley",            "🇨🇦", 1, 1, 0,   643],
+  [1124737, "Evan Driscoll",          "🇨🇦", 1, 1, 0,  1653],
+];
+// columns: [0]=id [1]=name [2]=flag [3]=unused [4]=cashes [5]=wins [6]=money
+
+let sortCol = 'money';
+let sortDir = -1; // -1 = desc, 1 = asc
+
+function fmtMoney(n) {
+  return 'C$' + n.toLocaleString('en-CA');
+}
+
+function getVal(p, col) {
+  switch (col) {
+    case 'rank':   return p[6]; // rank by money by default
+    case 'name':   return p[1].toLowerCase();
+    case 'cashes': return p[4];
+    case 'wins':   return p[5];
+    case 'money':  return p[6];
+  }
+}
+
+function renderTable() {
+  const sorted = [...PLAYERS].sort((a, b) => {
+    const av = getVal(a, sortCol);
+    const bv = getVal(b, sortCol);
+    if (av < bv) return sortDir;
+    if (av > bv) return -sortDir;
+    // tie-break: money desc
+    if (sortCol !== 'money') return b[6] - a[6];
+    return 0;
+  });
+
+  const tbody = document.getElementById('lb-body');
+  tbody.innerHTML = sorted.map((p, i) => {
+    const url = `https://pokerdb.thehendonmob.com/player.php?a=r&n=${p[0]}`;
+    const wins = p[5] > 0
+      ? `<span class="lb-wins">${p[5]}</span>`
+      : `<span class="lb-wins zero">—</span>`;
+    return `<tr>
+      <td class="td-l lb-rank">${i + 1}</td>
+      <td class="td-l"><span class="lb-name-cell"><span class="lb-flag">${p[2]}</span><a class="lb-name-link" href="${url}" target="_blank">${p[1]}</a></span></td>
+      <td class="lb-cashes">${p[4]}</td>
+      <td>${wins}</td>
+      <td class="lb-money">${fmtMoney(p[6])}</td>
+    </tr>`;
+  }).join('');
+}
+
+function updateHeaders() {
+  document.querySelectorAll('#lb-table thead th').forEach(th => {
+    th.classList.remove('sort-asc', 'sort-desc');
+    if (th.dataset.col === sortCol) {
+      th.classList.add(sortDir === -1 ? 'sort-desc' : 'sort-asc');
+    }
+  });
+}
+
+document.querySelectorAll('#lb-table thead th[data-col]').forEach(th => {
+  th.addEventListener('click', () => {
+    const col = th.dataset.col;
+    if (col === sortCol) {
+      sortDir *= -1;
+    } else {
+      sortCol = col;
+      sortDir = col === 'name' ? 1 : -1;
+    }
+    updateHeaders();
+    renderTable();
+  });
+});
+
+renderTable();
+updateHeaders();
+</script>
+</body>
+</html>
