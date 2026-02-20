@@ -245,6 +245,34 @@
     footer a:hover { text-decoration: underline; }
     footer p + p { margin-top: 6px; }
 
+    /* ── Highlight / dim interactions ── */
+    .tourney        { transition: opacity 0.18s, box-shadow 0.18s, filter 0.18s; }
+    .detail-card    { transition: opacity 0.18s, box-shadow 0.18s, border-color 0.18s; }
+
+    /* Active (hovered/clicked type) */
+    .tourney.hl-active {
+      opacity: 1 !important;
+      filter: brightness(1.35);
+      box-shadow: 0 0 0 2px currentColor, 0 0 14px rgba(255,255,255,0.25);
+    }
+    .detail-card.hl-active {
+      opacity: 1 !important;
+      border-color: rgba(212,175,55,0.7);
+      box-shadow: 0 0 0 2px rgba(212,175,55,0.35), 0 0 24px rgba(212,175,55,0.2);
+    }
+    .detail-card.hl-active.wed-card   { border-color: rgba(37,99,168,0.8);  box-shadow: 0 0 0 2px rgba(37,99,168,0.4),  0 0 24px rgba(37,99,168,0.25); }
+    .detail-card.hl-active.sun-card   { border-color: rgba(176,125,44,0.8); box-shadow: 0 0 0 2px rgba(176,125,44,0.4), 0 0 24px rgba(176,125,44,0.25); }
+    .detail-card.hl-active.sun550-card{ border-color: rgba(46,125,82,0.8);  box-shadow: 0 0 0 2px rgba(46,125,82,0.4),  0 0 24px rgba(46,125,82,0.25); }
+    .detail-card.hl-active.main-card  { border-color: rgba(139,32,32,0.9);  box-shadow: 0 0 0 2px rgba(139,32,32,0.5),  0 0 24px rgba(139,32,32,0.3); }
+
+    /* Dimmed (other types) */
+    .tourney.hl-dim    { opacity: 0.25; filter: none; }
+    .detail-card.hl-dim{ opacity: 0.3; }
+
+    /* Pinned (click-locked) — same as active but persists */
+    .tourney.hl-pinned     { opacity: 1 !important; filter: brightness(1.5); box-shadow: 0 0 0 2px currentColor, 0 0 18px rgba(255,255,255,0.3); }
+    .detail-card.hl-pinned { opacity: 1 !important; }
+
     /* ── Responsive ── */
     @media (max-width: 640px) {
       .cal-cell { min-height: 80px; padding: 6px 4px; }
@@ -367,7 +395,7 @@
     <h2>Tournament Details</h2>
     <div class="detail-grid">
 
-      <div class="detail-card">
+      <div class="detail-card wed-card" data-type="wed">
         <div class="dc-top">
           <span class="dc-dot" style="background:var(--wed)"></span>
           <h3>Wednesday NL Hold'em</h3>
@@ -381,7 +409,7 @@
         </div>
       </div>
 
-      <div class="detail-card">
+      <div class="detail-card sun-card" data-type="sun">
         <div class="dc-top">
           <span class="dc-dot" style="background:var(--sun)"></span>
           <h3>Sunday NL Hold'em</h3>
@@ -395,7 +423,7 @@
         </div>
       </div>
 
-      <div class="detail-card">
+      <div class="detail-card sun550-card" data-type="sun550">
         <div class="dc-top">
           <span class="dc-dot" style="background:var(--sun550)"></span>
           <h3>Last Sunday of Month</h3>
@@ -409,7 +437,7 @@
         </div>
       </div>
 
-      <div class="detail-card">
+      <div class="detail-card main-card" data-type="main">
         <div class="dc-top">
           <span class="dc-dot" style="background:var(--main)"></span>
           <h3>Winter Main Event</h3>
@@ -434,5 +462,86 @@
   </footer>
 
 </main>
+<script>
+  const TYPES = ['wed', 'sun', 'sun550', 'main'];
+  let pinnedType = null;
+
+  function getPills(type) {
+    return document.querySelectorAll(`.tourney.${type}`);
+  }
+  function getCard(type) {
+    return document.querySelector(`.detail-card[data-type="${type}"]`);
+  }
+
+  function applyHighlight(type) {
+    TYPES.forEach(t => {
+      const isDim = t !== type;
+      getPills(t).forEach(el => {
+        el.classList.toggle('hl-active', !isDim);
+        el.classList.toggle('hl-dim',    isDim);
+      });
+      const card = getCard(t);
+      if (card) {
+        card.classList.toggle('hl-active', !isDim);
+        card.classList.toggle('hl-dim',    isDim);
+      }
+    });
+  }
+
+  function clearHighlight() {
+    document.querySelectorAll('.tourney, .detail-card').forEach(el => {
+      el.classList.remove('hl-active', 'hl-dim', 'hl-pinned');
+    });
+  }
+
+  function getTypeFromEl(el) {
+    if (el.dataset.type) return el.dataset.type;
+    for (const t of TYPES) if (el.classList.contains(t)) return t;
+    return null;
+  }
+
+  // Attach events to pills and cards
+  document.querySelectorAll('.tourney, .detail-card[data-type]').forEach(el => {
+    el.style.cursor = 'pointer';
+
+    el.addEventListener('mouseenter', () => {
+      if (pinnedType) return; // don't override pin on hover
+      const type = getTypeFromEl(el);
+      if (type) applyHighlight(type);
+    });
+
+    el.addEventListener('mouseleave', () => {
+      if (pinnedType) return;
+      clearHighlight();
+    });
+
+    el.addEventListener('click', () => {
+      const type = getTypeFromEl(el);
+      if (!type) return;
+      if (pinnedType === type) {
+        // Unpin
+        pinnedType = null;
+        clearHighlight();
+      } else {
+        // Pin this type
+        pinnedType = type;
+        clearHighlight();
+        applyHighlight(type);
+        // Mark the active ones as pinned too (for extra glow)
+        getPills(type).forEach(p => p.classList.add('hl-pinned'));
+        const card = getCard(type);
+        if (card) card.classList.add('hl-pinned');
+      }
+    });
+  });
+
+  // Click anywhere else to unpin
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.tourney') && !e.target.closest('.detail-card[data-type]')) {
+      pinnedType = null;
+      clearHighlight();
+    }
+  });
+</script>
 </body>
 </html>
