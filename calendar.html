@@ -81,6 +81,35 @@
     .divider::after { background: linear-gradient(to left, transparent, var(--gold3)); }
     .divider span { color: var(--gold3); font-size: 16px; }
 
+    /* ── Nav links ── */
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 36px;
+      flex-wrap: wrap;
+    }
+    .nav-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 8px 18px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-decoration: none;
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+    .nav-link:hover {
+      background: rgba(212,175,55,0.1);
+      box-shadow: 0 0 12px rgba(212,175,55,0.2);
+    }
+
     /* ── Legend ── */
     .legend {
       display: flex;
@@ -290,6 +319,12 @@
     <h1>Tournament Calendar</h1>
     <div class="divider"><span>♠</span></div>
   </header>
+
+  <!-- Nav links -->
+  <div class="nav-links">
+    <a class="nav-link" href="index.html">🎰 Bad Beat Tracker</a>
+    <a class="nav-link" href="pokerroom.html">🃏 Poker Room</a>
+  </div>
 
   <!-- Legend -->
   <div class="legend">
