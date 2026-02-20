@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casino Niagara — Poker Room</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:    #0d1b2a;
+      --navy2:   #162032;
+      --navy3:   #1e2d40;
+      --gold:    #d4af37;
+      --gold2:   #f0d060;
+      --gold3:   #c8982c;
+      --text:    #e8e0cf;
+      --muted:   #8a9bb0;
+      --green:   #27ae60;
+      --amber:   #e67e22;
+      --blue:    #2980b9;
+      --card-bg: rgba(22, 32, 50, 0.88);
+      --border:  rgba(212,175,55,0.22);
+      --radius:  14px;
+    }
+
+    body {
+      background: var(--navy);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        repeating-linear-gradient(45deg, transparent, transparent 2px, rgba(255,255,255,0.012) 2px, rgba(255,255,255,0.012) 4px),
+        radial-gradient(ellipse at 20% 20%, #1a2d45 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 80%, #1a2535 0%, transparent 60%),
+        var(--navy);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    main { position: relative; z-index: 1; max-width: 1000px; margin: 0 auto; padding: 40px 16px 60px; }
+
+    /* ── Nav links ── */
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 36px;
+      flex-wrap: wrap;
+    }
+    .nav-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 8px 18px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-decoration: none;
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+    .nav-link:hover {
+      background: rgba(212,175,55,0.1);
+      box-shadow: 0 0 12px rgba(212,175,55,0.2);
+    }
+
+    /* ── Header ── */
+    header { text-align: center; margin-bottom: 40px; }
+    .casino-label {
+      font-family: 'Oswald', sans-serif;
+      font-size: 12px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    header h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(28px, 5vw, 48px);
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 2px;
+      text-shadow: 0 0 30px rgba(212,175,55,0.35);
+    }
+    .divider { display: flex; align-items: center; gap: 14px; margin: 14px auto 0; max-width: 360px; }
+    .divider::before, .divider::after { content:''; flex:1; height:1px; background: linear-gradient(to right, transparent, var(--gold3)); }
+    .divider::after { background: linear-gradient(to left, transparent, var(--gold3)); }
+    .divider span { color: var(--gold3); font-size: 18px; }
+
+    /* ── Hero stats row ── */
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      flex-wrap: wrap;
+    }
+    .hero-stat {
+      flex: 1;
+      min-width: 140px;
+      text-align: center;
+      padding: 22px 16px;
+      border-right: 1px solid var(--border);
+    }
+    .hero-stat:last-child { border-right: none; }
+    .hero-stat .hs-icon { font-size: 24px; margin-bottom: 8px; display: block; }
+    .hero-stat .hs-val {
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--gold);
+      display: block;
+      line-height: 1.2;
+    }
+    .hero-stat .hs-label { font-size: 11px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; margin-top: 3px; display: block; }
+
+    /* ── Notice box ── */
+    .notice-box {
+      background: rgba(212,175,55,0.08);
+      border: 1px solid rgba(212,175,55,0.45);
+      border-left: 4px solid var(--gold);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      font-size: 13.5px;
+      line-height: 1.6;
+      color: var(--text);
+    }
+    .notice-box strong { color: var(--gold2); }
+
+    /* ── Match the Stack callout ── */
+    .mts-callout {
+      background: linear-gradient(135deg, rgba(212,175,55,0.12) 0%, rgba(212,175,55,0.05) 100%);
+      border: 1px solid rgba(212,175,55,0.5);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(212,175,55,0.1);
+    }
+    .mts-callout .mts-icon { font-size: 32px; margin-bottom: 8px; display: block; }
+    .mts-callout h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 22px;
+      color: var(--gold2);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .mts-callout p { font-size: 13px; color: var(--muted); }
+
+    /* ── Amenities ── */
+    .section-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .amenities-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+    .amenity-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      text-align: center;
+    }
+    .amenity-card .am-icon { font-size: 26px; margin-bottom: 8px; display: block; }
+    .amenity-card .am-label { font-size: 12px; color: var(--text); font-weight: 500; line-height: 1.4; }
+
+    /* ── Games table ── */
+    .games-section { margin-bottom: 32px; }
+    .games-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .game-group {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .game-group-header {
+      background: rgba(212,175,55,0.1);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 16px;
+      font-family: 'Oswald', sans-serif;
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .game-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 9px 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      font-size: 13px;
+    }
+    .game-row:last-child { border-bottom: none; }
+    .game-stakes { color: var(--text); font-weight: 500; }
+    .avail-badge {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 20px;
+    }
+    .avail-badge.always   { background: rgba(39,174,96,0.2);  color: #6fcf97; border: 1px solid rgba(39,174,96,0.4); }
+    .avail-badge.often    { background: rgba(230,126,34,0.2);  color: #f0a060; border: 1px solid rgba(230,126,34,0.4); }
+    .avail-badge.demand   { background: rgba(41,128,185,0.2);  color: #7fb3f5; border: 1px solid rgba(41,128,185,0.35); }
+
+    /* ── Waitlist section ── */
+    .waitlist-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 24px;
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .waitlist-icon { font-size: 40px; flex-shrink: 0; }
+    .waitlist-content h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 17px;
+      color: var(--gold);
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+    .waitlist-content p { font-size: 13px; color: var(--muted); line-height: 1.7; }
+    .waitlist-content p strong { color: var(--text); }
+    .waitlist-content a { color: var(--gold3); text-decoration: none; }
+    .waitlist-content a:hover { text-decoration: underline; }
+
+    /* ── BBJ section ── */
+    .bbj-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 32px;
+      position: relative;
+      overflow: hidden;
+    }
+    .bbj-card::before {
+      content: '♠';
+      position: absolute;
+      font-size: 180px;
+      color: rgba(255,255,255,0.015);
+      bottom: -30px;
+      right: -10px;
+      line-height: 1;
+      pointer-events: none;
+    }
+    .bbj-card h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 18px;
+      color: var(--gold);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .bbj-card p { font-size: 13px; color: var(--muted); line-height: 1.75; margin-bottom: 10px; }
+    .bbj-card p:last-of-type { margin-bottom: 16px; }
+    .bbj-card strong { color: var(--text); }
+    .bbj-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(212,175,55,0.1);
+      border: 1px solid rgba(212,175,55,0.4);
+      border-radius: 30px;
+      padding: 9px 20px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-decoration: none;
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+    .bbj-link:hover { background: rgba(212,175,55,0.18); box-shadow: 0 0 14px rgba(212,175,55,0.2); }
+
+    /* ── Footer ── */
+    footer { text-align: center; font-size: 12px; color: var(--muted); }
+    footer a { color: var(--gold3); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    footer p + p { margin-top: 6px; }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .games-grid { grid-template-columns: 1fr; }
+      .hero-stats { flex-direction: column; }
+      .hero-stat { border-right: none; border-bottom: 1px solid var(--border); }
+      .hero-stat:last-child { border-bottom: none; }
+    }
+  </style>
+</head>
+<body>
+<main>
+
+  <!-- Nav links -->
+  <div class="nav-links">
+    <a class="nav-link" href="index.html">🎰 Bad Beat Tracker</a>
+    <a class="nav-link" href="calendar.html">📅 Tournament Calendar</a>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <p class="casino-label">Casino Niagara · Level 2</p>
+    <h1>Poker Room</h1>
+    <div class="divider"><span>♦</span></div>
+  </header>
+
+  <!-- Hero stats -->
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <span class="hs-icon">🃏</span>
+      <span class="hs-val">18 Tables</span>
+      <span class="hs-label">Poker Room</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hs-icon">🕛</span>
+      <span class="hs-val">12PM – 3:45AM</span>
+      <span class="hs-label">Open Daily</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hs-icon">📍</span>
+      <span class="hs-val">LEV2L</span>
+      <span class="hs-label">Casino Niagara</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hs-icon">🏆</span>
+      <span class="hs-val">High & Low</span>
+      <span class="hs-label">Limits Available</span>
+    </div>
+  </div>
+
+  <!-- Cashier notice -->
+  <div class="notice-box">
+    💳 <strong>Initial buy-in &amp; tournament entry:</strong> Please visit the cashier cage next to the Momentum booth on <strong>Level 3</strong>. Re-buys can be handled directly within the poker room.
+  </div>
+
+  <!-- Match the Stack callout -->
+  <div class="mts-callout">
+    <span class="mts-icon">🔥</span>
+    <h2>Match the Stack is here!</h2>
+    <p>Ask the poker room staff for details on this exciting featured game.</p>
+  </div>
+
+  <!-- Amenities -->
+  <p class="section-title">Room Amenities</p>
+  <div class="amenities-grid">
+    <div class="amenity-card">
+      <span class="am-icon">📱</span>
+      <span class="am-label">Free WiFi</span>
+    </div>
+    <div class="amenity-card">
+      <span class="am-icon">🔋</span>
+      <span class="am-label">Phone Charger at Every Seat</span>
+    </div>
+    <div class="amenity-card">
+      <span class="am-icon">🥤</span>
+      <span class="am-label">Self-Serve Beverage Station (Non-Alcoholic)</span>
+    </div>
+    <div class="amenity-card">
+      <span class="am-icon">🏈</span>
+      <span class="am-label">Sportsbook Access</span>
+    </div>
+    <div class="amenity-card">
+      <span class="am-icon">💵</span>
+      <span class="am-label">No Tax Withholding on Winnings</span>
+    </div>
+    <div class="amenity-card">
+      <span class="am-icon">🔄</span>
+      <span class="am-label">Re-Buys Handled In-Room</span>
+    </div>
+  </div>
+
+  <!-- Games -->
+  <p class="section-title">Available Games</p>
+  <div class="games-section">
+    <div class="games-grid">
+
+      <div class="game-group">
+        <div class="game-group-header">No Limit Hold'em</div>
+        <div class="game-row"><span class="game-stakes">1/3 NLH</span><span class="avail-badge always">Always</span></div>
+        <div class="game-row"><span class="game-stakes">2/5 NLH</span><span class="avail-badge often">Often</span></div>
+        <div class="game-row"><span class="game-stakes">5/10 NLH</span><span class="avail-badge demand">On Demand</span></div>
+        <div class="game-row"><span class="game-stakes">10/25 NLH</span><span class="avail-badge demand">On Demand</span></div>
+        <div class="game-row"><span class="game-stakes">25/50 · 50/100 NLH</span><span class="avail-badge demand">On Demand</span></div>
+      </div>
+
+      <div class="game-group">
+        <div class="game-group-header">Pot Limit Omaha</div>
+        <div class="game-row"><span class="game-stakes">1/3 PLO</span><span class="avail-badge often">Often</span></div>
+        <div class="game-row"><span class="game-stakes">2/5 PLO</span><span class="avail-badge demand">On Demand</span></div>
+        <div class="game-row"><span class="game-stakes">5/10 · 10/25 · 25/50 PLO</span><span class="avail-badge demand">On Demand</span></div>
+      </div>
+
+      <div class="game-group">
+        <div class="game-group-header">Round by Round</div>
+        <div class="game-row"><span class="game-stakes">1/3 Round by Round</span><span class="avail-badge demand">On Demand</span></div>
+        <div class="game-row"><span class="game-stakes">2/5 Round by Round</span><span class="avail-badge demand">On Demand</span></div>
+        <div class="game-row"><span class="game-stakes">25/50 Round by Round</span><span class="avail-badge demand">On Demand</span></div>
+      </div>
+
+      <div class="game-group">
+        <div class="game-group-header">Other Games</div>
+        <div class="game-row"><span class="game-stakes">Match the Stack</span><span class="avail-badge often">Often</span></div>
+        <div class="game-row"><span class="game-stakes">20/40 · 50/100 · 100/200 Limit</span><span class="avail-badge demand">On Demand</span></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Waitlist -->
+  <p class="section-title">Join the Waitlist</p>
+  <div class="waitlist-card">
+    <div class="waitlist-icon">📋</div>
+    <div class="waitlist-content">
+      <h3>Reserve Your Spot</h3>
+      <p>
+        Waitlist opens <strong>daily after 12:00 PM</strong>. We'll hold your spot for up to <strong>90 minutes</strong> — please check in at the poker room upon arrival.
+      </p>
+      <p style="margin-top:10px;">
+        📞 Call us at <a href="tel:+19053537000"><strong>(905) 353-7000</strong></a><br>
+        📲 Or add your name via <a href="https://www.bravopokerlive.com" target="_blank"><strong>Bravo Poker Live</strong></a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Bad Beat Jackpot -->
+  <p class="section-title">Bad Beat Jackpot</p>
+  <div class="bbj-card">
+    <h3>🎰 Bad Beat Jackpot</h3>
+    <p>
+      The jackpot value may change or have been won at any time. Please visit the Poker Room for current information.
+    </p>
+    <p>
+      <strong>Qualifying hand:</strong> A minimum of Four of a Kind (Quads) beaten by a higher Four of a Kind, Straight Flush, or Royal Flush.
+      The player must use <strong>both hole cards</strong> and three board cards.
+      Players must hold a <strong>pocket pair</strong> when making Four of a Kind. See Poker Room staff for full details.
+    </p>
+    <a class="bbj-link" href="index.html">View Live Jackpot Tracker →</a>
+  </div>
+
+  <footer>
+    <p><a href="https://casinoniagara.com/playing/poker.html" target="_blank">casinoniagara.com/playing/poker.html</a></p>
+    <p>Casino Niagara reserves the right to change or cancel games, promotions, or events at any time.</p>
+  </footer>
+
+</main>
+</body>
+</html>
