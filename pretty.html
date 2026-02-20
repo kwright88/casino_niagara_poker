@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niagara BBJ</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:    #0d1b2a;
+      --navy2:   #162032;
+      --navy3:   #1e2d40;
+      --gold:    #d4af37;
+      --gold2:   #f0d060;
+      --gold3:   #c8982c;
+      --red:     #c0392b;
+      --green:   #27ae60;
+      --text:    #e8e0cf;
+      --muted:   #8a9bb0;
+      --card-bg: rgba(22, 32, 50, 0.85);
+      --border:  rgba(212, 175, 55, 0.25);
+      --radius:  16px;
+    }
+
+    body {
+      background: var(--navy);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ── Background felt texture ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        repeating-linear-gradient(
+          45deg,
+          transparent,
+          transparent 2px,
+          rgba(255,255,255,0.012) 2px,
+          rgba(255,255,255,0.012) 4px
+        ),
+        radial-gradient(ellipse at 20% 20%, #1a2d45 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 80%, #1a2535 0%, transparent 60%),
+        var(--navy);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    main { position: relative; z-index: 1; max-width: 1100px; margin: 0 auto; padding: 40px 20px 60px; }
+
+    /* ── Header ── */
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .casino-label {
+      font-family: 'Oswald', sans-serif;
+      font-size: 13px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    header h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(28px, 5vw, 46px);
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 2px;
+      text-shadow: 0 0 40px rgba(212,175,55,0.4);
+      line-height: 1.1;
+    }
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin: 18px auto 0;
+      max-width: 360px;
+    }
+    .divider::before, .divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold3));
+    }
+    .divider::after { background: linear-gradient(to left, transparent, var(--gold3)); }
+    .divider span { color: var(--gold3); font-size: 18px; }
+
+    /* ── Hero jackpot card ── */
+    .hero-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 48px 36px;
+      text-align: center;
+      margin-bottom: 28px;
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.5), inset 0 1px 0 rgba(212,175,55,0.15);
+    }
+    .hero-card::before {
+      content: '♠';
+      position: absolute;
+      font-size: 280px;
+      color: rgba(255,255,255,0.018);
+      top: -60px;
+      right: -30px;
+      line-height: 1;
+      pointer-events: none;
+      user-select: none;
+    }
+    .hero-label {
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+    .jackpot-amount {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(52px, 10vw, 96px);
+      font-weight: 700;
+      line-height: 1;
+      background: linear-gradient(135deg, var(--gold2) 0%, var(--gold) 50%, var(--gold3) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: none;
+      animation: pulse-glow 3s ease-in-out infinite;
+      display: inline-block;
+    }
+    @keyframes pulse-glow {
+      0%, 100% { filter: drop-shadow(0 0 12px rgba(212,175,55,0.5)); }
+      50%       { filter: drop-shadow(0 0 28px rgba(212,175,55,0.85)); }
+    }
+    .as-of {
+      margin-top: 16px;
+      font-size: 14px;
+      color: var(--muted);
+      letter-spacing: 1px;
+    }
+    .as-of strong { color: var(--text); }
+
+    /* ── Stat cards grid ── */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .stat-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 20px;
+      text-align: center;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .stat-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+    }
+    .stat-icon {
+      font-size: 26px;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .stat-label {
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .stat-value {
+      font-family: 'Oswald', sans-serif;
+      font-size: 28px;
+      font-weight: 600;
+      color: var(--gold);
+    }
+    .stat-sub {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+    .stat-card.highlight {
+      border-color: rgba(212,175,55,0.5);
+      background: rgba(212,175,55,0.07);
+    }
+
+    /* ── Chart ── */
+    .chart-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      margin-bottom: 28px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+    }
+    .chart-card h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 16px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+    .chart-wrapper { position: relative; height: 260px; }
+
+    /* ── History toggle ── */
+    .history-section {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+    }
+    .history-toggle {
+      width: 100%;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--gold);
+      font-family: 'Oswald', sans-serif;
+      font-size: 16px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: background 0.2s;
+    }
+    .history-toggle:hover { background: rgba(212,175,55,0.06); }
+    .toggle-icon {
+      font-size: 20px;
+      transition: transform 0.3s;
+      display: inline-block;
+    }
+    .history-toggle[aria-expanded="true"] .toggle-icon {
+      transform: rotate(180deg);
+    }
+    .history-body {
+      display: none;
+      padding: 0 24px 24px;
+    }
+    .history-body.open { display: block; }
+
+    table.data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    table.data-table thead tr {
+      background: rgba(212,175,55,0.12);
+    }
+    table.data-table th {
+      padding: 10px 14px;
+      text-align: right;
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+      border-bottom: 1px solid var(--border);
+    }
+    table.data-table th:first-child { text-align: left; }
+    table.data-table td {
+      padding: 9px 14px;
+      text-align: right;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+    }
+    table.data-table td:first-child { text-align: left; color: var(--muted); }
+    table.data-table tbody tr:hover { background: rgba(255,255,255,0.03); }
+    table.data-table tbody tr:last-child td { border-bottom: none; }
+    .change-pos { color: var(--green); }
+    .change-neg { color: var(--red); }
+    .change-zero { color: var(--muted); }
+
+    /* ── Reset row highlight ── */
+    tr.jackpot-hit td { background: rgba(192,57,43,0.08); }
+    tr.jackpot-hit td:first-child::after {
+      content: ' 🎰';
+      font-size: 11px;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      margin-top: 48px;
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: 1px;
+    }
+    footer a { color: var(--gold3); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+      .hero-card { padding: 32px 20px; }
+      table.data-table th, table.data-table td { padding: 8px 8px; font-size: 12px; }
+    }
+  </style>
+</head>
+<body>
+<main>
+
+  <!-- Header -->
+  <header>
+    <p class="casino-label">Casino Niagara · Poker Room</p>
+    <h1>Bad Beat Jackpot Tracker</h1>
+    <div class="divider"><span>♦</span></div>
+  </header>
+
+  <!-- Hero -->
+  <div class="hero-card">
+    <p class="hero-label">Current Jackpot</p>
+    <div class="jackpot-amount" id="hero-amount">$14,297.30</div>
+    <p class="as-of">As of <strong id="hero-date">2026-02-19</strong></p>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats-grid">
+    <div class="stat-card highlight">
+      <span class="stat-icon">💰</span>
+      <p class="stat-label">Total Collected</p>
+      <p class="stat-value" id="stat-collected">$5,564.00</p>
+      <p class="stat-sub">Since Feb 15, 2026</p>
+    </div>
+    <div class="stat-card">
+      <span class="stat-icon">🏦</span>
+      <p class="stat-label">Casino Take (10%)</p>
+      <p class="stat-value" id="stat-casino">$556.40</p>
+    </div>
+    <div class="stat-card">
+      <span class="stat-icon">🎰</span>
+      <p class="stat-label">Last BBJ Hit</p>
+      <p class="stat-value" id="stat-hit-date">Feb 16, 2026</p>
+      <p class="stat-sub" id="stat-hit-amount">$129,841.10</p>
+    </div>
+    <div class="stat-card">
+      <span class="stat-icon">🌱</span>
+      <p class="stat-label">Seeded for Next BBJ</p>
+      <p class="stat-value" id="stat-next">$193.50</p>
+    </div>
+  </div>
+
+  <!-- Chart -->
+  <div class="chart-card">
+    <h2>📈 Jackpot History</h2>
+    <div class="chart-wrapper">
+      <canvas id="jackpotChart"></canvas>
+    </div>
+  </div>
+
+  <!-- Daily history (hidden by default) -->
+  <div class="history-section">
+    <button class="history-toggle" aria-expanded="false" onclick="toggleHistory(this)">
+      <span>Daily Data Log</span>
+      <span class="toggle-icon">▼</span>
+    </button>
+    <div class="history-body" id="history-body">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Jackpot Total</th>
+            <th>Daily Change</th>
+            <th>Amt Collected</th>
+            <th>→ Next BBJ</th>
+          </tr>
+        </thead>
+        <tbody id="data-tbody">
+          <!-- Populated by JS -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer>
+    Data sourced from <a href="https://casinoniagara.com/playing/poker.html" target="_blank">casinoniagara.com</a> · Updated daily
+  </footer>
+
+</main>
+
+<script>
+  // ── Data (auto-generated by bad_beat.py) ──────────────────────────────────
+  const DATA = [
+    { date: "2026-02-14", jackpot: 126937.90, change: null,        collected: null,   nextBBJ: null   },
+    { date: "2026-02-15", jackpot: 128353.90, change:  1416.00,    collected: 1770.00, nextBBJ: 177.00  },
+    { date: "2026-02-16", jackpot: 129841.10, change:  1487.20,    collected: 1859.00, nextBBJ: 185.90  },
+    { date: "2026-02-17", jackpot:  12749.30, change: -117091.80,  collected:    0.00, nextBBJ:   0.00  },
+    { date: "2026-02-18", jackpot:  13541.30, change:    792.00,   collected:  990.00, nextBBJ:  99.00  },
+    { date: "2026-02-19", jackpot:  14297.30, change:    756.00,   collected:  945.00, nextBBJ:  94.50  },
+  ];
+
+  const SUMMARY = {
+    currentJackpot:  14297.30,
+    currentDate:     "2026-02-19",
+    totalCollected:   5564.00,
+    casinoTake:        556.40,
+    lastHitDate:     "2026-02-16",
+    lastHitAmount:   129841.10,
+    nextBBJ:           193.50,
+  };
+
+  // ── Formatters ────────────────────────────────────────────────────────────
+  const fmt = (n) => n == null ? "—" : "$" + n.toLocaleString("en-CA", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const fmtChange = (n) => {
+    if (n == null) return { txt: "—", cls: "" };
+    if (n < 0)     return { txt: fmt(n), cls: "change-neg" };
+    if (n === 0)   return { txt: "$0.00", cls: "change-zero" };
+    return { txt: "+" + fmt(n), cls: "change-pos" };
+  };
+  const fmtDate = (d) => {
+    const [y, m, day] = d.split("-");
+    return new Date(y, m - 1, day).toLocaleDateString("en-CA", { month: "short", day: "numeric", year: "numeric" });
+  };
+
+  // ── Populate summary cards ────────────────────────────────────────────────
+  document.getElementById("hero-amount").textContent  = fmt(SUMMARY.currentJackpot);
+  document.getElementById("hero-date").textContent    = SUMMARY.currentDate;
+  document.getElementById("stat-collected").textContent = fmt(SUMMARY.totalCollected);
+  document.getElementById("stat-casino").textContent  = fmt(SUMMARY.casinoTake);
+  document.getElementById("stat-hit-date").textContent = fmtDate(SUMMARY.lastHitDate);
+  document.getElementById("stat-hit-amount").textContent = fmt(SUMMARY.lastHitAmount);
+  document.getElementById("stat-next").textContent    = fmt(SUMMARY.nextBBJ);
+
+  // ── Populate table ────────────────────────────────────────────────────────
+  const tbody = document.getElementById("data-tbody");
+  [...DATA].reverse().forEach(row => {
+    const isReset = row.change !== null && row.change < 0;
+    const ch = fmtChange(row.change);
+    const tr = document.createElement("tr");
+    if (isReset) tr.className = "jackpot-hit";
+    tr.innerHTML = `
+      <td>${row.date}</td>
+      <td>${fmt(row.jackpot)}</td>
+      <td class="${ch.cls}">${ch.txt}</td>
+      <td>${fmt(row.collected)}</td>
+      <td>${fmt(row.nextBBJ)}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+
+  // ── Toggle history ────────────────────────────────────────────────────────
+  function toggleHistory(btn) {
+    const body = document.getElementById("history-body");
+    const open = body.classList.toggle("open");
+    btn.setAttribute("aria-expanded", open);
+  }
+
+  // ── Chart ─────────────────────────────────────────────────────────────────
+  const labels = DATA.map(d => d.date);
+  const jackpots = DATA.map(d => d.jackpot);
+
+  // Color segments: red for the reset drop, gold for normal growth
+  const pointColors = DATA.map((d, i) => {
+    if (d.change !== null && d.change < 0) return "#c0392b";
+    return "#d4af37";
+  });
+  const segmentColors = DATA.map((d, i) => {
+    if (i === 0) return "rgba(212,175,55,0.7)";
+    if (d.change !== null && d.change < 0) return "rgba(192,57,43,0.7)";
+    return "rgba(212,175,55,0.7)";
+  });
+
+  const ctx = document.getElementById("jackpotChart").getContext("2d");
+
+  // Gradient fill
+  const gradient = ctx.createLinearGradient(0, 0, 0, 260);
+  gradient.addColorStop(0, "rgba(212,175,55,0.35)");
+  gradient.addColorStop(1, "rgba(212,175,55,0.02)");
+
+  new Chart(ctx, {
+    type: "line",
+    data: {
+      labels,
+      datasets: [{
+        label: "Jackpot Total",
+        data: jackpots,
+        borderColor: "#d4af37",
+        backgroundColor: gradient,
+        borderWidth: 2.5,
+        pointRadius: 6,
+        pointHoverRadius: 9,
+        pointBackgroundColor: pointColors,
+        pointBorderColor: "#0d1b2a",
+        pointBorderWidth: 2,
+        fill: true,
+        tension: 0.3,
+        segment: {
+          borderColor: (ctx) => {
+            const i = ctx.p1DataIndex;
+            if (DATA[i] && DATA[i].change !== null && DATA[i].change < 0) return "#c0392b";
+            return "#d4af37";
+          }
+        }
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: "index", intersect: false },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: "rgba(13,27,42,0.95)",
+          borderColor: "rgba(212,175,55,0.4)",
+          borderWidth: 1,
+          titleColor: "#d4af37",
+          bodyColor: "#e8e0cf",
+          padding: 12,
+          callbacks: {
+            label: (ctx) => "  Jackpot: " + fmt(ctx.parsed.y),
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { color: "rgba(255,255,255,0.05)" },
+          ticks: { color: "#8a9bb0", font: { size: 11 } },
+          border: { color: "rgba(255,255,255,0.1)" }
+        },
+        y: {
+          grid: { color: "rgba(255,255,255,0.05)" },
+          ticks: {
+            color: "#8a9bb0",
+            font: { size: 11 },
+            callback: (v) => "$" + (v >= 1000 ? (v/1000).toFixed(0) + "k" : v)
+          },
+          border: { color: "rgba(255,255,255,0.1)" }
+        }
+      }
+    }
+  });
+</script>
+</body>
+</html>
