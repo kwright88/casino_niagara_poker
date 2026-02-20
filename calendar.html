@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casino Niagara — Poker Tournament Calendar</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:     #0d1b2a;
+      --navy2:    #162032;
+      --navy3:    #1e2d40;
+      --gold:     #d4af37;
+      --gold2:    #f0d060;
+      --gold3:    #c8982c;
+      --text:     #e8e0cf;
+      --muted:    #8a9bb0;
+      --border:   rgba(212,175,55,0.22);
+      --radius:   14px;
+      --card-bg:  rgba(22, 32, 50, 0.88);
+
+      /* Tournament colour palette */
+      --wed:      #2563a8;   /* Wednesday $300 — blue */
+      --wed-bg:   rgba(37,99,168,0.18);
+      --sun:      #b07d2c;   /* Sunday $400 — amber */
+      --sun-bg:   rgba(176,125,44,0.18);
+      --sun550:   #2e7d52;   /* Sunday $550 — green */
+      --sun550-bg:rgba(46,125,82,0.18);
+      --main:     #8b2020;   /* Main Event — red */
+      --main-bg:  rgba(139,32,32,0.22);
+    }
+
+    body {
+      background: var(--navy);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        repeating-linear-gradient(45deg, transparent, transparent 2px, rgba(255,255,255,0.012) 2px, rgba(255,255,255,0.012) 4px),
+        radial-gradient(ellipse at 20% 20%, #1a2d45 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 80%, #1a2535 0%, transparent 60%),
+        var(--navy);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    main { position: relative; z-index: 1; max-width: 1100px; margin: 0 auto; padding: 40px 16px 60px; }
+
+    /* ── Header ── */
+    header { text-align: center; margin-bottom: 40px; }
+    .casino-label {
+      font-family: 'Oswald', sans-serif;
+      font-size: 12px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    header h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(24px, 4vw, 40px);
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 2px;
+      text-shadow: 0 0 30px rgba(212,175,55,0.35);
+    }
+    .divider { display: flex; align-items: center; gap: 14px; margin: 14px auto 0; max-width: 320px; }
+    .divider::before, .divider::after { content: ''; flex: 1; height: 1px; background: linear-gradient(to right, transparent, var(--gold3)); }
+    .divider::after { background: linear-gradient(to left, transparent, var(--gold3)); }
+    .divider span { color: var(--gold3); font-size: 16px; }
+
+    /* ── Legend ── */
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 20px;
+      margin-bottom: 32px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .legend-dot.wed   { background: var(--wed); }
+    .legend-dot.sun   { background: var(--sun); }
+    .legend-dot.sun550{ background: var(--sun550); }
+    .legend-dot.main  { background: var(--main); }
+
+    /* ── Calendar grid ── */
+    .cal-wrapper {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+    }
+
+    .month-header {
+      background: rgba(212,175,55,0.1);
+      border-bottom: 1px solid var(--border);
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .month-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: 2px;
+    }
+    .month-sub { font-size: 12px; color: var(--muted); }
+
+    .dow-header {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      border-bottom: 1px solid var(--border);
+    }
+    .dow-header div {
+      padding: 10px 0;
+      text-align: center;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold3);
+    }
+    .dow-header div:first-child { color: #9b6b6b; }  /* Sun */
+    .dow-header div:last-child  { color: #9b6b6b; }  /* Sat */
+
+    .cal-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+    }
+
+    .cal-cell {
+      border-right: 1px solid rgba(255,255,255,0.05);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      padding: 10px 8px;
+      min-height: 110px;
+      vertical-align: top;
+      position: relative;
+    }
+    .cal-cell:nth-child(7n) { border-right: none; }
+    .cal-cell.empty { background: rgba(0,0,0,0.1); }
+    .cal-cell.today { background: rgba(212,175,55,0.06); }
+    .cal-cell.today .day-num { color: var(--gold2); }
+
+    .day-num {
+      font-family: 'Oswald', sans-serif;
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--muted);
+      margin-bottom: 6px;
+      line-height: 1;
+    }
+    .cal-cell:nth-child(7n+1) .day-num,
+    .cal-cell:nth-child(7n)   .day-num { color: #9b6b6b; } /* Sun/Sat */
+
+    /* ── Tournament pills ── */
+    .tourney {
+      display: block;
+      border-radius: 6px;
+      padding: 4px 7px;
+      margin-bottom: 4px;
+      font-size: 10.5px;
+      font-weight: 600;
+      line-height: 1.3;
+      cursor: default;
+    }
+    .tourney.wed    { background: var(--wed-bg);   color: #7fb3f5; border-left: 3px solid var(--wed); }
+    .tourney.sun    { background: var(--sun-bg);   color: #e8b86d; border-left: 3px solid var(--sun); }
+    .tourney.sun550 { background: var(--sun550-bg);color: #6fcf97; border-left: 3px solid var(--sun550); }
+    .tourney.main   { background: var(--main-bg);  color: #f08080; border-left: 3px solid var(--main); }
+    .tourney .time  { font-weight: 400; opacity: 0.8; font-size: 9.5px; }
+
+    /* ── Detail cards below calendar ── */
+    .detail-section { margin-top: 32px; }
+    .detail-section h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 14px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 14px;
+    }
+    .detail-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px;
+      backdrop-filter: blur(8px);
+    }
+    .detail-card .dc-top {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .dc-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .detail-card h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: 0.5px;
+    }
+    .detail-card .dc-buy { font-family: 'Oswald', sans-serif; font-size: 22px; color: var(--gold); margin-bottom: 6px; }
+    .detail-card .dc-row { font-size: 12px; color: var(--muted); margin-bottom: 3px; }
+    .detail-card .dc-row strong { color: var(--text); }
+    .detail-card a { color: var(--gold3); font-size: 11px; text-decoration: none; }
+    .detail-card a:hover { text-decoration: underline; }
+
+    /* ── Footer ── */
+    footer { text-align: center; margin-top: 40px; font-size: 12px; color: var(--muted); }
+    footer a { color: var(--gold3); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    footer p + p { margin-top: 6px; }
+
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      .cal-cell { min-height: 80px; padding: 6px 4px; }
+      .tourney { font-size: 9px; padding: 3px 5px; }
+      .tourney .time { display: none; }
+      .day-num { font-size: 14px; }
+    }
+  </style>
+</head>
+<body>
+<main>
+
+  <header>
+    <p class="casino-label">Casino Niagara · Poker Room</p>
+    <h1>Tournament Calendar</h1>
+    <div class="divider"><span>♠</span></div>
+  </header>
+
+  <!-- Legend -->
+  <div class="legend">
+    <div class="legend-item"><span class="legend-dot wed"></span> Wednesday $300 NL Hold'em</div>
+    <div class="legend-item"><span class="legend-dot sun"></span> Sunday $400 NL Hold'em</div>
+    <div class="legend-item"><span class="legend-dot sun550"></span> Last Sunday $550 NL Hold'em</div>
+    <div class="legend-item"><span class="legend-dot main"></span> Winter Main Event</div>
+  </div>
+
+  <!-- Calendar -->
+  <div class="cal-wrapper">
+    <div class="month-header">
+      <div>
+        <div class="month-title">February 2026</div>
+        <div class="month-sub">All tournaments start at 12:30 PM · Casino Niagara Poker Room</div>
+      </div>
+      <div style="font-size:28px; opacity:0.4;">🃏</div>
+    </div>
+
+    <!-- Day-of-week headers -->
+    <div class="dow-header">
+      <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div>
+      <div>Thu</div><div>Fri</div><div>Sat</div>
+    </div>
+
+    <!-- Feb 2026 starts on Sunday -->
+    <div class="cal-grid">
+
+      <!-- Week 1: Feb 1–7 -->
+      <div class="cal-cell">
+        <div class="day-num">1</div>
+        <span class="tourney sun">Sunday $400<br><span class="time">12:30 PM · NL Hold'em</span></span>
+      </div>
+      <div class="cal-cell"><div class="day-num">2</div></div>
+      <div class="cal-cell"><div class="day-num">3</div></div>
+      <div class="cal-cell">
+        <div class="day-num">4</div>
+        <span class="tourney wed">Wednesday $300<br><span class="time">12:30 PM · NL Hold'em</span></span>
+      </div>
+      <div class="cal-cell"><div class="day-num">5</div></div>
+      <div class="cal-cell"><div class="day-num">6</div></div>
+      <div class="cal-cell"><div class="day-num">7</div></div>
+
+      <!-- Week 2: Feb 8–14 -->
+      <div class="cal-cell">
+        <div class="day-num">8</div>
+        <span class="tourney sun">Sunday $400<br><span class="time">12:30 PM · NL Hold'em</span></span>
+      </div>
+      <div class="cal-cell"><div class="day-num">9</div></div>
+      <div class="cal-cell"><div class="day-num">10</div></div>
+      <div class="cal-cell">
+        <div class="day-num">11</div>
+        <span class="tourney wed">Wednesday $300<br><span class="time">12:30 PM · NL Hold'em</span></span>
+      </div>
+      <div class="cal-cell"><div class="day-num">12</div></div>
+      <div class="cal-cell"><div class="day-num">13</div></div>
+      <div class="cal-cell"><div class="day-num">14</div></div>
+
+      <!-- Week 3: Feb 15–21 — Main Event week -->
+      <div class="cal-cell">
+        <div class="day-num">15</div>
+        <span class="tourney sun">Sunday $400<br><span class="time">12:30 PM · NL Hold'em</span></span>
+      </div>
+      <div class="cal-cell"><div class="day-num">16</div></div>
+      <div class="cal-cell">
+        <div class="day-num">17</div>
+        <span class="tourney main">Main Event<br><span class="time">Flight A (Day 1a) · 12:30 PM</span></span>
+      </div>
+      <div class="cal-cell">
+        <div class="day-num">18</div>
+        <span class="tourney main">Main Event<br><span class="time">Flight B (Day 1b) · 12:30 PM</span></span>
+        <span class="tourney wed" style="opacity:0.4;text-decoration:line-through;">Wed $300 <span class="time">(blacked out)</span></span>
+      </div>
+      <div class="cal-cell">
+        <div class="day-num">19</div>
+        <span class="tourney main">Main Event<br><span class="time">Day 2 · 12:30 PM</span></span>
+      </div>
+      <div class="cal-cell">
+        <div class="day-num">20</div>
+        <span class="tourney main" style="opacity:0.65;">Main Event<br><span class="time">Day 3 (if needed)</span></span>
+      </div>
+      <div class="cal-cell"><div class="day-num">21</div></div>
+
+      <!-- Week 4: Feb 22–28 -->
+      <div class="cal-cell">
+        <div class="day-num">22</div>
+        <span class="tourney sun550">Last Sunday $550<br><span class="time">12:30 PM · NL Hold'em</span></span>
+      </div>
+      <div class="cal-cell"><div class="day-num">23</div></div>
+      <div class="cal-cell"><div class="day-num">24</div></div>
+      <div class="cal-cell">
+        <div class="day-num">25</div>
+        <span class="tourney wed">Wednesday $300<br><span class="time">12:30 PM · NL Hold'em</span></span>
+      </div>
+      <div class="cal-cell"><div class="day-num">26</div></div>
+      <div class="cal-cell"><div class="day-num">27</div></div>
+      <div class="cal-cell"><div class="day-num">28</div></div>
+
+    </div><!-- .cal-grid -->
+  </div><!-- .cal-wrapper -->
+
+  <!-- Detail cards -->
+  <div class="detail-section">
+    <h2>Tournament Details</h2>
+    <div class="detail-grid">
+
+      <div class="detail-card">
+        <div class="dc-top">
+          <span class="dc-dot" style="background:var(--wed)"></span>
+          <h3>Wednesday NL Hold'em</h3>
+        </div>
+        <div class="dc-buy">$300 Buy-in</div>
+        <div class="dc-row"><strong>Every Wednesday</strong> · 12:30 PM</div>
+        <div class="dc-row">Re-entry to end of 1st break</div>
+        <div class="dc-row">Blackout dates may apply</div>
+        <div class="dc-row" style="margin-top:8px;">
+          <a href="https://casinoniagara.com/events-and-promotions/promotions/texas-holdem-poker-tournaments-wednesdays.html" target="_blank">Full details ↗</a>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <div class="dc-top">
+          <span class="dc-dot" style="background:var(--sun)"></span>
+          <h3>Sunday NL Hold'em</h3>
+        </div>
+        <div class="dc-buy">$400 Buy-in</div>
+        <div class="dc-row"><strong>Every Sunday</strong> · 12:30 PM</div>
+        <div class="dc-row">Unlimited re-entry to end of 1st break</div>
+        <div class="dc-row">Blackout: Last Sunday of month & multi-day event weeks</div>
+        <div class="dc-row" style="margin-top:8px;">
+          <a href="https://casinoniagara.com/events-and-promotions/promotions/texas-holdem-poker-tournaments.html" target="_blank">Full details ↗</a>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <div class="dc-top">
+          <span class="dc-dot" style="background:var(--sun550)"></span>
+          <h3>Last Sunday of Month</h3>
+        </div>
+        <div class="dc-buy">$550 Buy-in</div>
+        <div class="dc-row"><strong>Last Sunday monthly</strong> · 12:30 PM</div>
+        <div class="dc-row">Unlimited re-entry to end of 2nd break</div>
+        <div class="dc-row">Feb 2026: <strong>February 22</strong></div>
+        <div class="dc-row" style="margin-top:8px;">
+          <a href="https://casinoniagara.com/events-and-promotions/promotions/texas-holdem-poker-tournaments-sundays.html" target="_blank">Full details ↗</a>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <div class="dc-top">
+          <span class="dc-dot" style="background:var(--main)"></span>
+          <h3>Winter Main Event</h3>
+        </div>
+        <div class="dc-buy">Multi-day</div>
+        <div class="dc-row"><strong>Flight A (Day 1a):</strong> Feb 17 · 12:30 PM</div>
+        <div class="dc-row"><strong>Flight B (Day 1b):</strong> Feb 18 · 12:30 PM</div>
+        <div class="dc-row"><strong>Day 2:</strong> Feb 19 · 12:30 PM</div>
+        <div class="dc-row"><strong>Day 3:</strong> Feb 20 (if necessary)</div>
+        <div class="dc-row">Unlimited re-entry to end of 2nd break (Flights only)</div>
+        <div class="dc-row" style="margin-top:8px;">
+          <a href="https://casinoniagara.com/events-and-promotions/promotions/no-limit-holdem-poker-tournaments.html" target="_blank">Full details ↗</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>Source: <a href="https://casinoniagara.com/playing/poker.html" target="_blank">casinoniagara.com/playing/poker.html</a></p>
+    <p>Blackout dates may apply · Casino Niagara reserves the right to modify or cancel tournaments at any time</p>
+  </footer>
+
+</main>
+</body>
+</html>
