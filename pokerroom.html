@@ -453,6 +453,59 @@
       font-style: italic;
     }
 
+    /* ── LEV2L menu links ── */
+    .lev2l-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 32px;
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .lev2l-icon { font-size: 36px; flex-shrink: 0; }
+    .lev2l-content { flex: 1; min-width: 0; }
+    .lev2l-content h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 17px;
+      color: var(--gold);
+      margin-bottom: 6px;
+      letter-spacing: 1px;
+    }
+    .lev2l-content p {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.65;
+      margin-bottom: 16px;
+    }
+    .menu-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .menu-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(212,175,55,0.08);
+      border: 1px solid rgba(212,175,55,0.35);
+      border-radius: 30px;
+      padding: 8px 16px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-decoration: none;
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+    .menu-link:hover {
+      background: rgba(212,175,55,0.16);
+      box-shadow: 0 0 12px rgba(212,175,55,0.18);
+    }
+
     /* ── Responsive ── */
     @media (max-width: 600px) {
       .games-grid { grid-template-columns: 1fr; }
@@ -492,8 +545,8 @@
       <span class="hs-label">Open Daily</span>
     </div>
     <div class="hero-stat">
-      <span class="hs-icon">📍</span>
-      <span class="hs-val">LEV2L</span>
+      <span class="hs-icon">🍽️</span>
+      <span class="hs-val">LEV2L Restaurant</span>
       <span class="hs-label">Casino Niagara</span>
     </div>
     <div class="hero-stat">
@@ -694,6 +747,21 @@
         📞 Call us at <a href="tel:+19053537000"><strong>(905) 353-7000</strong></a><br>
         📲 Or add your name via <a href="https://www.bravopokerlive.com" target="_blank"><strong>Bravo Poker Live</strong></a>
       </p>
+    </div>
+  </div>
+
+  <!-- LEV2L Restaurant -->
+  <p class="section-title">LEV2L Restaurant</p>
+  <div class="lev2l-card">
+    <div class="lev2l-icon">🍔</div>
+    <div class="lev2l-content">
+      <h3>LEV2L Sports Bar &amp; Restaurant</h3>
+      <p>275-seat restaurant with over 50 HD plasma screens. Wings, handmade pizza, salads, sandwiches, and burgers — right on the casino floor. Happy Hour Mon–Fri 3–5 PM.</p>
+      <div class="menu-links">
+        <a class="menu-link" href="https://casinoniagara.com/content/dam/niagara/PDF/Menus/2025/LEV2L-Menu-Winter-2025.pdf" target="_blank">🍽️ Main Menu</a>
+        <a class="menu-link" href="https://casinoniagara.com/content/dam/niagara/PDF/Menus/2025/LEV2L-Dessert-Menu-Winter-2025.pdf" target="_blank">🍰 Dessert Menu</a>
+        <a class="menu-link" href="https://casinoniagara.com/content/dam/niagara/PDF/Menus/2025/L2_Drink_Menu_NOV_2025.pdf" target="_blank">🍺 Drink Menu</a>
+      </div>
     </div>
   </div>
 
