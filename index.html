@@ -456,9 +456,33 @@
     return new Date(y, m - 1, day).toLocaleDateString("en-CA", { month: "short", day: "numeric", year: "numeric" });
   };
 
+  // ── Slot-machine roll-up for the hero jackpot amount ─────────────────────
+  function rollUpAmount(el, target, duration) {
+    // Ease-out quart: fast start, dramatic slow-down at the end
+    const ease = t => 1 - Math.pow(1 - t, 4);
+    let startTs = null;
+
+    el.textContent = fmt(0);
+
+    function frame(ts) {
+      if (!startTs) startTs = ts;
+      const progress = Math.min((ts - startTs) / duration, 1);
+      const value    = target * ease(progress);
+      el.textContent = fmt(value);
+      if (progress < 1) requestAnimationFrame(frame);
+      else el.textContent = fmt(target); // lock exact final value
+    }
+    requestAnimationFrame(frame);
+  }
+
   // ── Populate summary cards ────────────────────────────────────────────────
-  document.getElementById("hero-amount").textContent  = fmt(SUMMARY.currentJackpot);
   document.getElementById("hero-date").textContent    = SUMMARY.currentDate;
+  // Delay slightly so the page renders first, then roll in
+  setTimeout(() => rollUpAmount(
+    document.getElementById("hero-amount"),
+    SUMMARY.currentJackpot,
+    2200   // ms — feels like a slot reel settling
+  ), 350);
   document.getElementById("stat-hit-date").textContent = fmtDate(SUMMARY.lastHitDate);
   document.getElementById("stat-hit-amount").textContent = fmt(SUMMARY.lastHitAmount);
 
