@@ -160,6 +160,12 @@
       gap: 16px;
       margin-bottom: 28px;
     }
+    .stats-grid.two-col {
+      grid-template-columns: 1fr 1fr;
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+    }
     .stat-card {
       background: var(--card-bg);
       border: 1px solid var(--border);
@@ -339,28 +345,18 @@
   </div>
 
   <!-- Stats -->
-  <div class="stats-grid">
+  <div class="stats-grid two-col">
     <div class="stat-card highlight">
-      <span class="stat-icon">💰</span>
-      <p class="stat-label">Total Collected</p>
-      <p class="stat-value" id="stat-collected">$5,564.00</p>
-      <p class="stat-sub">Since Feb 15, 2026</p>
-    </div>
-    <div class="stat-card">
-      <span class="stat-icon">🏦</span>
-      <p class="stat-label">Casino Take (10%)</p>
-      <p class="stat-value" id="stat-casino">$556.40</p>
-    </div>
-    <div class="stat-card">
       <span class="stat-icon">🎰</span>
       <p class="stat-label">Last BBJ Hit</p>
       <p class="stat-value" id="stat-hit-date">Feb 16, 2026</p>
       <p class="stat-sub" id="stat-hit-amount">$129,841.10</p>
     </div>
     <div class="stat-card">
-      <span class="stat-icon">🌱</span>
-      <p class="stat-label">Seeded for Next BBJ</p>
-      <p class="stat-value" id="stat-next">$193.50</p>
+      <span class="stat-icon">📈</span>
+      <p class="stat-label">Avg Daily Increase Since Last Hit</p>
+      <p class="stat-value" id="stat-avg-daily">$774.00</p>
+      <p class="stat-sub" id="stat-avg-sub">2 days of data</p>
     </div>
   </div>
 
@@ -439,11 +435,20 @@
   // ── Populate summary cards ────────────────────────────────────────────────
   document.getElementById("hero-amount").textContent  = fmt(SUMMARY.currentJackpot);
   document.getElementById("hero-date").textContent    = SUMMARY.currentDate;
-  document.getElementById("stat-collected").textContent = fmt(SUMMARY.totalCollected);
-  document.getElementById("stat-casino").textContent  = fmt(SUMMARY.casinoTake);
   document.getElementById("stat-hit-date").textContent = fmtDate(SUMMARY.lastHitDate);
   document.getElementById("stat-hit-amount").textContent = fmt(SUMMARY.lastHitAmount);
-  document.getElementById("stat-next").textContent    = fmt(SUMMARY.nextBBJ);
+
+  // ── Avg daily increase since last hit (rows after the reset) ─────────────
+  const resetIdx = DATA.findIndex(r => r.change !== null && r.change < 0);
+  const postReset = resetIdx >= 0 ? DATA.slice(resetIdx) : [];
+  // postReset[0] is the reset day (starting value), remaining days have positive increases
+  const postIncrease = postReset.slice(1).filter(r => r.change !== null && r.change > 0);
+  const avgDaily = postIncrease.length > 0
+    ? postIncrease.reduce((s, r) => s + r.change, 0) / postIncrease.length
+    : null;
+  document.getElementById("stat-avg-daily").textContent = avgDaily != null ? fmt(avgDaily) : "—";
+  document.getElementById("stat-avg-sub").textContent =
+    postIncrease.length === 1 ? "1 day of data" : `${postIncrease.length} days of data`;
 
   // ── Populate table ────────────────────────────────────────────────────────
   const tbody = document.getElementById("data-tbody");
