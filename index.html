@@ -351,7 +351,6 @@
   <div class="nav-links">
     <a class="nav-link" href="pokerroom.html">🃏 Poker Room</a>
     <a class="nav-link" href="calendar.html">📅 Tournament Calendar</a>
-    <a class="nav-link" href="tournamentstats.html">📊 Tournament Stats</a>
   </div>
 
   <!-- Header -->
@@ -365,7 +364,7 @@
   <div class="hero-card">
     <p class="hero-label">Current Jackpot</p>
     <div class="jackpot-amount" id="hero-amount">$0.00</div>
-    <p class="as-of">As of <strong id="hero-date">2026-02-19</strong></p>
+    <p class="as-of">As of <strong id="hero-date">2026-02-19</strong> at <strong id="hero-time">11:45 AM</strong></p>
   </div>
 
   <!-- Stats -->
@@ -476,12 +475,20 @@
         "change": 710.4,
         "collected": 888.0,
         "nextBBJ": 88.8
+    },
+    {
+        "date": "2026-02-21",
+        "jackpot": 15713.3,
+        "change": 705.6,
+        "collected": 882.0,
+        "nextBBJ": 88.2
     }
 ];
 
   const SUMMARY = {
-    currentJackpot:  15007.7,
-    currentDate:     "2026-02-20",
+    currentJackpot:  15713.3,
+    currentDate:     "2026-02-21",
+    currentTime:     "9:27 AM",
     lastHitDate:     "2026-02-16",
     lastHitAmount:   129841.1,
   };
@@ -520,6 +527,7 @@
 
   // ── Populate summary cards ────────────────────────────────────────────────
   document.getElementById("hero-date").textContent    = SUMMARY.currentDate;
+  document.getElementById("hero-time").textContent    = SUMMARY.currentTime || "";
   // Delay slightly so the page renders first, then roll in
   setTimeout(() => rollUpAmount(
     document.getElementById("hero-amount"),
