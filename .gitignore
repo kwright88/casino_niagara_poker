@@ -1,1 +1,6 @@
 # Test commit
+
+# Python scripts (maintained in workspace, not tracked here)
+*.py
+__pycache__/
+*.pyc
