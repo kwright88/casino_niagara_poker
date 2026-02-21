@@ -4,3 +4,6 @@
 *.py
 __pycache__/
 *.pyc
+
+# Secrets
+.env
