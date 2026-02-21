@@ -288,6 +288,29 @@
     .bbj-card p { font-size: 13px; color: var(--muted); line-height: 1.75; margin-bottom: 10px; }
     .bbj-card p:last-of-type { margin-bottom: 16px; }
     .bbj-card strong { color: var(--text); }
+    .bbj-amount-display {
+      text-align: center;
+      padding: 16px;
+      margin-bottom: 16px;
+      background: rgba(212,175,55,0.06);
+      border: 1px solid rgba(212,175,55,0.3);
+      border-radius: 12px;
+    }
+    .bbj-amount-val {
+      font-family: 'Oswald', sans-serif;
+      font-size: 42px;
+      font-weight: 700;
+      color: var(--gold2);
+      display: block;
+      text-shadow: 0 0 20px rgba(212,175,55,0.4);
+    }
+    .bbj-amount-asof {
+      font-size: 12px;
+      color: var(--muted);
+      display: block;
+      margin-top: 4px;
+      letter-spacing: 1px;
+    }
     .bbj-link {
       display: inline-flex;
       align-items: center;
@@ -778,6 +801,12 @@
   <p class="section-title">Bad Beat Jackpot</p>
   <div class="bbj-card">
     <h3>🎰 Bad Beat Jackpot</h3>
+    <!-- @@BBJ_INJECT_START@@ -->
+    <div class="bbj-amount-display">
+      <span class="bbj-amount-val">$15,007.70</span>
+      <span class="bbj-amount-asof">as of 2026-02-20</span>
+    </div>
+    <!-- @@BBJ_INJECT_END@@ -->
     <p>
       The jackpot value may change or have been won at any time. Please visit the Poker Room for current information.
     </p>
