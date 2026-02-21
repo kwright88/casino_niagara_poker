@@ -570,10 +570,8 @@ def update_html(events, stats, awards, timestamp):
     )
 
     # ── Timestamps ──
-    content = re.sub(r'Static snapshot, updated \d{4}-\d{2}-\d{2}',
-                     f'Static snapshot, updated {timestamp}', content)
-    content = re.sub(r'Static snapshot · Updated \d{4}-\d{2}-\d{2}',
-                     f'Static snapshot · Updated {timestamp}', content)
+    content = re.sub(r'Updated \d{4}-\d{2}-\d{2}',
+                     f'Updated {timestamp}', content)
 
     with open(STATS_HTML, 'w', encoding='utf-8') as f:
         f.write(content)
