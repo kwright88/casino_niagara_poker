@@ -73,6 +73,10 @@
     .results-table thead tr { background: rgba(212,175,55,0.1); border-bottom: 1px solid var(--border); }
     .results-table thead th { padding: 12px 16px; font-family: 'Oswald', sans-serif; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); white-space: nowrap; text-align: right; }
     .results-table thead th.th-l { text-align: left; }
+    .results-table thead th[data-col] { cursor: pointer; user-select: none; transition: background 0.15s; position: relative; }
+    .results-table thead th[data-col]:hover { background: rgba(212,175,55,0.08); }
+    .results-table thead th[data-col].sort-asc::after  { content: ' ▲'; font-size: 9px; color: var(--gold2); }
+    .results-table thead th[data-col].sort-desc::after { content: ' ▼'; font-size: 9px; color: var(--gold2); }
     .results-table tbody tr { border-bottom: 1px solid rgba(255,255,255,0.04); transition: background 0.15s; }
     .results-table tbody tr:last-child { border-bottom: none; }
     .results-table tbody tr:hover { background: rgba(255,255,255,0.035); }
@@ -165,18 +169,18 @@
   <!-- Results -->
   <p class="section-title">2026 Results</p>
   <div class="results-wrap">
-    <table class="results-table">
+    <table class="results-table" id="results-table">
       <thead>
         <tr>
-          <th class="th-l">Date</th>
-          <th class="th-l">Tournament</th>
-          <th>Entries</th>
-          <th>Prize Pool</th>
-          <th>1st Place</th>
-          <th class="th-l">Winner</th>
+          <th class="th-l" data-col="date">Date</th>
+          <th class="th-l" data-col="tournament">Tournament</th>
+          <th data-col="entries">Entries</th>
+          <th data-col="pool">Prize Pool</th>
+          <th data-col="first">1st Place</th>
+          <th class="th-l" data-col="winner">Winner</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody id="results-tbody">
         <tr>
           <td class="td-l rt-date">Jan 4</td>
           <td class="td-l"><span class="rt-type"><span class="rt-dot" style="background:var(--sun)"></span><a class="rt-link" href="https://pokerdb.thehendonmob.com/event.php?a=r&n=1330323" target="_blank">Sunday $400 NLH</a></span></td>
@@ -557,6 +561,79 @@ document.querySelectorAll('#lb-table thead th[data-col]').forEach(th => {
 
 renderTable();
 updateHeaders();
+
+// ── Results table sort ──
+const MONTH_NUM = {Jan:1,Feb:2,Mar:3,Apr:4,May:5,Jun:6,Jul:7,Aug:8,Sep:9,Oct:10,Nov:11,Dec:12};
+
+function parseDateNum(text) {
+  const m = text.match(/(\w{3})\s+(\d+)/);
+  return m ? (MONTH_NUM[m[1]] || 0) * 100 + parseInt(m[2]) : 0;
+}
+function parseMoneyNum(text) {
+  const digits = text.replace(/[^\d]/g, '');
+  return digits ? parseInt(digits) : -1;
+}
+
+const rtTable = document.getElementById('results-table');
+const rtTbody = document.getElementById('results-tbody');
+
+// Snapshot rows + extract sort values once on load
+const rtRows = [...rtTbody.querySelectorAll('tr')].map(tr => {
+  const cells = tr.querySelectorAll('td');
+  return {
+    el:         tr,
+    date:       parseDateNum(cells[0]?.textContent || ''),
+    tournament: (cells[1]?.textContent || '').trim().toLowerCase(),
+    entries:    parseInt((cells[2]?.textContent || '').replace(/[^\d]/g, '')) || -1,
+    pool:       parseMoneyNum(cells[3]?.textContent || ''),
+    first:      parseMoneyNum(cells[4]?.textContent || ''),
+    winner:     (cells[5]?.textContent || '').trim().toLowerCase(),
+  };
+});
+
+let rtSortCol = 'date';
+let rtSortDir = 1; // 1 = asc
+
+function rtRender() {
+  const sorted = [...rtRows].sort((a, b) => {
+    const av = a[rtSortCol], bv = b[rtSortCol];
+    if (typeof av === 'string') {
+      if (av < bv) return -rtSortDir;
+      if (av > bv) return rtSortDir;
+    } else {
+      if (av !== bv) return (av - bv) * rtSortDir;
+    }
+    // tiebreak: chronological
+    if (rtSortCol !== 'date') return a.date - b.date;
+    return 0;
+  });
+  sorted.forEach(r => rtTbody.appendChild(r.el));
+}
+
+function rtUpdateHeaders() {
+  rtTable.querySelectorAll('thead th[data-col]').forEach(th => {
+    th.classList.remove('sort-asc', 'sort-desc');
+    if (th.dataset.col === rtSortCol) {
+      th.classList.add(rtSortDir === 1 ? 'sort-asc' : 'sort-desc');
+    }
+  });
+}
+
+rtTable.querySelectorAll('thead th[data-col]').forEach(th => {
+  th.addEventListener('click', () => {
+    const col = th.dataset.col;
+    if (col === rtSortCol) {
+      rtSortDir *= -1;
+    } else {
+      rtSortCol = col;
+      rtSortDir = ['date', 'tournament', 'winner'].includes(col) ? 1 : -1;
+    }
+    rtUpdateHeaders();
+    rtRender();
+  });
+});
+
+rtUpdateHeaders(); // show default sort arrow (date asc)
 </script>
 </body>
 </html>
