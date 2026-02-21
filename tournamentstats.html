@@ -462,8 +462,8 @@ function renderTable() {
   const sorted = [...PLAYERS].sort((a, b) => {
     const av = getVal(a, sortCol);
     const bv = getVal(b, sortCol);
-    if (av < bv) return sortDir;
-    if (av > bv) return -sortDir;
+    if (av < bv) return -sortDir;
+    if (av > bv) return sortDir;
     // tie-break: money desc
     if (sortCol !== 'money') return b[6] - a[6];
     return 0;
