@@ -529,6 +529,49 @@
       box-shadow: 0 0 12px rgba(212,175,55,0.18);
     }
 
+    /* ── Live Tournament card ── */
+    .live-tournament-wrapper {
+      margin-top: 14px;
+    }
+    .live-tournament-card {
+      border-color: rgba(212,175,55,0.4);
+      box-shadow: 0 0 18px rgba(212,175,55,0.08);
+    }
+    .tc-tourney-name {
+      padding: 8px 16px 0;
+      font-size: 13px;
+      color: var(--gold2);
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .tc-clock-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      padding: 12px 0 14px;
+    }
+    .tc-clock-stat {
+      text-align: center;
+      padding: 8px 12px;
+      border-right: 1px solid rgba(255,255,255,0.06);
+    }
+    .tc-clock-stat:last-child { border-right: none; }
+    .tc-clock-val {
+      font-family: 'Oswald', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--gold);
+      display: block;
+      line-height: 1.2;
+    }
+    .tc-clock-label {
+      font-size: 10px;
+      color: var(--muted);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-top: 3px;
+      display: block;
+    }
+
     /* ── Responsive ── */
     @media (max-width: 600px) {
       .games-grid { grid-template-columns: 1fr; }
@@ -536,6 +579,7 @@
       .hero-stats { flex-direction: column; }
       .hero-stat { border-right: none; border-bottom: 1px solid var(--border); }
       .hero-stat:last-child { border-bottom: none; }
+      .tc-clock-grid { grid-template-columns: repeat(3, 1fr); }
     }
   </style>
 </head>
@@ -590,7 +634,7 @@
   <div class="live-section">
     <div class="live-section-header">
       <p class="section-title">Live Right Now</p>
-      <span class="live-timestamp"><span class="live-dot"></span>As of 11:10 PM · Feb 21, 2026</span>
+      <span class="live-timestamp"><span class="live-dot"></span>As of 11:35 PM · Feb 21, 2026</span>
     </div>
     <div class="live-tables-grid">
 
@@ -603,7 +647,7 @@
             <div class="ltr-limits">$100–$300 Buy-in</div>
           </div>
           <div class="ltr-right">
-            <div class="ltr-count">7</div>
+            <div class="ltr-count">6</div>
             <div class="ltr-count-label">Tables</div>
           </div>
         </div>
@@ -627,14 +671,13 @@
             <div class="ltr-limits">$100–$300 Buy-in</div>
           </div>
           <div class="ltr-right">
-            <div class="ltr-waiting-count">3</div>
+            <div class="ltr-waiting-count">4</div>
             <div class="ltr-count-label">Waiting</div>
           </div>
         </div>
       </div>
 
-    </div>
-  </div>
+    </div>  </div>
 
     <!-- Amenities -->
   <p class="section-title">Room Amenities</p>
