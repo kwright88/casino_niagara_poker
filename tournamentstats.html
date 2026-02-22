@@ -148,6 +148,33 @@
     @media (max-width: 400px) {
       .awards-grid { grid-template-columns: 1fr; }
     }
+
+    /* Award card tooltips */
+    .award-card[data-tooltip] { position: relative; cursor: default; }
+    .award-card[data-tooltip]::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      bottom: calc(100% + 10px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: #0d1f3c;
+      color: #e8e0d0;
+      border: 1px solid rgba(212,175,55,0.5);
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-size: 12px;
+      font-family: inherit;
+      line-height: 1.45;
+      white-space: normal;
+      width: 210px;
+      text-align: center;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.18s;
+      z-index: 200;
+    }
+    .award-card[data-tooltip]:hover::after,
+    .award-card[data-tooltip].tooltip-active::after { opacity: 1; }
   </style>
 </head>
 <body>
@@ -287,98 +314,98 @@
   <p class="awards-tiebreak">Award ties are broken based on money won</p>
   <div class="awards-grid">
 
-    <div class="award-card">
+    <div class="award-card" data-tooltip="Most total cashes in 2026 recurring tournaments">
       <div class="award-icon">🏆</div>
       <div class="award-title">Most Cashes</div>
       <div class="award-winner"><img class="flag-img" src="https://flagcdn.com/20x15/ca.png" alt="CA"> <a href="https://pokerdb.thehendonmob.com/player.php?a=r&n=1183651" target="_blank">Benjamin Smith</a></div>
       <div class="award-detail">4 cashes in 2026</div>
     </div>
 
-    <div class="award-card">
+    <div class="award-card" data-tooltip="Highest total prize money earned in 2026">
       <div class="award-icon">💰</div>
       <div class="award-title">Most Money Won</div>
       <div class="award-winner"><img class="flag-img" src="https://flagcdn.com/20x15/ca.png" alt="CA"> <a href="https://pokerdb.thehendonmob.com/player.php?a=r&n=144560" target="_blank">Daniel Lebel</a></div>
       <div class="award-detail">C$12,638 across 3 cashes</div>
     </div>
 
-    <div class="award-card">
+    <div class="award-card" data-tooltip="Most money won without ever winning a tournament">
       <div class="award-icon">💐</div>
       <div class="award-title">Always the Bridesmaid</div>
       <div class="award-winner"><img class="flag-img" src="https://flagcdn.com/20x15/ca.png" alt="CA"> <a href="https://pokerdb.thehendonmob.com/player.php?a=r&n=1183651" target="_blank">Benjamin Smith</a></div>
       <div class="award-detail">C$10,947 total · 4 cashes · 0 wins</div>
     </div>
 
-    <div class="award-card">
+    <div class="award-card" data-tooltip="Highest single-tournament cash in 2026">
       <div class="award-icon">🎯</div>
       <div class="award-title">Biggest Single Score</div>
       <div class="award-winner"><img class="flag-img" src="https://flagcdn.com/20x15/ca.png" alt="CA"> <a href="https://pokerdb.thehendonmob.com/player.php?a=r&n=294737" target="_blank">Senthuran Vijayaratnam</a></div>
       <div class="award-detail">C$10,651 — Jan 25 Last Sunday $550 NLH</div>
     </div>
 
-    <div class="award-card">
+    <div class="award-card" data-tooltip="Highest average prize per cash (min. 2 cashes)">
       <div class="award-icon">📈</div>
       <div class="award-title">Best Average Cash</div>
       <div class="award-winner"><img class="flag-img" src="https://flagcdn.com/20x15/ca.png" alt="CA"> <a href="https://pokerdb.thehendonmob.com/player.php?a=r&n=1193375" target="_blank">James Haupert</a></div>
       <div class="award-detail">C$5,055 avg · 2 cashes</div>
     </div>
 
-    <div class="award-card">
+    <div class="award-card" data-tooltip="Lowest average cash (min. 2 cashes)">
       <div class="award-icon">💪</div>
       <div class="award-title">Still Swinging</div>
       <div class="award-winner"><img class="flag-img" src="https://flagcdn.com/20x15/ca.png" alt="CA"> <a href="https://pokerdb.thehendonmob.com/player.php?a=r&n=1468435" target="_blank">Minsu Kim</a></div>
       <div class="award-detail">Lowest avg cash: C$686 · 2 cashes</div>
     </div>
 
-    <div class="award-card">
+    <div class="award-card" data-tooltip="Most final table appearances (top-9 finishes) in 2026">
       <div class="award-icon">🎪</div>
       <div class="award-title">Final Tablist</div>
       <div class="award-winner"><img class="flag-img" src="https://flagcdn.com/20x15/ca.png" alt="CA"> <a href="https://pokerdb.thehendonmob.com/player.php?a=r&n=1183651" target="_blank">Benjamin Smith</a></div>
       <div class="award-detail">4 final tables in 2026 (top-9 finishes)</div>
     </div>
 
-    <div class="award-card">
+    <div class="award-card" data-tooltip="Won the tournament with the most entries in 2026">
       <div class="award-icon">📋</div>
       <div class="award-title">Largest Field Conquered</div>
       <div class="award-winner"><img class="flag-img" src="https://flagcdn.com/20x15/ca.png" alt="CA"> <a href="https://pokerdb.thehendonmob.com/player.php?a=r&n=244023" target="_blank">Peter Bodnar</a></div>
       <div class="award-detail">Won with 140 entries — Feb 4</div>
     </div>
 
-    <div class="award-card">
+    <div class="award-card" data-tooltip="First non-Canadian player to win a recurring tournament in 2026">
       <div class="award-icon">🌍</div>
       <div class="award-title">International Winner</div>
       <div class="award-winner"><img class="flag-img" src="https://flagcdn.com/20x15/ua.png" alt="UA"> <a href="https://pokerdb.thehendonmob.com/player.php?a=r&n=744397" target="_blank">Dmytro Klimov</a></div>
       <div class="award-detail">Only Ukraine winner in 2026</div>
     </div>
 
-    <div class="award-card">
+    <div class="award-card" data-tooltip="Won the very first recurring tournament of the year">
       <div class="award-icon">🔰</div>
       <div class="award-title">First Winner of 2026</div>
       <div class="award-winner"><img class="flag-img" src="https://flagcdn.com/20x15/ca.png" alt="CA"> <a href="https://pokerdb.thehendonmob.com/player.php?a=r&n=1368085" target="_blank">Ronald Smith</a></div>
       <div class="award-detail">Jan 4 — opened the year</div>
     </div>
 
-    <div class="award-card">
+    <div class="award-card" data-tooltip="Longest consecutive run of cashing in recurring tournaments">
       <div class="award-icon">🔥</div>
       <div class="award-title">Longest Cash Streak</div>
       <div class="award-winner"><img class="flag-img" src="https://flagcdn.com/20x15/ca.png" alt="CA"> <a href="https://pokerdb.thehendonmob.com/player.php?a=r&n=144560" target="_blank">Daniel Lebel</a></div>
       <div class="award-detail">2 in a row · Jan 21 &amp; Jan 25 · Won tiebreaker (C$12,638)</div>
     </div>
 
-    <div class="award-card">
+    <div class="award-card" data-tooltip="Longest consecutive run of top-9 finishes">
       <div class="award-icon">⚡</div>
       <div class="award-title">Longest Final Table Streak</div>
       <div class="award-winner"><img class="flag-img" src="https://flagcdn.com/20x15/ca.png" alt="CA"> <a href="https://pokerdb.thehendonmob.com/player.php?a=r&n=144560" target="_blank">Daniel Lebel</a></div>
       <div class="award-detail">2 consecutive top-9 finishes · Jan 21 &amp; Jan 25</div>
     </div>
 
-    <div class="award-card">
+    <div class="award-card" data-tooltip="Most prize money earned in January across all recurring tournaments">
       <div class="award-icon">❄️</div>
       <div class="award-title">Champ of January</div>
       <div class="award-winner"><img class="flag-img" src="https://flagcdn.com/20x15/ca.png" alt="CA"> <a href="https://pokerdb.thehendonmob.com/player.php?a=r&n=144560" target="_blank">Daniel Lebel</a></div>
       <div class="award-detail">C$10,904 in January · 2 cashes</div>
     </div>
 
-    <div class="award-card">
+    <div class="award-card" data-tooltip="Most prize money earned in February across all recurring tournaments">
       <div class="award-icon">💙</div>
       <div class="award-title">Champ of February</div>
       <div class="award-winner"><img class="flag-img" src="https://flagcdn.com/20x15/ca.png" alt="CA"> <a href="https://pokerdb.thehendonmob.com/player.php?a=r&n=1193375" target="_blank">James Haupert</a></div>
@@ -386,7 +413,7 @@
     </div>
 
     <!--
-    <div class="award-card">
+    <div class="award-card" data-tooltip="Most prize money earned in March across all recurring tournaments">
       <div class="award-icon">🌱</div>
       <div class="award-title">Champ of March</div>
       <div class="award-winner">—</div>
@@ -395,7 +422,7 @@
     -->
 
     <!--
-    <div class="award-card">
+    <div class="award-card" data-tooltip="Most prize money earned in April across all recurring tournaments">
       <div class="award-icon">🌸</div>
       <div class="award-title">Champ of April</div>
       <div class="award-winner">—</div>
@@ -404,7 +431,7 @@
     -->
 
     <!--
-    <div class="award-card">
+    <div class="award-card" data-tooltip="Most prize money earned in May across all recurring tournaments">
       <div class="award-icon">🌺</div>
       <div class="award-title">Champ of May</div>
       <div class="award-winner">—</div>
@@ -413,7 +440,7 @@
     -->
 
     <!--
-    <div class="award-card">
+    <div class="award-card" data-tooltip="Most prize money earned in June across all recurring tournaments">
       <div class="award-icon">☀️</div>
       <div class="award-title">Champ of June</div>
       <div class="award-winner">—</div>
@@ -422,7 +449,7 @@
     -->
 
     <!--
-    <div class="award-card">
+    <div class="award-card" data-tooltip="Most prize money earned in July across all recurring tournaments">
       <div class="award-icon">🌊</div>
       <div class="award-title">Champ of July</div>
       <div class="award-winner">—</div>
@@ -431,7 +458,7 @@
     -->
 
     <!--
-    <div class="award-card">
+    <div class="award-card" data-tooltip="Most prize money earned in August across all recurring tournaments">
       <div class="award-icon">🌻</div>
       <div class="award-title">Champ of August</div>
       <div class="award-winner">—</div>
@@ -440,7 +467,7 @@
     -->
 
     <!--
-    <div class="award-card">
+    <div class="award-card" data-tooltip="Most prize money earned in September across all recurring tournaments">
       <div class="award-icon">🍂</div>
       <div class="award-title">Champ of September</div>
       <div class="award-winner">—</div>
@@ -449,7 +476,7 @@
     -->
 
     <!--
-    <div class="award-card">
+    <div class="award-card" data-tooltip="Most prize money earned in October across all recurring tournaments">
       <div class="award-icon">🎃</div>
       <div class="award-title">Champ of October</div>
       <div class="award-winner">—</div>
@@ -458,7 +485,7 @@
     -->
 
     <!--
-    <div class="award-card">
+    <div class="award-card" data-tooltip="Most prize money earned in November across all recurring tournaments">
       <div class="award-icon">🍁</div>
       <div class="award-title">Champ of November</div>
       <div class="award-winner">—</div>
@@ -467,7 +494,7 @@
     -->
 
     <!--
-    <div class="award-card">
+    <div class="award-card" data-tooltip="Most prize money earned in December across all recurring tournaments">
       <div class="award-icon">🎄</div>
       <div class="award-title">Champ of December</div>
       <div class="award-winner">—</div>
@@ -752,6 +779,25 @@ rtTable.querySelectorAll('thead th[data-col]').forEach(th => {
 });
 
 rtUpdateHeaders(); // show default sort arrow (date asc)
+</script>
+
+<script>
+// Award card tooltips — tap to show on mobile, dismiss on outside tap
+document.querySelectorAll('.award-card[data-tooltip]').forEach(function(card) {
+  card.addEventListener('click', function(e) {
+    var isActive = this.classList.contains('tooltip-active');
+    document.querySelectorAll('.award-card.tooltip-active').forEach(function(c) {
+      c.classList.remove('tooltip-active');
+    });
+    if (!isActive) this.classList.add('tooltip-active');
+    e.stopPropagation();
+  });
+});
+document.addEventListener('click', function() {
+  document.querySelectorAll('.award-card.tooltip-active').forEach(function(c) {
+    c.classList.remove('tooltip-active');
+  });
+});
 </script>
 </body>
 </html>
