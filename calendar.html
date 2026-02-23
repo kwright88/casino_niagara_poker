@@ -432,6 +432,74 @@
     /* ── Flag images ── */
     .flag-img { width: 20px; height: 15px; border-radius: 2px; vertical-align: middle; position: relative; top: -1px; object-fit: cover; }
 
+    /* ── Countdown ── */
+    #countdown-wrap { margin-bottom: 28px; display: none; }
+    .countdown-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px 24px;
+      text-align: center;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+    }
+    .cd-eyebrow {
+      font-family: 'Oswald', sans-serif;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .cd-name {
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+    .cd-name.wed    { color: #7fb3f5; }
+    .cd-name.sun    { color: #e8b86d; }
+    .cd-name.sun550 { color: #6fcf97; }
+    .cd-name.main   { color: #f08080; }
+    .cd-units {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+    .cd-unit {
+      background: rgba(0,0,0,0.28);
+      border: 1px solid rgba(212,175,55,0.15);
+      border-radius: 10px;
+      padding: 12px 18px;
+      min-width: 72px;
+    }
+    .cd-num {
+      font-family: 'Oswald', sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: 1px;
+    }
+    .cd-unit-label {
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+    .cd-sub {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 12px;
+    }
+    @media (max-width: 480px) {
+      .cd-unit { min-width: 58px; padding: 10px 12px; }
+      .cd-num  { font-size: 26px; }
+    }
+
     /* ── Responsive ── */
     @media (max-width: 640px) {
       .cal-cell { min-height: 80px; padding: 6px 4px; }
@@ -457,6 +525,9 @@
     <h1>Tournament Calendar</h1>
     <div class="divider"><span>♠</span></div>
   </header>
+
+  <!-- Countdown to next tournament -->
+  <div id="countdown-wrap"></div>
 
   <!-- Legend -->
   <div class="legend">
@@ -963,6 +1034,112 @@
   //  Initial render
   // ─────────────────────────────────────────────
   renderMonth(0, 0);
+
+  // ─────────────────────────────────────────────
+  //  Countdown timer
+  // ─────────────────────────────────────────────
+
+  const TOURNAMENT_HOUR     = 12;
+  const TOURNAMENT_MIN      = 30;
+  const TOURNAMENT_END_HOUR = 23; // treat as live until midnight
+  const TOURNAMENT_END_MIN  = 59;
+
+  function getTournamentForDay(year, month, day) {
+    const key = dateKey(year, month, day);
+    if (SPECIAL_EVENTS[key]) {
+      return { type: 'main', label: SPECIAL_EVENTS[key][0].label };
+    }
+    const dow = new Date(year, month, day).getDay();
+    if (dow === 3) return { type: 'wed',    label: "Wednesday $300 NL Hold'em" };
+    if (dow === 0) {
+      const lastSun = getLastSunday(year, month);
+      if (day === lastSun) return { type: 'sun550', label: "Last Sunday $550 NL Hold'em" };
+      return { type: 'sun', label: "Sunday $400 NL Hold'em" };
+    }
+    return null;
+  }
+
+  function findNextTournament() {
+    const now        = new Date();
+    const todayYear  = now.getFullYear();
+    const todayMonth = now.getMonth();
+    const todayDay   = now.getDate();
+
+    // Check if a tournament is happening right now
+    const todayEvent = getTournamentForDay(todayYear, todayMonth, todayDay);
+    if (todayEvent) {
+      const start = new Date(todayYear, todayMonth, todayDay, TOURNAMENT_HOUR, TOURNAMENT_MIN);
+      const end   = new Date(todayYear, todayMonth, todayDay, TOURNAMENT_END_HOUR, TOURNAMENT_END_MIN);
+      if (now >= start && now <= end) return { live: true };
+      if (now < start) return { live: false, event: todayEvent, start };
+    }
+
+    // Scan forward up to 14 days
+    for (let offset = 1; offset <= 14; offset++) {
+      const d  = new Date(todayYear, todayMonth, todayDay + offset);
+      const ev = getTournamentForDay(d.getFullYear(), d.getMonth(), d.getDate());
+      if (ev) {
+        const start = new Date(d.getFullYear(), d.getMonth(), d.getDate(), TOURNAMENT_HOUR, TOURNAMENT_MIN);
+        return { live: false, event: ev, start };
+      }
+    }
+    return null;
+  }
+
+  function pad2(n) { return String(n).padStart(2, '0'); }
+
+  function formatCountdownDate(d) {
+    return d.toLocaleDateString('en-CA', { weekday: 'long', month: 'long', day: 'numeric' });
+  }
+
+  function tickCountdown() {
+    const wrap   = document.getElementById('countdown-wrap');
+    const result = findNextTournament();
+
+    if (!result || result.live) {
+      wrap.style.display = 'none';
+      return;
+    }
+
+    const { event, start } = result;
+    const diff = start - new Date();
+
+    if (diff <= 0) {
+      wrap.style.display = 'none';
+      return;
+    }
+
+    const totalSecs = Math.floor(diff / 1000);
+    const days      = Math.floor(totalSecs / 86400);
+    const hours     = Math.floor((totalSecs % 86400) / 3600);
+    const minutes   = Math.floor((totalSecs % 3600) / 60);
+
+    wrap.style.display = 'block';
+    wrap.innerHTML = `
+      <div class="countdown-box">
+        <div class="cd-eyebrow">Next Tournament</div>
+        <div class="cd-name ${event.type}">${event.label}</div>
+        <div class="cd-units">
+          <div class="cd-unit">
+            <div class="cd-num">${days}</div>
+            <div class="cd-unit-label">Days</div>
+          </div>
+          <div class="cd-unit">
+            <div class="cd-num">${pad2(hours)}</div>
+            <div class="cd-unit-label">Hours</div>
+          </div>
+          <div class="cd-unit">
+            <div class="cd-num">${pad2(minutes)}</div>
+            <div class="cd-unit-label">Mins</div>
+          </div>
+        </div>
+        <div class="cd-sub">Starts 12:30 PM · ${formatCountdownDate(start)}</div>
+      </div>
+    `;
+  }
+
+  tickCountdown();
+  setInterval(tickCountdown, 30000);
 </script>
 </body>
 </html>
