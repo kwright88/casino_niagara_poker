@@ -347,6 +347,26 @@
     footer p + p { margin-top: 6px; }
 
     /* ── Highlight / dim interactions ── */
+    /* ── Blackout dates ── */
+    .tourney.blackout {
+      position: relative;
+      opacity: 0.4;
+      filter: grayscale(0.4);
+    }
+    .tourney.blackout::after {
+      content: '✕';
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: 900;
+      color: #e53935;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+      pointer-events: none;
+    }
+
     .tourney        { transition: opacity 0.18s, box-shadow 0.18s, filter 0.18s; }
     .detail-card    { transition: opacity 0.18s, box-shadow 0.18s, border-color 0.18s; }
 
@@ -882,6 +902,12 @@
     'July','August','September','October','November','December'
   ];
 
+  // Blackout dates — no tournament runs on these days
+  // Format: 'YYYY-MM-DD'
+  const BLACKOUT_DATES = new Set([
+    '2026-02-25', // TEST — remove when done
+  ]);
+
   // Special / override events keyed by 'YYYY-MM-DD'
   // Each value is an array of event objects: { type, label, sub, dim? }
   const SPECIAL_EVENTS = {
@@ -922,7 +948,17 @@
 
       let events = [];
 
-      if (SPECIAL_EVENTS[key]) {
+      if (BLACKOUT_DATES.has(key)) {
+        // Blackout — show the pill dimmed with a red X
+        if (dow === 3) {
+          events = [{ type:'wed', label:'Wednesday $300', sub:"12:30 PM · NL Hold'em", blackout:true }];
+        } else if (dow === 0) {
+          const lastSun = getLastSunday(year, month);
+          const label = d === lastSun ? 'Last Sunday $550' : 'Sunday $400';
+          const type  = d === lastSun ? 'sun550' : 'sun';
+          events = [{ type, label, sub:"12:30 PM · NL Hold'em", blackout:true }];
+        }
+      } else if (SPECIAL_EVENTS[key]) {
         // Special event takes over the whole day
         events = SPECIAL_EVENTS[key];
       } else if (dow === 0) {
@@ -981,8 +1017,9 @@
       if (cell.isToday) cls.push('today');
 
       const pills = cell.events.map(ev => {
-        const dimAttr = ev.dim ? ' style="opacity:0.65"' : '';
-        return `<span class="tourney ${ev.type}"${dimAttr}>${ev.label}<br>` +
+        const dimAttr    = ev.dim     ? ' style="opacity:0.65"' : '';
+        const blackoutCl = ev.blackout ? ' blackout' : '';
+        return `<span class="tourney ${ev.type}${blackoutCl}"${dimAttr}>${ev.label}<br>` +
                `<span class="time">${ev.sub}</span></span>`;
       }).join('');
 
