@@ -267,8 +267,22 @@
     }
     .cal-cell:nth-child(7n) { border-right: none; }
     .cal-cell.empty { background: rgba(0,0,0,0.1); }
-    .cal-cell.today { background: rgba(212,175,55,0.06); }
-    .cal-cell.today .day-num { color: var(--gold2); }
+    .cal-cell.today {
+      background: rgba(212,175,55,0.10);
+      border-top: 2px solid var(--gold2);
+    }
+    .cal-cell.today .day-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      background: var(--gold2);
+      color: #0a0e1a;
+      border-radius: 50%;
+      margin-bottom: 4px;
+      font-weight: 700;
+    }
 
     .day-num {
       font-family: 'Oswald', sans-serif;
