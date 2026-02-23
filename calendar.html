@@ -495,6 +495,50 @@
       color: var(--muted);
       margin-top: 12px;
     }
+    /* Live state */
+    .cd-live-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+    .cd-live-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #4caf50;
+      flex-shrink: 0;
+      animation: livePulse 1.4s ease-in-out infinite;
+    }
+    @keyframes livePulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(76,175,80,0.6); opacity: 1; }
+      50%       { box-shadow: 0 0 0 7px rgba(76,175,80,0); opacity: 0.8; }
+    }
+    .cd-live-label {
+      font-family: 'Oswald', sans-serif;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #4caf50;
+    }
+    .cd-live-name {
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+    .cd-live-name.wed    { color: #7fb3f5; }
+    .cd-live-name.sun    { color: #e8b86d; }
+    .cd-live-name.sun550 { color: #6fcf97; }
+    .cd-live-name.main   { color: #f08080; }
+    .cd-running-text {
+      font-family: 'Oswald', sans-serif;
+      font-size: 15px;
+      color: #4caf50;
+      letter-spacing: 1px;
+    }
     @media (max-width: 480px) {
       .cd-unit { min-width: 58px; padding: 10px 12px; }
       .cd-num  { font-size: 26px; }
@@ -1036,13 +1080,13 @@
   renderMonth(0, 0);
 
   // ─────────────────────────────────────────────
-  //  Countdown timer
+  //  Countdown / Live banner
   // ─────────────────────────────────────────────
 
-  const TOURNAMENT_HOUR     = 12;
-  const TOURNAMENT_MIN      = 30;
-  const TOURNAMENT_END_HOUR = 23; // treat as live until midnight
-  const TOURNAMENT_END_MIN  = 59;
+  const TOURNAMENT_HOUR = 12;
+  const TOURNAMENT_MIN  = 30;
+  const LIVE_END_HOUR   = 17; // "Running now" window ends at 5:30 PM
+  const LIVE_END_MIN    = 30;
 
   function getTournamentForDay(year, month, day) {
     const key = dateKey(year, month, day);
@@ -1059,28 +1103,18 @@
     return null;
   }
 
-  function findNextTournament() {
-    const now        = new Date();
-    const todayYear  = now.getFullYear();
-    const todayMonth = now.getMonth();
-    const todayDay   = now.getDate();
-
-    // Check if a tournament is happening right now
-    const todayEvent = getTournamentForDay(todayYear, todayMonth, todayDay);
-    if (todayEvent) {
-      const start = new Date(todayYear, todayMonth, todayDay, TOURNAMENT_HOUR, TOURNAMENT_MIN);
-      const end   = new Date(todayYear, todayMonth, todayDay, TOURNAMENT_END_HOUR, TOURNAMENT_END_MIN);
-      if (now >= start && now <= end) return { live: true };
-      if (now < start) return { live: false, event: todayEvent, start };
-    }
-
-    // Scan forward up to 14 days
-    for (let offset = 1; offset <= 14; offset++) {
-      const d  = new Date(todayYear, todayMonth, todayDay + offset);
-      const ev = getTournamentForDay(d.getFullYear(), d.getMonth(), d.getDate());
+  // Find the next upcoming tournament, starting the search from startOffset days ahead of today
+  function findUpcomingTournament(startOffset) {
+    const now = new Date();
+    const y   = now.getFullYear();
+    const m   = now.getMonth();
+    const d   = now.getDate();
+    for (let offset = startOffset; offset <= 14; offset++) {
+      const dt = new Date(y, m, d + offset);
+      const ev = getTournamentForDay(dt.getFullYear(), dt.getMonth(), dt.getDate());
       if (ev) {
-        const start = new Date(d.getFullYear(), d.getMonth(), d.getDate(), TOURNAMENT_HOUR, TOURNAMENT_MIN);
-        return { live: false, event: ev, start };
+        const start = new Date(dt.getFullYear(), dt.getMonth(), dt.getDate(), TOURNAMENT_HOUR, TOURNAMENT_MIN);
+        return { event: ev, start };
       }
     }
     return null;
@@ -1092,30 +1126,27 @@
     return d.toLocaleDateString('en-CA', { weekday: 'long', month: 'long', day: 'numeric' });
   }
 
-  function tickCountdown() {
-    const wrap   = document.getElementById('countdown-wrap');
-    const result = findNextTournament();
+  function renderLive(event) {
+    return `
+      <div class="countdown-box">
+        <div class="cd-live-row">
+          <span class="cd-live-dot"></span>
+          <span class="cd-live-label">Live</span>
+        </div>
+        <div class="cd-live-name ${event.type}">${event.label}</div>
+        <div class="cd-running-text">Running now!</div>
+      </div>
+    `;
+  }
 
-    if (!result || result.live) {
-      wrap.style.display = 'none';
-      return;
-    }
-
-    const { event, start } = result;
+  function renderCountdown(event, start) {
     const diff = start - new Date();
-
-    if (diff <= 0) {
-      wrap.style.display = 'none';
-      return;
-    }
-
+    if (diff <= 0) return null;
     const totalSecs = Math.floor(diff / 1000);
     const days      = Math.floor(totalSecs / 86400);
     const hours     = Math.floor((totalSecs % 86400) / 3600);
     const minutes   = Math.floor((totalSecs % 3600) / 60);
-
-    wrap.style.display = 'block';
-    wrap.innerHTML = `
+    return `
       <div class="countdown-box">
         <div class="cd-eyebrow">Next Tournament</div>
         <div class="cd-name ${event.type}">${event.label}</div>
@@ -1136,6 +1167,46 @@
         <div class="cd-sub">Starts 12:30 PM · ${formatCountdownDate(start)}</div>
       </div>
     `;
+  }
+
+  function tickCountdown() {
+    const wrap = document.getElementById('countdown-wrap');
+    const now  = new Date();
+    const y    = now.getFullYear();
+    const mo   = now.getMonth();
+    const d    = now.getDate();
+
+    const todayEvent = getTournamentForDay(y, mo, d);
+
+    if (todayEvent) {
+      const start   = new Date(y, mo, d, TOURNAMENT_HOUR, TOURNAMENT_MIN);
+      const liveEnd = new Date(y, mo, d, LIVE_END_HOUR, LIVE_END_MIN);
+
+      if (now >= start && now < liveEnd) {
+        // 12:30 PM – 5:30 PM: show "Running now"
+        wrap.style.display = 'block';
+        wrap.innerHTML = renderLive(todayEvent);
+        return;
+      }
+
+      if (now < start) {
+        // Before 12:30 PM: countdown to today's tournament
+        const html = renderCountdown(todayEvent, start);
+        if (html) { wrap.style.display = 'block'; wrap.innerHTML = html; return; }
+      }
+
+      // After 5:30 PM: fall through to next tournament (skip today)
+    }
+
+    // Non-tournament day, or after 5:30 PM on tournament day → countdown to next event
+    const next = findUpcomingTournament(todayEvent ? 1 : 0);
+    if (next) {
+      // If it's a non-tournament day, offset 0 might return today's event with future start — handle it
+      const html = renderCountdown(next.event, next.start);
+      if (html) { wrap.style.display = 'block'; wrap.innerHTML = html; return; }
+    }
+
+    wrap.style.display = 'none';
   }
 
   tickCountdown();
