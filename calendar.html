@@ -1215,7 +1215,9 @@
     const m   = now.getMonth();
     const d   = now.getDate();
     for (let offset = startOffset; offset <= 14; offset++) {
-      const dt = new Date(y, m, d + offset);
+      const dt  = new Date(y, m, d + offset);
+      const key = dateKey(dt.getFullYear(), dt.getMonth(), dt.getDate());
+      if (BLACKOUT_DATES.has(key)) continue;
       const ev = getTournamentForDay(dt.getFullYear(), dt.getMonth(), dt.getDate());
       if (ev) {
         const start = new Date(dt.getFullYear(), dt.getMonth(), dt.getDate(), TOURNAMENT_HOUR, TOURNAMENT_MIN);
@@ -1281,7 +1283,8 @@
     const mo   = now.getMonth();
     const d    = now.getDate();
 
-    const todayEvent = getTournamentForDay(y, mo, d);
+    const todayKey   = dateKey(y, mo, d);
+    const todayEvent = BLACKOUT_DATES.has(todayKey) ? null : getTournamentForDay(y, mo, d);
 
     if (todayEvent) {
       const start   = new Date(y, mo, d, TOURNAMENT_HOUR, TOURNAMENT_MIN);
