@@ -688,7 +688,7 @@
     <div class="live-tournament-wrapper">
       <!-- Live Tournament -->
       <div class="live-table-card live-tournament-card">
-        <div class="live-table-card-header"><span class="lh-icon">🏆</span> Live Tournament<span class="lt-sep"> · </span><span class="lt-subtitle">Wednesday $300 NL Hold'em</span></div>
+        <div class="live-table-card-header"><span class="lh-icon">🏆</span> Live Tournament<span class="lt-sep"> · </span><span class="lt-subtitle" id="lt-name-dynamic"></span></div>
         <div class="tc-clock-grid">
       <div class="tc-clock-stat">
         <span class="tc-clock-val">20 – Break</span>
@@ -898,5 +898,31 @@
   </footer>
 
 </main>
+<script>
+  // Dynamically set tournament name in the static live tournament placeholder
+  // based on the last scheduled recurring tournament date.
+  (function () {
+    function getLastSunday(year, month) {
+      var d = new Date(year, month + 1, 0);
+      while (d.getDay() !== 0) d.setDate(d.getDate() - 1);
+      return d.getDate();
+    }
+    function getLastScheduledTournament() {
+      var now = new Date();
+      for (var i = 0; i < 7; i++) {
+        var d = new Date(now.getFullYear(), now.getMonth(), now.getDate() - i);
+        var dow = d.getDay(); // 0=Sun, 3=Wed
+        if (dow === 0) {
+          var lastSun = getLastSunday(d.getFullYear(), d.getMonth());
+          return d.getDate() === lastSun ? "Last Sunday $550 NL Hold'em" : "Sunday $400 NL Hold'em";
+        }
+        if (dow === 3) return "Wednesday $300 NL Hold'em";
+      }
+      return "NL Hold'em Tournament";
+    }
+    var el = document.getElementById('lt-name-dynamic');
+    if (el) el.textContent = getLastScheduledTournament();
+  })();
+</script>
 </body>
 </html>
