@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9GEQ55JEKQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9GEQ55JEKQ');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casino Niagara — Poker Room</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ── Page overrides ── */
+    main { max-width: 1000px; }
+    header h1 { font-size: clamp(28px, 5vw, 48px); }
+
+    /* ── Hero stats row ── */
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      flex-wrap: wrap;
+    }
+    .hero-stat {
+      flex: 1;
+      min-width: 140px;
+      text-align: center;
+      padding: 22px 16px;
+      border-right: 1px solid var(--border);
+    }
+    .hero-stat:last-child { border-right: none; }
+    .hero-stat .hs-icon { font-size: 24px; margin-bottom: 8px; display: block; }
+    .hero-stat .hs-val {
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--gold);
+      display: block;
+      line-height: 1.2;
+    }
+    .hero-stat .hs-label { font-size: 11px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; margin-top: 3px; display: block; }
+
+    /* ── Notice box ── */
+    .notice-box {
+      background: rgba(212,175,55,0.08);
+      border: 1px solid rgba(212,175,55,0.45);
+      border-left: 4px solid var(--gold);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      font-size: 13.5px;
+      line-height: 1.6;
+      color: var(--text);
+    }
+    .notice-box strong { color: var(--gold2); }
+
+    /* ── Match the Stack callout ── */
+    .mts-callout {
+      background: linear-gradient(135deg, rgba(212,175,55,0.12) 0%, rgba(212,175,55,0.05) 100%);
+      border: 1px solid rgba(212,175,55,0.5);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(212,175,55,0.1);
+    }
+    .mts-callout .mts-icon { font-size: 32px; margin-bottom: 8px; display: block; }
+    .mts-callout h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 22px;
+      color: var(--gold2);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .mts-callout p { font-size: 13px; color: var(--muted); }
+
+    /* ── Amenities ── */
+    .amenities-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+    .amenity-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      text-align: center;
+    }
+    .amenity-card .am-icon { font-size: 26px; margin-bottom: 8px; display: block; }
+    .amenity-card .am-label { font-size: 12px; color: var(--text); font-weight: 500; line-height: 1.4; }
+
+    /* ── Games table ── */
+    .games-section { margin-bottom: 32px; }
+    .games-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .game-group {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .game-group-header {
+      background: rgba(212,175,55,0.1);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 16px;
+      font-family: 'Oswald', sans-serif;
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .game-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 9px 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      font-size: 13px;
+    }
+    .game-row:last-child { border-bottom: none; }
+    .game-stakes { color: var(--text); font-weight: 500; }
+    .avail-badge {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 20px;
+    }
+    .avail-badge.always   { background: rgba(39,174,96,0.2);  color: #6fcf97; border: 1px solid rgba(39,174,96,0.4); }
+    .avail-badge.often    { background: rgba(230,126,34,0.2);  color: #f0a060; border: 1px solid rgba(230,126,34,0.4); }
+    .avail-badge.demand   { background: rgba(41,128,185,0.2);  color: #7fb3f5; border: 1px solid rgba(41,128,185,0.35); }
+
+    /* ── Waitlist section ── */
+    .waitlist-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 24px;
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .waitlist-icon { font-size: 40px; flex-shrink: 0; }
+    .waitlist-content h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 17px;
+      color: var(--gold);
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+    .waitlist-content p { font-size: 13px; color: var(--muted); line-height: 1.7; }
+    .waitlist-content p strong { color: var(--text); }
+    .waitlist-content a { color: var(--gold3); text-decoration: none; }
+    .waitlist-content a:hover { text-decoration: underline; }
+
+    /* ── BBJ section ── */
+    .bbj-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 32px;
+      position: relative;
+      overflow: hidden;
+    }
+    .bbj-card::before {
+      content: none;
+    }
+    .bbj-card h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 18px;
+      color: var(--gold);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .bbj-card p { font-size: 13px; color: var(--muted); line-height: 1.75; margin-bottom: 10px; }
+    .bbj-card p:last-of-type { margin-bottom: 16px; }
+    .bbj-card strong { color: var(--text); }
+    .bbj-amount-display {
+      text-align: center;
+      padding: 16px;
+      margin-bottom: 16px;
+      background: rgba(212,175,55,0.06);
+      border: 1px solid rgba(212,175,55,0.3);
+      border-radius: 12px;
+    }
+    .bbj-amount-val {
+      font-family: 'Oswald', sans-serif;
+      font-size: 42px;
+      font-weight: 700;
+      color: var(--gold2);
+      display: block;
+      text-shadow: 0 0 20px rgba(212,175,55,0.4);
+    }
+    .bbj-amount-asof {
+      font-size: 12px;
+      color: var(--muted);
+      display: block;
+      margin-top: 4px;
+      letter-spacing: 1px;
+    }
+    .bbj-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(212,175,55,0.1);
+      border: 1px solid rgba(212,175,55,0.4);
+      border-radius: 30px;
+      padding: 9px 20px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-decoration: none;
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+    .bbj-link:hover { background: rgba(212,175,55,0.18); box-shadow: 0 0 14px rgba(212,175,55,0.2); }
+
+    /* ── Tournaments ── */
+    .tournaments-section { margin-bottom: 32px; }
+    .tourney-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 14px;
+    }
+    .tourney-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .tourney-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.45);
+    }
+    .tourney-card.featured-card { border-color: rgba(139,32,32,0.5); }
+    .tc-stripe { height: 4px; }
+    .wed-stripe    { background: var(--wed); }
+    .sun-stripe    { background: var(--sun); }
+    .sun550-stripe { background: var(--sun550); }
+    .main-stripe   { background: var(--main); }
+    .tc-body { padding: 16px; flex: 1; display: flex; flex-direction: column; gap: 5px; }
+    .tc-day {
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 2px;
+    }
+    .tc-buyin {
+      font-family: 'Oswald', sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1.1;
+    }
+    .tc-buyin span { font-size: 14px; color: var(--muted); font-weight: 400; }
+    .tc-detail { font-size: 12px; color: var(--text); }
+    .tc-detail.muted { color: var(--muted); font-size: 11px; margin-top: 2px; }
+
+    /* ── Live Games section ── */
+    .live-section { margin-bottom: 32px; }
+    .live-section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .live-section-header .section-title { margin-bottom: 0; }
+    .live-timestamp {
+      font-size: 11px;
+      color: var(--muted);
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 4px 12px;
+      letter-spacing: 0.5px;
+    }
+    .live-timestamp .live-dot {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #6fcf97;
+      margin-right: 6px;
+      vertical-align: middle;
+      position: relative;
+      top: -1px;
+    }
+    .live-tables-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .live-table-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .live-table-card-header {
+      background: rgba(212,175,55,0.1);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Oswald', sans-serif;
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .live-table-card-header .lh-icon { font-size: 15px; }
+    .lt-sep {
+      color: var(--muted);
+      opacity: 0.6;
+      font-weight: 400;
+    }
+    .lt-subtitle {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: none;
+      color: var(--gold2);
+    }
+    .live-table-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 11px 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      font-size: 13px;
+    }
+    .live-table-row:last-child { border-bottom: none; }
+    .live-table-row.empty {
+      color: var(--muted);
+      font-style: italic;
+      font-size: 12px;
+    }
+    .ltr-game { color: var(--text); font-weight: 500; }
+    .ltr-limits { color: var(--muted); font-size: 11px; margin-top: 2px; }
+    .ltr-right { text-align: right; }
+    .ltr-count {
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .ltr-count-label { font-size: 10px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; margin-top: 2px; }
+    .ltr-waiting-count {
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--amber);
+      line-height: 1;
+    }
+    .live-note {
+      margin-top: 10px;
+      font-size: 11px;
+      color: var(--muted);
+      text-align: right;
+      font-style: italic;
+    }
+
+    /* ── LEV2L menu links ── */
+    .lev2l-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 32px;
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .lev2l-icon { font-size: 36px; flex-shrink: 0; }
+    .lev2l-content { flex: 1; min-width: 0; }
+    .lev2l-content h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 17px;
+      color: var(--gold);
+      margin-bottom: 6px;
+      letter-spacing: 1px;
+    }
+    .lev2l-content p {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.65;
+      margin-bottom: 16px;
+    }
+    .menu-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .menu-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(212,175,55,0.08);
+      border: 1px solid rgba(212,175,55,0.35);
+      border-radius: 30px;
+      padding: 8px 16px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-decoration: none;
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+    .menu-link:hover {
+      background: rgba(212,175,55,0.16);
+      box-shadow: 0 0 12px rgba(212,175,55,0.18);
+    }
+
+    /* ── Live Tournament card ── */
+    .live-tournament-wrapper {
+      margin-top: 14px;
+    }
+    .live-tournament-card {
+      border-color: rgba(212,175,55,0.4);
+      box-shadow: 0 0 18px rgba(212,175,55,0.08);
+    }
+    .tc-tourney-name {
+      padding: 8px 16px 0;
+      font-size: 13px;
+      color: var(--gold2);
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .tc-clock-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      padding: 12px 0 14px;
+    }
+    .tc-clock-stat {
+      text-align: center;
+      padding: 8px 12px;
+      border-right: 1px solid rgba(255,255,255,0.06);
+    }
+    .tc-clock-stat:last-child { border-right: none; }
+    .tc-clock-val {
+      font-family: 'Oswald', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--gold);
+      display: block;
+      line-height: 1.2;
+    }
+    .tc-clock-label {
+      font-size: 10px;
+      color: var(--muted);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-top: 3px;
+      display: block;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .games-grid { grid-template-columns: 1fr; }
+      .live-tables-grid { grid-template-columns: 1fr; }
+      .hero-stats { flex-direction: column; }
+      .hero-stat { border-right: none; border-bottom: 1px solid var(--border); }
+      .hero-stat:last-child { border-bottom: none; }
+      .tc-clock-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+  </style>
+</head>
+<body>
+<main>
+
+  <!-- Nav links -->
+  <div class="nav-links">
+    <a class="nav-link" href="badbeat.html">🎰 Bad Beat Tracker</a>
+    <a class="nav-link" href="calendar.html">📅 Tournament Calendar</a>
+    <a class="nav-link" href="tournamentstats.html">📊 Tournament Stats</a>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <p class="casino-label">Casino Niagara · Level 2</p>
+    <h1>Poker Room</h1>
+    <p class="disclaimer"><strong>No affiliation with Casino Niagara or Mohegan Sun</strong></p>
+    <div class="divider"><span>♦</span></div>
+  </header>
+
+  <!-- Hero stats -->
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <span class="hs-icon">🃏</span>
+      <span class="hs-val">18 Tables</span>
+      <span class="hs-label">Poker Room</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hs-icon">🕛</span>
+      <span class="hs-val">12PM – 3:45AM</span>
+      <span class="hs-label">Open Daily</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hs-icon">🍽️</span>
+      <span class="hs-val">LEV2L Restaurant</span>
+      <span class="hs-label">Casino Niagara</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hs-icon">🏆</span>
+      <span class="hs-val">High & Low</span>
+      <span class="hs-label">Limits Available</span>
+    </div>
+  </div>
+
+  <!-- Match the Stack callout -->
+  <div class="mts-callout">
+    <span class="mts-icon">🔥</span>
+    <h2>Match the Stack is here!</h2>
+  </div>
+
+  <!-- @@LIVE_SECTION_START@@ --><!-- @@LIVE_SECTION_END@@ -->
+
+    <!-- Amenities -->
+  <p class="section-title">Room Amenities</p>
+  <div class="amenities-grid">
+    <div class="amenity-card">
+      <span class="am-icon">📱</span>
+      <span class="am-label">Free WiFi</span>
+    </div>
+    <div class="amenity-card">
+      <span class="am-icon">🔋</span>
+      <span class="am-label">Phone Charger at Every Seat</span>
+    </div>
+    <div class="amenity-card">
+      <span class="am-icon">🥤</span>
+      <span class="am-label">Self-Serve Beverage Station (Non-Alcoholic)</span>
+    </div>
+    <div class="amenity-card">
+      <span class="am-icon">🏈</span>
+      <span class="am-label">Sportsbook Access</span>
+    </div>
+    <div class="amenity-card">
+      <span class="am-icon">💵</span>
+      <span class="am-label">No Tax Withholding on Winnings</span>
+    </div>
+    <div class="amenity-card">
+      <span class="am-icon">🔄</span>
+      <span class="am-label">Re-Buys Handled In-Room</span>
+    </div>
+  </div>
+
+  <!-- Games -->
+  <p class="section-title">Available Games</p>
+  <div class="games-section">
+    <div class="games-grid">
+
+      <div class="game-group">
+        <div class="game-group-header">No Limit Hold'em</div>
+        <div class="game-row"><span class="game-stakes">1/3 NLH</span><span class="avail-badge always">Always</span></div>
+        <div class="game-row"><span class="game-stakes">2/5 NLH</span><span class="avail-badge often">Often</span></div>
+        <div class="game-row"><span class="game-stakes">5/10 NLH</span><span class="avail-badge demand">On Demand</span></div>
+        <div class="game-row"><span class="game-stakes">10/25 NLH</span><span class="avail-badge demand">On Demand</span></div>
+        <div class="game-row"><span class="game-stakes">25/50 · 50/100 NLH</span><span class="avail-badge demand">On Demand</span></div>
+      </div>
+
+      <div class="game-group">
+        <div class="game-group-header">Pot Limit Omaha</div>
+        <div class="game-row"><span class="game-stakes">1/3 PLO</span><span class="avail-badge often">Often</span></div>
+        <div class="game-row"><span class="game-stakes">2/5 PLO</span><span class="avail-badge demand">On Demand</span></div>
+        <div class="game-row"><span class="game-stakes">5/10 · 10/25 · 25/50 PLO</span><span class="avail-badge demand">On Demand</span></div>
+      </div>
+
+      <div class="game-group">
+        <div class="game-group-header">Round by Round</div>
+        <div class="game-row"><span class="game-stakes">1/3 Round by Round</span><span class="avail-badge demand">On Demand</span></div>
+        <div class="game-row"><span class="game-stakes">2/5 Round by Round</span><span class="avail-badge demand">On Demand</span></div>
+        <div class="game-row"><span class="game-stakes">25/50 Round by Round</span><span class="avail-badge demand">On Demand</span></div>
+      </div>
+
+      <div class="game-group">
+        <div class="game-group-header">Other Games</div>
+        <div class="game-row"><span class="game-stakes">Match the Stack</span><span class="avail-badge often">Often</span></div>
+        <div class="game-row"><span class="game-stakes">20/40 · 50/100 · 100/200 Limit</span><span class="avail-badge demand">On Demand</span></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Tournaments -->
+  <p class="section-title">Tournaments</p>
+  <div class="tournaments-section">
+    <div class="tourney-grid">
+
+      <div class="tourney-card">
+        <div class="tc-stripe wed-stripe"></div>
+        <div class="tc-body">
+          <div class="tc-day">Every Wednesday</div>
+          <div class="tc-buyin">$300 <span>Buy-in</span></div>
+          <div class="tc-detail">NL Hold'em · 12:30 PM</div>
+          <div class="tc-detail">Unlimited re-entry to end of 1st break</div>
+          <div class="tc-detail muted">Blackout dates may apply</div>
+        </div>
+      </div>
+
+      <div class="tourney-card">
+        <div class="tc-stripe sun-stripe"></div>
+        <div class="tc-body">
+          <div class="tc-day">Every Sunday</div>
+          <div class="tc-buyin">$400 <span>Buy-in</span></div>
+          <div class="tc-detail">NL Hold'em · 12:30 PM</div>
+          <div class="tc-detail">Unlimited re-entry to end of 1st break</div>
+          <div class="tc-detail muted">Blackout: Last Sunday of month &amp; multi-day event weeks</div>
+        </div>
+      </div>
+
+      <div class="tourney-card">
+        <div class="tc-stripe sun550-stripe"></div>
+        <div class="tc-body">
+          <div class="tc-day">Last Sunday of the Month</div>
+          <div class="tc-buyin">$550 <span>Buy-in</span></div>
+          <div class="tc-detail">NL Hold'em · 12:30 PM</div>
+          <div class="tc-detail">Unlimited re-entry to end of 2nd break</div>
+          <div class="tc-detail muted">Replaces regular Sunday tournament</div>
+        </div>
+      </div>
+
+      <div class="tourney-card featured-card">
+        <div class="tc-stripe main-stripe"></div>
+        <div class="tc-body">
+          <div class="tc-day">Seasonal · Multi-Day</div>
+          <div class="tc-buyin">$1,200 <span>Buy-in</span></div>
+          <div class="tc-detail">Main Event NL Hold'em · 12:30 PM</div>
+          <div class="tc-detail">Unlimited re-entry to end of 2nd break (flights only)</div>
+          <div class="tc-detail muted">Held once per season — check calendar for dates</div>
+        </div>
+      </div>
+
+    </div>
+    <div style="text-align:center; margin-top:18px;">
+      <a class="bbj-link" href="calendar.html">📅 View Full Tournament Calendar →</a>
+    </div>
+  </div>
+
+  <!-- Waitlist -->
+  <p class="section-title">Join the Waitlist</p>
+  <div class="waitlist-card">
+    <div class="waitlist-icon">📋</div>
+    <div class="waitlist-content">
+      <h3>Reserve Your Spot</h3>
+      <p>
+        Waitlist opens <strong>daily after 12:00 PM</strong>. We'll hold your spot for up to <strong>90 minutes</strong> — please check in at the poker room upon arrival.
+      </p>
+      <p style="margin-top:10px;">
+        📞 Call us at <a href="tel:+19053537000"><strong>(905) 353-7000</strong></a><br>
+        📲 Or add your name via <a href="https://www.bravopokerlive.com" target="_blank"><strong>Bravo Poker Live</strong></a>
+      </p>
+    </div>
+  </div>
+
+  <!-- LEV2L Restaurant -->
+  <p class="section-title">LEV2L Restaurant</p>
+  <div class="lev2l-card">
+    <div class="lev2l-icon">🍔</div>
+    <div class="lev2l-content">
+      <h3>LEV2L Sports Bar &amp; Restaurant</h3>
+      <p>275-seat restaurant with over 50 HD plasma screens. Wings, handmade pizza, salads, sandwiches, and burgers — right on the casino floor. Happy Hour Mon–Fri 3–5 PM.</p>
+      <div class="menu-links">
+        <a class="menu-link" href="https://casinoniagara.com/content/dam/niagara/PDF/Menus/2025/LEV2L-Menu-Winter-2025.pdf" target="_blank">🍽️ Main Menu</a>
+        <a class="menu-link" href="https://casinoniagara.com/content/dam/niagara/PDF/Menus/2025/LEV2L-Dessert-Menu-Winter-2025.pdf" target="_blank">🍰 Dessert Menu</a>
+        <a class="menu-link" href="https://casinoniagara.com/content/dam/niagara/PDF/Menus/2025/L2_Drink_Menu_NOV_2025.pdf" target="_blank">🍺 Drink Menu</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bad Beat Jackpot -->
+  <p class="section-title">Bad Beat Jackpot</p>
+  <div class="bbj-card">
+    <h3>🎰 Bad Beat Jackpot</h3>
+    <!-- @@BBJ_INJECT_START@@ --><!-- @@BBJ_INJECT_END@@ -->
+    <p>
+      The jackpot value may change or have been won at any time. Please visit the Poker Room for current information.
+    </p>
+    <p>
+      <strong>Qualifying hand:</strong> A minimum of Four of a Kind (Quads) beaten by a higher Four of a Kind, Straight Flush, or Royal Flush.
+      The player must use <strong>both hole cards</strong> and three board cards.
+      Players must hold a <strong>pocket pair</strong> when making Four of a Kind. See Poker Room staff for full details.
+    </p>
+    <a class="bbj-link" href="badbeat.html">View Bad Beat Jackpot Tracker →</a>
+  </div>
+
+  <footer>
+    <p><a href="https://casinoniagara.com/playing/poker.html" target="_blank">casinoniagara.com/playing/poker.html</a></p>
+    <p>Casino Niagara reserves the right to change or cancel games, promotions, or events at any time.</p>
+  </footer>
+
+</main>
+<script>
+  // Dynamically set tournament name in the static live tournament placeholder
+  // based on the last scheduled recurring tournament date.
+  (function () {
+    function getLastSunday(year, month) {
+      var d = new Date(year, month + 1, 0);
+      while (d.getDay() !== 0) d.setDate(d.getDate() - 1);
+      return d.getDate();
+    }
+    function getLastScheduledTournament() {
+      var now = new Date();
+      for (var i = 0; i < 7; i++) {
+        var d = new Date(now.getFullYear(), now.getMonth(), now.getDate() - i);
+        var dow = d.getDay(); // 0=Sun, 3=Wed
+        if (dow === 0) {
+          var lastSun = getLastSunday(d.getFullYear(), d.getMonth());
+          return d.getDate() === lastSun ? "Last Sunday $550 NL Hold'em" : "Sunday $400 NL Hold'em";
+        }
+        if (dow === 3) return "Wednesday $300 NL Hold'em";
+      }
+      return "NL Hold'em Tournament";
+    }
+    var el = document.getElementById('lt-name-dynamic');
+    if (el) el.textContent = getLastScheduledTournament();
+  })();
+</script>
+</body>
+</html>
