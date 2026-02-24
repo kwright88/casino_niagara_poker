@@ -17,104 +17,11 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --navy:    #0d1b2a;
-      --navy2:   #162032;
-      --navy3:   #1e2d40;
-      --gold:    #d4af37;
-      --gold2:   #f0d060;
-      --gold3:   #c8982c;
-      --text:    #e8e0cf;
-      --muted:   #8a9bb0;
-      --green:   #27ae60;
-      --amber:   #e67e22;
-      --blue:    #2980b9;
-      --card-bg: rgba(22, 32, 50, 0.88);
-      --border:  rgba(212,175,55,0.22);
-      --radius:  14px;
-    }
-
-    body {
-      background: var(--navy);
-      color: var(--text);
-      font-family: 'Inter', sans-serif;
-      min-height: 100vh;
-    }
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background:
-        repeating-linear-gradient(45deg, transparent, transparent 2px, rgba(255,255,255,0.012) 2px, rgba(255,255,255,0.012) 4px),
-        radial-gradient(ellipse at 20% 20%, #1a2d45 0%, transparent 60%),
-        radial-gradient(ellipse at 80% 80%, #1a2535 0%, transparent 60%),
-        var(--navy);
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    main { position: relative; z-index: 1; max-width: 1000px; margin: 0 auto; padding: 40px 16px 60px; }
-
-    /* ── Nav links ── */
-    .nav-links {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-bottom: 36px;
-      flex-wrap: wrap;
-    }
-    .nav-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 30px;
-      padding: 8px 18px;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: var(--gold);
-      text-decoration: none;
-      transition: background 0.2s, box-shadow 0.2s;
-    }
-    .nav-link:hover {
-      background: rgba(212,175,55,0.1);
-      box-shadow: 0 0 12px rgba(212,175,55,0.2);
-    }
-
-    /* ── Header ── */
-    header { text-align: center; margin-bottom: 40px; }
-    .casino-label {
-      font-family: 'Oswald', sans-serif;
-      font-size: 12px;
-      letter-spacing: 4px;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 8px;
-    }
-    .disclaimer {
-      font-size: 13px;
-      color: var(--muted);
-      margin-top: 8px;
-      margin-bottom: 0;
-    }
-    header h1 {
-      font-family: 'Oswald', sans-serif;
-      font-size: clamp(28px, 5vw, 48px);
-      font-weight: 700;
-      color: var(--gold);
-      letter-spacing: 2px;
-      text-shadow: 0 0 30px rgba(212,175,55,0.35);
-    }
-    .divider { display: flex; align-items: center; gap: 14px; margin: 14px auto 0; max-width: 360px; }
-    .divider::before, .divider::after { content:''; flex:1; height:1px; background: linear-gradient(to right, transparent, var(--gold3)); }
-    .divider::after { background: linear-gradient(to left, transparent, var(--gold3)); }
-    .divider span { color: var(--gold3); font-size: 18px; }
+    /* ── Page overrides ── */
+    main { max-width: 1000px; }
+    header h1 { font-size: clamp(28px, 5vw, 48px); }
 
     /* ── Hero stats row ── */
     .hero-stats {
@@ -184,14 +91,6 @@
     .mts-callout p { font-size: 13px; color: var(--muted); }
 
     /* ── Amenities ── */
-    .section-title {
-      font-family: 'Oswald', sans-serif;
-      font-size: 13px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 16px;
-    }
     .amenities-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -365,10 +264,10 @@
     }
     .tourney-card.featured-card { border-color: rgba(139,32,32,0.5); }
     .tc-stripe { height: 4px; }
-    .wed-stripe   { background: #2563a8; }
-    .sun-stripe   { background: #b07d2c; }
-    .sun550-stripe{ background: #2e7d52; }
-    .main-stripe  { background: #8b2020; }
+    .wed-stripe    { background: var(--wed); }
+    .sun-stripe    { background: var(--sun); }
+    .sun550-stripe { background: var(--sun550); }
+    .main-stripe   { background: var(--main); }
     .tc-body { padding: 16px; flex: 1; display: flex; flex-direction: column; gap: 5px; }
     .tc-day {
       font-size: 11px;
@@ -387,12 +286,6 @@
     .tc-buyin span { font-size: 14px; color: var(--muted); font-weight: 400; }
     .tc-detail { font-size: 12px; color: var(--text); }
     .tc-detail.muted { color: var(--muted); font-size: 11px; margin-top: 2px; }
-
-    /* ── Footer ── */
-    footer { text-align: center; font-size: 12px; color: var(--muted); }
-    footer a { color: var(--gold3); text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-    footer p + p { margin-top: 6px; }
 
     /* ── Live Games section ── */
     .live-section { margin-bottom: 32px; }

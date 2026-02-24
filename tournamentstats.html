@@ -17,64 +17,15 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    /* ── Page overrides ── */
+    header h1 { font-size: clamp(22px, 4vw, 38px); }
+    .nav-links { gap: 12px; }
+    .section-title { font-size: 14px; }
+    footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); line-height: 1.8; }
 
-    :root {
-      --navy:    #0d1b2a;
-      --navy2:   #162032;
-      --navy3:   #1e2d40;
-      --gold:    #d4af37;
-      --gold2:   #f0d060;
-      --gold3:   #c8982c;
-      --amber:   #e8a020;
-      --green:   #6fcf97;
-      --text:    #e8e0cf;
-      --muted:   #8a9bb0;
-      --border:  rgba(212,175,55,0.22);
-      --radius:  14px;
-      --card-bg: rgba(22,32,50,0.88);
-      --wed:     #2563a8;
-      --sun:     #b07d2c;
-      --sun550:  #2e7d52;
-    }
-
-    body { background: var(--navy); color: var(--text); font-family: 'Inter', sans-serif; min-height: 100vh; }
-
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background:
-        repeating-linear-gradient(45deg, transparent, transparent 2px, rgba(255,255,255,0.012) 2px, rgba(255,255,255,0.012) 4px),
-        radial-gradient(ellipse at 20% 20%, #1a2d45 0%, transparent 60%),
-        radial-gradient(ellipse at 80% 80%, #1a2535 0%, transparent 60%),
-        var(--navy);
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    main { position: relative; z-index: 1; max-width: 1100px; margin: 0 auto; padding: 40px 16px 60px; }
-
-    /* ── Header ── */
-    header { text-align: center; margin-bottom: 40px; }
-    .casino-label { font-family: 'Oswald', sans-serif; font-size: 12px; letter-spacing: 4px; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
-    header h1 { font-family: 'Oswald', sans-serif; font-size: clamp(22px, 4vw, 38px); font-weight: 700; color: var(--gold); letter-spacing: 2px; text-shadow: 0 0 30px rgba(212,175,55,0.35); }
-    .disclaimer { font-size: 13px; color: var(--muted); margin-top: 8px; margin-bottom: 0; }
-    .divider { display: flex; align-items: center; gap: 14px; margin: 14px auto 0; max-width: 320px; }
-    .divider::before, .divider::after { content: ''; flex: 1; height: 1px; }
-    .divider::before { background: linear-gradient(to right, transparent, var(--gold3)); }
-    .divider::after  { background: linear-gradient(to left,  transparent, var(--gold3)); }
-    .divider span { color: var(--gold3); font-size: 16px; }
     .header-note { text-align: center; font-size: 12px; color: var(--muted); font-style: italic; margin-top: 12px; letter-spacing: 0.3px; }
-
-    /* ── Nav ── */
-    .nav-links { display: flex; justify-content: center; gap: 12px; margin-bottom: 36px; flex-wrap: wrap; }
-    .nav-link { display: inline-flex; align-items: center; gap: 7px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 30px; padding: 8px 18px; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); text-decoration: none; transition: background 0.2s, box-shadow 0.2s; }
-    .nav-link:hover { background: rgba(212,175,55,0.1); box-shadow: 0 0 12px rgba(212,175,55,0.2); }
-
-    /* ── Section title ── */
-    .section-title { font-family: 'Oswald', sans-serif; font-size: 14px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
 
     /* ── Results table ── */
     .results-wrap { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); overflow-x: auto; backdrop-filter: blur(8px); box-shadow: 0 8px 40px rgba(0,0,0,0.5); margin-bottom: 8px; }
@@ -96,7 +47,7 @@
     .rt-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
     .rt-entries { color: var(--text); font-weight: 600; }
     .rt-pool { color: var(--gold); font-weight: 600; }
-    .rt-first { color: var(--green); font-weight: 600; }
+    .rt-first { color: var(--green2); font-weight: 600; }
     .rt-link { color: var(--gold3); text-decoration: none; transition: color 0.15s; }
     .rt-link:hover { color: var(--gold2); text-decoration: underline; }
     .rt-winner-link { color: var(--text); text-decoration: none; border-bottom: 1px dotted rgba(212,175,55,0.35); transition: color 0.15s; }
@@ -104,9 +55,6 @@
     .results-source { font-size: 11px; color: var(--muted); text-align: right; margin-top: 10px; margin-bottom: 40px; font-style: italic; }
     .results-source a { color: var(--gold3); text-decoration: none; }
     .results-source a:hover { text-decoration: underline; }
-
-    /* ── Flag images ── */
-    .flag-img { width: 20px; height: 15px; border-radius: 2px; vertical-align: middle; position: relative; top: -1px; object-fit: cover; }
 
     /* ── Awards tiebreak note ── */
     .awards-tiebreak { font-size: 12px; color: var(--muted); margin-bottom: 14px; font-style: italic; }
@@ -142,14 +90,9 @@
     .lb-name-link { color: var(--text); text-decoration: none; border-bottom: 1px dotted rgba(212,175,55,0.3); transition: color 0.15s; }
     .lb-name-link:hover { color: var(--gold2); }
     .lb-cashes { color: var(--text); font-weight: 600; }
-    .lb-wins { color: var(--green); font-weight: 600; }
+    .lb-wins { color: var(--green2); font-weight: 600; }
     .lb-wins.zero { color: var(--muted); font-weight: 400; }
     .lb-money { color: var(--gold); font-weight: 600; font-variant-numeric: tabular-nums; }
-
-    /* ── Footer ── */
-    footer { text-align: center; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); line-height: 1.8; }
-    footer a { color: var(--gold3); text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
 
     @media (max-width: 600px) {
       .awards-grid { grid-template-columns: 1fr 1fr; }
