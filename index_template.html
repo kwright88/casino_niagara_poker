@@ -16,7 +16,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="styles.css">
   <style>
     /* ── Page overrides ── */
@@ -395,6 +395,16 @@
       text-align: right;
       font-style: italic;
     }
+
+    /* ── Live error card ── */
+    .live-error-full     { grid-column: 1 / -1; }
+    .live-error-body     { line-height: 1.8; }
+    .ltr-note            { margin-top: 4px; }
+    .ltr-contact-link    { color: var(--gold3); text-decoration: none; font-weight: 600; }
+    .ltr-contact-link:hover { text-decoration: underline; }
+
+    /* ── Tournament paused badge ── */
+    .tc-paused-badge     { font-size: 11px; color: var(--amber); letter-spacing: 1px; }
 
     /* ── LEV2L menu links ── */
     .lev2l-card {
