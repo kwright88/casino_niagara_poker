@@ -342,33 +342,7 @@
       text-align: right;
     }
     .results-table thead th.th-left { text-align: left; }
-    .results-table tbody tr {
-      border-bottom: 1px solid rgba(255,255,255,0.04);
-      transition: background 0.15s;
-    }
-    .results-table tbody tr:last-child { border-bottom: none; }
-    .results-table tbody tr:hover { background: rgba(255,255,255,0.035); }
-    .results-table td {
-      padding: 11px 16px;
-      white-space: nowrap;
-      text-align: right;
-    }
-    .results-table td.td-l { text-align: left; }
-    .rt-date { color: var(--muted); font-size: 12px; }
-    .rt-type { display: inline-flex; align-items: center; gap: 7px; }
-    .rt-dot  { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
-    .rt-entries { color: var(--text);   font-weight: 600; font-variant-numeric: tabular-nums; }
-    .rt-pool    { color: var(--gold);   font-weight: 600; font-variant-numeric: tabular-nums; }
-    .rt-first   { color: #6fcf97;       font-weight: 600; font-variant-numeric: tabular-nums; }
-    .rt-winner  { color: var(--text); }
-    .rt-unknown { color: var(--muted); font-style: italic; }
-    .results-source { font-size: 11px; color: var(--muted); text-align: right; margin-top: 10px; font-style: italic; }
-    .results-source a { color: var(--gold3); text-decoration: none; }
-    .results-source a:hover { text-decoration: underline; }
-    .rt-link { color: var(--gold3); text-decoration: none; transition: color 0.15s; }
-    .rt-link:hover { color: var(--gold2); text-decoration: underline; }
-    .rt-winner-link { color: var(--text); text-decoration: none; border-bottom: 1px dotted rgba(212,175,55,0.35); transition: color 0.15s, border-color 0.15s; }
-    .rt-winner-link:hover { color: var(--gold2); border-color: var(--gold2); }
+    /* .results-table row/cell styles + .rt-* classes live in styles.css */
 
     /* ── Countdown ── */
     #countdown-wrap { margin-bottom: 28px; display: none; }
@@ -602,6 +576,7 @@
            All four events follow the same multi-day structure (~$1,200 buy-in).
       ════════════════════════════════════════════════════════════════════════ -->
 
+      <!-- @@SEASON_CARD_START@@ -->
       <!-- WINTER MAIN EVENT — dates: Feb 17–20 2026 (completed — hide after February) -->
       <div class="detail-card main-card" data-type="main">
         <div class="dc-top">
@@ -618,6 +593,7 @@
           <a href="https://casinoniagara.com/content/dam/niagara/PDF/poker/F26_1200_Main_Event_Structure_Sheet.pdf" target="_blank">Blind Structure ↗</a>
         </div>
       </div>
+      <!-- @@SEASON_CARD_END@@ -->
 
       <!-- SPRING MAIN EVENT — dates: May 19–22 2026
       <div class="detail-card main-card" data-type="main">

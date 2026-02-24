@@ -37,26 +37,8 @@
     .results-table thead th[data-col]:hover { background: rgba(212,175,55,0.08); }
     .results-table thead th[data-col].sort-asc::after  { content: ' ▲'; font-size: 9px; color: var(--gold2); }
     .results-table thead th[data-col].sort-desc::after { content: ' ▼'; font-size: 9px; color: var(--gold2); }
-    .results-table tbody tr { border-bottom: 1px solid rgba(255,255,255,0.04); transition: background 0.15s; }
-    .results-table tbody tr:last-child { border-bottom: none; }
-    .results-table tbody tr:hover { background: rgba(255,255,255,0.035); }
-    .results-table td { padding: 11px 16px; white-space: nowrap; text-align: right; }
-    .results-table td.td-l { text-align: left; }
-    .rt-date { color: var(--muted); font-size: 12px; }
-    .rt-type { display: inline-flex; align-items: center; gap: 7px; }
-    .rt-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
-    .rt-entries { color: var(--text); font-weight: 600; }
-    .rt-pool { color: var(--gold); font-weight: 600; }
-    .rt-first { color: var(--green2); font-weight: 600; }
-    .rt-link { color: var(--gold3); text-decoration: none; transition: color 0.15s; }
-    .rt-link:hover { color: var(--gold2); text-decoration: underline; }
-    .rt-winner  { color: var(--text); }
-    .rt-unknown { color: var(--muted); font-style: italic; }
-    .rt-winner-link { color: var(--text); text-decoration: none; border-bottom: 1px dotted rgba(212,175,55,0.35); transition: color 0.15s; }
-    .rt-winner-link:hover { color: var(--gold2); }
-    .results-source { font-size: 11px; color: var(--muted); text-align: right; margin-top: 10px; margin-bottom: 40px; font-style: italic; }
-    .results-source a { color: var(--gold3); text-decoration: none; }
-    .results-source a:hover { text-decoration: underline; }
+    /* .results-table row/cell styles + .rt-* classes live in styles.css */
+    .results-source { margin-bottom: 40px; } /* extends the shared base in styles.css */
 
     /* ── Awards tiebreak note ── */
     .awards-tiebreak { font-size: 12px; color: var(--muted); margin-bottom: 14px; font-style: italic; }

@@ -7,3 +7,6 @@ __pycache__/
 
 # Secrets
 .env
+
+# macOS metadata
+.DS_Store
