@@ -1164,6 +1164,7 @@
     const days      = Math.floor(totalSecs / 86400);
     const hours     = Math.floor((totalSecs % 86400) / 3600);
     const minutes   = Math.floor((totalSecs % 3600) / 60);
+    const seconds   = totalSecs % 60;
     return `
       <div class="countdown-box">
         <div class="cd-eyebrow">Next Tournament</div>
@@ -1180,6 +1181,10 @@
           <div class="cd-unit">
             <div class="cd-num">${pad2(minutes)}</div>
             <div class="cd-unit-label">Mins</div>
+          </div>
+          <div class="cd-unit">
+            <div class="cd-num">${pad2(seconds)}</div>
+            <div class="cd-unit-label">Secs</div>
           </div>
         </div>
         <div class="cd-sub">Starts 12:30 PM · ${formatCountdownDate(start)}</div>
@@ -1229,7 +1234,7 @@
   }
 
   tickCountdown();
-  setInterval(tickCountdown, 30000);
+  setInterval(tickCountdown, 1000);
 </script>
 </body>
 </html>
