@@ -10,3 +10,6 @@ __pycache__/
 
 # macOS metadata
 .DS_Store
+
+# HTML templates (maintained in workspace, not served from Pages)
+*_template.html
