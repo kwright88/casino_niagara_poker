@@ -410,7 +410,9 @@
       border: 1px solid rgba(212,175,55,0.15);
       border-radius: 10px;
       padding: 12px 18px;
-      min-width: 72px;
+      width: 72px;
+      text-align: center;
+      flex-shrink: 0;
     }
     .cd-num {
       font-family: 'Oswald', sans-serif;
@@ -420,6 +422,7 @@
       line-height: 1;
       font-variant-numeric: tabular-nums;
       letter-spacing: 1px;
+      display: block;
     }
     .cd-unit-label {
       font-size: 10px;
@@ -478,7 +481,7 @@
       letter-spacing: 1px;
     }
     @media (max-width: 480px) {
-      .cd-unit { min-width: 58px; padding: 10px 12px; }
+      .cd-unit { width: 58px; padding: 10px 12px; }
       .cd-num  { font-size: 26px; }
     }
 
