@@ -1171,19 +1171,19 @@
         <div class="cd-name ${event.type}">${event.label}</div>
         <div class="cd-units">
           <div class="cd-unit">
-            <div class="cd-num">${days}</div>
+            <div class="cd-num" id="cd-days">${days}</div>
             <div class="cd-unit-label">Days</div>
           </div>
           <div class="cd-unit">
-            <div class="cd-num">${pad2(hours)}</div>
+            <div class="cd-num" id="cd-hours">${pad2(hours)}</div>
             <div class="cd-unit-label">Hours</div>
           </div>
           <div class="cd-unit">
-            <div class="cd-num">${pad2(minutes)}</div>
+            <div class="cd-num" id="cd-mins">${pad2(minutes)}</div>
             <div class="cd-unit-label">Mins</div>
           </div>
           <div class="cd-unit">
-            <div class="cd-num">${pad2(seconds)}</div>
+            <div class="cd-num" id="cd-secs">${pad2(seconds)}</div>
             <div class="cd-unit-label">Secs</div>
           </div>
         </div>
@@ -1191,6 +1191,23 @@
       </div>
     `;
   }
+
+  // Update only the number elements in-place — no DOM rebuild, no jitter.
+  function updateCountdownInPlace(start) {
+    const daysEl = document.getElementById('cd-days');
+    if (!daysEl) return false;
+    const diff = start - new Date();
+    if (diff <= 0) return false;
+    const totalSecs = Math.floor(diff / 1000);
+    daysEl.textContent                                       = Math.floor(totalSecs / 86400);
+    document.getElementById('cd-hours').textContent = pad2(Math.floor((totalSecs % 86400) / 3600));
+    document.getElementById('cd-mins').textContent  = pad2(Math.floor((totalSecs % 3600) / 60));
+    document.getElementById('cd-secs').textContent  = pad2(totalSecs % 60);
+    return true;
+  }
+
+  // Track what's currently displayed so we only rebuild the DOM on state changes.
+  let _cdEventKey = null;
 
   function tickCountdown() {
     const wrap = document.getElementById('countdown-wrap');
@@ -1207,16 +1224,22 @@
       const liveEnd = new Date(y, mo, d, LIVE_END_HOUR, LIVE_END_MIN);
 
       if (now >= start && now < liveEnd) {
-        // 12:30 PM – 5:30 PM: show "Running now"
-        wrap.style.display = 'block';
-        wrap.innerHTML = renderLive(todayEvent);
+        // 12:30 PM – 5:30 PM: show "Running now" (only rebuild on state change)
+        const liveKey = 'live:' + todayKey;
+        if (_cdEventKey !== liveKey) {
+          wrap.style.display = 'block';
+          wrap.innerHTML = renderLive(todayEvent);
+          _cdEventKey = liveKey;
+        }
         return;
       }
 
       if (now < start) {
         // Before 12:30 PM: countdown to today's tournament
+        const evKey = 'cd:' + todayKey;
+        if (_cdEventKey === evKey && updateCountdownInPlace(start)) return;
         const html = renderCountdown(todayEvent, start);
-        if (html) { wrap.style.display = 'block'; wrap.innerHTML = html; return; }
+        if (html) { wrap.style.display = 'block'; wrap.innerHTML = html; _cdEventKey = evKey; return; }
       }
 
       // After 5:30 PM: fall through to next tournament (skip today)
@@ -1225,12 +1248,14 @@
     // Non-tournament day, or after 5:30 PM on tournament day → countdown to next event
     const next = findUpcomingTournament(todayEvent ? 1 : 0);
     if (next) {
-      // If it's a non-tournament day, offset 0 might return today's event with future start — handle it
+      const evKey = 'cd:' + next.start.getTime();
+      if (_cdEventKey === evKey && updateCountdownInPlace(next.start)) return;
       const html = renderCountdown(next.event, next.start);
-      if (html) { wrap.style.display = 'block'; wrap.innerHTML = html; return; }
+      if (html) { wrap.style.display = 'block'; wrap.innerHTML = html; _cdEventKey = evKey; return; }
     }
 
     wrap.style.display = 'none';
+    _cdEventKey = null;
   }
 
   tickCountdown();
