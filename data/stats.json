@@ -150,194 +150,242 @@
     {
       "icon": "🏆",
       "title": "Most Cashes",
-      "winner_html": "<img class=\"flag-img\" src=\"flags/ca.png\" alt=\"CA\"> <a href=\"https://pokerdb.thehendonmob.com/player.php?a=r&amp;n=1183651\" target=\"_blank\">Benjamin Smith</a>",
       "detail": "4 cashes in 2026",
       "tooltip": "Most total cashes in 2026 recurring tournaments",
-      "active": true
+      "active": true,
+      "winner_name": "Benjamin Smith",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1183651",
+      "country_code": "ca"
     },
     {
       "icon": "💰",
       "title": "Most Money Won",
-      "winner_html": "<img class=\"flag-img\" src=\"flags/ca.png\" alt=\"CA\"> <a href=\"https://pokerdb.thehendonmob.com/player.php?a=r&amp;n=144560\" target=\"_blank\">Daniel Lebel</a>",
       "detail": "C$12,638 across 3 cashes",
       "tooltip": "Highest total prize money earned in 2026",
-      "active": true
+      "active": true,
+      "winner_name": "Daniel Lebel",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=144560",
+      "country_code": "ca"
     },
     {
       "icon": "💐",
       "title": "Always the Bridesmaid",
-      "winner_html": "<img class=\"flag-img\" src=\"flags/ca.png\" alt=\"CA\"> <a href=\"https://pokerdb.thehendonmob.com/player.php?a=r&amp;n=1183651\" target=\"_blank\">Benjamin Smith</a>",
       "detail": "C$10,947 total · 4 cashes · 0 wins",
       "tooltip": "Most money won without ever winning a tournament",
-      "active": true
+      "active": true,
+      "winner_name": "Benjamin Smith",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1183651",
+      "country_code": "ca"
     },
     {
       "icon": "🎯",
       "title": "Biggest Single Score",
-      "winner_html": "<img class=\"flag-img\" src=\"flags/ca.png\" alt=\"CA\"> <a href=\"https://pokerdb.thehendonmob.com/player.php?a=r&amp;n=294737\" target=\"_blank\">Senthuran Vijayaratnam</a>",
       "detail": "C$10,651 — Jan 25 Last Sunday $550 NLH",
       "tooltip": "Highest single-tournament cash in 2026",
-      "active": true
+      "active": true,
+      "winner_name": "Senthuran Vijayaratnam",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=294737",
+      "country_code": "ca"
     },
     {
       "icon": "📈",
       "title": "Best Average Cash",
-      "winner_html": "<img class=\"flag-img\" src=\"flags/ca.png\" alt=\"CA\"> <a href=\"https://pokerdb.thehendonmob.com/player.php?a=r&amp;n=1193375\" target=\"_blank\">James Haupert</a>",
       "detail": "C$5,055 avg · 2 cashes",
       "tooltip": "Highest average prize per cash (min. 2 cashes)",
-      "active": true
+      "active": true,
+      "winner_name": "James Haupert",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1193375",
+      "country_code": "ca"
     },
     {
       "icon": "💪",
       "title": "Still Swinging",
-      "winner_html": "<img class=\"flag-img\" src=\"flags/ca.png\" alt=\"CA\"> <a href=\"https://pokerdb.thehendonmob.com/player.php?a=r&amp;n=1468435\" target=\"_blank\">Minsu Kim</a>",
       "detail": "Lowest avg cash: C$686 · 2 cashes",
       "tooltip": "Lowest average cash (min. 2 cashes)",
-      "active": true
+      "active": true,
+      "winner_name": "Minsu Kim",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1468435",
+      "country_code": "ca"
     },
     {
       "icon": "🎪",
       "title": "Final Tablist",
-      "winner_html": "<img class=\"flag-img\" src=\"flags/ca.png\" alt=\"CA\"> <a href=\"https://pokerdb.thehendonmob.com/player.php?a=r&amp;n=1183651\" target=\"_blank\">Benjamin Smith</a>",
       "detail": "4 final tables in 2026 (top-9 finishes)",
       "tooltip": "Most final table appearances (top-9 finishes) in 2026",
-      "active": true
+      "active": true,
+      "winner_name": "Benjamin Smith",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1183651",
+      "country_code": "ca"
     },
     {
       "icon": "📋",
       "title": "Largest Field Conquered",
-      "winner_html": "<img class=\"flag-img\" src=\"flags/ca.png\" alt=\"CA\"> <a href=\"https://pokerdb.thehendonmob.com/player.php?a=r&amp;n=244023\" target=\"_blank\">Peter Bodnar</a>",
       "detail": "Won with 140 entries — Feb 4",
       "tooltip": "Won the tournament with the most entries in 2026",
-      "active": true
+      "active": true,
+      "winner_name": "Peter Bodnar",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=244023",
+      "country_code": "ca"
     },
     {
       "icon": "🌍",
       "title": "International Winner",
-      "winner_html": "<img class=\"flag-img\" src=\"flags/ua.png\" alt=\"UA\"> <a href=\"https://pokerdb.thehendonmob.com/player.php?a=r&amp;n=744397\" target=\"_blank\">Dmytro Klimov</a>",
       "detail": "Only Ukraine winner in 2026",
       "tooltip": "First non-Canadian player to win a recurring tournament in 2026",
-      "active": true
+      "active": true,
+      "winner_name": "Dmytro Klimov",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=744397",
+      "country_code": "ua"
     },
     {
       "icon": "🔰",
       "title": "First Winner of 2026",
-      "winner_html": "<img class=\"flag-img\" src=\"flags/ca.png\" alt=\"CA\"> <a href=\"https://pokerdb.thehendonmob.com/player.php?a=r&amp;n=1368085\" target=\"_blank\">Ronald Smith</a>",
       "detail": "Jan 4 — opened the year",
       "tooltip": "Won the very first recurring tournament of the year",
-      "active": true
+      "active": true,
+      "winner_name": "Ronald Smith",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1368085",
+      "country_code": "ca"
     },
     {
       "icon": "🔥",
       "title": "Longest Cash Streak",
-      "winner_html": "<img class=\"flag-img\" src=\"flags/ca.png\" alt=\"CA\"> <a href=\"https://pokerdb.thehendonmob.com/player.php?a=r&amp;n=144560\" target=\"_blank\">Daniel Lebel</a>",
       "detail": "2 in a row · Jan 21 &amp; Jan 25 · Won tiebreaker (C$12,638)",
       "tooltip": "Longest consecutive run of cashing in recurring tournaments",
-      "active": true
+      "active": true,
+      "winner_name": "Daniel Lebel",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=144560",
+      "country_code": "ca"
     },
     {
       "icon": "⚡",
       "title": "Longest Final Table Streak",
-      "winner_html": "<img class=\"flag-img\" src=\"flags/ca.png\" alt=\"CA\"> <a href=\"https://pokerdb.thehendonmob.com/player.php?a=r&amp;n=144560\" target=\"_blank\">Daniel Lebel</a>",
       "detail": "2 consecutive top-9 finishes · Jan 21 &amp; Jan 25 · Won tiebreaker (C$12,638)",
       "tooltip": "Longest consecutive run of top-9 finishes",
-      "active": true
+      "active": true,
+      "winner_name": "Daniel Lebel",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=144560",
+      "country_code": "ca"
     },
     {
       "icon": "❄️",
       "title": "Champ of January",
-      "winner_html": "<img class=\"flag-img\" src=\"flags/ca.png\" alt=\"CA\"> <a href=\"https://pokerdb.thehendonmob.com/player.php?a=r&amp;n=144560\" target=\"_blank\">Daniel Lebel</a>",
       "detail": "C$10,904 in January · 2 cashes",
       "tooltip": "Most prize money earned in January across all recurring tournaments",
-      "active": true
+      "active": true,
+      "winner_name": "Daniel Lebel",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=144560",
+      "country_code": "ca"
     },
     {
       "icon": "💙",
       "title": "Champ of February",
-      "winner_html": "<img class=\"flag-img\" src=\"flags/ca.png\" alt=\"CA\"> <a href=\"https://pokerdb.thehendonmob.com/player.php?a=r&amp;n=1193375\" target=\"_blank\">James Haupert</a>",
       "detail": "C$10,110 in February · 2 cashes",
       "tooltip": "Most prize money earned in February across all recurring tournaments",
-      "active": true
+      "active": true,
+      "winner_name": "James Haupert",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1193375",
+      "country_code": "ca"
     },
     {
       "icon": "🌱",
       "title": "Champ of March",
-      "winner_html": "—",
       "detail": "No results yet",
       "tooltip": "Most prize money earned in March across all recurring tournaments",
-      "active": false
+      "active": false,
+      "winner_name": "—",
+      "winner_url": "",
+      "country_code": ""
     },
     {
       "icon": "🌸",
       "title": "Champ of April",
-      "winner_html": "—",
       "detail": "No results yet",
       "tooltip": "Most prize money earned in April across all recurring tournaments",
-      "active": false
+      "active": false,
+      "winner_name": "—",
+      "winner_url": "",
+      "country_code": ""
     },
     {
       "icon": "🌺",
       "title": "Champ of May",
-      "winner_html": "—",
       "detail": "No results yet",
       "tooltip": "Most prize money earned in May across all recurring tournaments",
-      "active": false
+      "active": false,
+      "winner_name": "—",
+      "winner_url": "",
+      "country_code": ""
     },
     {
       "icon": "☀️",
       "title": "Champ of June",
-      "winner_html": "—",
       "detail": "No results yet",
       "tooltip": "Most prize money earned in June across all recurring tournaments",
-      "active": false
+      "active": false,
+      "winner_name": "—",
+      "winner_url": "",
+      "country_code": ""
     },
     {
       "icon": "🌊",
       "title": "Champ of July",
-      "winner_html": "—",
       "detail": "No results yet",
       "tooltip": "Most prize money earned in July across all recurring tournaments",
-      "active": false
+      "active": false,
+      "winner_name": "—",
+      "winner_url": "",
+      "country_code": ""
     },
     {
       "icon": "🌻",
       "title": "Champ of August",
-      "winner_html": "—",
       "detail": "No results yet",
       "tooltip": "Most prize money earned in August across all recurring tournaments",
-      "active": false
+      "active": false,
+      "winner_name": "—",
+      "winner_url": "",
+      "country_code": ""
     },
     {
       "icon": "🍂",
       "title": "Champ of September",
-      "winner_html": "—",
       "detail": "No results yet",
       "tooltip": "Most prize money earned in September across all recurring tournaments",
-      "active": false
+      "active": false,
+      "winner_name": "—",
+      "winner_url": "",
+      "country_code": ""
     },
     {
       "icon": "🎃",
       "title": "Champ of October",
-      "winner_html": "—",
       "detail": "No results yet",
       "tooltip": "Most prize money earned in October across all recurring tournaments",
-      "active": false
+      "active": false,
+      "winner_name": "—",
+      "winner_url": "",
+      "country_code": ""
     },
     {
       "icon": "🍁",
       "title": "Champ of November",
-      "winner_html": "—",
       "detail": "No results yet",
       "tooltip": "Most prize money earned in November across all recurring tournaments",
-      "active": false
+      "active": false,
+      "winner_name": "—",
+      "winner_url": "",
+      "country_code": ""
     },
     {
       "icon": "🎄",
       "title": "Champ of December",
-      "winner_html": "—",
       "detail": "No results yet",
       "tooltip": "Most prize money earned in December across all recurring tournaments",
-      "active": false
+      "active": false,
+      "winner_name": "—",
+      "winner_url": "",
+      "country_code": ""
     }
   ],
   "players": [

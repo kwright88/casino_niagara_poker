@@ -295,7 +295,21 @@ function buildResultRow(ev) {
 }
 function buildAwardCard(award) {
   const tip = award.tooltip ? ` data-tooltip="${escH(award.tooltip)}"` : '';
-  return `<div class="award-card"${tip}><div class="award-icon">${award.icon}</div><div class="award-title">${escH(award.title)}</div><div class="award-winner">${award.winner_html}</div><div class="award-detail">${escH(award.detail)}</div></div>`;
+  let winnerHtml;
+  if (!award.winner_name || award.winner_name === '—') {
+    winnerHtml = '—';
+  } else {
+    const cc   = award.country_code || '';
+    const name = escH(award.winner_name);
+    const flag = cc
+      ? `<img class="flag-img" src="flags/${escH(cc)}.png" alt="${escH(cc.toUpperCase())}" onerror="this.src='https://flagcdn.com/20x15/'+this.alt.toLowerCase()+'.png';this.onerror=null"> `
+      : '';
+    const inner = award.winner_url
+      ? `<a href="${escH(award.winner_url)}" target="_blank">${name}</a>`
+      : name;
+    winnerHtml = `${flag}${inner}`;
+  }
+  return `<div class="award-card"${tip}><div class="award-icon">${award.icon}</div><div class="award-title">${escH(award.title)}</div><div class="award-winner">${winnerHtml}</div><div class="award-detail">${escH(award.detail)}</div></div>`;
 }
 
 // ── Init ──────────────────────────────────────────────────────────────────
