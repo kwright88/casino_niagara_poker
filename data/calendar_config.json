@@ -1,0 +1,9 @@
+{
+  "special_events": {
+    "2026-02-17": [{"type": "main", "label": "Main Event", "sub": "Flight A (Day 1a) \u00b7 12:30 PM"}],
+    "2026-02-18": [{"type": "main", "label": "Main Event", "sub": "Flight B (Day 1b) \u00b7 12:30 PM"}],
+    "2026-02-19": [{"type": "main", "label": "Main Event", "sub": "Day 2 \u00b7 12:30 PM"}],
+    "2026-02-20": [{"type": "main", "label": "Main Event", "sub": "Day 3 (if needed)", "dim": true}]
+  },
+  "blackout_dates": []
+}

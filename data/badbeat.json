@@ -1,0 +1,88 @@
+{
+  "data": [
+    {
+      "date": "2026-02-14",
+      "jackpot": 126937.9,
+      "change": null,
+      "collected": null,
+      "nextBBJ": null
+    },
+    {
+      "date": "2026-02-15",
+      "jackpot": 128353.9,
+      "change": 1416.0,
+      "collected": 1770.0,
+      "nextBBJ": 177.0
+    },
+    {
+      "date": "2026-02-16",
+      "jackpot": 129841.1,
+      "change": 1487.2,
+      "collected": 1859.0,
+      "nextBBJ": 185.9
+    },
+    {
+      "date": "2026-02-17",
+      "jackpot": 12749.3,
+      "change": -117091.8,
+      "collected": 0.0,
+      "nextBBJ": 0.0
+    },
+    {
+      "date": "2026-02-18",
+      "jackpot": 13541.3,
+      "change": 792.0,
+      "collected": 990.0,
+      "nextBBJ": 99.0
+    },
+    {
+      "date": "2026-02-19",
+      "jackpot": 14297.3,
+      "change": 756.0,
+      "collected": 945.0,
+      "nextBBJ": 94.5
+    },
+    {
+      "date": "2026-02-20",
+      "jackpot": 15007.7,
+      "change": 710.4,
+      "collected": 888.0,
+      "nextBBJ": 88.8
+    },
+    {
+      "date": "2026-02-21",
+      "jackpot": 15713.3,
+      "change": 705.6,
+      "collected": 882.0,
+      "nextBBJ": 88.2
+    },
+    {
+      "date": "2026-02-22",
+      "jackpot": 16907.7,
+      "change": 1194.4,
+      "collected": 1493.0,
+      "nextBBJ": 149.3
+    },
+    {
+      "date": "2026-02-23",
+      "jackpot": 18190.1,
+      "change": 1282.4,
+      "collected": 1603.0,
+      "nextBBJ": 160.3
+    },
+    {
+      "date": "2026-02-24",
+      "jackpot": 19011.7,
+      "change": 821.6,
+      "collected": 1027.0,
+      "nextBBJ": 102.7
+    }
+  ],
+  "summary": {
+    "currentJackpot": 19011.7,
+    "currentDate": "2026-02-24",
+    "currentTime": null,
+    "lastHitDate": "2026-02-16",
+    "lastHitAmount": 129841.1
+  }
+}
