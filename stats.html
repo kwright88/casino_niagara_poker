@@ -11,6 +11,7 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="2026 Casino Niagara poker tournament stats — results, player leaderboard, and awards for weekly recurring tournaments.">
   <title>Casino Niagara — Recurring Tournament Stats 2026</title>
   <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
@@ -37,27 +38,6 @@
     .results-table thead th[data-col]:hover { background: rgba(212,175,55,0.08); }
     .results-table thead th[data-col].sort-asc::after  { content: ' ▲'; font-size: 9px; color: var(--gold2); }
     .results-table thead th[data-col].sort-desc::after { content: ' ▼'; font-size: 9px; color: var(--gold2); }
-    .results-table tbody tr { border-bottom: 1px solid rgba(255,255,255,0.04); transition: background 0.15s; }
-    .results-table tbody tr:last-child { border-bottom: none; }
-    .results-table tbody tr:hover { background: rgba(255,255,255,0.035); }
-    .results-table td { padding: 11px 16px; white-space: nowrap; text-align: right; }
-    .results-table td.td-l { text-align: left; }
-    .rt-date { color: var(--muted); font-size: 12px; }
-    .rt-type { display: inline-flex; align-items: center; gap: 7px; }
-    .rt-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
-    .rt-entries { color: var(--text); font-weight: 600; }
-    .rt-pool { color: var(--gold); font-weight: 600; }
-    .rt-first { color: var(--green2); font-weight: 600; }
-    .rt-link { color: var(--gold3); text-decoration: none; transition: color 0.15s; }
-    .rt-link:hover { color: var(--gold2); text-decoration: underline; }
-    .rt-winner  { color: var(--text); }
-    .rt-unknown { color: var(--muted); font-style: italic; }
-    .rt-winner-link { color: var(--text); text-decoration: none; border-bottom: 1px dotted rgba(212,175,55,0.35); transition: color 0.15s; }
-    .rt-winner-link:hover { color: var(--gold2); }
-    .results-source { font-size: 11px; color: var(--muted); text-align: right; margin-top: 10px; margin-bottom: 40px; font-style: italic; }
-    .results-source a { color: var(--gold3); text-decoration: none; }
-    .results-source a:hover { text-decoration: underline; }
-
     /* ── Awards tiebreak note ── */
     .awards-tiebreak { font-size: 12px; color: var(--muted); margin-bottom: 14px; font-style: italic; }
 
@@ -199,7 +179,7 @@
 <script>
 // ── Player data (populated by fetch) ──────────────────────────────────────
 let PLAYERS = [];
-// columns: [0]=id [1]=name [2]=flag [3]=unused [4]=cashes [5]=wins [6]=money
+// columns: [0]=id [1]=name [2]=flag [3]=cashes [4]=wins [5]=money
 
 let sortCol = 'money';
 let sortDir = -1;
@@ -209,11 +189,11 @@ function fmtMoney(n) {
 }
 function getVal(p, col) {
   switch (col) {
-    case 'rank':   return p[6];
+    case 'rank':   return p[5];
     case 'name':   return p[1].toLowerCase();
-    case 'cashes': return p[4];
-    case 'wins':   return p[5];
-    case 'money':  return p[6];
+    case 'cashes': return p[3];
+    case 'wins':   return p[4];
+    case 'money':  return p[5];
   }
 }
 function renderTable() {
@@ -221,20 +201,20 @@ function renderTable() {
     const av = getVal(a, sortCol), bv = getVal(b, sortCol);
     if (av < bv) return -sortDir;
     if (av > bv) return sortDir;
-    if (sortCol !== 'money') return b[6] - a[6];
+    if (sortCol !== 'money') return b[5] - a[5];
     return 0;
   });
   const tbody = document.getElementById('lb-body');
   if (!tbody) return;
   tbody.innerHTML = sorted.map((p, i) => {
     const url = `https://pokerdb.thehendonmob.com/player.php?a=r&n=${p[0]}`;
-    const wins = p[5] > 0 ? `<span class="lb-wins">${p[5]}</span>` : '<span class="lb-wins zero">—</span>';
+    const wins = p[4] > 0 ? `<span class="lb-wins">${p[4]}</span>` : '<span class="lb-wins zero">—</span>';
     return `<tr>
       <td class="td-l lb-rank">${i + 1}</td>
       <td class="td-l"><span class="lb-name-cell"><img class="flag-img" src="flags/${p[2]}.png" alt="${p[2].toUpperCase()}" onerror="this.src='https://flagcdn.com/20x15/'+this.alt.toLowerCase()+'.png';this.onerror=null"><a class="lb-name-link" href="${url}" target="_blank">${p[1]}</a></span></td>
-      <td class="lb-cashes">${p[4]}</td>
+      <td class="lb-cashes">${p[3]}</td>
       <td>${wins}</td>
-      <td class="lb-money">${fmtMoney(p[6])}</td>
+      <td class="lb-money">${fmtMoney(p[5])}</td>
     </tr>`;
   }).join('');
 }
