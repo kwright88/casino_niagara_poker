@@ -371,7 +371,10 @@
     .rt-winner-link:hover { color: var(--gold2); border-color: var(--gold2); }
 
     /* ── Countdown ── */
-    #countdown-wrap { margin-bottom: 28px; display: none; }
+    /* ── Running now + countdown side-by-side layout ── */
+    #cd-outer { margin-bottom: 28px; gap: 16px; align-items: stretch; }
+    .cd-running-card  { flex: 0 0 auto; min-width: 200px; max-width: 260px; }
+    .cd-countdown-card { flex: 1; }
     .countdown-box {
       background: var(--card-bg);
       border: 1px solid var(--border);
@@ -494,6 +497,8 @@
       .tourney .time { display: none; }
       .day-num { font-size: 14px; }
       .month-title { font-size: 18px; }
+      #cd-outer { flex-direction: column; }
+      .cd-running-card { max-width: none; min-width: 0; }
     }
   </style>
 </head>
@@ -514,8 +519,8 @@
     <div class="divider"><span>♠</span></div>
   </header>
 
-  <!-- Countdown to next tournament -->
-  <div id="countdown-wrap"></div>
+  <!-- Running now + countdown to next tournament -->
+  <div id="cd-outer" style="display:none;"></div>
 
   <!-- Legend -->
   <div class="legend">
@@ -990,13 +995,42 @@
   });
 
   // ─────────────────────────────────────────────
-  //  Countdown / Live banner
+  //  Running Now + Countdown
   // ─────────────────────────────────────────────
 
   const TOURNAMENT_HOUR = 12;
   const TOURNAMENT_MIN  = 30;
-  const LIVE_END_HOUR   = 17; // "Running now" window ends at 5:30 PM
-  const LIVE_END_MIN    = 30;
+  const CLOCK_FALLBACK_END_HOUR = 21; // treat as running until 9pm if live data unavailable
+
+  // Live state — updated by fetchLiveState() every 5 min
+  let _liveFetchOk  = false; // true once we have a clean non-error fetch
+  let _liveRunning  = false; // Bravo reports an active tournament clock
+  let _liveTourName = '';    // name from live data; may be empty → falls back to schedule
+
+  function fetchLiveState() {
+    fetch('data/live_games.json')
+      .then(r => r.json())
+      .then(d => {
+        if (d.error) { _liveFetchOk = false; return; }
+        const t = d.tournament;
+        _liveFetchOk  = true;
+        _liveRunning  = !!(t && t.level != null);
+        _liveTourName = (t && t.name) ? t.name.trim() : '';
+      })
+      .catch(() => { _liveFetchOk = false; });
+  }
+
+  // Clock fallback: today is a tournament day and it's between 12:30pm–9pm
+  function isClockFallbackLive() {
+    const now = new Date();
+    const key = dateKey(now.getFullYear(), now.getMonth(), now.getDate());
+    if (BLACKOUT_DATES.has(key)) return false;
+    const ev = getTournamentForDay(now.getFullYear(), now.getMonth(), now.getDate());
+    if (!ev) return false;
+    const start = new Date(now.getFullYear(), now.getMonth(), now.getDate(), TOURNAMENT_HOUR, TOURNAMENT_MIN);
+    const end   = new Date(now.getFullYear(), now.getMonth(), now.getDate(), CLOCK_FALLBACK_END_HOUR, 0);
+    return now >= start && now < end;
+  }
 
   function getTournamentForDay(year, month, day) {
     const key = dateKey(year, month, day);
@@ -1013,12 +1047,9 @@
     return null;
   }
 
-  // Find the next upcoming tournament, starting the search from startOffset days ahead of today
   function findUpcomingTournament(startOffset) {
     const now = new Date();
-    const y   = now.getFullYear();
-    const m   = now.getMonth();
-    const d   = now.getDate();
+    const y = now.getFullYear(), m = now.getMonth(), d = now.getDate();
     for (let offset = startOffset; offset <= 14; offset++) {
       const dt  = new Date(y, m, d + offset);
       const key = dateKey(dt.getFullYear(), dt.getMonth(), dt.getDate());
@@ -1034,122 +1065,83 @@
 
   function pad2(n) { return String(n).padStart(2, '0'); }
 
-  function formatCountdownDate(d) {
-    return d.toLocaleDateString('en-CA', { weekday: 'long', month: 'long', day: 'numeric' });
+  function _esc(s) {
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
   }
 
-  function renderLive(event) {
-    return `
-      <div class="countdown-box">
-        <div class="cd-live-row">
-          <span class="cd-live-dot"></span>
-          <span class="cd-live-label">Live</span>
-        </div>
-        <div class="cd-live-name ${event.type}">${event.label}</div>
-        <div class="cd-running-text">Running now!</div>
-      </div>
-    `;
+  function formatCountdownDate(dt) {
+    return dt.toLocaleDateString('en-CA', { weekday: 'long', month: 'long', day: 'numeric' });
   }
 
-  function renderCountdown(event, start) {
-    const diff = start - new Date();
-    if (diff <= 0) return null;
-    const totalSecs = Math.floor(diff / 1000);
-    const days      = Math.floor(totalSecs / 86400);
-    const hours     = Math.floor((totalSecs % 86400) / 3600);
-    const minutes   = Math.floor((totalSecs % 3600) / 60);
-    const seconds   = totalSecs % 60;
-    return `
-      <div class="countdown-box">
-        <div class="cd-eyebrow">Next Tournament</div>
-        <div class="cd-name ${event.type}">${event.label}</div>
-        <div class="cd-units">
-          <div class="cd-unit">
-            <div class="cd-num" id="cd-days">${days}</div>
-            <div class="cd-unit-label">Days</div>
-          </div>
-          <div class="cd-unit">
-            <div class="cd-num" id="cd-hours">${pad2(hours)}</div>
-            <div class="cd-unit-label">Hours</div>
-          </div>
-          <div class="cd-unit">
-            <div class="cd-num" id="cd-mins">${pad2(minutes)}</div>
-            <div class="cd-unit-label">Mins</div>
-          </div>
-          <div class="cd-unit">
-            <div class="cd-num" id="cd-secs">${pad2(seconds)}</div>
-            <div class="cd-unit-label">Secs</div>
-          </div>
-        </div>
-        <div class="cd-sub">Starts 12:30 PM · ${formatCountdownDate(start)}</div>
-      </div>
-    `;
-  }
-
-  // Update only the number elements in-place — no DOM rebuild, no jitter.
   function updateCountdownInPlace(start) {
-    const daysEl = document.getElementById('cd-days');
-    if (!daysEl) return false;
+    const el = document.getElementById('cd-days');
+    if (!el) return false;
     const diff = start - new Date();
     if (diff <= 0) return false;
-    const totalSecs = Math.floor(diff / 1000);
-    daysEl.textContent                                       = Math.floor(totalSecs / 86400);
-    document.getElementById('cd-hours').textContent = pad2(Math.floor((totalSecs % 86400) / 3600));
-    document.getElementById('cd-mins').textContent  = pad2(Math.floor((totalSecs % 3600) / 60));
-    document.getElementById('cd-secs').textContent  = pad2(totalSecs % 60);
+    const s = Math.floor(diff / 1000);
+    el.textContent = Math.floor(s / 86400);
+    document.getElementById('cd-hours').textContent = pad2(Math.floor((s % 86400) / 3600));
+    document.getElementById('cd-mins').textContent  = pad2(Math.floor((s % 3600) / 60));
+    document.getElementById('cd-secs').textContent  = pad2(s % 60);
     return true;
   }
 
-  // Track what's currently displayed so we only rebuild the DOM on state changes.
-  let _cdEventKey = null;
+  let _cdState = null; // tracks current render state to avoid unnecessary DOM rebuilds
 
   function tickCountdown() {
-    const wrap = document.getElementById('countdown-wrap');
-    const now  = new Date();
-    const y    = now.getFullYear();
-    const mo   = now.getMonth();
-    const d    = now.getDate();
+    const outer = document.getElementById('cd-outer');
+    if (!outer) return;
 
-    const todayKey   = dateKey(y, mo, d);
-    const todayEvent = BLACKOUT_DATES.has(todayKey) ? null : getTournamentForDay(y, mo, d);
+    const now = new Date();
 
-    if (todayEvent) {
-      const start   = new Date(y, mo, d, TOURNAMENT_HOUR, TOURNAMENT_MIN);
-      const liveEnd = new Date(y, mo, d, LIVE_END_HOUR, LIVE_END_MIN);
+    // Determine if a tournament is currently running
+    const isLive = _liveFetchOk ? _liveRunning : isClockFallbackLive();
 
-      if (now >= start && now < liveEnd) {
-        // 12:30 PM – 5:30 PM: show "Running now" (only rebuild on state change)
-        const liveKey = 'live:' + todayKey;
-        if (_cdEventKey !== liveKey) {
-          wrap.style.display = 'block';
-          wrap.innerHTML = renderLive(todayEvent);
-          _cdEventKey = liveKey;
-        }
-        return;
-      }
+    // Determine which tournament to count down to:
+    // If live → skip today (offset 1). If not live → use today if before start, else skip.
+    const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate(), TOURNAMENT_HOUR, TOURNAMENT_MIN);
+    const next = findUpcomingTournament(isLive || now >= todayStart ? 1 : 0);
+    if (!next) { outer.style.display = 'none'; _cdState = null; return; }
 
-      if (now < start) {
-        // Before 12:30 PM: countdown to today's tournament
-        const evKey = 'cd:' + todayKey;
-        if (_cdEventKey === evKey && updateCountdownInPlace(start)) return;
-        const html = renderCountdown(todayEvent, start);
-        if (html) { wrap.style.display = 'block'; wrap.innerHTML = html; _cdEventKey = evKey; return; }
-      }
+    const stateKey = (isLive ? 'L' : '') + next.start.getTime();
+    if (_cdState === stateKey) {
+      // Same state — just tick the numbers in-place
+      updateCountdownInPlace(next.start);
+      return;
+    }
+    _cdState = stateKey;
 
-      // After 5:30 PM: fall through to next tournament (skip today)
+    // ── Build Running Now card (if live) ──────────────────────────────────
+    let html = '';
+    if (isLive) {
+      const todayEv = getTournamentForDay(now.getFullYear(), now.getMonth(), now.getDate());
+      const name    = _liveTourName || (todayEv ? todayEv.label : 'Tournament');
+      const type    = todayEv ? todayEv.type : '';
+      html += `<div class="countdown-box cd-running-card">
+        <div class="cd-live-row"><span class="cd-live-dot"></span><span class="cd-live-label">Live</span></div>
+        <div class="cd-live-name ${_esc(type)}">${_esc(name)}</div>
+        <div class="cd-running-text">Running now!</div>
+      </div>`;
     }
 
-    // Non-tournament day, or after 5:30 PM on tournament day → countdown to next event
-    const next = findUpcomingTournament(todayEvent ? 1 : 0);
-    if (next) {
-      const evKey = 'cd:' + next.start.getTime();
-      if (_cdEventKey === evKey && updateCountdownInPlace(next.start)) return;
-      const html = renderCountdown(next.event, next.start);
-      if (html) { wrap.style.display = 'block'; wrap.innerHTML = html; _cdEventKey = evKey; return; }
-    }
+    // ── Build countdown card ──────────────────────────────────────────────
+    const diff = next.start - now;
+    if (diff <= 0) { outer.style.display = 'none'; _cdState = null; return; }
+    const s = Math.floor(diff / 1000);
+    html += `<div class="countdown-box cd-countdown-card">
+      <div class="cd-eyebrow">Next Tournament</div>
+      <div class="cd-name ${_esc(next.event.type)}">${_esc(next.event.label)}</div>
+      <div class="cd-units">
+        <div class="cd-unit"><span class="cd-num" id="cd-days">${Math.floor(s / 86400)}</span><span class="cd-unit-label">Days</span></div>
+        <div class="cd-unit"><span class="cd-num" id="cd-hours">${pad2(Math.floor((s % 86400) / 3600))}</span><span class="cd-unit-label">Hours</span></div>
+        <div class="cd-unit"><span class="cd-num" id="cd-mins">${pad2(Math.floor((s % 3600) / 60))}</span><span class="cd-unit-label">Mins</span></div>
+        <div class="cd-unit"><span class="cd-num" id="cd-secs">${pad2(s % 60)}</span><span class="cd-unit-label">Secs</span></div>
+      </div>
+      <div class="cd-sub">Starts 12:30 PM · ${formatCountdownDate(next.start)}</div>
+    </div>`;
 
-    wrap.style.display = 'none';
-    _cdEventKey = null;
+    outer.style.display = 'flex';
+    outer.innerHTML = html;
   }
 
   // ─────────────────────────────────────────────
@@ -1164,6 +1156,8 @@
     .catch(() => {})
     .finally(() => {
       renderMonth(0, 0);
+      fetchLiveState();
+      setInterval(fetchLiveState, 5 * 60 * 1000); // refresh live state every 5 min
       tickCountdown();
       setInterval(tickCountdown, 1000);
     });
