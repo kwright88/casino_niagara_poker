@@ -320,6 +320,13 @@
 
   let SUMMARY = {};
 
+  // ── Toggle history ────────────────────────────────────────────────────────
+  function toggleHistory(btn) {
+    const body = document.getElementById("history-body");
+    const open = body.classList.toggle("open");
+    btn.setAttribute("aria-expanded", open);
+  }
+
   // ── Formatters ────────────────────────────────────────────────────────────
   const fmt = (n) => n == null ? "—" : "$" + n.toLocaleString("en-CA", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   const fmtChange = (n) => {
@@ -393,13 +400,6 @@
     `;
     tbody.appendChild(tr);
   });
-
-  // ── Toggle history ────────────────────────────────────────────────────────
-  function toggleHistory(btn) {
-    const body = document.getElementById("history-body");
-    const open = body.classList.toggle("open");
-    btn.setAttribute("aria-expanded", open);
-  }
 
   // ── Chart ─────────────────────────────────────────────────────────────────
   const labels = DATA.map(d => d.date);
