@@ -1,42 +1,67 @@
 {
-  "timestamp": "3:10 PM · Feb 25, 2026",
+  "timestamp": "4:10 PM · Feb 25, 2026",
   "error": false,
   "games": [
     {
       "name": "1/3 NL Hold’em",
       "limits": "$100–$300 Buy-in",
       "tables": "2"
-    }
-  ],
-  "waitlist": [
-    {
-      "name": "1/3 NL Hold’em",
-      "limits": "$100–$300 Buy-in",
-      "waiting": "2"
-    },
-    {
-      "name": "1/3 PLO",
-      "limits": "$100–$300 Buy-in",
-      "waiting": "1"
     },
     {
       "name": "1/3 NL (Match the Stack)",
       "limits": "",
+      "tables": "1"
+    }
+  ],
+  "waitlist": [
+    {
+      "name": "1/3 NL (Match the Stack)",
+      "limits": "",
+      "waiting": "6"
+    },
+    {
+      "name": "1/3 PLO",
+      "limits": "$100–$300 Buy-in",
+      "waiting": "5"
+    },
+    {
+      "name": "1/3 NL Hold’em",
+      "limits": "$100–$300 Buy-in",
+      "waiting": "4"
+    },
+    {
+      "name": "1/3 PLO (Match the Stack)",
+      "limits": "",
+      "waiting": "4"
+    },
+    {
+      "name": "2/5 NL (Match the Stack)",
+      "limits": "",
+      "waiting": "4"
+    },
+    {
+      "name": "2/5 PLO",
+      "limits": "$200-$1000 Buy-in",
       "waiting": "1"
     },
     {
       "name": "2/5 NL Hold’em",
       "limits": "$200–$1000 Buy-in",
-      "waiting": "3"
+      "waiting": "1"
+    },
+    {
+      "name": "5/10 NLH/PLO",
+      "limits": "$500-$2000 Buy-in",
+      "waiting": "1"
     }
   ],
   "tournament": {
     "name": "",
-    "level": "7",
-    "blinds": "500 / 1,000 · Ante 1,000",
-    "time_left": "04:54",
+    "level": "9",
+    "blinds": "800 / 1,600 · Ante 1,600",
+    "time_left": "05:10",
     "num_entrants": 132,
-    "num_remaining": 72,
+    "num_remaining": 41,
     "prize_pool": "32650",
     "clock_state": "R"
   }
