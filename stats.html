@@ -231,7 +231,7 @@ function renderTable() {
     const wins = p[5] > 0 ? `<span class="lb-wins">${p[5]}</span>` : '<span class="lb-wins zero">—</span>';
     return `<tr>
       <td class="td-l lb-rank">${i + 1}</td>
-      <td class="td-l"><span class="lb-name-cell"><img class="flag-img" src="flags/${p[2]}.png" alt="${p[2].toUpperCase()}"><a class="lb-name-link" href="${url}" target="_blank">${p[1]}</a></span></td>
+      <td class="td-l"><span class="lb-name-cell"><img class="flag-img" src="flags/${p[2]}.png" alt="${p[2].toUpperCase()}" onerror="this.src='https://flagcdn.com/20x15/'+this.alt.toLowerCase()+'.png';this.onerror=null"><a class="lb-name-link" href="${url}" target="_blank">${p[1]}</a></span></td>
       <td class="lb-cashes">${p[4]}</td>
       <td>${wins}</td>
       <td class="lb-money">${fmtMoney(p[6])}</td>
@@ -307,7 +307,7 @@ function buildResultRow(ev) {
   const firstTd = ev.first_place? `<td class="rt-first">${escH(ev.first_place)}</td>`       : '<td class="rt-unknown">—</td>';
   let winnerTd;
   if (ev.winner_name && ev.winner_name.toLowerCase() !== 'unknown') {
-    const flag = ev.country_code ? `<img class="flag-img" src="flags/${escH(ev.country_code)}.png" alt="${escH(ev.country_code.toUpperCase())}"> ` : '';
+    const flag = ev.country_code ? `<img class="flag-img" src="flags/${escH(ev.country_code)}.png" alt="${escH(ev.country_code.toUpperCase())}" onerror="this.src='https://flagcdn.com/20x15/'+this.alt.toLowerCase()+'.png';this.onerror=null"> ` : '';
     const name = ev.winner_url ? `<a class="rt-winner-link" href="${escH(ev.winner_url)}" target="_blank">${escH(ev.winner_name)}</a>` : escH(ev.winner_name);
     winnerTd = `<td class="td-l rt-winner">${flag}${name}</td>`;
   } else { winnerTd = '<td class="td-l rt-unknown">—</td>'; }
