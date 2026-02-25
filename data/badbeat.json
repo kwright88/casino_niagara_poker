@@ -2,6 +2,7 @@
   "data": [
     {
       "date": "2026-02-14",
+      "time": "11:45 AM",
       "jackpot": 126937.9,
       "change": null,
       "collected": null,
@@ -9,6 +10,7 @@
     },
     {
       "date": "2026-02-15",
+      "time": "11:45 AM",
       "jackpot": 128353.9,
       "change": 1416.0,
       "collected": 1770.0,
@@ -16,6 +18,7 @@
     },
     {
       "date": "2026-02-16",
+      "time": "11:45 AM",
       "jackpot": 129841.1,
       "change": 1487.2,
       "collected": 1859.0,
@@ -23,6 +26,7 @@
     },
     {
       "date": "2026-02-17",
+      "time": "11:45 AM",
       "jackpot": 12749.3,
       "change": -117091.8,
       "collected": 0.0,
@@ -30,6 +34,7 @@
     },
     {
       "date": "2026-02-18",
+      "time": "11:45 AM",
       "jackpot": 13541.3,
       "change": 792.0,
       "collected": 990.0,
@@ -37,6 +42,7 @@
     },
     {
       "date": "2026-02-19",
+      "time": "11:45 AM",
       "jackpot": 14297.3,
       "change": 756.0,
       "collected": 945.0,
@@ -44,6 +50,7 @@
     },
     {
       "date": "2026-02-20",
+      "time": "11:45 AM",
       "jackpot": 15007.7,
       "change": 710.4,
       "collected": 888.0,
@@ -51,6 +58,7 @@
     },
     {
       "date": "2026-02-21",
+      "time": "11:45 AM",
       "jackpot": 15713.3,
       "change": 705.6,
       "collected": 882.0,
@@ -58,6 +66,7 @@
     },
     {
       "date": "2026-02-22",
+      "time": "11:45 AM",
       "jackpot": 16907.7,
       "change": 1194.4,
       "collected": 1493.0,
@@ -65,6 +74,7 @@
     },
     {
       "date": "2026-02-23",
+      "time": "11:45 AM",
       "jackpot": 18190.1,
       "change": 1282.4,
       "collected": 1603.0,
@@ -72,6 +82,7 @@
     },
     {
       "date": "2026-02-24",
+      "time": "11:45 AM",
       "jackpot": 19011.7,
       "change": 821.6,
       "collected": 1027.0,
@@ -79,6 +90,7 @@
     },
     {
       "date": "2026-02-25",
+      "time": "11:45 AM",
       "jackpot": 19382.1,
       "change": 370.4,
       "collected": 463.0,
