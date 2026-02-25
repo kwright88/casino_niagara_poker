@@ -1,7 +1,16 @@
 {
-  "timestamp": "10:10 AM · Feb 25, 2026",
+  "timestamp": "11:10 AM · Feb 25, 2026",
   "error": false,
   "games": [],
   "waitlist": [],
-  "tournament": null
+  "tournament": {
+    "name": "",
+    "level": "1",
+    "blinds": "100 / 100",
+    "time_left": "20:00",
+    "num_entrants": 3,
+    "num_remaining": 3,
+    "prize_pool": "742",
+    "clock_state": "P"
+  }
 }
