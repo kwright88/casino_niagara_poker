@@ -20,220 +20,7 @@
   <link rel="stylesheet" href="fonts.css">
   <script src="chart.min.js" defer></script>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    /* ── Page overrides ── */
-    header { margin-bottom: 48px; }
-    header h1 { font-size: clamp(28px, 5vw, 46px); line-height: 1.1; text-shadow: 0 0 40px rgba(212,175,55,0.4); }
-    .divider { margin-top: 18px; max-width: 360px; }
-    .divider span { font-size: 18px; }
-    footer { margin-top: 48px; letter-spacing: 1px; }
-
-    /* ── Hero jackpot card ── */
-    .hero-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 48px 36px;
-      text-align: center;
-      margin-bottom: 28px;
-      position: relative;
-      overflow: hidden;
-      backdrop-filter: blur(8px);
-      box-shadow: 0 8px 40px rgba(0,0,0,0.5), inset 0 1px 0 rgba(212,175,55,0.15);
-    }
-    .hero-card::before {
-      content: none;
-    }
-    .hero-label {
-      font-size: 12px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 12px;
-    }
-    .jackpot-amount {
-      font-family: 'Oswald', sans-serif;
-      font-size: clamp(52px, 10vw, 96px);
-      font-weight: 700;
-      line-height: 1;
-      color: var(--gold2);
-      animation: pulse-glow 3s ease-in-out infinite;
-      display: inline-block;
-    }
-    @keyframes pulse-glow {
-      0%, 100% { text-shadow: 0 0 14px rgba(212,175,55,0.5), 0 0 30px rgba(212,175,55,0.2); }
-      50%       { text-shadow: 0 0 28px rgba(212,175,55,0.9), 0 0 60px rgba(212,175,55,0.45); }
-    }
-    .as-of {
-      margin-top: 16px;
-      font-size: 14px;
-      color: var(--muted);
-      letter-spacing: 1px;
-    }
-    .as-of strong { color: var(--text); }
-
-    /* ── Stat cards grid ── */
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 16px;
-      margin-bottom: 28px;
-    }
-    .stats-grid.two-col {
-      grid-template-columns: 1fr 1fr;
-      max-width: 680px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .stat-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px 20px;
-      text-align: center;
-      backdrop-filter: blur(8px);
-      box-shadow: 0 4px 20px rgba(0,0,0,0.35);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .stat-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 30px rgba(0,0,0,0.5);
-    }
-    .stat-icon {
-      font-size: 26px;
-      margin-bottom: 10px;
-      display: block;
-    }
-    .stat-label {
-      font-size: 11px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 8px;
-    }
-    .stat-value {
-      font-family: 'Oswald', sans-serif;
-      font-size: 28px;
-      font-weight: 600;
-      color: var(--gold);
-    }
-    .stat-sub {
-      font-size: 12px;
-      color: var(--muted);
-      margin-top: 4px;
-    }
-    .stat-card.highlight {
-      border-color: rgba(212,175,55,0.5);
-      background: rgba(212,175,55,0.07);
-    }
-
-    /* ── Chart ── */
-    .chart-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 28px 24px;
-      margin-bottom: 28px;
-      backdrop-filter: blur(8px);
-      box-shadow: 0 4px 20px rgba(0,0,0,0.35);
-    }
-    .chart-card h2 {
-      font-family: 'Oswald', sans-serif;
-      font-size: 16px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 20px;
-    }
-    .chart-wrapper { position: relative; height: 260px; }
-
-    /* ── History toggle ── */
-    .history-section {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      overflow: hidden;
-      backdrop-filter: blur(8px);
-      box-shadow: 0 4px 20px rgba(0,0,0,0.35);
-    }
-    .history-toggle {
-      width: 100%;
-      background: transparent;
-      border: none;
-      cursor: pointer;
-      padding: 20px 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      color: var(--gold);
-      font-family: 'Oswald', sans-serif;
-      font-size: 16px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      transition: background 0.2s;
-    }
-    .history-toggle:hover { background: rgba(212,175,55,0.06); }
-    .toggle-icon {
-      font-size: 20px;
-      transition: transform 0.3s;
-      display: inline-block;
-    }
-    .history-toggle[aria-expanded="true"] .toggle-icon {
-      transform: rotate(180deg);
-    }
-    .history-body {
-      display: none;
-      padding: 0 24px 24px;
-    }
-    .history-body.open { display: block; }
-
-    table.data-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 13px;
-    }
-    table.data-table thead tr {
-      background: rgba(212,175,55,0.12);
-    }
-    table.data-table th {
-      padding: 10px 14px;
-      text-align: right;
-      font-size: 11px;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: var(--gold);
-      font-weight: 600;
-      border-bottom: 1px solid var(--border);
-    }
-    table.data-table th:first-child { text-align: left; }
-    table.data-table td {
-      padding: 9px 14px;
-      text-align: right;
-      border-bottom: 1px solid rgba(255,255,255,0.04);
-      color: var(--text);
-      font-variant-numeric: tabular-nums;
-    }
-    table.data-table td:first-child { text-align: left; color: var(--muted); }
-    table.data-table tbody tr:hover { background: rgba(255,255,255,0.03); }
-    table.data-table tbody tr:last-child td { border-bottom: none; }
-    .change-pos { color: var(--green); }
-    .change-neg { color: var(--red); }
-    .change-zero { color: var(--muted); }
-
-    /* ── Reset row highlight ── */
-    tr.jackpot-hit td { background: rgba(192,57,43,0.08); }
-    tr.jackpot-hit td:first-child::after {
-      content: ' 🎰';
-      font-size: 11px;
-    }
-
-    /* ── Responsive ── */
-    @media (max-width: 600px) {
-      .stats-grid { grid-template-columns: 1fr 1fr; }
-      .hero-card { padding: 32px 20px; }
-      table.data-table th, table.data-table td { padding: 8px 8px; font-size: 12px; }
-    }
-  </style>
+  <link rel="stylesheet" href="badbeat.css">
 </head>
 <body>
 <main>
@@ -255,8 +42,8 @@
   <!-- Hero -->
   <div class="hero-card">
     <p class="hero-label">Current Jackpot</p>
-    <div class="jackpot-amount" id="hero-amount">$0.00</div>
-    <p class="as-of">As of <strong id="hero-date">2026-02-19</strong> at <strong id="hero-time">11:45 AM</strong></p>
+    <div class="jackpot-amount" id="hero-amount" style="opacity:0.4">Loading…</div>
+    <p class="as-of">As of <strong id="hero-date">–</strong> at <strong id="hero-time"></strong></p>
   </div>
 
   <!-- Stats -->
@@ -264,14 +51,14 @@
     <div class="stat-card highlight">
       <span class="stat-icon">🎰</span>
       <p class="stat-label">Last BBJ Hit</p>
-      <p class="stat-value" id="stat-hit-date">Feb 16, 2026</p>
-      <p class="stat-sub" id="stat-hit-amount">$129,841.10</p>
+      <p class="stat-value" id="stat-hit-date">Loading…</p>
+      <p class="stat-sub" id="stat-hit-amount"></p>
     </div>
     <div class="stat-card">
       <span class="stat-icon">📈</span>
       <p class="stat-label">Avg Daily Increase Since Last Hit</p>
-      <p class="stat-value" id="stat-avg-daily">$774.00</p>
-      <p class="stat-sub" id="stat-avg-sub">2 days of data</p>
+      <p class="stat-value" id="stat-avg-daily">Loading…</p>
+      <p class="stat-sub" id="stat-avg-sub"></p>
     </div>
   </div>
 
@@ -364,7 +151,9 @@
     // ── Summary cards ───────────────────────────────────────────────────────
     document.getElementById("hero-date").textContent = SUMMARY.currentDate;
     document.getElementById("hero-time").textContent = SUMMARY.currentTime || "";
-    setTimeout(() => rollUpAmount(document.getElementById("hero-amount"), SUMMARY.currentJackpot, 2200), 350);
+    var heroEl = document.getElementById("hero-amount");
+    heroEl.style.opacity = '';
+    setTimeout(() => rollUpAmount(heroEl, SUMMARY.currentJackpot, 2200), 350);
     document.getElementById("stat-hit-date").textContent = fmtDate(SUMMARY.lastHitDate);
     document.getElementById("stat-hit-amount").textContent = fmt(SUMMARY.lastHitAmount);
 
@@ -499,7 +288,7 @@
   } // end _init
 
   // ── Fetch data then initialize ─────────────────────────────────────────
-  fetch('data/badbeat.json')
+  fetch('data/badbeat.json', {cache: 'no-cache'})
     .then(r => r.json())
     .then(d => {
       DATA = d.data;
@@ -508,7 +297,7 @@
     })
     .catch(() => {
       const hero = document.getElementById('hero-amount');
-      if (hero) hero.textContent = '—';
+      if (hero) { hero.style.opacity = ''; hero.textContent = '—'; }
     });
 </script>
 </body>
