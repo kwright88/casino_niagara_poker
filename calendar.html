@@ -713,6 +713,56 @@
     timestampId: 'results-last-updated',
     dataUrl:     'data/results.json',
   });
+  // ── Generate JSON-LD Event schema for upcoming tournaments ───────────
+  (function(){
+    const events = [];
+    const today = new Date();
+    today.setHours(0,0,0,0);
+    const horizon = new Date(today);
+    horizon.setDate(horizon.getDate() + 60);
+
+    for (let d = new Date(today); d <= horizon; d.setDate(d.getDate() + 1)) {
+      const dow = d.getDay();
+      const yyyy = d.getFullYear();
+      const mm = String(d.getMonth()+1).padStart(2,'0');
+      const dd = String(d.getDate()).padStart(2,'0');
+      const ds = `${yyyy}-${mm}-${dd}`;
+      if (typeof BLACKOUT_DATES !== 'undefined' && BLACKOUT_DATES.has(ds)) continue;
+
+      let name, buyIn;
+      if (dow === 3) { name = 'Wednesday $300 NL Hold\'em'; buyIn = 300; }
+      else if (dow === 0) {
+        // Check if last Sunday of month
+        const next = new Date(d); next.setDate(next.getDate() + 7);
+        if (next.getMonth() !== d.getMonth()) { name = 'Last Sunday $550 NL Hold\'em'; buyIn = 550; }
+        else { name = 'Sunday $400 NL Hold\'em'; buyIn = 400; }
+      }
+      if (!name) continue;
+
+      events.push({
+        "@type": "Event",
+        "name": name,
+        "startDate": ds + "T12:30:00-05:00",
+        "endDate": ds + "T17:30:00-05:00",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "location": {
+          "@type": "Place",
+          "name": "Casino Niagara Poker Room",
+          "address": { "@type": "PostalAddress", "streetAddress": "5705 Falls Avenue", "addressLocality": "Niagara Falls", "addressRegion": "ON", "postalCode": "L2E 6T3", "addressCountry": "CA" }
+        },
+        "offers": { "@type": "Offer", "price": buyIn, "priceCurrency": "CAD", "availability": "https://schema.org/InStock" },
+        "organizer": { "@type": "Organization", "name": "Casino Niagara" }
+      });
+    }
+
+    if (events.length) {
+      const el = document.createElement('script');
+      el.type = 'application/ld+json';
+      el.textContent = JSON.stringify({"@context":"https://schema.org","@graph":events});
+      document.head.appendChild(el);
+    }
+  })();
 </script>
 </body>
 </html>
