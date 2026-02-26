@@ -13,3 +13,4 @@ __pycache__/
 
 # HTML templates (maintained in workspace, not served from Pages)
 *_template.html
+__pycache__/
