@@ -352,7 +352,7 @@
     /* ── Countdown ── */
     /* ── Running now + countdown side-by-side layout ── */
     #cd-outer { margin-bottom: 28px; gap: 16px; align-items: stretch; }
-    .cd-running-card  { flex: 0 0 auto; min-width: 200px; max-width: 260px; }
+    .cd-running-card  { flex: 0 0 auto; min-width: 200px; max-width: 260px; display: flex; flex-direction: column; justify-content: center; }
     .cd-countdown-card { flex: 1; }
     .countdown-box {
       background: var(--card-bg);
