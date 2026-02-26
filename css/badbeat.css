@@ -1,6 +1,4 @@
     /* ── Page overrides ── */
-    header { margin-bottom: 48px; }
-    header h1 { font-size: clamp(28px, 5vw, 46px); line-height: 1.1; text-shadow: 0 0 40px rgba(212,175,55,0.4); }
     .divider { margin-top: 18px; max-width: 360px; }
     .divider span { font-size: 18px; }
     footer { margin-top: 48px; letter-spacing: 1px; }

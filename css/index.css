@@ -1,6 +1,5 @@
     /* ── Page overrides ── */
     main { max-width: 1000px; }
-    header h1 { font-size: clamp(28px, 5vw, 48px); }
 
     /* ── Hero stats row ── */
     .hero-stats {
