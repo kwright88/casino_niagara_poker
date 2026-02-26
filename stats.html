@@ -17,9 +17,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
   <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
-  <link rel="stylesheet" href="fonts.css">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="stats.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/stats.css">
     /* ── Page overrides ── */
 </head>
 <body>
@@ -207,7 +207,7 @@ fetch('data/stats.json', {cache: 'no-cache'})
     if (grid) grid.innerHTML = '<div style="color:var(--muted);text-align:center;padding:20px;">Unable to load awards</div>';
   });
 </script>
-<script src="results-table.js"></script>
+<script src="js/results-table.js"></script>
 <script>
   // Stats page: only show recurring tournament types (exclude main/festival events)
   var RECURRING = {wed:1, sun:1, sun550:1};
