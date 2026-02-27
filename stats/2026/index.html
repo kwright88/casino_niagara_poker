@@ -12,11 +12,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="2026 Casino Niagara poker tournament stats — results, player leaderboard, and awards for weekly recurring tournaments.">
-  <link rel="canonical" href="https://casinoniagarapoker.com/stats">
+  <link rel="canonical" href="https://casinoniagarapoker.com/stats/2026">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Casino Niagara Poker Tournament Stats 2026">
   <meta property="og:description" content="2026 Casino Niagara poker tournament stats — results, player leaderboard, and awards for weekly recurring tournaments.">
-  <meta property="og:url" content="https://casinoniagarapoker.com/stats">
+  <meta property="og:url" content="https://casinoniagarapoker.com/stats/2026">
   <meta property="og:site_name" content="Casino Niagara Poker">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Casino Niagara Poker Tournament Stats 2026">
@@ -26,15 +26,15 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:image" content="https://casinoniagarapoker.com/icons/og-image.png">
   <title>Casino Niagara — Recurring Tournament Stats 2026</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
-  <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
-  <link rel="preload" href="css/fonts/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlWHYjMdZwl.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="css/fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/stats.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../icons/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="../../icons/favicon.ico">
+  <link rel="preload" href="../../css/fonts/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlWHYjMdZwl.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../css/fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../../css/fonts.css">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="../../css/stats.css">
 </head>
 <body>
 <main>
@@ -42,8 +42,8 @@
   <!-- Nav links -->
   <div class="nav-links">
     <a class="nav-link" href="/">🃏 Poker Room</a>
-    <a class="nav-link" href="badbeat">🎰 Bad Beat Tracker</a>
-    <a class="nav-link" href="calendar">📅 Tournament Calendar</a>
+    <a class="nav-link" href="/badbeat">🎰 Bad Beat Tracker</a>
+    <a class="nav-link" href="/calendar">📅 Tournament Calendar</a>
   </div>
 
   <!-- Header -->
@@ -54,6 +54,12 @@
     <div class="divider"><span>♠</span></div>
     <p class="header-note">Weekly recurring tournaments only — quarterly festival events are excluded</p>
   </header>
+
+  <!-- Year toggle -->
+  <div class="year-toggle">
+    <a href="/stats/2025" class="year-btn ">2025</a>
+    <a href="/stats/2026" class="year-btn active">2026</a>
+  </div>
 
   <!-- Results -->
   <p class="section-title">2026 Results</p>
@@ -105,6 +111,7 @@
 </main>
 
 <script>
+var BASE = '../../';
 // ── Player data (populated by fetch) ──────────────────────────────────────
 let PLAYERS = [];
 // columns: [0]=id [1]=name [2]=flag [3]=cashes [4]=wins [5]=money
@@ -139,7 +146,7 @@ function renderTable() {
     const wins = p[4] > 0 ? `<span class="lb-wins">${p[4]}</span>` : '<span class="lb-wins zero">—</span>';
     return `<tr>
       <td class="td-l lb-rank">${i + 1}</td>
-      <td class="td-l"><span class="lb-name-cell"><img class="flag-img" src="flags/${p[2]}.png" alt="${p[2].toUpperCase()}" onerror="this.src='https://flagcdn.com/20x15/'+this.alt.toLowerCase()+'.png';this.onerror=null"><a class="lb-name-link" href="${url}" target="_blank">${p[1]}</a></span></td>
+      <td class="td-l"><span class="lb-name-cell"><img class="flag-img" src="${BASE}flags/${p[2]}.png" alt="${p[2].toUpperCase()}" onerror="this.src='https://flagcdn.com/20x15/'+this.alt.toLowerCase()+'.png';this.onerror=null"><a class="lb-name-link" href="${url}" target="_blank">${p[1]}</a></span></td>
       <td class="lb-cashes">${p[3]}</td>
       <td>${wins}</td>
       <td class="lb-money">${fmtMoney(p[5])}</td>
@@ -174,7 +181,7 @@ function buildAwardCard(award) {
     const cc   = award.country_code || '';
     const name = escH(award.winner_name);
     const flag = cc
-      ? `<img class="flag-img" src="flags/${escH(cc)}.png" alt="${escH(cc.toUpperCase())}" onerror="this.src='https://flagcdn.com/20x15/'+this.alt.toLowerCase()+'.png';this.onerror=null"> `
+      ? `<img class="flag-img" src="${BASE}flags/${escH(cc)}.png" alt="${escH(cc.toUpperCase())}" onerror="this.src='https://flagcdn.com/20x15/'+this.alt.toLowerCase()+'.png';this.onerror=null"> `
       : '';
     const inner = award.winner_url
       ? `<a href="${escH(award.winner_url)}" target="_blank">${name}</a>`
@@ -216,7 +223,7 @@ function initPage(data) {
 }
 
 // ── Fetch awards + leaderboard ─────────────────────────────────────────────
-fetch('data/stats.json', {cache: 'no-cache'})
+fetch('../../data/stats_2026.json', {cache: 'no-cache'})
   .then(r => r.json())
   .then(initPage)
   .catch(function() {
@@ -224,7 +231,7 @@ fetch('data/stats.json', {cache: 'no-cache'})
     if (grid) grid.innerHTML = '<div style="color:var(--muted);text-align:center;padding:20px;">Unable to load awards</div>';
   });
 </script>
-<script src="js/results-table.js"></script>
+<script src="../../js/results-table.js"></script>
 <script>
   // Stats page: only show recurring tournament types (exclude main/festival events)
   var RECURRING = {wed:1, sun:1, sun550:1};
@@ -232,7 +239,7 @@ fetch('data/stats.json', {cache: 'no-cache'})
     tbodyId:     'results-tbody',
     tableId:     'results-table',
     timestampId: 'stats-ts-results',
-    dataUrl:     'data/stats.json',
+    dataUrl:     '../../data/stats_2026.json',
     filterFn:    function(ev) { return RECURRING[ev.type] === 1; },
     onLoad:      function(data) {
       var ts2 = document.getElementById('stats-ts-footer');
@@ -246,7 +253,7 @@ fetch('data/stats.json', {cache: 'no-cache'})
     "@type": "WebPage",
     "name": "Casino Niagara Poker Tournament Stats 2026",
     "description": "2026 Casino Niagara poker tournament stats — results, player leaderboard, and awards for weekly recurring tournaments.",
-    "url": "https://casinoniagarapoker.com/stats",
+    "url": "https://casinoniagarapoker.com/stats/2026",
     "isPartOf": {
       "@type": "WebSite",
       "name": "Casino Niagara Poker",

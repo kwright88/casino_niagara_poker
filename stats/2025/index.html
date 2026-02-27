@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9GEQ55JEKQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9GEQ55JEKQ');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="2025 Casino Niagara poker tournament stats — results, player leaderboard, and awards for weekly recurring tournaments.">
+  <link rel="canonical" href="https://casinoniagarapoker.com/stats/2025">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Casino Niagara Poker Tournament Stats 2025">
+  <meta property="og:description" content="2025 Casino Niagara poker tournament stats — results, player leaderboard, and awards for weekly recurring tournaments.">
+  <meta property="og:url" content="https://casinoniagarapoker.com/stats/2025">
+  <meta property="og:site_name" content="Casino Niagara Poker">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Casino Niagara Poker Tournament Stats 2025">
+  <meta name="twitter:description" content="2025 Casino Niagara poker tournament stats — results, player leaderboard, and awards for weekly recurring tournaments.">
+  <meta property="og:image" content="https://casinoniagarapoker.com/icons/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:image" content="https://casinoniagarapoker.com/icons/og-image.png">
+  <title>Casino Niagara — Recurring Tournament Stats 2025</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="../../icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../icons/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="../../icons/favicon.ico">
+  <link rel="preload" href="../../css/fonts/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlWHYjMdZwl.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../css/fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../../css/fonts.css">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="../../css/stats.css">
+</head>
+<body>
+<main>
+
+  <!-- Nav links -->
+  <div class="nav-links">
+    <a class="nav-link" href="/">🃏 Poker Room</a>
+    <a class="nav-link" href="/badbeat">🎰 Bad Beat Tracker</a>
+    <a class="nav-link" href="/calendar">📅 Tournament Calendar</a>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <p class="casino-label">Casino Niagara · Poker Room</p>
+    <h1>Recurring Tournament Stats 2025</h1>
+    <p class="disclaimer"><strong>No affiliation with Casino Niagara or Mohegan Sun</strong></p>
+    <div class="divider"><span>♠</span></div>
+    <p class="header-note">Weekly recurring tournaments only — quarterly festival events are excluded</p>
+  </header>
+
+  <!-- Year toggle -->
+  <div class="year-toggle">
+    <a href="/stats/2025" class="year-btn active">2025</a>
+    <a href="/stats/2026" class="year-btn ">2026</a>
+  </div>
+
+  <!-- Results -->
+  <p class="section-title">2025 Results</p>
+  <div class="results-wrap">
+    <table class="results-table" id="results-table">
+      <thead>
+        <tr>
+          <th class="th-l" data-col="date">Date</th>
+          <th class="th-l" data-col="tournament">Tournament</th>
+          <th data-col="entries">Entries</th>
+          <th data-col="pool">Prize Pool</th>
+          <th data-col="first">1st Place</th>
+          <th class="th-l" data-col="winner">Winner</th>
+        </tr>
+      </thead>
+      <tbody id="results-tbody"><tr><td colspan="6" style="text-align:center;color:var(--muted);padding:20px;">Loading…</td></tr></tbody>
+    </table>
+  </div>
+  <p class="results-source">Last updated: <span id="stats-ts-results">–</span></p>
+
+  <!-- Awards -->
+  <p class="section-title">Awards</p>
+  <p class="awards-tiebreak">Award ties are broken based on money won</p>
+  <p class="awards-tiebreak">* Mouse over or tap on an award for more info</p>
+  <div class="awards-grid" id="awards-grid-container"><div style="color:var(--muted);text-align:center;padding:20px;">Loading…</div></div>
+
+  <!-- Leaderboard -->
+  <p class="section-title">Player Leaderboard</p>
+  <div class="lb-wrap">
+    <table id="lb-table">
+      <thead>
+        <tr>
+          <th class="th-l" data-col="rank">#</th>
+          <th class="th-l" data-col="name">Player</th>
+          <th data-col="cashes">Cashes</th>
+          <th data-col="wins">Wins</th>
+          <th data-col="money" class="sort-desc">Money Won</th>
+        </tr>
+      </thead>
+      <tbody id="lb-body"></tbody>
+    </table>
+  </div>
+
+  <footer>
+    <p>Last updated: <span id="stats-ts-footer">–</span> · Players with unidentified profiles excluded</p>
+  </footer>
+
+  <div class="copyright">Copyright &copy; 2026 Kevin Wright. All rights reserved.</div>
+</main>
+
+<script>
+var BASE = '../../';
+// ── Player data (populated by fetch) ──────────────────────────────────────
+let PLAYERS = [];
+// columns: [0]=id [1]=name [2]=flag [3]=cashes [4]=wins [5]=money
+
+let sortCol = 'money';
+let sortDir = -1;
+
+function fmtMoney(n) {
+  return 'C$' + n.toLocaleString('en-CA');
+}
+function getVal(p, col) {
+  switch (col) {
+    case 'rank':   return p[5];
+    case 'name':   return p[1].toLowerCase();
+    case 'cashes': return p[3];
+    case 'wins':   return p[4];
+    case 'money':  return p[5];
+  }
+}
+function renderTable() {
+  const sorted = [...PLAYERS].sort((a, b) => {
+    const av = getVal(a, sortCol), bv = getVal(b, sortCol);
+    if (av < bv) return -sortDir;
+    if (av > bv) return sortDir;
+    if (sortCol !== 'money') return b[5] - a[5];
+    return 0;
+  });
+  const tbody = document.getElementById('lb-body');
+  if (!tbody) return;
+  tbody.innerHTML = sorted.map((p, i) => {
+    const url = `https://pokerdb.thehendonmob.com/player.php?a=r&n=${p[0]}`;
+    const wins = p[4] > 0 ? `<span class="lb-wins">${p[4]}</span>` : '<span class="lb-wins zero">—</span>';
+    return `<tr>
+      <td class="td-l lb-rank">${i + 1}</td>
+      <td class="td-l"><span class="lb-name-cell"><img class="flag-img" src="${BASE}flags/${p[2]}.png" alt="${p[2].toUpperCase()}" onerror="this.src='https://flagcdn.com/20x15/'+this.alt.toLowerCase()+'.png';this.onerror=null"><a class="lb-name-link" href="${url}" target="_blank">${p[1]}</a></span></td>
+      <td class="lb-cashes">${p[3]}</td>
+      <td>${wins}</td>
+      <td class="lb-money">${fmtMoney(p[5])}</td>
+    </tr>`;
+  }).join('');
+}
+function updateHeaders() {
+  document.querySelectorAll('#lb-table thead th').forEach(th => {
+    th.classList.remove('sort-asc', 'sort-desc');
+    if (th.dataset.col === sortCol) th.classList.add(sortDir === -1 ? 'sort-desc' : 'sort-asc');
+  });
+}
+document.querySelectorAll('#lb-table thead th[data-col]').forEach(th => {
+  th.addEventListener('click', () => {
+    const col = th.dataset.col;
+    if (col === sortCol) { sortDir *= -1; }
+    else { sortCol = col; sortDir = col === 'name' ? 1 : -1; }
+    updateHeaders(); renderTable();
+  });
+});
+
+// ── Row / card builders ───────────────────────────────────────────────────
+function escH(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+function buildAwardCard(award) {
+  const tip = award.tooltip ? ` data-tooltip="${escH(award.tooltip)}"` : '';
+  let winnerHtml;
+  if (!award.winner_name || award.winner_name === '—') {
+    winnerHtml = '—';
+  } else {
+    const cc   = award.country_code || '';
+    const name = escH(award.winner_name);
+    const flag = cc
+      ? `<img class="flag-img" src="${BASE}flags/${escH(cc)}.png" alt="${escH(cc.toUpperCase())}" onerror="this.src='https://flagcdn.com/20x15/'+this.alt.toLowerCase()+'.png';this.onerror=null"> `
+      : '';
+    const inner = award.winner_url
+      ? `<a href="${escH(award.winner_url)}" target="_blank">${name}</a>`
+      : name;
+    winnerHtml = `${flag}${inner}`;
+  }
+  return `<div class="award-card"${tip}><div class="award-icon">${award.icon}</div><div class="award-title">${escH(award.title)}</div><div class="award-winner">${winnerHtml}</div><div class="award-detail">${escH(award.detail)}</div></div>`;
+}
+
+// ── Init ──────────────────────────────────────────────────────────────────
+function initPage(data) {
+  // Leaderboard
+  PLAYERS = data.players || [];
+  renderTable();
+  updateHeaders();
+
+  // Awards
+  const grid = document.getElementById('awards-grid-container');
+  if (grid && data.awards) {
+    grid.innerHTML = data.awards.filter(a => a.active !== false).map(buildAwardCard).join('');
+    grid.querySelectorAll('.award-card[data-tooltip]').forEach(function(card) {
+      card.addEventListener('click', function(e) {
+        const was = this.classList.contains('tooltip-active');
+        document.querySelectorAll('.award-card.tooltip-active').forEach(c => c.classList.remove('tooltip-active'));
+        if (!was) this.classList.add('tooltip-active');
+        e.stopPropagation();
+      });
+    });
+    document.addEventListener('click', () => {
+      document.querySelectorAll('.award-card.tooltip-active').forEach(c => c.classList.remove('tooltip-active'));
+    });
+  }
+
+  // Timestamps
+  const ts1 = document.getElementById('stats-ts-results');
+  const ts2 = document.getElementById('stats-ts-footer');
+  if (ts1) ts1.textContent = data.last_updated || '–';
+  if (ts2) ts2.textContent = data.last_updated || '–';
+}
+
+// ── Fetch awards + leaderboard ─────────────────────────────────────────────
+fetch('../../data/stats_2025.json', {cache: 'no-cache'})
+  .then(r => r.json())
+  .then(initPage)
+  .catch(function() {
+    const grid = document.getElementById('awards-grid-container');
+    if (grid) grid.innerHTML = '<div style="color:var(--muted);text-align:center;padding:20px;">Unable to load awards</div>';
+  });
+</script>
+<script src="../../js/results-table.js"></script>
+<script>
+  // Stats page: only show recurring tournament types (exclude main/festival events)
+  var RECURRING = {wed:1, sun:1, sun550:1};
+  ResultsTable.init({
+    tbodyId:     'results-tbody',
+    tableId:     'results-table',
+    timestampId: 'stats-ts-results',
+    dataUrl:     '../../data/stats_2025.json',
+    filterFn:    function(ev) { return RECURRING[ev.type] === 1; },
+    onLoad:      function(data) {
+      var ts2 = document.getElementById('stats-ts-footer');
+      if (ts2) ts2.textContent = data.last_updated || '\u2013';
+    }
+  });
+</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Casino Niagara Poker Tournament Stats 2025",
+    "description": "2025 Casino Niagara poker tournament stats — results, player leaderboard, and awards for weekly recurring tournaments.",
+    "url": "https://casinoniagarapoker.com/stats/2025",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Casino Niagara Poker",
+      "url": "https://casinoniagarapoker.com/"
+    }
+  }
+  </script>
+</body>
+</html>

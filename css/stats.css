@@ -1,3 +1,9 @@
+    /* ── Year toggle ── */
+    .year-toggle { display: flex; justify-content: center; gap: 8px; margin-bottom: 24px; }
+    .year-btn { display: inline-block; padding: 8px 24px; border-radius: 6px; font-family: 'Oswald', sans-serif; font-size: 14px; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none; color: var(--muted); border: 1px solid var(--border); background: transparent; transition: all 0.2s; cursor: pointer; }
+    .year-btn:hover { color: var(--gold); border-color: var(--gold); }
+    .year-btn.active { color: var(--gold); border-color: var(--gold); background: rgba(212,175,55,0.1); pointer-events: none; }
+
     /* ── Page overrides ── */
     .section-title { font-size: 14px; }
     footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); line-height: 1.8; }
