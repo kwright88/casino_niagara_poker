@@ -350,10 +350,13 @@
     function renderSection(data) {
       var gridHtml = data.error ? errorCard() : liveCard(data.games)+waitlistCard(data.waitlist);
       var tourneyHtml = data.tournament ? tournamentCard(data.tournament) : '';
+      var staleBadge = data.stale
+        ? ' <span style="color:#f4b400;font-weight:700;">(Stale)</span>'
+        : '';
       return (
         '<div class="live-section-header">'+
           '<p class="section-title">Live Right Now</p>'+
-          '<span class="live-timestamp"><span class="live-dot"></span>As of '+esc(data.timestamp||'–')+'</span>'+
+          '<span class="live-timestamp"><span class="live-dot"></span>As of '+esc(data.timestamp||'–')+staleBadge+'</span>'+
         '</div>'+
         '<div class="live-tables-grid">'+gridHtml+'</div>'+
         tourneyHtml
