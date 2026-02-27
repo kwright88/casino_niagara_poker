@@ -2,6 +2,90 @@
   "last_updated": "2026-02-26",
   "results": [
     {
+      "date": "Jan 3",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1157133",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 159,
+      "prize_pool": "C$46,476",
+      "first_place": "C$8,291",
+      "winner_name": "Nadra Ghali",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1193343"
+    },
+    {
+      "date": "Jan 8",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1157125",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 143,
+      "prize_pool": "C$32,597",
+      "first_place": "C$9,110",
+      "winner_name": "Michael Milne",
+      "country_code": "us",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=641504"
+    },
+    {
+      "date": "Jan 10",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1157135",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 123,
+      "prize_pool": "C$36,162",
+      "first_place": "C$6,922",
+      "winner_name": "Christopher Glover",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=582540"
+    },
+    {
+      "date": "Jan 15",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1157127",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 132,
+      "prize_pool": "C$30,089",
+      "first_place": "C$8,502",
+      "winner_name": "",
+      "country_code": "",
+      "winner_url": ""
+    },
+    {
+      "date": "Jan 17",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1157137",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 104,
+      "prize_pool": "C$30,576",
+      "first_place": "C$6,155",
+      "winner_name": "Christopher Pagnout",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1327351"
+    },
+    {
+      "date": "Jan 22",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1157129",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 116,
+      "prize_pool": "C$26,442",
+      "first_place": "C$7,802",
+      "winner_name": "Nicholas Gambino",
+      "country_code": "us",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1085427"
+    },
+    {
+      "date": "Jan 24",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1157139",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 98,
+      "prize_pool": "C$28,812",
+      "first_place": "C$5,798",
+      "winner_name": "Dmytro Kachin",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=767639"
+    },
+    {
       "date": "Jan 26",
       "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1153813",
       "tournament": "Last Sunday $550 NLH",
@@ -12,6 +96,78 @@
       "winner_name": "Victor Adams",
       "country_code": "ca",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=177076"
+    },
+    {
+      "date": "Jan 29",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1157131",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 116,
+      "prize_pool": "C$26,442",
+      "first_place": "C$7,802",
+      "winner_name": "Van Pham",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=188271"
+    },
+    {
+      "date": "Jan 31",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1157141",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 89,
+      "prize_pool": "C$26,166",
+      "first_place": "C$5,477",
+      "winner_name": "Christian Concolino",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1331441"
+    },
+    {
+      "date": "Feb 5",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1180753",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 116,
+      "prize_pool": "C$26,442",
+      "first_place": "C$7,802",
+      "winner_name": "Kris Lavoie",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1300545"
+    },
+    {
+      "date": "Feb 7",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1183095",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 132,
+      "prize_pool": "C$38,808",
+      "first_place": "C$7,236",
+      "winner_name": "Jiajun Mei",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1280161"
+    },
+    {
+      "date": "Feb 12",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1183097",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 101,
+      "prize_pool": "C$23,023",
+      "first_place": "C$7,022",
+      "winner_name": "Joshua Greville",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=697951"
+    },
+    {
+      "date": "Feb 14",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1183101",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 67,
+      "prize_pool": "C$19,698",
+      "first_place": "C$4,550",
+      "winner_name": "Andre Noce",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=779785"
     },
     {
       "date": "Feb 23",
@@ -26,6 +182,126 @@
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=583015"
     },
     {
+      "date": "Feb 26",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1183099",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 117,
+      "prize_pool": "C$26,670",
+      "first_place": "C$7,870",
+      "winner_name": "William Schuster",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=286856"
+    },
+    {
+      "date": "Feb 28",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1183105",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 99,
+      "prize_pool": "C$29,106",
+      "first_place": "C$5,858",
+      "winner_name": "Paolo Zambito",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=329676"
+    },
+    {
+      "date": "Mar 5",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1183103",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 158,
+      "prize_pool": "C$36,016",
+      "first_place": "C$9,681",
+      "winner_name": "Paolo Zambito",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=329676"
+    },
+    {
+      "date": "Mar 7",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1183109",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 81,
+      "prize_pool": "C$23,814",
+      "first_place": "C$5,068",
+      "winner_name": "Nicholas Gambino",
+      "country_code": "us",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1085427"
+    },
+    {
+      "date": "Mar 12",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1183111",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 122,
+      "prize_pool": "C$27,810",
+      "first_place": "C$8,065",
+      "winner_name": "Michael Arcaro",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=471233"
+    },
+    {
+      "date": "Mar 14",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1183113",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 97,
+      "prize_pool": "C$28,518",
+      "first_place": "C$5,742",
+      "winner_name": "Jonathan Meyer",
+      "country_code": "us",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=343854"
+    },
+    {
+      "date": "Mar 19",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1183115",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 120,
+      "prize_pool": "C$27,354",
+      "first_place": "C$8,071",
+      "winner_name": "Brad Copestake",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=418665"
+    },
+    {
+      "date": "Mar 21",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1183117",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 87,
+      "prize_pool": "C$25,578",
+      "first_place": "C$5,444",
+      "winner_name": "Tian Zhang",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1346069"
+    },
+    {
+      "date": "Mar 26",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1203925",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 111,
+      "prize_pool": "C$25,302",
+      "first_place": "C$7,589",
+      "winner_name": "Edward Rice",
+      "country_code": "us",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=929181"
+    },
+    {
+      "date": "Mar 28",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1203927",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 81,
+      "prize_pool": "C$23,814",
+      "first_place": "C$5,068",
+      "winner_name": "Edward Rice",
+      "country_code": "us",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=929181"
+    },
+    {
       "date": "Mar 30",
       "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1203857",
       "tournament": "Last Sunday $550 NLH",
@@ -36,6 +312,78 @@
       "winner_name": "Anesti Kocini",
       "country_code": "ca",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=260634"
+    },
+    {
+      "date": "Apr 2",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1203929",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 101,
+      "prize_pool": "C$23,023",
+      "first_place": "C$7,022",
+      "winner_name": "James Stewart",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1352991"
+    },
+    {
+      "date": "Apr 4",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1203931",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 65,
+      "prize_pool": "C$19,110",
+      "first_place": "C$4,415",
+      "winner_name": "Ghassan Jammal",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=890253"
+    },
+    {
+      "date": "Apr 9",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1203933",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 109,
+      "prize_pool": "C$24,847",
+      "first_place": "C$7,455",
+      "winner_name": "Roberto Bussi",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=671476"
+    },
+    {
+      "date": "Apr 11",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1203935",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 84,
+      "prize_pool": "C$24,696",
+      "first_place": "C$5,255",
+      "winner_name": "Paul McLean",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=265083"
+    },
+    {
+      "date": "Apr 16",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1203937",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 93,
+      "prize_pool": "C$21,199",
+      "first_place": "C$6,725",
+      "winner_name": "Maurizio Russo",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=530167"
+    },
+    {
+      "date": "Apr 25",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1219695",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 64,
+      "prize_pool": "C$18,816",
+      "first_place": "C$4,470",
+      "winner_name": "Carlos Gerones",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=456439"
     },
     {
       "date": "Apr 27",
@@ -50,6 +398,102 @@
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=343854"
     },
     {
+      "date": "Apr 30",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1219699",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 39,
+      "prize_pool": "C$21,199",
+      "first_place": "C$6,725",
+      "winner_name": "Peter Bodnar",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=244023"
+    },
+    {
+      "date": "May 2",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1222509",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 85,
+      "prize_pool": "C$24,990",
+      "first_place": "C$5,317",
+      "winner_name": "Anthony Ha",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1368083"
+    },
+    {
+      "date": "May 7",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1224889",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 96,
+      "prize_pool": "C$21,883",
+      "first_place": "C$6,942",
+      "winner_name": "Wanda Wakelin",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1230539"
+    },
+    {
+      "date": "May 9",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1224891",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 67,
+      "prize_pool": "C$19,698",
+      "first_place": "C$4,550",
+      "winner_name": "Robert McMaster",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1370021"
+    },
+    {
+      "date": "May 14",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1224893",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 89,
+      "prize_pool": "C$20,288",
+      "first_place": "C$6,435",
+      "winner_name": "",
+      "country_code": "",
+      "winner_url": ""
+    },
+    {
+      "date": "May 16",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1228365",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 58,
+      "prize_pool": "C$17,052",
+      "first_place": "C$4,050",
+      "winner_name": "",
+      "country_code": "",
+      "winner_url": ""
+    },
+    {
+      "date": "May 21",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1228367",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 103,
+      "prize_pool": "C$23,479",
+      "first_place": "C$7,160",
+      "winner_name": "Stephen Garland",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=681723"
+    },
+    {
+      "date": "May 23",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1228369",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 66,
+      "prize_pool": "C$19,404",
+      "first_place": "C$4,483",
+      "winner_name": "Wuji Zhang",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1376555"
+    },
+    {
       "date": "May 25",
       "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1229547",
       "tournament": "Last Sunday $550 NLH",
@@ -60,6 +504,126 @@
       "winner_name": "Howard Leung",
       "country_code": "ca",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=93970"
+    },
+    {
+      "date": "May 28",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1230171",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 104,
+      "prize_pool": "C$237,070",
+      "first_place": "C$7,231",
+      "winner_name": "",
+      "country_code": "",
+      "winner_url": ""
+    },
+    {
+      "date": "May 30",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1232023",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 79,
+      "prize_pool": "C$23,226",
+      "first_place": "C$5,211",
+      "winner_name": "Edward Rice",
+      "country_code": "us",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=929181"
+    },
+    {
+      "date": "Jun 4",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1232027",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 86,
+      "prize_pool": "C$19,605",
+      "first_place": "C$6,322",
+      "winner_name": "Maurizio Russo",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=530167"
+    },
+    {
+      "date": "Jun 6",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1233721",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 64,
+      "prize_pool": "C$18,816",
+      "first_place": "C$4,470",
+      "winner_name": "Perrin Hendrick",
+      "country_code": "us",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1061427"
+    },
+    {
+      "date": "Jun 11",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1233723",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 96,
+      "prize_pool": "C$21,883",
+      "first_place": "C$6,942",
+      "winner_name": "Gregory Walden",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1380127"
+    },
+    {
+      "date": "Jun 13",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1238927",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 76,
+      "prize_pool": "C$22,344",
+      "first_place": "C$5,013",
+      "winner_name": "Connor Jacobs",
+      "country_code": "us",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1387885"
+    },
+    {
+      "date": "Jun 18",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1238929",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 95,
+      "prize_pool": "C$21,655",
+      "first_place": "C$6,870",
+      "winner_name": "Jonathan Meyer",
+      "country_code": "us",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=343854"
+    },
+    {
+      "date": "Jun 20",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1238925",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 64,
+      "prize_pool": "C$18,816",
+      "first_place": "C$4,470",
+      "winner_name": "James Orkin",
+      "country_code": "us",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1387883"
+    },
+    {
+      "date": "Jun 25",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1239687",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 89,
+      "prize_pool": "C$20,288",
+      "first_place": "C$6,435",
+      "winner_name": "Stephen Garland",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=681723"
+    },
+    {
+      "date": "Jun 27",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1203939",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 56,
+      "prize_pool": "C$10,864",
+      "first_place": "C$4,019",
+      "winner_name": "Bennett James",
+      "country_code": "us",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1388237"
     },
     {
       "date": "Jun 29",
@@ -74,6 +638,102 @@
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=282655"
     },
     {
+      "date": "Jul 2",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249203",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 101,
+      "prize_pool": "C$23,023",
+      "first_place": "C$7,022",
+      "winner_name": "David Keay",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=787045"
+    },
+    {
+      "date": "Jul 4",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249205",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 65,
+      "prize_pool": "C$19,110",
+      "first_place": "C$4,415",
+      "winner_name": "Garry Diu",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1393607"
+    },
+    {
+      "date": "Jul 9",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249207",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 94,
+      "prize_pool": "C$21,427",
+      "first_place": "C$6,798",
+      "winner_name": "Anesti Kocini",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=260634"
+    },
+    {
+      "date": "Jul 11",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249209",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 70,
+      "prize_pool": "C$20,580",
+      "first_place": "C$4,753",
+      "winner_name": "",
+      "country_code": "",
+      "winner_url": ""
+    },
+    {
+      "date": "Jul 16",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249211",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 123,
+      "prize_pool": "C$28,038",
+      "first_place": "C$8,130",
+      "winner_name": "Sandra Boyle",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=525284"
+    },
+    {
+      "date": "Jul 18",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249213",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 87,
+      "prize_pool": "C$25,578",
+      "first_place": "C$5,444",
+      "winner_name": "",
+      "country_code": "",
+      "winner_url": ""
+    },
+    {
+      "date": "Jul 23",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249215",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 98,
+      "prize_pool": "C$22,339",
+      "first_place": "C$6,815",
+      "winner_name": "James Stewart",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1352991"
+    },
+    {
+      "date": "Jul 25",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249217",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 51,
+      "prize_pool": "C$14,994",
+      "first_place": "C$3,660",
+      "winner_name": "Richard Wilkinson",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=695885"
+    },
+    {
       "date": "Jul 27",
       "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249197",
       "tournament": "Last Sunday $550 NLH",
@@ -84,6 +744,102 @@
       "winner_name": "Yiquan Zhong",
       "country_code": "ca",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1267623"
+    },
+    {
+      "date": "Jul 30",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249219",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 99,
+      "prize_pool": "C$22,567",
+      "first_place": "C$6,883",
+      "winner_name": "Anesti Kocini",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=260634"
+    },
+    {
+      "date": "Aug 1",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249221",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 46,
+      "prize_pool": "C$13,524",
+      "first_place": "C$3,481",
+      "winner_name": "John Esho",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1115487"
+    },
+    {
+      "date": "Aug 8",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1262027",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 33,
+      "prize_pool": "C$9,702",
+      "first_place": "C$2,625",
+      "winner_name": "Scott Studer",
+      "country_code": "us",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1267845"
+    },
+    {
+      "date": "Aug 13",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249223",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 112,
+      "prize_pool": "C$25,530",
+      "first_place": "C$7,658",
+      "winner_name": "Aaron Hall",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1157481"
+    },
+    {
+      "date": "Aug 15",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249225",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 43,
+      "prize_pool": "C$12,642",
+      "first_place": "C$3,253",
+      "winner_name": "Daniele Collu",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=418654"
+    },
+    {
+      "date": "Aug 20",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249227",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 98,
+      "prize_pool": "C$22,339",
+      "first_place": "C$6,815",
+      "winner_name": "Yiquan Zhong",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1267623"
+    },
+    {
+      "date": "Aug 22",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249229",
+      "tournament": "Friday $240 NLH",
+      "type": "fri240",
+      "entries": 39,
+      "prize_pool": "C$11,466",
+      "first_place": "C$3,102",
+      "winner_name": "Barry Klupt",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1281235"
+    },
+    {
+      "date": "Aug 27",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249231",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 82,
+      "prize_pool": "C$18,692",
+      "first_place": "C$6,028",
+      "winner_name": "Tedde Ballanger",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=339823"
     },
     {
       "date": "Aug 31",
@@ -98,6 +854,54 @@
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=582568"
     },
     {
+      "date": "Sep 3",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249235",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 74,
+      "prize_pool": "C$16,868",
+      "first_place": "C$5,735",
+      "winner_name": "Ayed Shweihat",
+      "country_code": "us",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=82379"
+    },
+    {
+      "date": "Sep 10",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249239",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 103,
+      "prize_pool": "C$23,479",
+      "first_place": "C$7,160",
+      "winner_name": "Behnam Esfahanizadeh",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=583015"
+    },
+    {
+      "date": "Sep 17",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249243",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 94,
+      "prize_pool": "C$21,427",
+      "first_place": "C$6,798",
+      "winner_name": "Peter DeSantis Jr.",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=189596"
+    },
+    {
+      "date": "Sep 24",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249247",
+      "tournament": "Wednesday $275 NLH",
+      "type": "wed275",
+      "entries": 98,
+      "prize_pool": "C$22,339",
+      "first_place": "C$6,815",
+      "winner_name": "Bryan Aichinger",
+      "country_code": "us",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1420775"
+    },
+    {
       "date": "Sep 28",
       "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249201",
       "tournament": "Last Sunday $550 NLH",
@@ -108,6 +912,66 @@
       "winner_name": "Cameron Stewart",
       "country_code": "ca",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1383269"
+    },
+    {
+      "date": "Oct 1",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249249",
+      "tournament": "Wednesday $300 NLH",
+      "type": "wed",
+      "entries": 79,
+      "prize_pool": "C$19,541",
+      "first_place": "C$6,644",
+      "winner_name": "Jerod Cassidy",
+      "country_code": "us",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=33147"
+    },
+    {
+      "date": "Oct 5",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249233",
+      "tournament": "Sunday $400 NLH",
+      "type": "sun",
+      "entries": 49,
+      "prize_pool": "C$16,873",
+      "first_place": "C$6,244",
+      "winner_name": "Charbel Boujaoude",
+      "country_code": "us",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=924057"
+    },
+    {
+      "date": "Oct 8",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249245",
+      "tournament": "Wednesday $300 NLH",
+      "type": "wed",
+      "entries": 91,
+      "prize_pool": "C$22,509",
+      "first_place": "C$7,141",
+      "winner_name": "Bin Hua",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=936763"
+    },
+    {
+      "date": "Oct 12",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249237",
+      "tournament": "Sunday $400 NLH",
+      "type": "sun",
+      "entries": 23,
+      "prize_pool": "C$7,920",
+      "first_place": "C$3,960",
+      "winner_name": "Nathan Smith",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1325307"
+    },
+    {
+      "date": "Oct 19",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249241",
+      "tournament": "Sunday $400 NLH",
+      "type": "sun",
+      "entries": 43,
+      "prize_pool": "C$14,807",
+      "first_place": "C$5,775",
+      "winner_name": "John Griswold",
+      "country_code": "us",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=412304"
     },
     {
       "date": "Oct 22",
@@ -330,10 +1194,10 @@
     {
       "icon": "🏆",
       "title": "Most Cashes",
-      "winner_name": "Anesti Kocini",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=260634",
+      "winner_name": "Paolo Zambito",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=329676",
       "country_code": "ca",
-      "detail": "8 cashes in 2025",
+      "detail": "19 cashes in 2025",
       "tooltip": "Most total cashes in 2025 recurring tournaments",
       "active": true
     },
@@ -343,17 +1207,17 @@
       "winner_name": "Anesti Kocini",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=260634",
       "country_code": "ca",
-      "detail": "C$39,243 across 8 cashes",
+      "detail": "C$54,367 across 12 cashes",
       "tooltip": "Highest total prize money earned in 2025",
       "active": true
     },
     {
       "icon": "💐",
       "title": "Always the Bridesmaid",
-      "winner_name": "Maurizio Russo",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=530167",
+      "winner_name": "Fawaz Siddiqui",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=790655",
       "country_code": "ca",
-      "detail": "C$23,385 total · 6 cashes · 0 wins",
+      "detail": "C$38,674 total · 16 cashes · 0 wins",
       "tooltip": "Most money won without ever winning a tournament",
       "active": true
     },
@@ -370,30 +1234,30 @@
     {
       "icon": "📈",
       "title": "Best Average Cash",
-      "winner_name": "Yiquan Zhong",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1267623",
+      "winner_name": "Howard Leung",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=93970",
       "country_code": "ca",
-      "detail": "C$12,865 avg · 2 cashes, 1 win",
+      "detail": "C$10,215 avg · 2 cashes, 1 win",
       "tooltip": "Highest average prize per cash (min. 2 cashes)",
       "active": true
     },
     {
       "icon": "💪",
       "title": "Still Swinging",
-      "winner_name": "Jessy Halls",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1445225",
+      "winner_name": "Keaton Johnson",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=753453",
       "country_code": "ca",
-      "detail": "Lowest avg cash: C$592 · 2 cashes",
+      "detail": "Lowest avg cash: C$484 · 2 cashes",
       "tooltip": "Lowest average cash (min. 2 cashes)",
       "active": true
     },
     {
       "icon": "🎪",
       "title": "Final Tablist",
-      "winner_name": "Anesti Kocini",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=260634",
+      "winner_name": "Maurizio Russo",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=530167",
       "country_code": "ca",
-      "detail": "7 final tables in 2025 (top-9 finishes)",
+      "detail": "15 final tables in 2025 (top-9 finishes)",
       "tooltip": "Most final table appearances (top-9 finishes) in 2025",
       "active": true
     },
@@ -410,8 +1274,8 @@
     {
       "icon": "🌍",
       "title": "International Winner",
-      "winner_name": "Jonathan Meyer",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=343854",
+      "winner_name": "Michael Milne",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=641504",
       "country_code": "us",
       "detail": "Only United States winner in 2025",
       "tooltip": "First non-Canadian player to win a recurring tournament in 2025",
@@ -420,30 +1284,30 @@
     {
       "icon": "🔰",
       "title": "First Winner of 2025",
-      "winner_name": "Victor Adams",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=177076",
+      "winner_name": "Nadra Ghali",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1193343",
       "country_code": "ca",
-      "detail": "Jan 26 — opened the year",
+      "detail": "Jan 3 — opened the year",
       "tooltip": "Won the very first recurring tournament of the year",
       "active": true
     },
     {
       "icon": "🔥",
       "title": "Longest Cash Streak",
-      "winner_name": "Xavier Zofimo",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=160923",
-      "country_code": "ca",
-      "detail": "4 in a row · Aug 31 &amp; Oct 26",
+      "winner_name": "Nicholas Gambino",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1085427",
+      "country_code": "us",
+      "detail": "4 in a row · Feb 26 &amp; Mar 7",
       "tooltip": "Longest consecutive run of cashing in recurring tournaments",
       "active": true
     },
     {
       "icon": "⚡",
       "title": "Longest Final Table Streak",
-      "winner_name": "Jianheng Liu",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1226029",
-      "country_code": "us",
-      "detail": "3 consecutive top-9 finishes · Nov 23 &amp; Nov 30",
+      "winner_name": "Tedde Ballanger",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=339823",
+      "country_code": "ca",
+      "detail": "3 consecutive top-9 finishes · May 7 &amp; May 14 · Won tiebreaker (C$24,704)",
       "tooltip": "Longest consecutive run of top-9 finishes",
       "active": true
     },
@@ -453,7 +1317,7 @@
       "winner_name": "Victor Adams",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=177076",
       "country_code": "ca",
-      "detail": "C$20,077 in January · 1 cash",
+      "detail": "C$20,552 in January · 2 cashes",
       "tooltip": "Most prize money earned in January across all recurring tournaments",
       "active": true
     },
@@ -483,7 +1347,7 @@
       "winner_name": "Jonathan Meyer",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=343854",
       "country_code": "us",
-      "detail": "C$18,570 in April · 1 cash",
+      "detail": "C$20,163 in April · 3 cashes",
       "tooltip": "Most prize money earned in April across all recurring tournaments",
       "active": true
     },
@@ -523,7 +1387,7 @@
       "winner_name": "Timmy Vaillancourt",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=582568",
       "country_code": "ca",
-      "detail": "C$19,411 in August · 1 cash",
+      "detail": "C$20,177 in August · 2 cashes",
       "tooltip": "Most prize money earned in August across all recurring tournaments",
       "active": true
     },
@@ -573,17 +1437,97 @@
       260634,
       "Anesti Kocini",
       "ca",
-      8,
+      12,
+      4,
+      54367
+    ],
+    [
+      530167,
+      "Maurizio Russo",
+      "ca",
+      18,
       2,
-      39243
+      53100
+    ],
+    [
+      343854,
+      "Jonathan Meyer",
+      "us",
+      16,
+      3,
+      49268
+    ],
+    [
+      329676,
+      "Paolo Zambito",
+      "ca",
+      19,
+      2,
+      48450
+    ],
+    [
+      244023,
+      "Peter Bodnar",
+      "ca",
+      18,
+      1,
+      39549
+    ],
+    [
+      790655,
+      "Fawaz Siddiqui",
+      "ca",
+      16,
+      0,
+      38674
+    ],
+    [
+      1267623,
+      "Yiquan Zhong",
+      "ca",
+      4,
+      2,
+      35834
     ],
     [
       282655,
       "Walter Metella",
       "ca",
-      6,
+      8,
       1,
-      29610
+      35158
+    ],
+    [
+      695885,
+      "Richard Wilkinson",
+      "ca",
+      16,
+      2,
+      34770
+    ],
+    [
+      583015,
+      "Behnam Esfahanizadeh",
+      "ca",
+      5,
+      2,
+      31332
+    ],
+    [
+      471233,
+      "Michael Arcaro",
+      "ca",
+      10,
+      2,
+      30220
+    ],
+    [
+      681723,
+      "Stephen Garland",
+      "ca",
+      9,
+      3,
+      28930
     ],
     [
       1383269,
@@ -594,28 +1538,44 @@
       28223
     ],
     [
-      1267623,
-      "Yiquan Zhong",
-      "ca",
-      2,
-      1,
-      25730
+      929181,
+      "Edward Rice",
+      "us",
+      9,
+      3,
+      28171
     ],
     [
-      530167,
-      "Maurizio Russo",
+      1352991,
+      "James Stewart",
       "ca",
       6,
-      0,
-      23385
+      2,
+      26249
     ],
     [
-      343854,
-      "Jonathan Meyer",
-      "us",
-      3,
+      582568,
+      "Timmy Vaillancourt",
+      "ca",
+      6,
       1,
-      22790
+      26172
+    ],
+    [
+      671476,
+      "Roberto Bussi",
+      "ca",
+      13,
+      1,
+      26069
+    ],
+    [
+      339823,
+      "Tedde Ballanger",
+      "ca",
+      15,
+      1,
+      24704
     ],
     [
       1296133,
@@ -626,20 +1586,36 @@
       22498
     ],
     [
-      583015,
-      "Behnam Esfahanizadeh",
+      244298,
+      "Brian Bond",
       "ca",
-      2,
+      10,
       1,
-      22373
+      22473
+    ],
+    [
+      160923,
+      "Xavier Zofimo",
+      "ca",
+      13,
+      0,
+      22249
     ],
     [
       177076,
       "Victor Adams",
       "ca",
-      2,
+      4,
       1,
-      20836
+      21828
+    ],
+    [
+      725567,
+      "Daniel Deluca",
+      "ca",
+      6,
+      2,
+      20681
     ],
     [
       93970,
@@ -650,14 +1626,6 @@
       20431
     ],
     [
-      582568,
-      "Timmy Vaillancourt",
-      "ca",
-      1,
-      1,
-      19411
-    ],
-    [
       580447,
       "Osbert Liu",
       "ca",
@@ -666,36 +1634,68 @@
       19132
     ],
     [
-      725567,
-      "Daniel Deluca",
+      582970,
+      "Igor Tregoubov",
       "ca",
-      4,
-      2,
-      18359
-    ],
-    [
-      471233,
-      "Michael Arcaro",
-      "ca",
-      5,
+      7,
       1,
-      16977
+      18368
     ],
     [
       1413839,
       "Sabbir Ahmed",
       "ca",
+      2,
       1,
-      1,
-      16456
+      17937
     ],
     [
-      790655,
-      "Fawaz Siddiqui",
+      1368083,
+      "Anthony Ha",
       "ca",
+      3,
+      1,
+      17869
+    ],
+    [
+      1085427,
+      "Nicholas Gambino",
+      "us",
+      7,
       2,
+      17820
+    ],
+    [
+      286856,
+      "William Schuster",
+      "ca",
+      11,
+      1,
+      17590
+    ],
+    [
+      936763,
+      "Bin Hua",
+      "ca",
+      8,
+      1,
+      16710
+    ],
+    [
+      340617,
+      "Robert Forbes",
+      "us",
+      3,
       0,
-      15502
+      15824
+    ],
+    [
+      582540,
+      "Christopher Glover",
+      "ca",
+      9,
+      1,
+      15523
     ],
     [
       468693,
@@ -714,12 +1714,60 @@
       14240
     ],
     [
-      329676,
-      "Paolo Zambito",
+      924057,
+      "Charbel Boujaoude",
+      "us",
+      2,
+      1,
+      14168
+    ],
+    [
+      671510,
+      "Archimedes Arenas",
       "ca",
       5,
       0,
-      14212
+      14092
+    ],
+    [
+      1183651,
+      "Benjamin Smith",
+      "ca",
+      2,
+      0,
+      13891
+    ],
+    [
+      753467,
+      "Wilfred Mohabir",
+      "ca",
+      5,
+      0,
+      13837
+    ],
+    [
+      697951,
+      "Joshua Greville",
+      "ca",
+      6,
+      1,
+      13814
+    ],
+    [
+      1365939,
+      "Thanh Tran",
+      "ca",
+      7,
+      1,
+      13813
+    ],
+    [
+      144560,
+      "Daniel Lebel",
+      "ca",
+      11,
+      0,
+      13531
     ],
     [
       733247,
@@ -730,28 +1778,28 @@
       13022
     ],
     [
-      340617,
-      "Robert Forbes",
+      692343,
+      "Alan Nacinovic",
+      "ca",
+      6,
+      1,
+      12797
+    ],
+    [
+      675002,
+      "David Rott",
       "us",
-      1,
+      5,
       0,
-      12816
+      12387
     ],
     [
-      244298,
-      "Brian Bond",
+      725563,
+      "Artur Brengoszewski",
       "ca",
-      4,
-      1,
-      12674
-    ],
-    [
-      1368083,
-      "Anthony Ha",
-      "ca",
-      2,
+      8,
       0,
-      12552
+      12351
     ],
     [
       406703,
@@ -762,20 +1810,60 @@
       12307
     ],
     [
-      160923,
-      "Xavier Zofimo",
+      1204167,
+      "Kenneth Ranalli",
       "ca",
-      5,
+      8,
       0,
-      12137
+      12267
     ],
     [
-      582970,
-      "Igor Tregoubov",
+      188271,
+      "Van Pham",
       "ca",
-      2,
+      6,
       1,
-      11555
+      12179
+    ],
+    [
+      189596,
+      "Peter DeSantis Jr.",
+      "ca",
+      3,
+      1,
+      12133
+    ],
+    [
+      82379,
+      "Ayed Shweihat",
+      "us",
+      5,
+      1,
+      12122
+    ],
+    [
+      417751,
+      "Brian Hastey",
+      "ca",
+      3,
+      0,
+      11975
+    ],
+    [
+      1226029,
+      "Jianheng Liu",
+      "us",
+      5,
+      0,
+      11962
+    ],
+    [
+      641504,
+      "Michael Milne",
+      "us",
+      3,
+      1,
+      11395
     ],
     [
       1309171,
@@ -786,76 +1874,148 @@
       11210
     ],
     [
-      695885,
-      "Richard Wilkinson",
-      "ca",
-      4,
-      1,
-      11117
-    ],
-    [
-      671476,
-      "Roberto Bussi",
-      "ca",
-      4,
-      0,
-      11034
-    ],
-    [
-      681723,
-      "Stephen Garland",
-      "ca",
-      3,
-      1,
-      10563
-    ],
-    [
-      244023,
-      "Peter Bodnar",
-      "ca",
-      5,
-      0,
-      10562
-    ],
-    [
-      675002,
-      "David Rott",
-      "us",
-      3,
-      0,
-      10547
-    ],
-    [
       1351289,
       "Nicholas Wilkie",
       "ca",
-      3,
+      4,
       1,
-      10315
+      10986
     ],
     [
-      1183651,
-      "Benjamin Smith",
+      500116,
+      "Kevin Tohivsky",
       "ca",
-      1,
+      6,
       0,
-      10179
+      10845
     ],
     [
-      1352991,
-      "James Stewart",
+      1187569,
+      "Glenn McCleary",
       "ca",
-      1,
+      8,
       0,
-      10092
+      10777
     ],
     [
       244487,
       "Donovan Obrien",
       "ca",
-      2,
+      3,
       0,
-      9364
+      10748
+    ],
+    [
+      418665,
+      "Brad Copestake",
+      "ca",
+      4,
+      1,
+      10690
+    ],
+    [
+      890253,
+      "Ghassan Jammal",
+      "ca",
+      7,
+      1,
+      10602
+    ],
+    [
+      1377557,
+      "Kevin Lehman",
+      "ca",
+      6,
+      0,
+      10197
+    ],
+    [
+      525284,
+      "Sandra Boyle",
+      "ca",
+      2,
+      1,
+      9692
+    ],
+    [
+      247035,
+      "Jody Ashton",
+      "ca",
+      6,
+      0,
+      9612
+    ],
+    [
+      123593,
+      "Brad Perkins",
+      "us",
+      3,
+      0,
+      9532
+    ],
+    [
+      265083,
+      "Paul McLean",
+      "ca",
+      5,
+      1,
+      9347
+    ],
+    [
+      1193343,
+      "Nadra Ghali",
+      "ca",
+      2,
+      1,
+      9298
+    ],
+    [
+      1115487,
+      "John Esho",
+      "ca",
+      4,
+      1,
+      9089
+    ],
+    [
+      1233961,
+      "Corbin Gold",
+      "ca",
+      8,
+      0,
+      9062
+    ],
+    [
+      1157481,
+      "Aaron Hall",
+      "ca",
+      3,
+      1,
+      8969
+    ],
+    [
+      136819,
+      "Jason James",
+      "ca",
+      8,
+      0,
+      8902
+    ],
+    [
+      1376555,
+      "Wuji Zhang",
+      "ca",
+      4,
+      1,
+      8761
+    ],
+    [
+      494133,
+      "Sladjana Micevski",
+      "ca",
+      5,
+      0,
+      8703
     ],
     [
       1183941,
@@ -866,12 +2026,36 @@
       8680
     ],
     [
+      1187581,
+      "Trung Ngo",
+      "ca",
+      3,
+      0,
+      8650
+    ],
+    [
       1187579,
       "Duc Nguyen",
       "ca",
       1,
       0,
       8604
+    ],
+    [
+      260544,
+      "Sean Balfour",
+      "ca",
+      7,
+      0,
+      8530
+    ],
+    [
+      440208,
+      "Charles Naughton",
+      "us",
+      6,
+      0,
+      8521
     ],
     [
       1050901,
@@ -882,12 +2066,12 @@
       8505
     ],
     [
-      1226029,
-      "Jianheng Liu",
-      "us",
-      3,
-      0,
-      8430
+      1280161,
+      "Jiajun Mei",
+      "ca",
+      2,
+      1,
+      8291
     ],
     [
       530141,
@@ -898,20 +2082,52 @@
       8084
     ],
     [
-      1204167,
-      "Kenneth Ranalli",
-      "ca",
-      3,
-      0,
-      8052
+      33147,
+      "Jerod Cassidy",
+      "us",
+      2,
+      1,
+      7995
     ],
     [
-      924057,
-      "Charbel Boujaoude",
-      "us",
-      1,
+      1059921,
+      "Maroun Diab",
+      "ca",
+      4,
       0,
-      7924
+      7984
+    ],
+    [
+      1183629,
+      "Ryan Gal",
+      "ca",
+      4,
+      0,
+      7956
+    ],
+    [
+      695923,
+      "James Van Dyke",
+      "ca",
+      4,
+      0,
+      7913
+    ],
+    [
+      1300545,
+      "Kris Lavoie",
+      "ca",
+      1,
+      1,
+      7802
+    ],
+    [
+      502879,
+      "Stephen Langlois",
+      "ca",
+      7,
+      0,
+      7764
     ],
     [
       165537,
@@ -922,6 +2138,38 @@
       7674
     ],
     [
+      787045,
+      "David Keay",
+      "ca",
+      2,
+      1,
+      7636
+    ],
+    [
+      1352993,
+      "Jang Lee",
+      "ca",
+      5,
+      0,
+      7558
+    ],
+    [
+      1380127,
+      "Gregory Walden",
+      "ca",
+      2,
+      1,
+      7402
+    ],
+    [
+      1309385,
+      "Aleksandar Stankovic",
+      "ca",
+      2,
+      0,
+      7274
+    ],
+    [
       1376841,
       "Antony Kearsley",
       "ca",
@@ -930,28 +2178,28 @@
       7197
     ],
     [
-      692343,
-      "Alan Nacinovic",
+      497795,
+      "Zahir Gilani",
       "ca",
-      2,
-      1,
-      7196
+      7,
+      0,
+      7120
     ],
     [
-      1365939,
-      "Thanh Tran",
+      695855,
+      "Timothy Baiden",
       "ca",
-      2,
-      1,
-      7155
+      3,
+      0,
+      7063
     ],
     [
-      417751,
-      "Brian Hastey",
+      412000,
+      "Robert Davis",
       "ca",
       2,
       0,
-      7149
+      6972
     ],
     [
       709005,
@@ -962,20 +2210,52 @@
       6944
     ],
     [
-      1059921,
-      "Maroun Diab",
-      "ca",
-      2,
-      0,
-      6751
-    ],
-    [
-      671510,
-      "Archimedes Arenas",
+      1230539,
+      "Wanda Wakelin",
       "ca",
       1,
+      1,
+      6942
+    ],
+    [
+      767625,
+      "Nikola Brajkovic",
+      "ca",
+      3,
       0,
-      6683
+      6899
+    ],
+    [
+      1235695,
+      "Bryan Bowes",
+      "ca",
+      7,
+      0,
+      6869
+    ],
+    [
+      1420775,
+      "Bryan Aichinger",
+      "us",
+      1,
+      1,
+      6815
+    ],
+    [
+      59089,
+      "Alan Close",
+      "ca",
+      4,
+      0,
+      6718
+    ],
+    [
+      412304,
+      "John Griswold",
+      "us",
+      2,
+      1,
+      6504
     ],
     [
       1437817,
@@ -986,12 +2266,44 @@
       6498
     ],
     [
+      267796,
+      "Todd Saffron",
+      "us",
+      4,
+      0,
+      6263
+    ],
+    [
+      1327351,
+      "Christopher Pagnout",
+      "ca",
+      1,
+      1,
+      6155
+    ],
+    [
+      92446,
+      "Giuseppe Galuzzo",
+      "ca",
+      5,
+      0,
+      6152
+    ],
+    [
       1204169,
       "Hantang Li",
       "ca",
       2,
       0,
       6044
+    ],
+    [
+      709001,
+      "Steven Kirouac",
+      "ca",
+      3,
+      0,
+      5950
     ],
     [
       1445215,
@@ -1002,20 +2314,76 @@
       5909
     ],
     [
-      725563,
-      "Artur Brengoszewski",
+      147835,
+      "Raymond Williams",
+      "us",
+      4,
+      0,
+      5883
+    ],
+    [
+      1366065,
+      "Thi Nguyen",
+      "ca",
+      5,
+      0,
+      5873
+    ],
+    [
+      767639,
+      "Dmytro Kachin",
+      "ca",
+      1,
+      1,
+      5798
+    ],
+    [
+      1210249,
+      "Kaden Vaillancourt",
+      "ca",
+      6,
+      0,
+      5776
+    ],
+    [
+      15512,
+      "James Worth",
       "ca",
       4,
       0,
-      5676
+      5655
     ],
     [
-      767625,
-      "Nikola Brajkovic",
+      1266361,
+      "Lucas Strkalj",
       "ca",
-      2,
+      3,
       0,
-      5610
+      5655
+    ],
+    [
+      1331441,
+      "Christian Concolino",
+      "ca",
+      1,
+      1,
+      5477
+    ],
+    [
+      1346069,
+      "Tian Zhang",
+      "ca",
+      1,
+      1,
+      5444
+    ],
+    [
+      711969,
+      "Lam Nguyen",
+      "ca",
+      4,
+      0,
+      5414
     ],
     [
       444038,
@@ -1026,20 +2394,76 @@
       5385
     ],
     [
-      582540,
-      "Christopher Glover",
+      1241519,
+      "Adam Rotstein",
       "ca",
-      3,
+      1,
       0,
-      5364
+      5378
     ],
     [
-      92446,
-      "Giuseppe Galuzzo",
+      87133,
+      "Rajiv Khanna",
       "ca",
       3,
       0,
-      4911
+      5368
+    ],
+    [
+      456439,
+      "Carlos Gerones",
+      "ca",
+      2,
+      1,
+      5368
+    ],
+    [
+      954183,
+      "Xavier Ochangco",
+      "ca",
+      3,
+      0,
+      5351
+    ],
+    [
+      1124757,
+      "Yiqiang Xie",
+      "ca",
+      5,
+      0,
+      5316
+    ],
+    [
+      1068823,
+      "Andrew Schneider",
+      "ca",
+      5,
+      0,
+      5013
+    ],
+    [
+      1387885,
+      "Connor Jacobs",
+      "us",
+      1,
+      1,
+      5013
+    ],
+    [
+      295099,
+      "Renmei Liu",
+      "ca",
+      4,
+      0,
+      4988
+    ],
+    [
+      1340985,
+      "James Shippens",
+      "us",
+      1,
+      0,
+      4867
     ],
     [
       502159,
@@ -1050,12 +2474,172 @@
       4820
     ],
     [
-      494133,
-      "Sladjana Micevski",
+      694435,
+      "Catherine Conheady",
+      "us",
+      2,
+      0,
+      4743
+    ],
+    [
+      440896,
+      "Vahan Minassian",
+      "ca",
+      3,
+      0,
+      4734
+    ],
+    [
+      779707,
+      "Edgar Avshalomov",
+      "ca",
+      3,
+      0,
+      4719
+    ],
+    [
+      1198779,
+      "Vladimir Perovic",
+      "ca",
+      3,
+      0,
+      4701
+    ],
+    [
+      293908,
+      "Martin Roussy",
       "ca",
       2,
       0,
-      4404
+      4692
+    ],
+    [
+      68784,
+      "Jair Beltran",
+      "ca",
+      4,
+      0,
+      4690
+    ],
+    [
+      1246225,
+      "Dennis Macura",
+      "ca",
+      3,
+      0,
+      4671
+    ],
+    [
+      184783,
+      "Jean Rene Plante",
+      "ca",
+      2,
+      0,
+      4658
+    ],
+    [
+      1213213,
+      "Michael Villella",
+      "ca",
+      2,
+      0,
+      4570
+    ],
+    [
+      779785,
+      "Andre Noce",
+      "ca",
+      1,
+      1,
+      4550
+    ],
+    [
+      1370021,
+      "Robert McMaster",
+      "ca",
+      1,
+      1,
+      4550
+    ],
+    [
+      1325307,
+      "Nathan Smith",
+      "ca",
+      2,
+      1,
+      4491
+    ],
+    [
+      1061427,
+      "Perrin Hendrick",
+      "us",
+      1,
+      1,
+      4470
+    ],
+    [
+      1387883,
+      "James Orkin",
+      "us",
+      1,
+      1,
+      4470
+    ],
+    [
+      1246223,
+      "Manuel Botelho",
+      "ca",
+      5,
+      0,
+      4442
+    ],
+    [
+      406710,
+      "Thanh Tran",
+      "ca",
+      4,
+      0,
+      4436
+    ],
+    [
+      1393607,
+      "Garry Diu",
+      "ca",
+      1,
+      1,
+      4415
+    ],
+    [
+      410754,
+      "James DiPasquale",
+      "us",
+      1,
+      0,
+      4317
+    ],
+    [
+      466797,
+      "Mahmoud Chehade",
+      "ca",
+      6,
+      0,
+      4304
+    ],
+    [
+      582967,
+      "Rostyslav Kozak",
+      "ca",
+      1,
+      0,
+      4295
+    ],
+    [
+      1399161,
+      "Charles Tinebra",
+      "ca",
+      1,
+      0,
+      4231
     ],
     [
       681711,
@@ -1066,20 +2650,52 @@
       4226
     ],
     [
-      144560,
-      "Daniel Lebel",
+      1308573,
+      "John Stone",
+      "ca",
+      1,
+      0,
+      4189
+    ],
+    [
+      59527,
+      "Art Demmerley",
+      "us",
+      2,
+      0,
+      4099
+    ],
+    [
+      0,
+      "Todd Soluri",
+      "us",
+      3,
+      0,
+      4085
+    ],
+    [
+      1226919,
+      "William Hoover",
+      "ca",
+      4,
+      0,
+      4028
+    ],
+    [
+      1388237,
+      "Bennett James",
+      "us",
+      1,
+      1,
+      4019
+    ],
+    [
+      582969,
+      "Vinash Luthra",
       "ca",
       2,
       0,
-      4098
-    ],
-    [
-      123593,
-      "Brad Perkins",
-      "us",
-      1,
-      0,
-      3993
+      3979
     ],
     [
       1226027,
@@ -1090,12 +2706,12 @@
       3955
     ],
     [
-      936763,
-      "Bin Hua",
+      1118021,
+      "Georgees Zero",
       "ca",
-      2,
+      3,
       0,
-      3946
+      3953
     ],
     [
       709439,
@@ -1130,6 +2746,14 @@
       3907
     ],
     [
+      69596,
+      "Gerald Selby",
+      "ca",
+      3,
+      0,
+      3901
+    ],
+    [
       1340955,
       "Zizhu Zhao",
       "ca",
@@ -1138,28 +2762,12 @@
       3891
     ],
     [
-      1198779,
-      "Vladimir Perovic",
-      "ca",
-      2,
-      0,
-      3881
-    ],
-    [
       1445217,
       "Vladimir Qereshniku",
       "ca",
       2,
       0,
       3865
-    ],
-    [
-      1233961,
-      "Corbin Gold",
-      "ca",
-      2,
-      0,
-      3861
     ],
     [
       1366067,
@@ -1178,12 +2786,44 @@
       3712
     ],
     [
+      344456,
+      "Steve Singeris",
+      "ca",
+      1,
+      0,
+      3701
+    ],
+    [
+      476771,
+      "Bahman Ataeianfar",
+      "ca",
+      2,
+      0,
+      3659
+    ],
+    [
       1328357,
       "Ronald Gamble",
       "ca",
       1,
       0,
       3604
+    ],
+    [
+      932139,
+      "Xiang Zou",
+      "us",
+      1,
+      0,
+      3601
+    ],
+    [
+      1370027,
+      "Nahshon Kerr",
+      "ca",
+      2,
+      0,
+      3533
     ],
     [
       1455129,
@@ -1194,20 +2834,36 @@
       3521
     ],
     [
-      1376555,
-      "Wuji Zhang",
+      1219837,
+      "Ahamed Mohamud",
       "ca",
       2,
       0,
-      3519
+      3494
     ],
     [
-      1068823,
-      "Andrew Schneider",
-      "ca",
-      3,
+      532314,
+      "Phillip Girolamo",
+      "us",
+      2,
       0,
-      3506
+      3482
+    ],
+    [
+      1414763,
+      "Robert Eastwood",
+      "ca",
+      2,
+      0,
+      3434
+    ],
+    [
+      283403,
+      "Kevin Blake",
+      "ca",
+      1,
+      0,
+      3406
     ],
     [
       626406,
@@ -1242,20 +2898,36 @@
       3309
     ],
     [
-      582969,
-      "Vinash Luthra",
+      767627,
+      "Nicola Lombardo",
       "ca",
-      1,
-      0,
-      3256
-    ],
-    [
-      440208,
-      "Charles Naughton",
-      "us",
       2,
       0,
-      3224
+      3260
+    ],
+    [
+      640336,
+      "Amit Jhagroo",
+      "ca",
+      2,
+      0,
+      3253
+    ],
+    [
+      418654,
+      "Daniele Collu",
+      "ca",
+      1,
+      1,
+      3253
+    ],
+    [
+      1085449,
+      "Than Tran",
+      "ca",
+      3,
+      0,
+      3227
     ],
     [
       544450,
@@ -1266,12 +2938,20 @@
       3217
     ],
     [
-      0,
-      "Todd Soluri",
-      "us",
+      573059,
+      "Kevin Wright",
+      "ca",
       2,
       0,
-      3199
+      3202
+    ],
+    [
+      1325309,
+      "Drazan Lazarevski",
+      "ca",
+      4,
+      0,
+      3188
     ],
     [
       1437815,
@@ -1282,12 +2962,44 @@
       3186
     ],
     [
-      1309385,
-      "Aleksandar Stankovic",
+      1393655,
+      "Brody Marshall",
+      "ca",
+      3,
+      0,
+      3129
+    ],
+    [
+      75465,
+      "Michael Benson",
+      "us",
+      3,
+      0,
+      3117
+    ],
+    [
+      1281235,
+      "Barry Klupt",
       "ca",
       1,
+      1,
+      3102
+    ],
+    [
+      558957,
+      "Suk Yoon",
+      "ca",
+      2,
       0,
-      3085
+      3089
+    ],
+    [
+      697715,
+      "Walter Hasselman",
+      "ca",
+      3,
+      0,
+      3077
     ],
     [
       174126,
@@ -1298,6 +3010,14 @@
       3075
     ],
     [
+      764571,
+      "Joseph Martire",
+      "ca",
+      2,
+      0,
+      3073
+    ],
+    [
       786747,
       "Mark Giorgio",
       "ca",
@@ -1306,12 +3026,20 @@
       3043
     ],
     [
-      1366065,
-      "Thi Nguyen",
+      357477,
+      "Deon Thomas",
+      "us",
+      3,
+      0,
+      3038
+    ],
+    [
+      1309087,
+      "Fangren Yu",
       "ca",
       2,
       0,
-      2964
+      3013
     ],
     [
       1233631,
@@ -1330,12 +3058,44 @@
       2895
     ],
     [
-      695855,
-      "Timothy Baiden",
+      286843,
+      "Galvin Vanbrussell",
+      "us",
+      5,
+      0,
+      2883
+    ],
+    [
+      354652,
+      "Patrick Tardif",
       "ca",
       1,
       0,
-      2861
+      2882
+    ],
+    [
+      695917,
+      "Marco Leonelli",
+      "ca",
+      2,
+      0,
+      2849
+    ],
+    [
+      692323,
+      "Vincenzo Gallucci",
+      "ca",
+      4,
+      0,
+      2837
+    ],
+    [
+      1207295,
+      "Alfredo Matira",
+      "ca",
+      2,
+      0,
+      2832
     ],
     [
       1376843,
@@ -1354,22 +3114,6 @@
       2817
     ],
     [
-      15512,
-      "James Worth",
-      "ca",
-      2,
-      0,
-      2806
-    ],
-    [
-      954183,
-      "Xavier Ochangco",
-      "ca",
-      2,
-      0,
-      2780
-    ],
-    [
       531044,
       "David Ho",
       "ca",
@@ -1386,12 +3130,60 @@
       2724
     ],
     [
-      500116,
-      "Kevin Tohivsky",
+      1191055,
+      "Daniel Honey-Cohen",
+      "ca",
+      3,
+      0,
+      2651
+    ],
+    [
+      1221453,
+      "Azziz Haghighi",
       "ca",
       1,
       0,
-      2680
+      2648
+    ],
+    [
+      74243,
+      "Christopher Martin",
+      "us",
+      1,
+      0,
+      2626
+    ],
+    [
+      1267845,
+      "Scott Studer",
+      "us",
+      1,
+      1,
+      2625
+    ],
+    [
+      329671,
+      "Danesh Luthra",
+      "ca",
+      2,
+      0,
+      2624
+    ],
+    [
+      1387889,
+      "Shawn Broughton",
+      "ca",
+      1,
+      0,
+      2599
+    ],
+    [
+      113538,
+      "Dominic Staniscia",
+      "ca",
+      3,
+      0,
+      2596
     ],
     [
       1229951,
@@ -1402,20 +3194,12 @@
       2595
     ],
     [
-      339823,
-      "Tedde Ballanger",
-      "ca",
-      2,
-      0,
-      2582
-    ],
-    [
-      87133,
-      "Rajiv Khanna",
+      431945,
+      "Joseph Clark",
       "ca",
       1,
       0,
-      2563
+      2544
     ],
     [
       1236901,
@@ -1426,10 +3210,34 @@
       2533
     ],
     [
-      764571,
-      "Joseph Martire",
+      1393609,
+      "Liam Turnbull",
       "ca",
       1,
+      0,
+      2522
+    ],
+    [
+      1187577,
+      "Jeremy Poon",
+      "ca",
+      2,
+      0,
+      2497
+    ],
+    [
+      265032,
+      "Jason Lucas",
+      "ca",
+      2,
+      0,
+      2493
+    ],
+    [
+      1245019,
+      "Xu Huimin",
+      "ca",
+      2,
       0,
       2454
     ],
@@ -1440,6 +3248,14 @@
       1,
       0,
       2445
+    ],
+    [
+      533715,
+      "Eugene Chan",
+      "us",
+      2,
+      0,
+      2440
     ],
     [
       1445207,
@@ -1474,20 +3290,60 @@
       2406
     ],
     [
-      295099,
-      "Renmei Liu",
+      428252,
+      "Philip Jackson",
+      "us",
+      1,
+      0,
+      2390
+    ],
+    [
+      366591,
+      "Joshua Wittenberg",
+      "us",
+      2,
+      0,
+      2338
+    ],
+    [
+      373931,
+      "Ryan Martin",
       "ca",
       2,
       0,
-      2403
+      2329
     ],
     [
-      1309087,
-      "Fangren Yu",
+      570767,
+      "Wanda Bighetty",
+      "ca",
+      2,
+      0,
+      2328
+    ],
+    [
+      270799,
+      "Andrew Cameron",
+      "ca",
+      3,
+      0,
+      2318
+    ],
+    [
+      694429,
+      "Karen Bond",
+      "ca",
+      2,
+      0,
+      2318
+    ],
+    [
+      593894,
+      "Sterling Hinds",
       "ca",
       1,
       0,
-      2330
+      2266
     ],
     [
       1455131,
@@ -1506,6 +3362,14 @@
       2198
     ],
     [
+      1078325,
+      "Matthew Catania",
+      "us",
+      1,
+      0,
+      2177
+    ],
+    [
       753455,
       "Regan Standing",
       "ca",
@@ -1522,14 +3386,6 @@
       2107
     ],
     [
-      329671,
-      "Danesh Luthra",
-      "ca",
-      1,
-      0,
-      2096
-    ],
-    [
       782145,
       "Howard Manning",
       "ca",
@@ -1538,28 +3394,36 @@
       2073
     ],
     [
-      1226919,
-      "William Hoover",
-      "ca",
-      2,
-      0,
-      2044
-    ],
-    [
-      147835,
-      "Raymond Williams",
+      1432475,
+      "William Davis",
       "us",
       1,
       0,
-      2022
+      2073
     ],
     [
-      1085449,
-      "Than Tran",
+      1375473,
+      "Haolong Yang",
       "ca",
-      1,
+      2,
       0,
-      2008
+      2072
+    ],
+    [
+      1038147,
+      "Mukul Puri",
+      "ca",
+      2,
+      0,
+      2061
+    ],
+    [
+      489694,
+      "John Fuciarelli",
+      "ca",
+      3,
+      0,
+      2038
     ],
     [
       515404,
@@ -1570,6 +3434,14 @@
       2008
     ],
     [
+      1215745,
+      "Adam Poitras",
+      "ca",
+      2,
+      0,
+      1994
+    ],
+    [
       640852,
       "Aaron Misner",
       "us",
@@ -1578,12 +3450,12 @@
       1958
     ],
     [
-      188271,
-      "Van Pham",
-      "ca",
-      2,
+      120819,
+      "Andrew Fitting",
+      "us",
+      3,
       0,
-      1940
+      1949
     ],
     [
       1097871,
@@ -1594,12 +3466,68 @@
       1925
     ],
     [
+      471207,
+      "Steven Doyle",
+      "ca",
+      1,
+      0,
+      1919
+    ],
+    [
+      309881,
+      "Richard Gauthier",
+      "ca",
+      1,
+      0,
+      1915
+    ],
+    [
+      1389599,
+      "Thi Nguyen",
+      "ca",
+      2,
+      0,
+      1913
+    ],
+    [
+      1140875,
+      "David Milne",
+      "ca",
+      2,
+      0,
+      1908
+    ],
+    [
+      695867,
+      "Tibor Bizony",
+      "ca",
+      1,
+      0,
+      1905
+    ],
+    [
       530735,
       "Matthew Osorio",
       "ca",
       2,
       0,
       1902
+    ],
+    [
+      1209599,
+      "Robert Preta",
+      "us",
+      2,
+      0,
+      1895
+    ],
+    [
+      1393653,
+      "Daniel Feldman",
+      "ca",
+      1,
+      0,
+      1893
     ],
     [
       1230545,
@@ -1626,6 +3554,14 @@
       1879
     ],
     [
+      1380125,
+      "Mukeshkumar Patel",
+      "ca",
+      1,
+      0,
+      1870
+    ],
+    [
       294737,
       "Senthuran Vijayaratnam",
       "ca",
@@ -1642,12 +3578,52 @@
       1857
     ],
     [
+      695903,
+      "Adam Pighin",
+      "ca",
+      1,
+      0,
+      1801
+    ],
+    [
+      1193355,
+      "Jose Carvalho",
+      "ca",
+      2,
+      0,
+      1797
+    ],
+    [
       540007,
       "Vincenzo Francavilla",
       "us",
       1,
       0,
       1781
+    ],
+    [
+      1277649,
+      "Franco Artale",
+      "ca",
+      2,
+      0,
+      1762
+    ],
+    [
+      1288479,
+      "Calvin Weston",
+      "ca",
+      1,
+      0,
+      1761
+    ],
+    [
+      1414765,
+      "Eddie Figueroa",
+      "us",
+      1,
+      0,
+      1761
     ],
     [
       1253517,
@@ -1682,12 +3658,12 @@
       1755
     ],
     [
-      767627,
-      "Nicola Lombardo",
+      1196115,
+      "Sarah Boyle",
       "ca",
       1,
       0,
-      1688
+      1727
     ],
     [
       1414761,
@@ -1706,20 +3682,20 @@
       1687
     ],
     [
-      373931,
-      "Ryan Martin",
-      "ca",
-      1,
-      0,
-      1683
-    ],
-    [
       1024515,
       "Wenxi Pan",
       "ca",
       1,
       0,
       1668
+    ],
+    [
+      1252153,
+      "Daniel Ferguson",
+      "ca",
+      1,
+      0,
+      1664
     ],
     [
       1434645,
@@ -1730,28 +3706,60 @@
       1663
     ],
     [
-      136819,
-      "Jason James",
+      1417289,
+      "Shane Papa",
+      "ca",
+      1,
+      0,
+      1661
+    ],
+    [
+      87228,
+      "Joseph Minialoff",
+      "ca",
+      1,
+      0,
+      1645
+    ],
+    [
+      572458,
+      "Emily Hawksworth",
+      "ca",
+      1,
+      0,
+      1643
+    ],
+    [
+      492428,
+      "Jessie Winsor",
       "ca",
       2,
       0,
-      1658
+      1622
     ],
     [
-      267796,
-      "Todd Saffron",
-      "us",
+      1106669,
+      "Christopher Blondeau",
+      "ca",
       1,
       0,
-      1628
+      1612
     ],
     [
-      533715,
-      "Eugene Chan",
-      "us",
+      432173,
+      "Brett Goodall",
+      "ca",
       1,
       0,
-      1628
+      1601
+    ],
+    [
+      1200837,
+      "Michael Mulla",
+      "us",
+      2,
+      0,
+      1594
     ],
     [
       698617,
@@ -1770,25 +3778,9 @@
       1590
     ],
     [
-      709001,
-      "Steven Kirouac",
-      "ca",
-      1,
-      0,
-      1590
-    ],
-    [
       1210267,
       "Trevor Campbell",
       "us",
-      1,
-      0,
-      1576
-    ],
-    [
-      558957,
-      "Suk Yoon",
-      "ca",
       1,
       0,
       1576
@@ -1818,6 +3810,14 @@
       1572
     ],
     [
+      1341539,
+      "Shawn Cacador",
+      "ca",
+      2,
+      0,
+      1564
+    ],
+    [
       1352997,
       "William Dix",
       "ca",
@@ -1826,12 +3826,20 @@
       1562
     ],
     [
-      525284,
-      "Sandra Boyle",
+      1409321,
+      "Duncan Penman",
       "ca",
       1,
       0,
-      1562
+      1533
+    ],
+    [
+      280784,
+      "Steven Sudar",
+      "ca",
+      2,
+      0,
+      1523
     ],
     [
       1265907,
@@ -1850,16 +3858,16 @@
       1501
     ],
     [
-      242952,
-      "Jeffrey Cheevers",
-      "ca",
-      1,
+      1252157,
+      "Paul Kashmanian",
+      "us",
+      2,
       0,
-      1477
+      1492
     ],
     [
-      570767,
-      "Wanda Bighetty",
+      242952,
+      "Jeffrey Cheevers",
       "ca",
       1,
       0,
@@ -1874,12 +3882,44 @@
       1477
     ],
     [
+      248710,
+      "Anthony Schneider",
+      "us",
+      2,
+      0,
+      1475
+    ],
+    [
+      1341541,
+      "Robert Schram",
+      "ca",
+      2,
+      0,
+      1465
+    ],
+    [
+      724133,
+      "James Robins",
+      "ca",
+      2,
+      0,
+      1453
+    ],
+    [
       595711,
       "Bradley Kane",
       "us",
       1,
       0,
       1442
+    ],
+    [
+      1328181,
+      "Jeffrey Mestek",
+      "ca",
+      1,
+      0,
+      1426
     ],
     [
       288913,
@@ -1890,12 +3930,20 @@
       1412
     ],
     [
-      68784,
-      "Jair Beltran",
+      1316903,
+      "Kin Wong",
       "ca",
       1,
       0,
-      1412
+      1411
+    ],
+    [
+      1331357,
+      "Jiries Tourani",
+      "ca",
+      1,
+      0,
+      1401
     ],
     [
       329674,
@@ -1906,12 +3954,28 @@
       1387
     ],
     [
-      1235695,
-      "Bryan Bowes",
+      354732,
+      "Vickie Manuge",
       "ca",
+      1,
+      0,
+      1384
+    ],
+    [
+      790659,
+      "William Bohneberg",
+      "us",
       2,
       0,
-      1386
+      1378
+    ],
+    [
+      1414767,
+      "Daniel Kandelas",
+      "ca",
+      1,
+      0,
+      1374
     ],
     [
       1443267,
@@ -1922,18 +3986,18 @@
       1343
     ],
     [
-      1389599,
-      "Thi Nguyen",
+      498460,
+      "Domenico Olivo",
       "ca",
       1,
       0,
-      1322
+      1338
     ],
     [
-      247035,
-      "Jody Ashton",
+      1316875,
+      "Neil Markowski",
       "ca",
-      1,
+      2,
       0,
       1322
     ],
@@ -1946,12 +4010,12 @@
       1319
     ],
     [
-      1325309,
-      "Drazan Lazarevski",
+      308144,
+      "Cuong Le",
       "ca",
-      1,
+      2,
       0,
-      1319
+      1318
     ],
     [
       1445221,
@@ -1970,6 +4034,14 @@
       1314
     ],
     [
+      246697,
+      "Mirko Medic",
+      "ca",
+      1,
+      0,
+      1313
+    ],
+    [
       571918,
       "Michael Tichbon",
       "ca",
@@ -1986,12 +4058,20 @@
       1306
     ],
     [
-      1191055,
-      "Daniel Honey-Cohen",
+      214588,
+      "Guy Cruickshanks",
+      "us",
+      1,
+      0,
+      1289
+    ],
+    [
+      298794,
+      "Ravinder Leder",
       "ca",
       1,
       0,
-      1277
+      1286
     ],
     [
       1211107,
@@ -2000,6 +4080,30 @@
       1,
       0,
       1277
+    ],
+    [
+      1357341,
+      "Raza Malik",
+      "ca",
+      1,
+      0,
+      1272
+    ],
+    [
+      1365343,
+      "Philip Tunstill",
+      "ca",
+      1,
+      0,
+      1272
+    ],
+    [
+      570534,
+      "Richard Bottenfield",
+      "us",
+      1,
+      0,
+      1264
     ],
     [
       562128,
@@ -2026,6 +4130,14 @@
       1252
     ],
     [
+      723491,
+      "Atul Chandra",
+      "ca",
+      1,
+      0,
+      1249
+    ],
+    [
       671512,
       "Ace Loum",
       "ca",
@@ -2042,12 +4154,36 @@
       1231
     ],
     [
-      113538,
-      "Dominic Staniscia",
+      1200823,
+      "Olsi Rama",
+      "ca",
+      2,
+      0,
+      1226
+    ],
+    [
+      1240457,
+      "Elleftherios Simeonidis",
       "ca",
       1,
       0,
-      1214
+      1225
+    ],
+    [
+      1427361,
+      "Michael Delsey",
+      "ca",
+      1,
+      0,
+      1221
+    ],
+    [
+      1377561,
+      "Karine Silverberg",
+      "ca",
+      2,
+      0,
+      1217
     ],
     [
       39302,
@@ -2058,20 +4194,36 @@
       1214
     ],
     [
-      497795,
-      "Zahir Gilani",
-      "ca",
-      1,
-      0,
-      1213
-    ],
-    [
       1000019,
       "Hoshang Sarwary",
       "ca",
       1,
       0,
       1213
+    ],
+    [
+      1325301,
+      "Ryan Mccarthy",
+      "ca",
+      1,
+      0,
+      1193
+    ],
+    [
+      1309183,
+      "Corrado Sucic",
+      "ca",
+      2,
+      0,
+      1188
+    ],
+    [
+      1108269,
+      "Sheldon Crockford",
+      "ca",
+      1,
+      0,
+      1185
     ],
     [
       1445225,
@@ -2090,20 +4242,20 @@
       1181
     ],
     [
-      1277649,
-      "Franco Artale",
+      1351285,
+      "Patrick Di Marino",
       "ca",
       1,
       0,
-      1129
+      1164
     ],
     [
-      1193355,
-      "Jose Carvalho",
+      1370023,
+      "Gregory Baldin",
       "ca",
       1,
       0,
-      1116
+      1137
     ],
     [
       697721,
@@ -2114,20 +4266,20 @@
       1115
     ],
     [
-      1209599,
-      "Robert Preta",
+      460290,
+      "Dwayne Langelaan",
       "us",
       1,
       0,
-      1080
+      1112
     ],
     [
-      929181,
-      "Edward Rice",
-      "us",
+      1377559,
+      "Zaheed Daya",
+      "ca",
       1,
       0,
-      1080
+      1108
     ],
     [
       480177,
@@ -2138,12 +4290,28 @@
       1080
     ],
     [
-      366591,
-      "Joshua Wittenberg",
-      "us",
+      1352995,
+      "Luke Heisz",
+      "ca",
       1,
       0,
-      1074
+      1076
+    ],
+    [
+      527798,
+      "Jaered Besse",
+      "ca",
+      1,
+      0,
+      1076
+    ],
+    [
+      1318413,
+      "Philip Elliott",
+      "ca",
+      1,
+      0,
+      1072
     ],
     [
       1389601,
@@ -2170,20 +4338,60 @@
       1057
     ],
     [
-      1246225,
-      "Dennis Macura",
+      1038187,
+      "Andrew Bonnard",
       "ca",
       1,
       0,
-      1051
+      1055
     ],
     [
-      466797,
-      "Mahmoud Chehade",
+      1193373,
+      "Leonard Dowhan",
       "ca",
       1,
       0,
-      1046
+      1055
+    ],
+    [
+      709431,
+      "Paul Labelle",
+      "ca",
+      1,
+      0,
+      1044
+    ],
+    [
+      1191065,
+      "Derek Shewell",
+      "ca",
+      1,
+      0,
+      1044
+    ],
+    [
+      167034,
+      "William Hamilton",
+      "ca",
+      1,
+      0,
+      1039
+    ],
+    [
+      787181,
+      "David Stelmach",
+      "ca",
+      1,
+      0,
+      1039
+    ],
+    [
+      1346065,
+      "Wesley Pasek",
+      "ca",
+      1,
+      0,
+      1036
     ],
     [
       1445223,
@@ -2194,6 +4402,22 @@
       1027
     ],
     [
+      406701,
+      "Sammy Sidky",
+      "ca",
+      1,
+      0,
+      1026
+    ],
+    [
+      1253285,
+      "Matthew Woods",
+      "ca",
+      1,
+      0,
+      1019
+    ],
+    [
       265080,
       "Istvan Nagy",
       "ca",
@@ -2202,12 +4426,52 @@
       1014
     ],
     [
-      1193343,
-      "Nadra Ghali",
+      1427363,
+      "Christopher Kozel",
       "ca",
       1,
       0,
-      1007
+      1012
+    ],
+    [
+      364456,
+      "Gary Irvine",
+      "ca",
+      1,
+      0,
+      996
+    ],
+    [
+      1351287,
+      "Peter O'Connor",
+      "ca",
+      1,
+      0,
+      987
+    ],
+    [
+      753453,
+      "Keaton Johnson",
+      "ca",
+      2,
+      0,
+      968
+    ],
+    [
+      565713,
+      "Nicholas Flesch",
+      "us",
+      1,
+      0,
+      963
+    ],
+    [
+      501740,
+      "Trevor Grove",
+      "ca",
+      1,
+      0,
+      943
     ],
     [
       1193375,
@@ -2218,12 +4482,12 @@
       942
     ],
     [
-      1118021,
-      "Georgees Zero",
+      1257199,
+      "Matthew Bayley",
       "ca",
       1,
       0,
-      911
+      940
     ],
     [
       1191071,
@@ -2242,12 +4506,28 @@
       895
     ],
     [
-      692323,
-      "Vincenzo Gallucci",
+      530161,
+      "Imad Salameh",
       "ca",
       1,
       0,
-      873
+      888
+    ],
+    [
+      118327,
+      "John Theofilopaulos",
+      "ca",
+      1,
+      0,
+      888
+    ],
+    [
+      1405823,
+      "Sergio Villaecusa",
+      "us",
+      1,
+      0,
+      868
     ],
     [
       1207325,
@@ -2258,12 +4538,68 @@
       868
     ],
     [
+      1230611,
+      "Garret Cutler-Kri",
+      "ca",
+      1,
+      0,
+      864
+    ],
+    [
+      1267561,
+      "David Capretta",
+      "ca",
+      1,
+      0,
+      857
+    ],
+    [
+      1417291,
+      "Allan Panttila",
+      "ca",
+      1,
+      0,
+      857
+    ],
+    [
+      781915,
+      "Brett Biro",
+      "us",
+      1,
+      0,
+      850
+    ],
+    [
+      490933,
+      "Peter Buckley",
+      "us",
+      1,
+      0,
+      846
+    ],
+    [
+      1357343,
+      "To Inthavong",
+      "ca",
+      1,
+      0,
+      845
+    ],
+    [
       429805,
       "Matthew Raffoul",
       "ca",
       1,
       0,
       842
+    ],
+    [
+      1405827,
+      "Cary Morin",
+      "ca",
+      1,
+      0,
+      834
     ],
     [
       1280179,
@@ -2274,6 +4610,14 @@
       831
     ],
     [
+      1322361,
+      "Brian Eagle",
+      "ca",
+      1,
+      0,
+      829
+    ],
+    [
       444478,
       "Sandy Lam",
       "ca",
@@ -2282,12 +4626,12 @@
       822
     ],
     [
-      640336,
-      "Amit Jhagroo",
-      "ca",
+      415329,
+      "John Perri",
+      "us",
       1,
       0,
-      818
+      810
     ],
     [
       968821,
@@ -2298,12 +4642,60 @@
       809
     ],
     [
+      513483,
+      "Terence Caulcutt",
+      "ca",
+      1,
+      0,
+      806
+    ],
+    [
+      1157541,
+      "Robert Sutherland",
+      "ca",
+      1,
+      0,
+      802
+    ],
+    [
+      1322909,
+      "Yiu Fan",
+      "ca",
+      1,
+      0,
+      799
+    ],
+    [
+      199807,
+      "David Kozak",
+      "ca",
+      1,
+      0,
+      799
+    ],
+    [
       732713,
       "Kirk Sorensen",
       "ca",
       1,
       0,
       794
+    ],
+    [
+      1340987,
+      "Michael Myles",
+      "ca",
+      1,
+      0,
+      787
+    ],
+    [
+      1240387,
+      "Justin Cornell",
+      "us",
+      1,
+      0,
+      786
     ],
     [
       74734,
@@ -2314,6 +4706,46 @@
       783
     ],
     [
+      447165,
+      "Claude Henoud",
+      "ca",
+      1,
+      0,
+      782
+    ],
+    [
+      340568,
+      "Nicholas Dipalma",
+      "us",
+      1,
+      0,
+      780
+    ],
+    [
+      1405831,
+      "David Smallhorn",
+      "ca",
+      1,
+      0,
+      771
+    ],
+    [
+      1222425,
+      "Vaibhav Gupta",
+      "ca",
+      1,
+      0,
+      766
+    ],
+    [
+      748753,
+      "Kamyar Zahedi",
+      "ca",
+      1,
+      0,
+      766
+    ],
+    [
       1455125,
       "Enea Nako",
       "ca",
@@ -2322,36 +4754,52 @@
       763
     ],
     [
-      694429,
-      "Karen Bond",
+      1328183,
+      "Alex Cicilla",
       "ca",
       1,
       0,
-      746
+      756
     ],
     [
-      697715,
-      "Walter Hasselman",
-      "ca",
+      412193,
+      "Adam Stephany",
+      "us",
       1,
       0,
-      734
+      752
     ],
     [
-      1210249,
-      "Kaden Vaillancourt",
+      1276725,
+      "Stefano Di Salvo",
       "ca",
       1,
       0,
-      734
+      752
     ],
     [
-      1414763,
-      "Robert Eastwood",
+      1417293,
+      "Glenn Milliken",
       "ca",
       1,
       0,
-      734
+      750
+    ],
+    [
+      447159,
+      "Lori Palka",
+      "us",
+      1,
+      0,
+      729
+    ],
+    [
+      481888,
+      "Timothy Cavallin",
+      "ca",
+      1,
+      0,
+      723
     ],
     [
       1455127,
@@ -2362,12 +4810,60 @@
       722
     ],
     [
+      443565,
+      "Walter Hrelja",
+      "ca",
+      1,
+      0,
+      711
+    ],
+    [
+      549494,
+      "Andre Huard",
+      "ca",
+      1,
+      0,
+      711
+    ],
+    [
+      265052,
+      "Gerald White",
+      "ca",
+      1,
+      0,
+      710
+    ],
+    [
       1434647,
       "Mohammad Ali",
       "ca",
       1,
       0,
       710
+    ],
+    [
+      1346067,
+      "Michael Schraft",
+      "us",
+      1,
+      0,
+      709
+    ],
+    [
+      1024917,
+      "Matthew Walla",
+      "us",
+      1,
+      0,
+      704
+    ],
+    [
+      1335077,
+      "Jesse Hylkema",
+      "ca",
+      1,
+      0,
+      702
     ],
     [
       1193367,
@@ -2378,20 +4874,172 @@
       701
     ],
     [
-      248710,
-      "Anthony Schneider",
+      265033,
+      "Stuart Levine",
+      "ca",
+      1,
+      0,
+      700
+    ],
+    [
+      166800,
+      "Hussein Harb",
+      "ca",
+      1,
+      0,
+      700
+    ],
+    [
+      1327353,
+      "Dennis Park",
+      "ca",
+      1,
+      0,
+      696
+    ],
+    [
+      107536,
+      "Gary Norwick",
+      "ca",
+      1,
+      0,
+      694
+    ],
+    [
+      184772,
+      "Daniel Good",
+      "ca",
+      1,
+      0,
+      693
+    ],
+    [
+      725593,
+      "Nolan Wilson",
+      "ca",
+      1,
+      0,
+      693
+    ],
+    [
+      767641,
+      "Colin Anderson",
+      "ca",
+      1,
+      0,
+      693
+    ],
+    [
+      620924,
+      "Gregorio Agresta",
+      "ca",
+      1,
+      0,
+      691
+    ],
+    [
+      650364,
+      "Roy Glazer",
       "us",
       1,
       0,
-      681
+      687
     ],
     [
-      69596,
-      "Gerald Selby",
+      1226017,
+      "Shane Pearcey",
+      "ca",
+      1,
+      0,
+      687
+    ],
+    [
+      181613,
+      "Matt Grocholsky",
+      "ca",
+      1,
+      0,
+      687
+    ],
+    [
+      1331525,
+      "Youssef Henry",
+      "ca",
+      1,
+      0,
+      687
+    ],
+    [
+      211835,
+      "Mark Stewart",
+      "ca",
+      1,
+      0,
+      684
+    ],
+    [
+      163860,
+      "Francesco Maltese",
+      "ca",
+      1,
+      0,
+      675
+    ],
+    [
+      706419,
+      "Edward Van Klooster",
+      "ca",
+      1,
+      0,
+      672
+    ],
+    [
+      697731,
+      "Deborah Taylor",
+      "ca",
+      1,
+      0,
+      662
+    ],
+    [
+      1357345,
+      "Sean Norton",
+      "ca",
+      1,
+      0,
+      658
+    ],
+    [
+      1409323,
+      "Jennifer Carter",
       "ca",
       1,
       0,
       654
+    ],
+    [
+      56931,
+      "Trevor Kane",
+      "ca",
+      1,
+      0,
+      653
+    ],
+    [
+      753461,
+      "A Faegh",
+      "ca",
+      1,
+      0,
+      652
+    ],
+    [
+      1388239,
+      "Anthony-William D'Ippolito",
+      "ca",
+      1,
+      0,
+      652
     ],
     [
       1445219,
@@ -2402,6 +5050,22 @@
       651
     ],
     [
+      1414769,
+      "Roger Ledoux",
+      "ca",
+      1,
+      0,
+      646
+    ],
+    [
+      1344741,
+      "Shane McClurg",
+      "us",
+      1,
+      0,
+      646
+    ],
+    [
       1445211,
       "Doreen Lariviere",
       "ca",
@@ -2410,28 +5074,236 @@
       646
     ],
     [
-      260544,
-      "Sean Balfour",
+      510395,
+      "David Page",
+      "ca",
+      1,
+      0,
+      640
+    ],
+    [
+      75805,
+      "Richard Rossi Sr.",
+      "us",
+      1,
+      0,
+      633
+    ],
+    [
+      678721,
+      "Glenn Grandy",
+      "ca",
+      1,
+      0,
+      633
+    ],
+    [
+      1270429,
+      "Cody Pogue",
+      "ca",
+      1,
+      0,
+      633
+    ],
+    [
+      211117,
+      "Barry Kruger",
+      "ca",
+      1,
+      0,
+      633
+    ],
+    [
+      1193371,
+      "Milos Trkulja",
+      "ca",
+      1,
+      0,
+      624
+    ],
+    [
+      1233663,
+      "Jimmy Nguyen",
+      "ca",
+      1,
+      0,
+      615
+    ],
+    [
+      1294853,
+      "Zhi-Lin Lin",
       "ca",
       1,
       0,
       614
     ],
     [
-      502879,
-      "Stephen Langlois",
+      767665,
+      "Vasko Georgievski",
+      "ca",
+      1,
+      0,
+      614
+    ],
+    [
+      582439,
+      "John Huynh",
+      "ca",
+      1,
+      0,
+      614
+    ],
+    [
+      1124743,
+      "Vathanathas Tharmathasan",
+      "ca",
+      1,
+      0,
+      614
+    ],
+    [
+      1325303,
+      "Donna Armstrong",
       "ca",
       1,
       0,
       608
     ],
     [
-      286843,
-      "Galvin Vanbrussell",
+      1204165,
+      "Daniel Ruddach",
+      "ca",
+      1,
+      0,
+      608
+    ],
+    [
+      445077,
+      "Craig Allan",
+      "ca",
+      1,
+      0,
+      608
+    ],
+    [
+      1409325,
+      "Shane Sketchley",
+      "ca",
+      1,
+      0,
+      605
+    ],
+    [
+      723483,
+      "Paul Belmore",
+      "ca",
+      1,
+      0,
+      600
+    ],
+    [
+      1183653,
+      "Michael Musson",
+      "ca",
+      1,
+      0,
+      600
+    ],
+    [
+      69164,
+      "Tony Fasulo",
+      "ca",
+      1,
+      0,
+      595
+    ],
+    [
+      1207315,
+      "Edward Dukeshire",
+      "ca",
+      1,
+      0,
+      595
+    ],
+    [
+      1191067,
+      "Andrew Cairns",
+      "ca",
+      1,
+      0,
+      595
+    ],
+    [
+      1328187,
+      "Austin Dutcher",
+      "ca",
+      1,
+      0,
+      595
+    ],
+    [
+      675086,
+      "Alan Gershbein",
       "us",
       1,
       0,
-      589
+      595
+    ],
+    [
+      582535,
+      "Corey Regnier",
+      "ca",
+      1,
+      0,
+      595
+    ],
+    [
+      213523,
+      "Alexander Kover",
+      "ca",
+      1,
+      0,
+      595
+    ],
+    [
+      559018,
+      "Oleg Sviriduk",
+      "ca",
+      1,
+      0,
+      588
+    ],
+    [
+      1236899,
+      "Wayne Marsters",
+      "ca",
+      1,
+      0,
+      588
+    ],
+    [
+      692333,
+      "Peter Labelle",
+      "ca",
+      1,
+      0,
+      585
+    ],
+    [
+      113158,
+      "Khaled Aljoma",
+      "ca",
+      1,
+      0,
+      585
+    ],
+    [
+      1227145,
+      "Aaron Rothwell",
+      "ca",
+      1,
+      0,
+      584
     ],
     [
       681703,
@@ -2442,12 +5314,404 @@
       584
     ],
     [
+      675000,
+      "Shannon Farrell",
+      "us",
+      1,
+      0,
+      580
+    ],
+    [
+      1183645,
+      "Bekim Jakupaj",
+      "ca",
+      1,
+      0,
+      576
+    ],
+    [
+      582539,
+      "Darren Zinck",
+      "ca",
+      1,
+      0,
+      576
+    ],
+    [
+      1196117,
+      "Mario Dimperio",
+      "ca",
+      1,
+      0,
+      574
+    ],
+    [
+      1354693,
+      "Aiden Wigfield",
+      "ca",
+      1,
+      0,
+      567
+    ],
+    [
+      719559,
+      "Danny Croy",
+      "us",
+      1,
+      0,
+      563
+    ],
+    [
+      579066,
+      "Evelyne Roy",
+      "ca",
+      1,
+      0,
+      563
+    ],
+    [
+      1333161,
+      "Denis Avdibegovic",
+      "ca",
+      1,
+      0,
+      563
+    ],
+    [
       1445213,
       "Theodore Lariviere",
       "ca",
       1,
       0,
       561
+    ],
+    [
+      429897,
+      "Thomas Kowalski",
+      "us",
+      1,
+      0,
+      559
+    ],
+    [
+      928509,
+      "Jeffrey Funk",
+      "us",
+      1,
+      0,
+      558
+    ],
+    [
+      1420777,
+      "Michael Sokyrka",
+      "ca",
+      1,
+      0,
+      558
+    ],
+    [
+      993219,
+      "Ignatiy Kuznyetsov",
+      "ca",
+      1,
+      0,
+      555
+    ],
+    [
+      1276681,
+      "Fang Mei",
+      "ca",
+      1,
+      0,
+      555
+    ],
+    [
+      297537,
+      "John Ribeiro",
+      "us",
+      1,
+      0,
+      550
+    ],
+    [
+      1331443,
+      "Jay Smith",
+      "ca",
+      1,
+      0,
+      548
+    ],
+    [
+      1381999,
+      "Allen Moore",
+      "ca",
+      1,
+      0,
+      548
+    ],
+    [
+      962091,
+      "James Lundie",
+      "ca",
+      1,
+      0,
+      544
+    ],
+    [
+      1399159,
+      "Maxwell Lemelin",
+      "ca",
+      1,
+      0,
+      535
+    ],
+    [
+      406702,
+      "Robert Cicchelli",
+      "ca",
+      1,
+      0,
+      532
+    ],
+    [
+      1325305,
+      "Nikhil Parekh",
+      "ca",
+      1,
+      0,
+      531
+    ],
+    [
+      1340983,
+      "Levi Hearn",
+      "ca",
+      1,
+      0,
+      528
+    ],
+    [
+      692319,
+      "Mike Costello",
+      "ca",
+      1,
+      0,
+      528
+    ],
+    [
+      169432,
+      "Curtis Medina",
+      "ca",
+      1,
+      0,
+      527
+    ],
+    [
+      805755,
+      "Christopher Mehes",
+      "ca",
+      1,
+      0,
+      523
+    ],
+    [
+      1328185,
+      "Jamal Harb",
+      "ca",
+      1,
+      0,
+      523
+    ],
+    [
+      1183659,
+      "Maurice Samuels",
+      "ca",
+      1,
+      0,
+      523
+    ],
+    [
+      530846,
+      "Majid Sassaninilgoon",
+      "ca",
+      1,
+      0,
+      521
+    ],
+    [
+      1097905,
+      "Mohammad Feizi",
+      "ca",
+      1,
+      0,
+      520
+    ],
+    [
+      227285,
+      "Edward Reid",
+      "ca",
+      1,
+      0,
+      520
+    ],
+    [
+      1183491,
+      "Richard Jones",
+      "ca",
+      1,
+      0,
+      512
+    ],
+    [
+      541287,
+      "Abhishek Paul",
+      "in",
+      1,
+      0,
+      512
+    ],
+    [
+      1346071,
+      "Gary Dwyer",
+      "ca",
+      1,
+      0,
+      506
+    ],
+    [
+      593260,
+      "Andy San",
+      "ca",
+      1,
+      0,
+      506
+    ],
+    [
+      1341543,
+      "Michael Belluomini",
+      "ca",
+      1,
+      0,
+      504
+    ],
+    [
+      671592,
+      "Maher Nasr",
+      "ca",
+      1,
+      0,
+      504
+    ],
+    [
+      1387887,
+      "Richard Bogdanski",
+      "ca",
+      1,
+      0,
+      501
+    ],
+    [
+      1368085,
+      "Ronald Smith",
+      "ca",
+      1,
+      0,
+      495
+    ],
+    [
+      1211101,
+      "Samrat Singh",
+      "ca",
+      1,
+      0,
+      489
+    ],
+    [
+      357031,
+      "Benjamin Chabot",
+      "ca",
+      1,
+      0,
+      489
+    ],
+    [
+      1338701,
+      "Russell Romualdo",
+      "ca",
+      1,
+      0,
+      480
+    ],
+    [
+      1346063,
+      "Dymtro Klimov",
+      "ca",
+      1,
+      0,
+      471
+    ],
+    [
+      1352901,
+      "Christopher Tartick",
+      "us",
+      1,
+      0,
+      471
+    ],
+    [
+      767645,
+      "Kevin Truong",
+      "ca",
+      1,
+      0,
+      466
+    ],
+    [
+      460379,
+      "Scott Dunlop",
+      "ca",
+      1,
+      0,
+      465
+    ],
+    [
+      1365333,
+      "Behrooz Niknam",
+      "ca",
+      1,
+      0,
+      447
+    ],
+    [
+      455334,
+      "Ghasem Alizadeh",
+      "ca",
+      1,
+      0,
+      447
+    ],
+    [
+      1393657,
+      "Sean Carriere",
+      "ca",
+      1,
+      0,
+      445
+    ],
+    [
+      87573,
+      "John Scheffel",
+      "ca",
+      1,
+      0,
+      440
+    ],
+    [
+      240474,
+      "Adam Podstawka",
+      "ca",
+      1,
+      0,
+      432
     ]
   ]
 }
