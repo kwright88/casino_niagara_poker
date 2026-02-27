@@ -17,7 +17,7 @@ var ResultsTable = (function () {
   'use strict';
 
   var TYPE_COLOR = {
-    wed: 'var(--wed)', sun: 'var(--sun)', sun550: 'var(--sun550)', main: 'var(--main)', wed275: 'var(--wed275)', fri240: 'var(--fri240)'
+    wed: 'var(--wed)', sun: 'var(--sun)', sun550: 'var(--sun550)', main: 'var(--main)', wed275: 'var(--wed275)', fri240: 'var(--fri240)', mon175: 'var(--mon175)', tue225: 'var(--tue225)', fri_bounty: 'var(--fri_bounty)'
   };
 
   function esc(s) {

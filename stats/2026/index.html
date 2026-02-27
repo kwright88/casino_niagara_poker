@@ -57,6 +57,7 @@
 
   <!-- Year toggle -->
   <div class="year-toggle">
+    <a href="/stats/2024" class="year-btn ">2024</a>
     <a href="/stats/2025" class="year-btn ">2025</a>
     <a href="/stats/2026" class="year-btn active">2026</a>
   </div>
@@ -234,7 +235,7 @@ fetch('../../data/stats_2026.json', {cache: 'no-cache'})
 <script src="../../js/results-table.js"></script>
 <script>
   // Stats page: only show recurring tournament types (exclude main/festival events)
-  var RECURRING = {wed:1, sun:1, sun550:1, wed275:1, fri240:1};
+  var RECURRING = {wed:1, sun:1, sun550:1, wed275:1, fri240:1, mon175:1, tue225:1, fri_bounty:1};
   ResultsTable.init({
     tbodyId:     'results-tbody',
     tableId:     'results-table',
