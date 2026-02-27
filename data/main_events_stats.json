@@ -134,65 +134,65 @@
     {
       "icon": "🏆",
       "title": "Most Cashes",
-      "name": "Manish Ralh",
-      "url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=787199",
       "country_code": "ca",
       "detail": "5 cashes across 8 main events",
-      "tooltip": "Most total cashes in Casino Niagara main events"
+      "tooltip": "Most total cashes in Casino Niagara main events",
+      "winner_name": "Manish Ralh",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=787199"
     },
     {
       "icon": "💰",
       "title": "Most Money Won",
-      "name": "Behnam Esfahanizadeh",
-      "url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=583015",
       "country_code": "ca",
       "detail": "C$98,940 across 2 cashes",
-      "tooltip": "Highest total prize money earned in main events"
+      "tooltip": "Highest total prize money earned in main events",
+      "winner_name": "Behnam Esfahanizadeh",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=583015"
     },
     {
       "icon": "🎯",
       "title": "Biggest Single Score",
-      "name": "Alexander Butko",
-      "url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=596081",
       "country_code": "ca",
       "detail": "C$96,362 — Aug 6 Summer Multi-Day 2024",
-      "tooltip": "Highest single-event cash in a main event"
+      "tooltip": "Highest single-event cash in a main event",
+      "winner_name": "Alexander Butko",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=596081"
     },
     {
       "icon": "💐",
       "title": "Always the Bridesmaid",
-      "name": "Chun Kwan",
-      "url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1192571",
       "country_code": "",
       "detail": "C$75,876 total · 3 cashes · 0 wins",
-      "tooltip": "Most money won without ever winning a main event"
+      "tooltip": "Most money won without ever winning a main event",
+      "winner_name": "Chun Kwan",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1192571"
     },
     {
       "icon": "📈",
       "title": "Best Average Cash",
-      "name": "Behnam Esfahanizadeh",
-      "url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=583015",
       "country_code": "ca",
       "detail": "C$49,470 avg · 2 cashes",
-      "tooltip": "Highest average prize per cash (min. 2 cashes)"
+      "tooltip": "Highest average prize per cash (min. 2 cashes)",
+      "winner_name": "Behnam Esfahanizadeh",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=583015"
     },
     {
       "icon": "🎪",
       "title": "Final Tablist",
-      "name": "Senthuran Vijayaratnam",
-      "url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=294737",
       "country_code": "ca",
       "detail": "2 final tables (top-9 finishes)",
-      "tooltip": "Most final table appearances in main events"
+      "tooltip": "Most final table appearances in main events",
+      "winner_name": "Senthuran Vijayaratnam",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=294737"
     },
     {
       "icon": "📋",
       "title": "Largest Field Conquered",
-      "name": "Alexander Butko",
-      "url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=596081",
       "country_code": "ca",
       "detail": "Won with 623 entries — Aug 6 Summer Multi-Day 2024",
-      "tooltip": "Won the main event with the largest field"
+      "tooltip": "Won the main event with the largest field",
+      "winner_name": "Alexander Butko",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=596081"
     }
   ],
   "players": [
