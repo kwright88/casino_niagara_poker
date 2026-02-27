@@ -35,6 +35,20 @@
     .award-detail { font-size: 12px; color: var(--muted); }
 
     /* ── Leaderboard ── */
+    .leaderboard-head { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; }
+    .leaderboard-head .section-title { margin:0; }
+    .lb-search {
+      width: min(260px, 52vw);
+      background: rgba(13,27,42,0.9);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 8px;
+      padding: 8px 10px;
+      font-size: 13px;
+      outline: none;
+    }
+    .lb-search:focus { border-color: var(--gold); box-shadow: 0 0 0 2px rgba(212,175,55,0.18); }
+    .lb-search::placeholder { color: var(--muted); }
     .lb-wrap { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); overflow-x: auto; backdrop-filter: blur(8px); box-shadow: 0 8px 40px rgba(0,0,0,0.5); }
     #lb-table { width: 100%; border-collapse: collapse; font-size: 13px; }
     #lb-table thead tr { background: rgba(212,175,55,0.1); border-bottom: 1px solid var(--border); }
@@ -57,6 +71,11 @@
     .lb-wins { color: var(--green2); font-weight: 600; }
     .lb-wins.zero { color: var(--muted); font-weight: 400; }
     .lb-money { color: var(--gold); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+    @media (max-width: 700px) {
+      .leaderboard-head { flex-wrap: wrap; align-items: flex-start; }
+      .lb-search { width: 100%; }
+    }
 
     @media (max-width: 600px) {
       .awards-grid { grid-template-columns: 1fr 1fr; }

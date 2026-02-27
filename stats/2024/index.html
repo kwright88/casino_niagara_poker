@@ -89,7 +89,10 @@
   <div class="awards-grid" id="awards-grid-container"><div style="color:var(--muted);text-align:center;padding:20px;">Loading…</div></div>
 
   <!-- Leaderboard -->
-  <p class="section-title">Player Leaderboard</p>
+  <div class="leaderboard-head">
+    <p class="section-title">Player Leaderboard</p>
+    <input id="lb-search" class="lb-search" type="search" placeholder="Search player" aria-label="Search player leaderboard by name" autocomplete="off" spellcheck="false">
+  </div>
   <div class="lb-wrap">
     <table id="lb-table">
       <thead>
@@ -120,6 +123,7 @@ let PLAYERS = [];
 
 let sortCol = 'money';
 let sortDir = -1;
+let nameFilter = '';
 
 function fmtMoney(n) {
   return '$' + n.toLocaleString('en-CA');
@@ -141,9 +145,19 @@ function renderTable() {
     if (sortCol !== 'money') return b[5] - a[5];
     return 0;
   });
+  const filtered = nameFilter
+    ? sorted.filter(p => (p[1] || '').toLowerCase().includes(nameFilter))
+    : sorted;
+
   const tbody = document.getElementById('lb-body');
   if (!tbody) return;
-  tbody.innerHTML = sorted.map((p, i) => {
+
+  if (!filtered.length) {
+    tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--muted);padding:16px;">No players found</td></tr>';
+    return;
+  }
+
+  tbody.innerHTML = filtered.map((p, i) => {
     const url = `https://pokerdb.thehendonmob.com/player.php?a=r&n=${p[0]}`;
     const wins = p[4] > 0 ? `<span class="lb-wins">${p[4]}</span>` : '<span class="lb-wins zero">—</span>';
     return `<tr>
@@ -197,6 +211,13 @@ function buildAwardCard(award) {
 function initPage(data) {
   // Leaderboard
   PLAYERS = data.players || [];
+  const searchInput = document.getElementById('lb-search');
+  if (searchInput) {
+    searchInput.addEventListener('input', function() {
+      nameFilter = (this.value || '').trim().toLowerCase();
+      renderTable();
+    });
+  }
   renderTable();
   updateHeaders();
 
