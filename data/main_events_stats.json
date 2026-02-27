@@ -15,7 +15,8 @@
       "first_place": "$60,236",
       "winner_name": "Jordan Grant",
       "country_code": "ca",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=471226"
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=471226",
+      "season": "fall"
     },
     {
       "date_iso": "2025-08-05",
@@ -31,7 +32,8 @@
       "first_place": "$63,370",
       "winner_name": "Jason Morneau-Powell",
       "country_code": "ca",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1355795"
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1355795",
+      "season": "summer"
     },
     {
       "date_iso": "2025-04-22",
@@ -47,7 +49,8 @@
       "first_place": "$59,896",
       "winner_name": "Samuel Labenski",
       "country_code": "ca",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=531719"
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=531719",
+      "season": "spring"
     },
     {
       "date_iso": "2025-02-18",
@@ -63,7 +66,8 @@
       "first_place": "$94,360",
       "winner_name": "Mayuran Jeyabalan",
       "country_code": "ca",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1337931"
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1337931",
+      "season": "winter"
     },
     {
       "date_iso": "2024-10-15",
@@ -79,7 +83,8 @@
       "first_place": "$77,357",
       "winner_name": "Charbel Kanterjian",
       "country_code": "ca",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=229433"
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=229433",
+      "season": "fall"
     },
     {
       "date_iso": "2024-08-06",
@@ -95,7 +100,8 @@
       "first_place": "$96,362",
       "winner_name": "Alexander Butko",
       "country_code": "ca",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=596081"
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=596081",
+      "season": "summer"
     },
     {
       "date_iso": "2024-04-02",
@@ -111,7 +117,8 @@
       "first_place": "$56,967",
       "winner_name": "",
       "country_code": "",
-      "winner_url": ""
+      "winner_url": "",
+      "season": "spring"
     },
     {
       "date_iso": "2024-02-20",
@@ -127,7 +134,8 @@
       "first_place": "$95,359",
       "winner_name": "Behnam Esfahanizadeh",
       "country_code": "ca",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=583015"
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=583015",
+      "season": "winter"
     }
   ],
   "awards": [

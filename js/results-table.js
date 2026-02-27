@@ -37,19 +37,23 @@ var ResultsTable = (function () {
     fall:   '#E07B39'
   };
 
-  function getSeasonColor(tournament) {
-    var t = (tournament || '').toLowerCase();
-    if (t.indexOf('winter') !== -1) return SEASON_COLOR.winter;
-    if (t.indexOf('spring') !== -1) return SEASON_COLOR.spring;
-    if (t.indexOf('summer') !== -1) return SEASON_COLOR.summer;
-    if (t.indexOf('fall')   !== -1) return SEASON_COLOR.fall;
-    return null;
+  function getSeasonColor(ev) {
+    // Prefer explicit season field; fall back to title string match
+    var season = ev.season;
+    if (!season) {
+      var t = (ev.tournament || '').toLowerCase();
+      if (t.indexOf('winter') !== -1) season = 'winter';
+      else if (t.indexOf('spring') !== -1) season = 'spring';
+      else if (t.indexOf('summer') !== -1) season = 'summer';
+      else if (t.indexOf('fall')   !== -1) season = 'fall';
+    }
+    return season ? (SEASON_COLOR[season] || null) : null;
   }
 
   function buildRow(ev, showYear) {
     var color = TYPE_COLOR[ev.type] || 'var(--wed)';
     if (ev.type === 'main') {
-      var seasonColor = getSeasonColor(ev.tournament);
+      var seasonColor = getSeasonColor(ev);
       if (seasonColor) color = seasonColor;
     }
     var entriesTd = ev.entries
