@@ -30,7 +30,7 @@ var ResultsTable = (function () {
     return (typeof BASE !== 'undefined' && BASE) ? BASE : '';
   }
 
-  function buildRow(ev) {
+  function buildRow(ev, showYear) {
     var color = TYPE_COLOR[ev.type] || 'var(--wed)';
     var entriesTd = ev.entries
       ? '<td class="rt-entries">' + esc(String(ev.entries)) + '</td>'
@@ -53,9 +53,11 @@ var ResultsTable = (function () {
     } else {
       winnerTd = '<td class="td-l rt-unknown">\u2014</td>';
     }
+    var dateText = esc(ev.date);
+    if (showYear && ev.date_iso) dateText += ' \'' + esc(ev.date_iso.slice(2, 4));
     return (
       '<tr>' +
-        '<td class="td-l rt-date">' + esc(ev.date) + '</td>' +
+        '<td class="td-l rt-date">' + dateText + '</td>' +
         '<td class="td-l"><span class="rt-type">' +
           '<span class="rt-dot" style="background:' + color + '"></span>' +
           '<a class="rt-link" href="' + esc(ev.event_url) + '" target="_blank">' + esc(ev.tournament) + '</a>' +
@@ -85,6 +87,7 @@ var ResultsTable = (function () {
     var dataUrl    = opts.dataUrl;
     var filterFn   = opts.filterFn || null;
     var onLoad     = opts.onLoad || null;
+    var showYear   = opts.showYear || false;
 
     var sortCol = 'date';
     var sortDir = 1; // 1 = desc for date (newest first by default)
@@ -143,14 +146,19 @@ var ResultsTable = (function () {
         var tbody = document.getElementById(tbodyId);
         if (tbody) {
           tbody.innerHTML = results.length
-            ? results.map(buildRow).join('')
+            ? results.map(function(ev) { return buildRow(ev, showYear); }).join('')
             : '<tr><td colspan="6" style="text-align:center;color:var(--muted);padding:20px;">No results yet</td></tr>';
 
-          rows = Array.prototype.slice.call(tbody.querySelectorAll('tr')).map(function (tr) {
+          var trs = Array.prototype.slice.call(tbody.querySelectorAll('tr'));
+          rows = trs.map(function (tr, idx) {
             var cells = tr.querySelectorAll('td');
+            var ev = results[idx] || {};
+            var dateSort = ev.date_iso
+              ? parseInt(ev.date_iso.replace(/-/g, ''))
+              : parseDateNum(cells[0] ? cells[0].textContent : '');
             return {
               el:         tr,
-              date:       parseDateNum(cells[0] ? cells[0].textContent : ''),
+              date:       dateSort,
               tournament: (cells[1] ? cells[1].textContent : '').trim().toLowerCase(),
               entries:    parseInt(((cells[2] ? cells[2].textContent : '').replace(/[^\d]/g, ''))) || -1,
               pool:       parseMoneyNum(cells[3] ? cells[3].textContent : ''),

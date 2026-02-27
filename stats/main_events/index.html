@@ -242,6 +242,7 @@ fetch('../../data/main_events_stats.json', {cache: 'no-cache'})
     tableId:     'results-table',
     timestampId: 'stats-ts-results',
     dataUrl:     '../../data/main_events_stats.json',
+    showYear:    true,
     filterFn:    function(ev) { return RECURRING[ev.type] === 1; },
     onLoad:      function(data) {
       var ts2 = document.getElementById('stats-ts-footer');
