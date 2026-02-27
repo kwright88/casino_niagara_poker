@@ -30,8 +30,28 @@ var ResultsTable = (function () {
     return (typeof BASE !== 'undefined' && BASE) ? BASE : '';
   }
 
+  var SEASON_COLOR = {
+    winter: '#5B9BD5',
+    spring: '#6BBF59',
+    summer: '#F5A623',
+    fall:   '#E07B39'
+  };
+
+  function getSeasonColor(tournament) {
+    var t = (tournament || '').toLowerCase();
+    if (t.indexOf('winter') !== -1) return SEASON_COLOR.winter;
+    if (t.indexOf('spring') !== -1) return SEASON_COLOR.spring;
+    if (t.indexOf('summer') !== -1) return SEASON_COLOR.summer;
+    if (t.indexOf('fall')   !== -1) return SEASON_COLOR.fall;
+    return null;
+  }
+
   function buildRow(ev, showYear) {
     var color = TYPE_COLOR[ev.type] || 'var(--wed)';
+    if (ev.type === 'main') {
+      var seasonColor = getSeasonColor(ev.tournament);
+      if (seasonColor) color = seasonColor;
+    }
     var entriesTd = ev.entries
       ? '<td class="rt-entries">' + esc(String(ev.entries)) + '</td>'
       : '<td class="rt-unknown">\u2014</td>';
