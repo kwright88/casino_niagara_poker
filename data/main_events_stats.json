@@ -1,0 +1,2896 @@
+{
+  "last_updated": "2026-02-26",
+  "results": [
+    {
+      "date_iso": "2025-10-14",
+      "date": "Oct 14",
+      "date_end": "2025-10-16",
+      "festival_name": "Fall Main Event 2025",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249191",
+      "tournament": "Fall Main Event 2025",
+      "type": "main",
+      "buy_in": "C$1,000",
+      "entries": 342,
+      "prize_pool": "C$281,979",
+      "first_place": "C$60,236",
+      "winner_name": "Jordan Grant",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=471226"
+    },
+    {
+      "date_iso": "2025-08-05",
+      "date": "Aug 5",
+      "date_end": "2025-08-07",
+      "festival_name": "Summer Main Event 2025",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249021",
+      "tournament": "Summer Main Event 2025",
+      "type": "main",
+      "buy_in": "C$1,000",
+      "entries": 366,
+      "prize_pool": "C$301,767",
+      "first_place": "C$63,370",
+      "winner_name": "Jason Morneau-Powell",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1355795"
+    },
+    {
+      "date_iso": "2025-04-22",
+      "date": "Apr 22",
+      "date_end": "2025-04-25",
+      "festival_name": "Spring Main Event 2025",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1198097",
+      "tournament": "Spring Main Event 2025",
+      "type": "main",
+      "buy_in": "C$1,000",
+      "entries": 340,
+      "prize_pool": "C$280,330",
+      "first_place": "C$59,896",
+      "winner_name": "Samuel Labenski",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=531719"
+    },
+    {
+      "date_iso": "2025-02-18",
+      "date": "Feb 18",
+      "date_end": "2025-02-21",
+      "festival_name": "Winter Main Event 2025",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1157117",
+      "tournament": "Winter Main Event 2025",
+      "type": "main",
+      "buy_in": "C$1,000",
+      "entries": 607,
+      "prize_pool": "C$500,472",
+      "first_place": "C$94,360",
+      "winner_name": "Mayuran Jeyabalan",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1337931"
+    },
+    {
+      "date_iso": "2024-10-15",
+      "date": "Oct 15",
+      "date_end": "2024-10-17",
+      "festival_name": "Fall Multi-Day 2024",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1102949",
+      "tournament": "Fall Multi-Day 2024",
+      "type": "main",
+      "buy_in": "C$1,000",
+      "entries": 472,
+      "prize_pool": "C$389,164",
+      "first_place": "C$77,357",
+      "winner_name": "Charbel Kanterjian",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=229433"
+    },
+    {
+      "date_iso": "2024-08-06",
+      "date": "Aug 6",
+      "date_end": "2024-08-09",
+      "festival_name": "Summer Multi-Day 2024",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1083971",
+      "tournament": "Summer Multi-Day 2024",
+      "type": "main",
+      "buy_in": "C$1,000",
+      "entries": 623,
+      "prize_pool": "C$513,664",
+      "first_place": "C$96,362",
+      "winner_name": "Alexander Butko",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=596081"
+    },
+    {
+      "date_iso": "2024-04-02",
+      "date": "Apr 2",
+      "date_end": "2024-04-05",
+      "festival_name": "Spring Multi-Day 2024",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1042883",
+      "tournament": "Spring Multi-Day 2024",
+      "type": "main",
+      "buy_in": "C$1,000",
+      "entries": 318,
+      "prize_pool": "C$262,191",
+      "first_place": "",
+      "winner_name": "",
+      "country_code": "",
+      "winner_url": ""
+    },
+    {
+      "date_iso": "2024-02-20",
+      "date": "Feb 20",
+      "date_end": "2024-02-23",
+      "festival_name": "Winter Multi-Day 2024",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1042881",
+      "tournament": "Winter Multi-Day 2024",
+      "type": "main",
+      "buy_in": "C$1,000",
+      "entries": 615,
+      "prize_pool": "C$507,068",
+      "first_place": "C$95,359",
+      "winner_name": "Behnam Esfahanizadeh",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=583015"
+    }
+  ],
+  "awards": [
+    {
+      "icon": "🏆",
+      "title": "Most Cashes",
+      "name": "Manish Ralh",
+      "url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=787199",
+      "country_code": "ca",
+      "detail": "5 cashes across 8 main events",
+      "tooltip": "Most total cashes in Casino Niagara main events"
+    },
+    {
+      "icon": "💰",
+      "title": "Most Money Won",
+      "name": "Behnam Esfahanizadeh",
+      "url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=583015",
+      "country_code": "ca",
+      "detail": "C$98,940 across 2 cashes",
+      "tooltip": "Highest total prize money earned in main events"
+    },
+    {
+      "icon": "🎯",
+      "title": "Biggest Single Score",
+      "name": "Alexander Butko",
+      "url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=596081",
+      "country_code": "ca",
+      "detail": "C$96,362 — Aug 6 Summer Multi-Day 2024",
+      "tooltip": "Highest single-event cash in a main event"
+    },
+    {
+      "icon": "💐",
+      "title": "Always the Bridesmaid",
+      "name": "Chun Kwan",
+      "url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1192571",
+      "country_code": "",
+      "detail": "C$75,876 total · 3 cashes · 0 wins",
+      "tooltip": "Most money won without ever winning a main event"
+    },
+    {
+      "icon": "📈",
+      "title": "Best Average Cash",
+      "name": "Behnam Esfahanizadeh",
+      "url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=583015",
+      "country_code": "ca",
+      "detail": "C$49,470 avg · 2 cashes",
+      "tooltip": "Highest average prize per cash (min. 2 cashes)"
+    },
+    {
+      "icon": "🎪",
+      "title": "Final Tablist",
+      "name": "Senthuran Vijayaratnam",
+      "url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=294737",
+      "country_code": "ca",
+      "detail": "2 final tables (top-9 finishes)",
+      "tooltip": "Most final table appearances in main events"
+    },
+    {
+      "icon": "📋",
+      "title": "Largest Field Conquered",
+      "name": "Alexander Butko",
+      "url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=596081",
+      "country_code": "ca",
+      "detail": "Won with 623 entries — Aug 6 Summer Multi-Day 2024",
+      "tooltip": "Won the main event with the largest field"
+    }
+  ],
+  "players": [
+    [
+      583015,
+      "Behnam Esfahanizadeh",
+      "ca",
+      2,
+      1,
+      98940
+    ],
+    [
+      596081,
+      "Alexander Butko",
+      "ca",
+      2,
+      1,
+      98618
+    ],
+    [
+      1337931,
+      "Mayuran Jeyabalan",
+      "ca",
+      1,
+      1,
+      94360
+    ],
+    [
+      229433,
+      "Charbel Kanterjian",
+      "ca",
+      1,
+      1,
+      77357
+    ],
+    [
+      1192571,
+      "Chun Kwan",
+      "ca",
+      3,
+      0,
+      75876
+    ],
+    [
+      107066,
+      "Trieu Hong",
+      "ca",
+      2,
+      0,
+      72866
+    ],
+    [
+      1332271,
+      "Indpaul Gill",
+      "ca",
+      1,
+      0,
+      66167
+    ],
+    [
+      1355795,
+      "Jason Morneau-Powell",
+      "ca",
+      1,
+      1,
+      63370
+    ],
+    [
+      471226,
+      "Jordan Grant",
+      "ca",
+      2,
+      1,
+      62198
+    ],
+    [
+      531719,
+      "Samuel Labenski",
+      "ca",
+      1,
+      1,
+      59896
+    ],
+    [
+      294737,
+      "Senthuran Vijayaratnam",
+      "ca",
+      4,
+      0,
+      59335
+    ],
+    [
+      525284,
+      "Sandra Boyle",
+      "ca",
+      2,
+      0,
+      55924
+    ],
+    [
+      339823,
+      "Tedde Ballanger",
+      "ca",
+      2,
+      0,
+      47303
+    ],
+    [
+      244487,
+      "Donovan Obrien",
+      "ca",
+      4,
+      0,
+      43908
+    ],
+    [
+      466797,
+      "Mahmoud Chehade",
+      "ca",
+      1,
+      0,
+      43482
+    ],
+    [
+      33152,
+      "Calogero Maltese",
+      "ca",
+      1,
+      0,
+      43015
+    ],
+    [
+      1309045,
+      "Jordan Bowes",
+      "ca",
+      1,
+      0,
+      42550
+    ],
+    [
+      1207329,
+      "Adam Bocskei",
+      "ca",
+      1,
+      0,
+      42212
+    ],
+    [
+      513476,
+      "Donald Cowie",
+      "ca",
+      1,
+      0,
+      41965
+    ],
+    [
+      460267,
+      "Bao Deu",
+      "us",
+      1,
+      0,
+      39950
+    ],
+    [
+      787199,
+      "Manish Ralh",
+      "ca",
+      5,
+      0,
+      36018
+    ],
+    [
+      695855,
+      "Timothy Baiden",
+      "ca",
+      1,
+      0,
+      34791
+    ],
+    [
+      65059,
+      "Tu Dao",
+      "ca",
+      2,
+      0,
+      34084
+    ],
+    [
+      573059,
+      "Kevin Wright",
+      "ca",
+      2,
+      0,
+      33560
+    ],
+    [
+      1198769,
+      "Pasqualino Auciello",
+      "ca",
+      1,
+      0,
+      30921
+    ],
+    [
+      379117,
+      "Tom Tien",
+      "ca",
+      2,
+      0,
+      28782
+    ],
+    [
+      259635,
+      "Patrick Lacy",
+      "ca",
+      1,
+      0,
+      26985
+    ],
+    [
+      1267555,
+      "Adnan Glavas",
+      "ca",
+      1,
+      0,
+      24034
+    ],
+    [
+      1046521,
+      "Colin Harvey-Lewis",
+      "ca",
+      1,
+      0,
+      23817
+    ],
+    [
+      582970,
+      "Igor Tregoubov",
+      "ca",
+      2,
+      0,
+      22012
+    ],
+    [
+      406680,
+      "Michael Tieu",
+      "ca",
+      2,
+      0,
+      21083
+    ],
+    [
+      177076,
+      "Victor Adams",
+      "ca",
+      3,
+      0,
+      20262
+    ],
+    [
+      562112,
+      "Omar Nasrallah",
+      "ca",
+      3,
+      0,
+      19775
+    ],
+    [
+      929181,
+      "Edward Rice",
+      "us",
+      4,
+      0,
+      19460
+    ],
+    [
+      880991,
+      "Kyle Grupp",
+      "us",
+      1,
+      0,
+      19395
+    ],
+    [
+      732765,
+      "Mark Elder",
+      "ca",
+      1,
+      0,
+      19178
+    ],
+    [
+      329676,
+      "Paolo Zambito",
+      "ca",
+      2,
+      0,
+      18772
+    ],
+    [
+      280877,
+      "Richard Block",
+      "us",
+      1,
+      0,
+      18664
+    ],
+    [
+      1267623,
+      "Yiquan Zhong",
+      "ca",
+      2,
+      0,
+      17896
+    ],
+    [
+      1087259,
+      "Isaac Wallace",
+      "ca",
+      4,
+      0,
+      17740
+    ],
+    [
+      530141,
+      "David Phong",
+      "ca",
+      3,
+      0,
+      17513
+    ],
+    [
+      1253285,
+      "Matthew Woods",
+      "ca",
+      1,
+      0,
+      16119
+    ],
+    [
+      1226907,
+      "Yu Lim",
+      "ca",
+      1,
+      0,
+      15780
+    ],
+    [
+      890331,
+      "Xiao Hu",
+      "ca",
+      2,
+      0,
+      14385
+    ],
+    [
+      444478,
+      "Sandy Lam",
+      "ca",
+      2,
+      0,
+      14329
+    ],
+    [
+      113538,
+      "Dominic Staniscia",
+      "ca",
+      2,
+      0,
+      14197
+    ],
+    [
+      512422,
+      "Irtiza Malik",
+      "ca",
+      2,
+      0,
+      14014
+    ],
+    [
+      697951,
+      "Joshua Greville",
+      "ca",
+      2,
+      0,
+      13781
+    ],
+    [
+      129768,
+      "Dan Scott",
+      "ca",
+      1,
+      0,
+      13479
+    ],
+    [
+      260167,
+      "Tommy Nguyen",
+      "ca",
+      2,
+      0,
+      13136
+    ],
+    [
+      295080,
+      "Pirooz Bayat",
+      "ca",
+      2,
+      0,
+      13001
+    ],
+    [
+      1157541,
+      "Robert Sutherland",
+      "ca",
+      1,
+      0,
+      12847
+    ],
+    [
+      692331,
+      "Dylan Forsyth",
+      "ca",
+      2,
+      0,
+      12834
+    ],
+    [
+      227833,
+      "Justin Ouimette",
+      "ca",
+      4,
+      0,
+      12688
+    ],
+    [
+      471271,
+      "Eun Park",
+      "ca",
+      3,
+      0,
+      12420
+    ],
+    [
+      379101,
+      "Dustin Melanson",
+      "ca",
+      3,
+      0,
+      11600
+    ],
+    [
+      342271,
+      "Harpreet Padda",
+      "ca",
+      3,
+      0,
+      11219
+    ],
+    [
+      582515,
+      "Franco Armogida",
+      "ca",
+      1,
+      0,
+      11152
+    ],
+    [
+      1365335,
+      "Kyle Johnson",
+      "ca",
+      1,
+      0,
+      11087
+    ],
+    [
+      558962,
+      "Andrew Fahey",
+      "ca",
+      2,
+      0,
+      11026
+    ],
+    [
+      1198779,
+      "Vladimir Perovic",
+      "ca",
+      3,
+      0,
+      10727
+    ],
+    [
+      295099,
+      "Renmei Liu",
+      "ca",
+      3,
+      0,
+      10609
+    ],
+    [
+      136819,
+      "Jason James",
+      "ca",
+      4,
+      0,
+      10576
+    ],
+    [
+      329644,
+      "Peter Muraca",
+      "ca",
+      1,
+      0,
+      10409
+    ],
+    [
+      1226919,
+      "William Hoover",
+      "ca",
+      1,
+      0,
+      9973
+    ],
+    [
+      582510,
+      "Bradey Prosic",
+      "ca",
+      1,
+      0,
+      9636
+    ],
+    [
+      59527,
+      "Art Demmerley",
+      "us",
+      2,
+      0,
+      9589
+    ],
+    [
+      582545,
+      "Gregory Dimopoulos",
+      "ca",
+      1,
+      0,
+      9434
+    ],
+    [
+      260564,
+      "Kyle Janisse",
+      "ca",
+      1,
+      0,
+      9307
+    ],
+    [
+      19650,
+      "Jason Sagle",
+      "ca",
+      3,
+      0,
+      9284
+    ],
+    [
+      471233,
+      "Michael Arcaro",
+      "ca",
+      4,
+      0,
+      9096
+    ],
+    [
+      1050585,
+      "Nicholas Nowak",
+      "ca",
+      3,
+      0,
+      8770
+    ],
+    [
+      167386,
+      "Aadam Daya",
+      "ca",
+      1,
+      0,
+      8744
+    ],
+    [
+      1215743,
+      "Paul Russell",
+      "ca",
+      2,
+      0,
+      8679
+    ],
+    [
+      1187579,
+      "Duc Nguyen",
+      "ca",
+      3,
+      0,
+      8469
+    ],
+    [
+      545399,
+      "Craig oliver",
+      "ca",
+      2,
+      0,
+      8100
+    ],
+    [
+      145685,
+      "Darren Keyes",
+      "ca",
+      1,
+      0,
+      8054
+    ],
+    [
+      1148267,
+      "Aaron Godden Noorzad",
+      "ca",
+      1,
+      0,
+      8054
+    ],
+    [
+      1198771,
+      "Antonios Mantas",
+      "ca",
+      1,
+      0,
+      7961
+    ],
+    [
+      205260,
+      "Alex Visbisky",
+      "us",
+      1,
+      0,
+      7867
+    ],
+    [
+      672432,
+      "Stelios Dimakos",
+      "ca",
+      1,
+      0,
+      7867
+    ],
+    [
+      148751,
+      "Buck Ramsay",
+      "ca",
+      3,
+      0,
+      7849
+    ],
+    [
+      1296653,
+      "Shobhit Seth",
+      "ca",
+      1,
+      0,
+      7684
+    ],
+    [
+      87133,
+      "Rajiv Khanna",
+      "ca",
+      4,
+      0,
+      7325
+    ],
+    [
+      104611,
+      "Evan Jarvis",
+      "ca",
+      2,
+      0,
+      7289
+    ],
+    [
+      1157481,
+      "Aaron Hall",
+      "ca",
+      2,
+      0,
+      7084
+    ],
+    [
+      748791,
+      "Fyad Mustafa",
+      "ca",
+      2,
+      0,
+      7020
+    ],
+    [
+      769523,
+      "Gregory Pessine",
+      "ca",
+      2,
+      0,
+      6775
+    ],
+    [
+      519103,
+      "Tyler Dietz",
+      "us",
+      2,
+      0,
+      6696
+    ],
+    [
+      497795,
+      "Zahir Gilani",
+      "ca",
+      2,
+      0,
+      6609
+    ],
+    [
+      716255,
+      "Jonathan Newman",
+      "ca",
+      1,
+      0,
+      6416
+    ],
+    [
+      877305,
+      "Kaul Rohit",
+      "ca",
+      1,
+      0,
+      6416
+    ],
+    [
+      582568,
+      "Timmy Vaillancourt",
+      "ca",
+      3,
+      0,
+      6412
+    ],
+    [
+      299154,
+      "Daniel Ghionoiu",
+      "ca",
+      1,
+      0,
+      6359
+    ],
+    [
+      790655,
+      "Fawaz Siddiqui",
+      "ca",
+      1,
+      0,
+      6343
+    ],
+    [
+      165472,
+      "Scott Diver",
+      "ca",
+      1,
+      0,
+      6343
+    ],
+    [
+      1399155,
+      "Ethan Kinnaird",
+      "ca",
+      1,
+      0,
+      6337
+    ],
+    [
+      338431,
+      "John Tabago",
+      "ca",
+      1,
+      0,
+      6281
+    ],
+    [
+      489587,
+      "Rocco Smeriglio",
+      "ca",
+      1,
+      0,
+      6281
+    ],
+    [
+      1230069,
+      "Kam Yu",
+      "ca",
+      1,
+      0,
+      6281
+    ],
+    [
+      715169,
+      "Eric Shwarcer",
+      "ca",
+      2,
+      0,
+      6277
+    ],
+    [
+      313952,
+      "Samuel Tsehai",
+      "ca",
+      3,
+      0,
+      6096
+    ],
+    [
+      1413839,
+      "Sabbir Ahmed",
+      "ca",
+      1,
+      0,
+      6023
+    ],
+    [
+      485243,
+      "Drew Ormsby",
+      "us",
+      1,
+      0,
+      5988
+    ],
+    [
+      1256067,
+      "Rahul Sharma",
+      "in",
+      2,
+      0,
+      5951
+    ],
+    [
+      260111,
+      "Kyle Chang",
+      "ca",
+      3,
+      0,
+      5911
+    ],
+    [
+      1204169,
+      "Hantang Li",
+      "ca",
+      2,
+      0,
+      5866
+    ],
+    [
+      692343,
+      "Alan Nacinovic",
+      "ca",
+      1,
+      0,
+      5697
+    ],
+    [
+      983963,
+      "Donald Mullen",
+      "us",
+      1,
+      0,
+      5363
+    ],
+    [
+      671494,
+      "Christopher Gaddi",
+      "ca",
+      1,
+      0,
+      5299
+    ],
+    [
+      1198773,
+      "Steve Saliu",
+      "ca",
+      1,
+      0,
+      5299
+    ],
+    [
+      1187879,
+      "Francis Kyan",
+      "au",
+      1,
+      0,
+      5240
+    ],
+    [
+      582978,
+      "Lam Lam",
+      "ca",
+      2,
+      0,
+      5121
+    ],
+    [
+      1350319,
+      "Tony Nguyen",
+      "ca",
+      1,
+      0,
+      5076
+    ],
+    [
+      1128215,
+      "Jonathan Gitman",
+      "ca",
+      1,
+      0,
+      5076
+    ],
+    [
+      113545,
+      "Andy Huynh",
+      "ca",
+      2,
+      0,
+      5075
+    ],
+    [
+      562115,
+      "Joshua James",
+      "ca",
+      2,
+      0,
+      5046
+    ],
+    [
+      936763,
+      "Bin Hua",
+      "ca",
+      1,
+      0,
+      5046
+    ],
+    [
+      782135,
+      "Dilip Lulla",
+      "ca",
+      1,
+      0,
+      5046
+    ],
+    [
+      422039,
+      "Ian Tang",
+      "ca",
+      1,
+      0,
+      5040
+    ],
+    [
+      406710,
+      "Thanh Tran",
+      "ca",
+      2,
+      0,
+      4887
+    ],
+    [
+      493016,
+      "Eric Adams",
+      "us",
+      1,
+      0,
+      4520
+    ],
+    [
+      1267557,
+      "Aboyowa Okoturo",
+      "ca",
+      1,
+      0,
+      4520
+    ],
+    [
+      148778,
+      "Ko Maddock",
+      "ca",
+      2,
+      0,
+      4498
+    ],
+    [
+      330314,
+      "Ronald Kambeitz",
+      "ca",
+      1,
+      0,
+      4496
+    ],
+    [
+      364456,
+      "Gary Irvine",
+      "ca",
+      1,
+      0,
+      4496
+    ],
+    [
+      671476,
+      "Roberto Bussi",
+      "ca",
+      2,
+      0,
+      4492
+    ],
+    [
+      1198775,
+      "Mitchell Stokes",
+      "ca",
+      1,
+      0,
+      4467
+    ],
+    [
+      329674,
+      "Dejan Kovinic",
+      "ca",
+      2,
+      0,
+      4333
+    ],
+    [
+      297791,
+      "Trevor Haight",
+      "us",
+      1,
+      0,
+      4328
+    ],
+    [
+      445077,
+      "Craig Allan",
+      "ca",
+      1,
+      0,
+      4328
+    ],
+    [
+      502812,
+      "Theodore Sotiropoulos",
+      "ca",
+      1,
+      0,
+      4328
+    ],
+    [
+      1365337,
+      "Matthew Constans",
+      "ca",
+      1,
+      0,
+      4303
+    ],
+    [
+      638244,
+      "Christine Do",
+      "ca",
+      1,
+      0,
+      4303
+    ],
+    [
+      592180,
+      "Darren Chow",
+      "ca",
+      1,
+      0,
+      4303
+    ],
+    [
+      1192469,
+      "Gurtej Toor",
+      "ca",
+      1,
+      0,
+      4261
+    ],
+    [
+      295091,
+      "Baron Ha",
+      "ca",
+      1,
+      0,
+      4261
+    ],
+    [
+      582969,
+      "Vinash Luthra",
+      "ca",
+      2,
+      0,
+      4248
+    ],
+    [
+      0,
+      "Todd Soluri",
+      "us",
+      2,
+      0,
+      4201
+    ],
+    [
+      278796,
+      "Daniel Wagner",
+      "us",
+      2,
+      0,
+      4174
+    ],
+    [
+      329671,
+      "Danesh Luthra",
+      "ca",
+      2,
+      0,
+      4110
+    ],
+    [
+      490924,
+      "Jeremy Felicetti",
+      "us",
+      1,
+      0,
+      4077
+    ],
+    [
+      765415,
+      "Weiping Gu",
+      "cn",
+      1,
+      0,
+      4077
+    ],
+    [
+      1215745,
+      "Adam Poitras",
+      "ca",
+      2,
+      0,
+      4038
+    ],
+    [
+      1337933,
+      "Mark Brennan",
+      "ca",
+      2,
+      0,
+      4019
+    ],
+    [
+      165537,
+      "Daniel Watton",
+      "ca",
+      2,
+      0,
+      3978
+    ],
+    [
+      1267559,
+      "Tyrone Eversley",
+      "ca",
+      1,
+      0,
+      3755
+    ],
+    [
+      93970,
+      "Howard Leung",
+      "ca",
+      1,
+      0,
+      3755
+    ],
+    [
+      415329,
+      "John Perri",
+      "us",
+      1,
+      0,
+      3717
+    ],
+    [
+      558995,
+      "Mustafa Hassanzada",
+      "ca",
+      1,
+      0,
+      3717
+    ],
+    [
+      447271,
+      "Thomas Law",
+      "us",
+      1,
+      0,
+      3717
+    ],
+    [
+      748747,
+      "Tan Truong",
+      "ca",
+      1,
+      0,
+      3697
+    ],
+    [
+      582340,
+      "Daniel Wojcik",
+      "ca",
+      1,
+      0,
+      3697
+    ],
+    [
+      220604,
+      "Medhat Ramzy",
+      "ca",
+      2,
+      0,
+      3676
+    ],
+    [
+      580447,
+      "Osbert Liu",
+      "ca",
+      2,
+      0,
+      3674
+    ],
+    [
+      213523,
+      "Alexander Kover",
+      "ca",
+      1,
+      0,
+      3673
+    ],
+    [
+      1112429,
+      "Faiz Sattar",
+      "ca",
+      1,
+      0,
+      3673
+    ],
+    [
+      410715,
+      "Moheb Bassily",
+      "us",
+      2,
+      0,
+      3499
+    ],
+    [
+      88249,
+      "Vasco Morgado",
+      "ca",
+      1,
+      0,
+      3408
+    ],
+    [
+      1211087,
+      "Gabriel Radu",
+      "us",
+      1,
+      0,
+      3408
+    ],
+    [
+      870923,
+      "Maxim Kogay",
+      "ru",
+      2,
+      0,
+      3370
+    ],
+    [
+      1040381,
+      "Allen Shen",
+      "ca",
+      2,
+      0,
+      3220
+    ],
+    [
+      1040379,
+      "Kevin Hendriks",
+      "ca",
+      1,
+      0,
+      3195
+    ],
+    [
+      145246,
+      "Graham Lupton",
+      "ca",
+      2,
+      0,
+      3164
+    ],
+    [
+      1198777,
+      "Sinh Ho",
+      "ca",
+      1,
+      0,
+      3159
+    ],
+    [
+      59089,
+      "Alan Close",
+      "ca",
+      1,
+      0,
+      3123
+    ],
+    [
+      697699,
+      "Trung Nguyen",
+      "ca",
+      1,
+      0,
+      3123
+    ],
+    [
+      1210249,
+      "Kaden Vaillancourt",
+      "ca",
+      1,
+      0,
+      3078
+    ],
+    [
+      107295,
+      "Simon Charette",
+      "ca",
+      1,
+      0,
+      3078
+    ],
+    [
+      692319,
+      "Mike Costello",
+      "ca",
+      1,
+      0,
+      2997
+    ],
+    [
+      354705,
+      "Thanh Phu",
+      "ca",
+      1,
+      0,
+      2997
+    ],
+    [
+      695895,
+      "Paul Robinson",
+      "ca",
+      1,
+      0,
+      2961
+    ],
+    [
+      711959,
+      "Nicola Stagliano",
+      "ca",
+      1,
+      0,
+      2961
+    ],
+    [
+      82379,
+      "Ayed Shweihat",
+      "us",
+      1,
+      0,
+      2943
+    ],
+    [
+      582557,
+      "Ryan Andrade",
+      "ca",
+      1,
+      0,
+      2792
+    ],
+    [
+      782121,
+      "Jayesh Kotak",
+      "ca",
+      1,
+      0,
+      2645
+    ],
+    [
+      260579,
+      "Oleg Boulchyi",
+      "ca",
+      1,
+      0,
+      2645
+    ],
+    [
+      1200821,
+      "Michael Erman",
+      "ca",
+      1,
+      0,
+      2645
+    ],
+    [
+      695903,
+      "Adam Pighin",
+      "ca",
+      1,
+      0,
+      2645
+    ],
+    [
+      232334,
+      "Anastasios Kotsaris",
+      "ca",
+      1,
+      0,
+      2645
+    ],
+    [
+      283403,
+      "Kevin Blake",
+      "ca",
+      1,
+      0,
+      2645
+    ],
+    [
+      135435,
+      "Andy Asihwardji",
+      "ca",
+      1,
+      0,
+      2645
+    ],
+    [
+      748765,
+      "Van Tran",
+      "ca",
+      1,
+      0,
+      2611
+    ],
+    [
+      1198781,
+      "Daniele Santelli",
+      "ca",
+      1,
+      0,
+      2611
+    ],
+    [
+      530852,
+      "Ernest Gulassarian",
+      "ca",
+      1,
+      0,
+      2611
+    ],
+    [
+      562128,
+      "T.O. Tieu",
+      "ca",
+      1,
+      0,
+      2611
+    ],
+    [
+      188271,
+      "Van Pham",
+      "ca",
+      1,
+      0,
+      2588
+    ],
+    [
+      1294853,
+      "Zhi-Lin Lin",
+      "ca",
+      1,
+      0,
+      2588
+    ],
+    [
+      1316903,
+      "Kin Wong",
+      "ca",
+      1,
+      0,
+      2587
+    ],
+    [
+      1259287,
+      "Al-Hussein Daya",
+      "ca",
+      1,
+      0,
+      2587
+    ],
+    [
+      1200823,
+      "Olsi Rama",
+      "ca",
+      1,
+      0,
+      2587
+    ],
+    [
+      513483,
+      "Terence Caulcutt",
+      "ca",
+      1,
+      0,
+      2587
+    ],
+    [
+      583132,
+      "Joseph Monaco",
+      "ca",
+      1,
+      0,
+      2587
+    ],
+    [
+      12773,
+      "Lucio Procopio",
+      "us",
+      1,
+      0,
+      2587
+    ],
+    [
+      583014,
+      "Jarret Flood",
+      "ca",
+      1,
+      0,
+      2587
+    ],
+    [
+      247035,
+      "Jody Ashton",
+      "ca",
+      1,
+      0,
+      2520
+    ],
+    [
+      1354869,
+      "Garrett Sundberg",
+      "ca",
+      1,
+      0,
+      2520
+    ],
+    [
+      222413,
+      "Samual Desabio",
+      "us",
+      1,
+      0,
+      2520
+    ],
+    [
+      286856,
+      "William Schuster",
+      "ca",
+      1,
+      0,
+      2394
+    ],
+    [
+      75465,
+      "Michael Benson",
+      "us",
+      1,
+      0,
+      2394
+    ],
+    [
+      530161,
+      "Imad Salameh",
+      "ca",
+      1,
+      0,
+      2286
+    ],
+    [
+      671586,
+      "Jolan Mancini",
+      "ca",
+      1,
+      0,
+      2286
+    ],
+    [
+      540495,
+      "Austin Lamanna",
+      "ca",
+      1,
+      0,
+      2286
+    ],
+    [
+      1207323,
+      "Amirreza Jaberi",
+      "ca",
+      1,
+      0,
+      2286
+    ],
+    [
+      356219,
+      "Oksana Kuznichenko",
+      "us",
+      1,
+      0,
+      2286
+    ],
+    [
+      1050891,
+      "Sergey Hovakimyan",
+      "ca",
+      1,
+      0,
+      2281
+    ],
+    [
+      786751,
+      "Farhat Akbari",
+      "ca",
+      1,
+      0,
+      2277
+    ],
+    [
+      558980,
+      "Jishant Sapra",
+      "ca",
+      1,
+      0,
+      2277
+    ],
+    [
+      1211101,
+      "Samrat Singh",
+      "ca",
+      1,
+      0,
+      2277
+    ],
+    [
+      582531,
+      "Waise Foladbahar",
+      "ca",
+      1,
+      0,
+      2277
+    ],
+    [
+      596522,
+      "Haris Hadziabdic",
+      "us",
+      1,
+      0,
+      2277
+    ],
+    [
+      188244,
+      "David Quang",
+      "ca",
+      1,
+      0,
+      2277
+    ],
+    [
+      1198783,
+      "Xuan Vu",
+      "ca",
+      1,
+      0,
+      2256
+    ],
+    [
+      1192555,
+      "Guy Richard",
+      "ca",
+      1,
+      0,
+      2256
+    ],
+    [
+      1059921,
+      "Maroun Diab",
+      "ca",
+      1,
+      0,
+      2256
+    ],
+    [
+      782131,
+      "Charles Grapes",
+      "ca",
+      1,
+      0,
+      2256
+    ],
+    [
+      741977,
+      "Jeffrey Reardon",
+      "ca",
+      1,
+      0,
+      2256
+    ],
+    [
+      993619,
+      "Nicholas Teeuwen",
+      "ca",
+      1,
+      0,
+      2242
+    ],
+    [
+      500116,
+      "Kevin Tohivsky",
+      "ca",
+      1,
+      0,
+      2242
+    ],
+    [
+      498461,
+      "Matt Fergenbaum",
+      "ca",
+      1,
+      0,
+      2242
+    ],
+    [
+      28306,
+      "Joe Gualtieri",
+      "ca",
+      1,
+      0,
+      2179
+    ],
+    [
+      1254821,
+      "Deborah De Caluwe",
+      "ca",
+      1,
+      0,
+      2179
+    ],
+    [
+      108499,
+      "Poorya Nazari",
+      "ca",
+      1,
+      0,
+      2081
+    ],
+    [
+      1085449,
+      "Than Tran",
+      "ca",
+      1,
+      0,
+      2081
+    ],
+    [
+      624648,
+      "Robert Demille",
+      "ca",
+      1,
+      0,
+      2081
+    ],
+    [
+      406702,
+      "Robert Cicchelli",
+      "ca",
+      1,
+      0,
+      2069
+    ],
+    [
+      330309,
+      "Dave Graham",
+      "ca",
+      1,
+      0,
+      1998
+    ],
+    [
+      189596,
+      "Peter DeSantis Jr.",
+      "ca",
+      1,
+      0,
+      1998
+    ],
+    [
+      440208,
+      "Charles Naughton",
+      "us",
+      1,
+      0,
+      1998
+    ],
+    [
+      1267561,
+      "David Capretta",
+      "ca",
+      1,
+      0,
+      1998
+    ],
+    [
+      101669,
+      "Nikolas Psarris",
+      "ca",
+      1,
+      0,
+      1980
+    ],
+    [
+      188029,
+      "Thinh Bui",
+      "ca",
+      1,
+      0,
+      1980
+    ],
+    [
+      1198785,
+      "Oliver Chylia",
+      "ca",
+      1,
+      0,
+      1978
+    ],
+    [
+      338432,
+      "Rodney Lawrence",
+      "ca",
+      1,
+      0,
+      1978
+    ],
+    [
+      154139,
+      "Adam Foster",
+      "us",
+      1,
+      0,
+      1978
+    ],
+    [
+      244203,
+      "Gaetano Di Maria",
+      "ca",
+      1,
+      0,
+      1978
+    ],
+    [
+      1187569,
+      "Glenn McCleary",
+      "ca",
+      1,
+      0,
+      1978
+    ],
+    [
+      748811,
+      "Shenghao Zhu",
+      "ca",
+      1,
+      0,
+      1978
+    ],
+    [
+      1266361,
+      "Lucas Strkalj",
+      "ca",
+      1,
+      0,
+      1969
+    ],
+    [
+      167736,
+      "Daniel Kirsch",
+      "ca",
+      1,
+      0,
+      1969
+    ],
+    [
+      967655,
+      "Matthew Silva",
+      "ca",
+      1,
+      0,
+      1969
+    ],
+    [
+      113550,
+      "Claude Gaudet",
+      "ca",
+      1,
+      0,
+      1969
+    ],
+    [
+      1221453,
+      "Azziz Haghighi",
+      "ca",
+      1,
+      0,
+      1969
+    ],
+    [
+      1337935,
+      "Richard German",
+      "ca",
+      1,
+      0,
+      1962
+    ],
+    [
+      1229895,
+      "Pietro Lo Giudice",
+      "ca",
+      1,
+      0,
+      1962
+    ],
+    [
+      1337937,
+      "Anthony McInerney",
+      "ca",
+      1,
+      0,
+      1962
+    ],
+    [
+      377230,
+      "Jason Kantarjian",
+      "ca",
+      1,
+      0,
+      1962
+    ],
+    [
+      1337939,
+      "Szymon Pawlak",
+      "ca",
+      1,
+      0,
+      1962
+    ],
+    [
+      582439,
+      "John Huynh",
+      "ca",
+      1,
+      0,
+      1780
+    ],
+    [
+      494133,
+      "Sladjana Micevski",
+      "ca",
+      1,
+      0,
+      1780
+    ],
+    [
+      282620,
+      "Peter Beshay",
+      "ca",
+      1,
+      0,
+      1780
+    ],
+    [
+      1399157,
+      "Thomas Francis",
+      "ca",
+      1,
+      0,
+      1780
+    ],
+    [
+      530735,
+      "Matthew Osorio",
+      "ca",
+      1,
+      0,
+      1780
+    ],
+    [
+      1230691,
+      "Federic Tassinari",
+      "ca",
+      1,
+      0,
+      1757
+    ],
+    [
+      147835,
+      "Raymond Williams",
+      "us",
+      1,
+      0,
+      1757
+    ],
+    [
+      1365339,
+      "Tae Jin",
+      "ca",
+      1,
+      0,
+      1746
+    ],
+    [
+      1365341,
+      "Run Li",
+      "ca",
+      1,
+      0,
+      1746
+    ],
+    [
+      1310641,
+      "David Knight",
+      "us",
+      1,
+      0,
+      1746
+    ],
+    [
+      164101,
+      "Mark Defaria",
+      "ca",
+      1,
+      0,
+      1746
+    ],
+    [
+      327526,
+      "Jonathan Rothman",
+      "ca",
+      1,
+      0,
+      1746
+    ],
+    [
+      530167,
+      "Maurizio Russo",
+      "ca",
+      1,
+      0,
+      1746
+    ],
+    [
+      530854,
+      "Franco Loduca",
+      "ca",
+      1,
+      0,
+      1736
+    ],
+    [
+      172399,
+      "Calvin Ventura",
+      "ca",
+      1,
+      0,
+      1736
+    ],
+    [
+      744843,
+      "Jasdeep Sandal",
+      "ca",
+      1,
+      0,
+      1736
+    ],
+    [
+      1235695,
+      "Bryan Bowes",
+      "ca",
+      1,
+      0,
+      1736
+    ],
+    [
+      1183647,
+      "Steve Csankovszky",
+      "ca",
+      1,
+      0,
+      1736
+    ],
+    [
+      269688,
+      "Patrick Nguyen",
+      "ca",
+      1,
+      0,
+      1736
+    ],
+    [
+      942601,
+      "Shayne Christie",
+      "ca",
+      1,
+      0,
+      1736
+    ],
+    [
+      244023,
+      "Peter Bodnar",
+      "ca",
+      1,
+      0,
+      1719
+    ],
+    [
+      620054,
+      "Hayden Toole",
+      "ca",
+      1,
+      0,
+      1719
+    ],
+    [
+      275203,
+      "Geoffrey McNeely",
+      "ca",
+      1,
+      0,
+      1719
+    ],
+    [
+      1198787,
+      "Andrew Maurer",
+      "ca",
+      1,
+      0,
+      1719
+    ],
+    [
+      1198789,
+      "Trevor Jones",
+      "ca",
+      1,
+      0,
+      1719
+    ],
+    [
+      1097873,
+      "Tarik Mazari",
+      "ca",
+      1,
+      0,
+      1719
+    ],
+    [
+      1233961,
+      "Corbin Gold",
+      "ca",
+      1,
+      0,
+      1702
+    ],
+    [
+      1337941,
+      "Sasa Masirevic",
+      "ca",
+      1,
+      0,
+      1702
+    ],
+    [
+      671510,
+      "Archimedes Arenas",
+      "ca",
+      1,
+      0,
+      1702
+    ],
+    [
+      370249,
+      "Ali Keshavarz",
+      "ca",
+      1,
+      0,
+      1702
+    ],
+    [
+      1309171,
+      "Joseph Tannous",
+      "ca",
+      1,
+      0,
+      1702
+    ],
+    [
+      582964,
+      "Scott Fingland",
+      "ca",
+      1,
+      0,
+      1702
+    ],
+    [
+      267810,
+      "Israel Pantaleon",
+      "ca",
+      1,
+      0,
+      1678
+    ],
+    [
+      181613,
+      "Matt Grocholsky",
+      "ca",
+      1,
+      0,
+      1678
+    ],
+    [
+      213610,
+      "Jason Park",
+      "ca",
+      1,
+      0,
+      1678
+    ],
+    [
+      540203,
+      "Matthew Laslo",
+      "ca",
+      1,
+      0,
+      1678
+    ],
+    [
+      671592,
+      "Maher Nasr",
+      "ca",
+      1,
+      0,
+      1678
+    ],
+    [
+      582967,
+      "Rostyslav Kozak",
+      "ca",
+      1,
+      0,
+      1678
+    ],
+    [
+      582540,
+      "Christopher Glover",
+      "ca",
+      1,
+      0,
+      1673
+    ],
+    [
+      571316,
+      "Mark Ruzycky",
+      "ca",
+      1,
+      0,
+      1673
+    ],
+    [
+      464475,
+      "Carlo Vescio",
+      "ca",
+      1,
+      0,
+      1673
+    ],
+    [
+      530153,
+      "Wei Hu",
+      "ca",
+      1,
+      0,
+      1673
+    ],
+    [
+      267796,
+      "Todd Saffron",
+      "us",
+      1,
+      0,
+      1673
+    ],
+    [
+      1115487,
+      "John Esho",
+      "ca",
+      1,
+      0,
+      1639
+    ],
+    [
+      260556,
+      "Sinisa Stajic",
+      "ca",
+      1,
+      0,
+      1639
+    ],
+    [
+      104589,
+      "Sam Chau",
+      "ca",
+      1,
+      0,
+      1639
+    ],
+    [
+      160923,
+      "Xavier Zofimo",
+      "ca",
+      1,
+      0,
+      1639
+    ],
+    [
+      960313,
+      "Kyle Anderson",
+      "ca",
+      1,
+      0,
+      1639
+    ],
+    [
+      562021,
+      "Eric Elefante",
+      "ca",
+      1,
+      0,
+      1639
+    ],
+    [
+      282655,
+      "Walter Metella",
+      "ca",
+      1,
+      0,
+      1509
+    ],
+    [
+      990807,
+      "Nancy Brett",
+      "ca",
+      1,
+      0,
+      1495
+    ],
+    [
+      82830,
+      "Greg Ostrander",
+      "us",
+      1,
+      0,
+      1495
+    ],
+    [
+      471212,
+      "Adam Bogach",
+      "ca",
+      1,
+      0,
+      1495
+    ],
+    [
+      1193377,
+      "David White",
+      "ca",
+      1,
+      0,
+      1486
+    ],
+    [
+      113158,
+      "Khaled Aljoma",
+      "ca",
+      1,
+      0,
+      1486
+    ],
+    [
+      1198791,
+      "Tan Zhuofu",
+      "ca",
+      1,
+      0,
+      1486
+    ],
+    [
+      471244,
+      "Izhak Sini",
+      "ca",
+      1,
+      0,
+      1486
+    ],
+    [
+      113547,
+      "Michael Noor",
+      "ca",
+      1,
+      0,
+      1486
+    ],
+    [
+      1198793,
+      "Justin Halioua",
+      "ca",
+      1,
+      0,
+      1486
+    ],
+    [
+      379105,
+      "Saim Mumal",
+      "ca",
+      1,
+      0,
+      1471
+    ],
+    [
+      120819,
+      "Andrew Fitting",
+      "us",
+      1,
+      0,
+      1471
+    ],
+    [
+      265058,
+      "Joe Ardagna",
+      "ca",
+      1,
+      0,
+      1471
+    ],
+    [
+      1172189,
+      "Ryan Seigel",
+      "ca",
+      1,
+      0,
+      1471
+    ],
+    [
+      1337943,
+      "Arkadiusz Nalichowski",
+      "ca",
+      1,
+      0,
+      1471
+    ],
+    [
+      582535,
+      "Corey Regnier",
+      "ca",
+      1,
+      0,
+      1471
+    ],
+    [
+      1258319,
+      "Ross Mould",
+      "ca",
+      1,
+      0,
+      1471
+    ],
+    [
+      118301,
+      "Brady Hinnegan",
+      "ca",
+      1,
+      0,
+      1441
+    ],
+    [
+      692329,
+      "Vincenzo Delio",
+      "ca",
+      1,
+      0,
+      1441
+    ],
+    [
+      1341541,
+      "Robert Schram",
+      "ca",
+      1,
+      0,
+      1441
+    ],
+    [
+      507785,
+      "Divesh Thappar",
+      "in",
+      1,
+      0,
+      1441
+    ],
+    [
+      1357341,
+      "Raza Malik",
+      "ca",
+      1,
+      0,
+      1432
+    ],
+    [
+      78729,
+      "Narinder Khasria",
+      "ca",
+      1,
+      0,
+      1432
+    ],
+    [
+      1183651,
+      "Benjamin Smith",
+      "ca",
+      1,
+      0,
+      1432
+    ],
+    [
+      132174,
+      "Carmelo Menechella",
+      "us",
+      1,
+      0,
+      1420
+    ],
+    [
+      51014,
+      "Wilson Igwe",
+      "ca",
+      1,
+      0,
+      1420
+    ],
+    [
+      775877,
+      "Tserendash Battulga",
+      "ca",
+      1,
+      0,
+      1420
+    ],
+    [
+      1010963,
+      "Harley Gollert",
+      "ca",
+      1,
+      0,
+      1420
+    ],
+    [
+      1215747,
+      "Costakis Aresti",
+      "ca",
+      1,
+      0,
+      1392
+    ],
+    [
+      124980,
+      "Shane Brotherwood",
+      "ca",
+      1,
+      0,
+      1392
+    ],
+    [
+      559702,
+      "Robert Weese",
+      "ca",
+      1,
+      0,
+      1258
+    ],
+    [
+      163860,
+      "Francesco Maltese",
+      "ca",
+      1,
+      0,
+      1258
+    ],
+    [
+      265086,
+      "Blake Napierala",
+      "us",
+      1,
+      0,
+      1258
+    ],
+    [
+      1097057,
+      "Armeen Haghighatjou",
+      "ca",
+      1,
+      0,
+      1258
+    ],
+    [
+      74734,
+      "Michael Wills",
+      "us",
+      1,
+      0,
+      1258
+    ],
+    [
+      169433,
+      "Kim Kilroy",
+      "ca",
+      1,
+      0,
+      1258
+    ],
+    [
+      707625,
+      "John Macdonald",
+      "ca",
+      1,
+      0,
+      1258
+    ],
+    [
+      527891,
+      "Christopher Turnbull",
+      "ca",
+      1,
+      0,
+      1258
+    ],
+    [
+      1040387,
+      "Jake Hobday",
+      "ca",
+      1,
+      0,
+      1246
+    ],
+    [
+      1266897,
+      "Luke Manifavas",
+      "au",
+      1,
+      0,
+      1246
+    ]
+  ]
+}

@@ -11,21 +11,21 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="2025 Casino Niagara poker tournament stats — results, player leaderboard, and awards for weekly recurring tournaments.">
-  <link rel="canonical" href="https://casinoniagarapoker.com/stats/2025">
+  <meta name="description" content="Casino Niagara main event tournament stats — results, player leaderboard, and awards for quarterly main events since 2024.">
+  <link rel="canonical" href="https://casinoniagarapoker.com/stats/main_events">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Casino Niagara Poker Tournament Stats 2025">
-  <meta property="og:description" content="2025 Casino Niagara poker tournament stats — results, player leaderboard, and awards for weekly recurring tournaments.">
-  <meta property="og:url" content="https://casinoniagarapoker.com/stats/2025">
+  <meta property="og:title" content="Casino Niagara Main Event Tournament Stats">
+  <meta property="og:description" content="Casino Niagara main event tournament stats — results, player leaderboard, and awards for quarterly main events since 2024.">
+  <meta property="og:url" content="https://casinoniagarapoker.com/stats/main_events">
   <meta property="og:site_name" content="Casino Niagara Poker">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Casino Niagara Poker Tournament Stats 2025">
-  <meta name="twitter:description" content="2025 Casino Niagara poker tournament stats — results, player leaderboard, and awards for weekly recurring tournaments.">
+  <meta name="twitter:title" content="Casino Niagara Main Event Tournament Stats">
+  <meta name="twitter:description" content="Casino Niagara main event tournament stats — results, player leaderboard, and awards for quarterly main events since 2024.">
   <meta property="og:image" content="https://casinoniagarapoker.com/icons/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:image" content="https://casinoniagarapoker.com/icons/og-image.png">
-  <title>Casino Niagara — Recurring Tournament Stats 2025</title>
+  <title>Casino Niagara — Main Event Tournament Stats</title>
   <link rel="apple-touch-icon" sizes="180x180" href="../../icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../../icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../../icons/favicon-16x16.png">
@@ -49,22 +49,22 @@
   <!-- Header -->
   <header>
     <p class="casino-label">Casino Niagara · Poker Room</p>
-    <h1>Recurring Tournament Stats 2025</h1>
+    <h1>Main Event Stats</h1>
     <p class="disclaimer"><strong>No affiliation with Casino Niagara or Mohegan Sun</strong></p>
     <div class="divider"><span>♠</span></div>
-    <p class="header-note">Weekly recurring tournaments only — quarterly festival events are excluded</p>
+    <p class="header-note">Quarterly main events only — weekly recurring tournaments are tracked separately</p>
   </header>
 
   <!-- Year toggle -->
   <div class="year-toggle">
     <a href="/stats/2024" class="year-btn ">2024</a>
-    <a href="/stats/2025" class="year-btn active">2025</a>
+    <a href="/stats/2025" class="year-btn ">2025</a>
     <a href="/stats/2026" class="year-btn ">2026</a>
-    <a href="/stats/main_events" class="year-btn ">Main Events</a>
+    <a href="/stats/main_events" class="year-btn active">Main Events</a>
   </div>
 
   <!-- Results -->
-  <p class="section-title">2025 Results</p>
+  <p class="section-title">Main Events Results</p>
   <div class="results-wrap">
     <table class="results-table" id="results-table">
       <thead>
@@ -225,7 +225,7 @@ function initPage(data) {
 }
 
 // ── Fetch awards + leaderboard ─────────────────────────────────────────────
-fetch('../../data/stats_2025.json', {cache: 'no-cache'})
+fetch('../../data/main_events_stats.json', {cache: 'no-cache'})
   .then(r => r.json())
   .then(initPage)
   .catch(function() {
@@ -236,12 +236,12 @@ fetch('../../data/stats_2025.json', {cache: 'no-cache'})
 <script src="../../js/results-table.js"></script>
 <script>
   // Stats page: only show recurring tournament types (exclude main/festival events)
-  var RECURRING = {wed:1, sun:1, sun550:1, wed275:1, fri240:1, mon175:1, tue225:1, fri_bounty:1};
+  var RECURRING = {main:1};
   ResultsTable.init({
     tbodyId:     'results-tbody',
     tableId:     'results-table',
     timestampId: 'stats-ts-results',
-    dataUrl:     '../../data/stats_2025.json',
+    dataUrl:     '../../data/main_events_stats.json',
     filterFn:    function(ev) { return RECURRING[ev.type] === 1; },
     onLoad:      function(data) {
       var ts2 = document.getElementById('stats-ts-footer');
@@ -253,9 +253,9 @@ fetch('../../data/stats_2025.json', {cache: 'no-cache'})
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Casino Niagara Poker Tournament Stats 2025",
-    "description": "2025 Casino Niagara poker tournament stats — results, player leaderboard, and awards for weekly recurring tournaments.",
-    "url": "https://casinoniagarapoker.com/stats/2025",
+    "name": "Casino Niagara Poker Tournament Stats Main Events",
+    "description": "Main Events Casino Niagara poker tournament stats — results, player leaderboard, and awards for weekly recurring tournaments.",
+    "url": "https://casinoniagarapoker.com/stats/Main Events",
     "isPartOf": {
       "@type": "WebSite",
       "name": "Casino Niagara Poker",
