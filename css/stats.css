@@ -37,6 +37,8 @@
     /* ── Leaderboard ── */
     .leaderboard-head { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; }
     .leaderboard-head .section-title { margin:0; }
+    .leaderboard-tools { display:flex; align-items:center; gap:10px; }
+    .lb-count { font-size:12px; color: var(--muted); white-space: nowrap; }
     .lb-search {
       width: min(260px, 52vw);
       background: rgba(13,27,42,0.9);
@@ -74,6 +76,7 @@
 
     @media (max-width: 700px) {
       .leaderboard-head { flex-wrap: wrap; align-items: flex-start; }
+      .leaderboard-tools { width: 100%; flex-wrap: wrap; }
       .lb-search { width: 100%; }
     }
 

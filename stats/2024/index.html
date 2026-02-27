@@ -91,7 +91,10 @@
   <!-- Leaderboard -->
   <div class="leaderboard-head">
     <p class="section-title">Player Leaderboard</p>
-    <input id="lb-search" class="lb-search" type="search" placeholder="Search player" aria-label="Search player leaderboard by name" autocomplete="off" spellcheck="false">
+    <div class="leaderboard-tools">
+      <span id="lb-count" class="lb-count">0 / 0 players</span>
+      <input id="lb-search" class="lb-search" type="search" placeholder="Search player" aria-label="Search player leaderboard by name" autocomplete="off" spellcheck="false">
+    </div>
   </div>
   <div class="lb-wrap">
     <table id="lb-table">
@@ -138,6 +141,9 @@ function getVal(p, col) {
   }
 }
 function renderTable() {
+  const countEl = document.getElementById('lb-count');
+  const total = PLAYERS.length;
+
   const sorted = [...PLAYERS].sort((a, b) => {
     const av = getVal(a, sortCol), bv = getVal(b, sortCol);
     if (av < bv) return -sortDir;
@@ -151,6 +157,8 @@ function renderTable() {
 
   const tbody = document.getElementById('lb-body');
   if (!tbody) return;
+
+  if (countEl) countEl.textContent = `${filtered.length} / ${total} players`;
 
   if (!filtered.length) {
     tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--muted);padding:16px;">No players found</td></tr>';
