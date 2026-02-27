@@ -7,8 +7,8 @@
       "tournament": "Sunday $400 NLH",
       "type": "sun",
       "entries": 85,
-      "prize_pool": "C$29,270",
-      "first_place": "C$9,439",
+      "prize_pool": "$29,270",
+      "first_place": "$9,439",
       "winner_name": "Ronald Smith",
       "country_code": "ca",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1368085"
@@ -19,8 +19,8 @@
       "tournament": "Wednesday $300 NLH",
       "type": "wed",
       "entries": 96,
-      "prize_pool": "C$23,746",
-      "first_place": "C$7,533",
+      "prize_pool": "$23,746",
+      "first_place": "$7,533",
       "winner_name": "Timothy Baiden",
       "country_code": "ca",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=695855"
@@ -31,8 +31,8 @@
       "tournament": "Sunday $400 NLH",
       "type": "sun",
       "entries": 57,
-      "prize_pool": "C$19,628",
-      "first_place": "C$7,065",
+      "prize_pool": "$19,628",
+      "first_place": "$7,065",
       "winner_name": "Alfredo Matira",
       "country_code": "ca",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1207295"
@@ -43,8 +43,8 @@
       "tournament": "Wednesday $300 NLH",
       "type": "wed",
       "entries": 106,
-      "prize_pool": "C$26,219",
-      "first_place": "C$7,866",
+      "prize_pool": "$26,219",
+      "first_place": "$7,866",
       "winner_name": "Michael Tieu",
       "country_code": "ca",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=406680"
@@ -55,8 +55,8 @@
       "tournament": "Sunday $400 NLH",
       "type": "sun",
       "entries": 56,
-      "prize_pool": "C$19,284",
-      "first_place": "C$7,135",
+      "prize_pool": "$19,284",
+      "first_place": "$7,135",
       "winner_name": "Paolo Zambito",
       "country_code": "ca",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=329676"
@@ -67,8 +67,8 @@
       "tournament": "Wednesday $300 NLH",
       "type": "wed",
       "entries": 89,
-      "prize_pool": "C$22,015",
-      "first_place": "C$6,984",
+      "prize_pool": "$22,015",
+      "first_place": "$6,984",
       "winner_name": "Daniel Lebel",
       "country_code": "ca",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=144560"
@@ -79,8 +79,8 @@
       "tournament": "Last Sunday $550 NLH",
       "type": "sun550",
       "entries": 61,
-      "prize_pool": "C$29,585",
-      "first_place": "C$10,651",
+      "prize_pool": "$29,585",
+      "first_place": "$10,651",
       "winner_name": "Senthuran Vijayaratnam",
       "country_code": "ca",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=294737"
@@ -91,8 +91,8 @@
       "tournament": "Wednesday $300 NLH",
       "type": "wed",
       "entries": 98,
-      "prize_pool": "C$24,241",
-      "first_place": "C$7,393",
+      "prize_pool": "$24,241",
+      "first_place": "$7,393",
       "winner_name": "Robert Schram",
       "country_code": "ca",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1341541"
@@ -103,8 +103,8 @@
       "tournament": "Sunday $400 NLH",
       "type": "sun",
       "entries": 77,
-      "prize_pool": "C$26,515",
-      "first_place": "C$9,015",
+      "prize_pool": "$26,515",
+      "first_place": "$9,015",
       "winner_name": "Dmytro Klimov",
       "country_code": "ua",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=744397"
@@ -115,8 +115,8 @@
       "tournament": "Wednesday $300 NLH",
       "type": "wed",
       "entries": 140,
-      "prize_pool": "C$34,629",
-      "first_place": "C$9,678",
+      "prize_pool": "$34,629",
+      "first_place": "$9,678",
       "winner_name": "Peter Bodnar",
       "country_code": "ca",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=244023"
@@ -127,8 +127,8 @@
       "tournament": "Sunday $400 NLH",
       "type": "sun",
       "entries": 53,
-      "prize_pool": "C$18,251",
-      "first_place": "C$6,753",
+      "prize_pool": "$18,251",
+      "first_place": "$6,753",
       "winner_name": "Curtis Medina",
       "country_code": "ca",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=169432"
@@ -139,8 +139,8 @@
       "tournament": "Wednesday $300 NLH",
       "type": "wed",
       "entries": 135,
-      "prize_pool": "C$33,393",
-      "first_place": "C$9,432",
+      "prize_pool": "$33,393",
+      "first_place": "$9,432",
       "winner_name": null,
       "country_code": "",
       "winner_url": null
@@ -163,7 +163,7 @@
       "winner_name": "Daniel Lebel",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=144560",
       "country_code": "ca",
-      "detail": "C$12,638 across 3 cashes",
+      "detail": "$12,638 across 3 cashes",
       "tooltip": "Highest total prize money earned in 2026",
       "active": true
     },
@@ -173,7 +173,7 @@
       "winner_name": "Benjamin Smith",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1183651",
       "country_code": "ca",
-      "detail": "C$10,947 total · 4 cashes · 0 wins",
+      "detail": "$10,947 total · 4 cashes · 0 wins",
       "tooltip": "Most money won without ever winning a tournament",
       "active": true
     },
@@ -183,7 +183,7 @@
       "winner_name": "Senthuran Vijayaratnam",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=294737",
       "country_code": "ca",
-      "detail": "C$10,651 — Jan 25 Last Sunday $550 NLH",
+      "detail": "$10,651 — Jan 25 Last Sunday $550 NLH",
       "tooltip": "Highest single-tournament cash in 2026",
       "active": true
     },
@@ -193,7 +193,7 @@
       "winner_name": "James Haupert",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1193375",
       "country_code": "ca",
-      "detail": "C$5,055 avg · 2 cashes",
+      "detail": "$5,055 avg · 2 cashes",
       "tooltip": "Highest average prize per cash (min. 2 cashes)",
       "active": true
     },
@@ -203,7 +203,7 @@
       "winner_name": "Minsu Kim",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1468435",
       "country_code": "ca",
-      "detail": "Lowest avg cash: C$686 · 2 cashes",
+      "detail": "Lowest avg cash: $686 · 2 cashes",
       "tooltip": "Lowest average cash (min. 2 cashes)",
       "active": true
     },
@@ -253,7 +253,7 @@
       "winner_name": "Daniel Lebel",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=144560",
       "country_code": "ca",
-      "detail": "2 in a row · Jan 21 &amp; Jan 25 · Won tiebreaker (C$12,638)",
+      "detail": "2 in a row · Jan 21 &amp; Jan 25 · Won tiebreaker ($12,638)",
       "tooltip": "Longest consecutive run of cashing in recurring tournaments",
       "active": true
     },
@@ -263,7 +263,7 @@
       "winner_name": "Daniel Lebel",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=144560",
       "country_code": "ca",
-      "detail": "2 consecutive top-9 finishes · Jan 21 &amp; Jan 25 · Won tiebreaker (C$12,638)",
+      "detail": "2 consecutive top-9 finishes · Jan 21 &amp; Jan 25 · Won tiebreaker ($12,638)",
       "tooltip": "Longest consecutive run of top-9 finishes",
       "active": true
     },
@@ -273,7 +273,7 @@
       "winner_name": "Daniel Lebel",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=144560",
       "country_code": "ca",
-      "detail": "C$10,904 in January · 2 cashes",
+      "detail": "$10,904 in January · 2 cashes",
       "tooltip": "Most prize money earned in January across all recurring tournaments",
       "active": true
     },
@@ -283,7 +283,7 @@
       "winner_name": "James Haupert",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1193375",
       "country_code": "ca",
-      "detail": "C$10,110 in February · 2 cashes",
+      "detail": "$10,110 in February · 2 cashes",
       "tooltip": "Most prize money earned in February across all recurring tournaments",
       "active": true
     },
