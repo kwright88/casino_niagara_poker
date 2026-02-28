@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-27",
+  "last_updated": "2026-02-28",
   "results": [
     {
       "date": "Jan 4",
@@ -144,6 +144,42 @@
       "winner_name": null,
       "country_code": "",
       "winner_url": null
+    },
+    {
+      "date": "Feb 15",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1330333",
+      "tournament": "Sunday $400 NLH",
+      "type": "sun",
+      "entries": 104,
+      "prize_pool": "$35,812",
+      "first_place": "$10,923",
+      "winner_name": "Robert Patterson",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=709439"
+    },
+    {
+      "date": "Feb 22",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1330309",
+      "tournament": "Last Sunday $550 NLH",
+      "type": "sun550",
+      "entries": 137,
+      "prize_pool": "$66,445",
+      "first_place": "$18,570",
+      "winner_name": "Tedde Ballanger",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=339823"
+    },
+    {
+      "date": "Feb 25",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1292253",
+      "tournament": "Wednesday $300 NLH",
+      "type": "wed",
+      "entries": 132,
+      "prize_pool": "$32,650",
+      "first_place": "$9,225",
+      "winner_name": "Kenneth Ranalli",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1204167"
     }
   ],
   "awards": [
@@ -160,40 +196,40 @@
     {
       "icon": "💰",
       "title": "Most Money Won",
-      "winner_name": "Daniel Lebel",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=144560",
+      "winner_name": "Tedde Ballanger",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=339823",
       "country_code": "ca",
-      "detail": "$12,638 across 3 cashes",
+      "detail": "$23,082 across 2 cashes",
       "tooltip": "Highest total prize money earned in 2026",
       "active": true
     },
     {
       "icon": "💐",
       "title": "Always the Bridesmaid",
-      "winner_name": "Benjamin Smith",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1183651",
-      "country_code": "ca",
-      "detail": "$10,947 total · 4 cashes · 0 wins",
+      "winner_name": "Scott Hosbach",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=283212",
+      "country_code": "us",
+      "detail": "$11,694 total · 1 cash · 0 wins",
       "tooltip": "Most money won without ever winning a tournament",
       "active": true
     },
     {
       "icon": "🎯",
       "title": "Biggest Single Score",
-      "winner_name": "Senthuran Vijayaratnam",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=294737",
+      "winner_name": "Tedde Ballanger",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=339823",
       "country_code": "ca",
-      "detail": "$10,651 — Jan 25 Last Sunday $550 NLH",
+      "detail": "$18,570 — Feb 22 Last Sunday $550 NLH",
       "tooltip": "Highest single-tournament cash in 2026",
       "active": true
     },
     {
       "icon": "📈",
       "title": "Best Average Cash",
-      "winner_name": "James Haupert",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1193375",
+      "winner_name": "Tedde Ballanger",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=339823",
       "country_code": "ca",
-      "detail": "$5,055 avg · 2 cashes",
+      "detail": "$11,541 avg · 2 cashes, 1 win",
       "tooltip": "Highest average prize per cash (min. 2 cashes)",
       "active": true
     },
@@ -280,10 +316,10 @@
     {
       "icon": "💙",
       "title": "Champ of February",
-      "winner_name": "James Haupert",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1193375",
+      "winner_name": "Tedde Ballanger",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=339823",
       "country_code": "ca",
-      "detail": "$10,110 in February · 2 cashes",
+      "detail": "$18,570 in February · 1 cash",
       "tooltip": "Most prize money earned in February across all recurring tournaments",
       "active": true
     },
@@ -390,12 +426,44 @@
   ],
   "players": [
     [
+      339823,
+      "Tedde Ballanger",
+      "ca",
+      2,
+      1,
+      23082
+    ],
+    [
       144560,
       "Daniel Lebel",
       "ca",
       3,
       1,
       12638
+    ],
+    [
+      709439,
+      "Robert Patterson",
+      "ca",
+      2,
+      1,
+      11743
+    ],
+    [
+      283212,
+      "Scott Hosbach",
+      "us",
+      1,
+      0,
+      11694
+    ],
+    [
+      1204167,
+      "Kenneth Ranalli",
+      "ca",
+      2,
+      1,
+      11689
     ],
     [
       1183651,
@@ -446,6 +514,14 @@
       9678
     ],
     [
+      329676,
+      "Paolo Zambito",
+      "ca",
+      3,
+      1,
+      9579
+    ],
+    [
       1368085,
       "Ronald Smith",
       "ca",
@@ -470,12 +546,12 @@
       8599
     ],
     [
-      329676,
-      "Paolo Zambito",
+      244298,
+      "Brian Bond",
       "ca",
-      2,
-      1,
-      7905
+      3,
+      0,
+      8188
     ],
     [
       406680,
@@ -486,20 +562,44 @@
       7866
     ],
     [
+      494133,
+      "Sladjana Micevski",
+      "ca",
+      2,
+      0,
+      7795
+    ],
+    [
+      790655,
+      "Fawaz Siddiqui",
+      "ca",
+      3,
+      0,
+      7315
+    ],
+    [
+      678721,
+      "Glenn Grandy",
+      "ca",
+      2,
+      0,
+      7256
+    ],
+    [
+      571088,
+      "Kenneth Wasik",
+      "us",
+      1,
+      0,
+      6944
+    ],
+    [
       169432,
       "Curtis Medina",
       "ca",
       1,
       1,
       6753
-    ],
-    [
-      244298,
-      "Brian Bond",
-      "ca",
-      2,
-      0,
-      6572
     ],
     [
       471233,
@@ -526,14 +626,6 @@
       5969
     ],
     [
-      790655,
-      "Fawaz Siddiqui",
-      "ca",
-      2,
-      0,
-      5687
-    ],
-    [
       767639,
       "Dmytro Kachin",
       "ca",
@@ -558,20 +650,20 @@
       4545
     ],
     [
-      339823,
-      "Tedde Ballanger",
-      "ca",
-      1,
-      0,
-      4512
-    ],
-    [
       787189,
       "Samir Khail",
       "ca",
       2,
       0,
       4445
+    ],
+    [
+      295099,
+      "Renmei Liu",
+      "ca",
+      4,
+      0,
+      4403
     ],
     [
       1198779,
@@ -582,12 +674,44 @@
       4242
     ],
     [
+      1310641,
+      "David Knight",
+      "us",
+      1,
+      0,
+      4186
+    ],
+    [
+      671476,
+      "Roberto Bussi",
+      "ca",
+      1,
+      0,
+      4118
+    ],
+    [
+      1059921,
+      "Maroun Diab",
+      "ca",
+      2,
+      0,
+      3709
+    ],
+    [
       244487,
       "Donovan Obrien",
       "ca",
       1,
       0,
       3619
+    ],
+    [
+      582970,
+      "Igor Tregoubov",
+      "ca",
+      2,
+      0,
+      3588
     ],
     [
       59527,
@@ -606,12 +730,20 @@
       3540
     ],
     [
-      295099,
-      "Renmei Liu",
+      1476879,
+      "Kahaan Shah",
       "ca",
-      3,
+      1,
       0,
-      3358
+      3461
+    ],
+    [
+      1230069,
+      "Kam Yu",
+      "ca",
+      1,
+      0,
+      3256
     ],
     [
       1376555,
@@ -620,6 +752,14 @@
       1,
       0,
       3235
+    ],
+    [
+      695885,
+      "Richard Wilkinson",
+      "ca",
+      2,
+      0,
+      3029
     ],
     [
       366591,
@@ -638,20 +778,20 @@
       2856
     ],
     [
+      204116,
+      "Kevin Brown",
+      "ca",
+      1,
+      0,
+      2686
+    ],
+    [
       147835,
       "Raymond Williams",
       "us",
       2,
       0,
       2661
-    ],
-    [
-      582970,
-      "Igor Tregoubov",
-      "ca",
-      1,
-      0,
-      2603
     ],
     [
       1464389,
@@ -670,20 +810,12 @@
       2568
     ],
     [
-      1204167,
-      "Kenneth Ranalli",
+      456439,
+      "Carlos Gerones",
       "ca",
       1,
       0,
-      2464
-    ],
-    [
-      695885,
-      "Richard Wilkinson",
-      "ca",
-      1,
-      0,
-      2400
+      2359
     ],
     [
       260634,
@@ -710,12 +842,44 @@
       2170
     ],
     [
+      725567,
+      "Daniel Deluca",
+      "ca",
+      1,
+      0,
+      2122
+    ],
+    [
+      175662,
+      "Thi Nguyen",
+      "ca",
+      1,
+      0,
+      2096
+    ],
+    [
+      573059,
+      "Kevin Wright",
+      "ca",
+      1,
+      0,
+      2095
+    ],
+    [
       1466295,
       "Johnny Pham",
       "ca",
       1,
       0,
       2071
+    ],
+    [
+      530735,
+      "Matthew Osorio",
+      "ca",
+      1,
+      0,
+      1857
     ],
     [
       1389599,
@@ -766,6 +930,30 @@
       1653
     ],
     [
+      1354763,
+      "Hossein Sazgarnejad",
+      "ca",
+      1,
+      0,
+      1628
+    ],
+    [
+      1476877,
+      "Davendra Roshundatt",
+      "ca",
+      1,
+      0,
+      1628
+    ],
+    [
+      1068823,
+      "Andrew Schneider",
+      "ca",
+      2,
+      0,
+      1551
+    ],
+    [
       671526,
       "Domenico Greco",
       "ca",
@@ -798,12 +986,12 @@
       1446
     ],
     [
-      678721,
-      "Glenn Grandy",
+      87133,
+      "Rajiv Khanna",
       "ca",
       1,
       0,
-      1420
+      1424
     ],
     [
       88255,
@@ -812,6 +1000,30 @@
       1,
       0,
       1418
+    ],
+    [
+      571097,
+      "Tyler Seibert",
+      "us",
+      1,
+      0,
+      1412
+    ],
+    [
+      924057,
+      "Charbel Boujaoude",
+      "us",
+      1,
+      0,
+      1412
+    ],
+    [
+      582967,
+      "Rostyslav Kozak",
+      "ca",
+      1,
+      0,
+      1412
     ],
     [
       1464391,
@@ -830,6 +1042,14 @@
       1373
     ],
     [
+      1244465,
+      "Jonathan Mazur",
+      "us",
+      1,
+      0,
+      1371
+    ],
+    [
       1474193,
       "Justin Barnes",
       "ca",
@@ -844,6 +1064,14 @@
       1,
       0,
       1326
+    ],
+    [
+      39302,
+      "Eric Nuss",
+      "ca",
+      1,
+      0,
+      1236
     ],
     [
       1085449,
@@ -868,6 +1096,38 @@
       1,
       0,
       1215
+    ],
+    [
+      167736,
+      "Daniel Kirsch",
+      "ca",
+      1,
+      0,
+      1213
+    ],
+    [
+      530131,
+      "Tarik Rehou",
+      "ca",
+      1,
+      0,
+      1213
+    ],
+    [
+      326160,
+      "Yan Kaznachey",
+      "ca",
+      1,
+      0,
+      1213
+    ],
+    [
+      1476881,
+      "Chris Seventikidis",
+      "ca",
+      1,
+      0,
+      1192
     ],
     [
       189596,
@@ -910,12 +1170,12 @@
       1093
     ],
     [
-      494133,
-      "Sladjana Micevski",
+      1476875,
+      "James Forler",
       "ca",
       1,
       0,
-      1080
+      1092
     ],
     [
       513483,
@@ -934,6 +1194,14 @@
       1061
     ],
     [
+      297537,
+      "John Ribeiro",
+      "us",
+      1,
+      0,
+      985
+    ],
+    [
       101664,
       "Domenic Salciccia",
       "ca",
@@ -948,6 +1216,22 @@
       1,
       0,
       944
+    ],
+    [
+      1266361,
+      "Lucas Strkalj",
+      "ca",
+      1,
+      0,
+      922
+    ],
+    [
+      1365939,
+      "Thanh Tran",
+      "ca",
+      1,
+      0,
+      895
     ],
     [
       1183629,
@@ -1038,12 +1322,20 @@
       821
     ],
     [
-      709439,
-      "Robert Patterson",
+      675002,
+      "David Rott",
+      "us",
+      1,
+      0,
+      816
+    ],
+    [
+      364709,
+      "Gerard Maurice",
       "ca",
       1,
       0,
-      820
+      816
     ],
     [
       308144,
@@ -1070,12 +1362,28 @@
       736
     ],
     [
-      1068823,
-      "Andrew Schneider",
+      1227151,
+      "Navid Ismaili",
       "ca",
       1,
       0,
-      735
+      718
+    ],
+    [
+      460290,
+      "Dwayne Langelaan",
+      "us",
+      1,
+      0,
+      718
+    ],
+    [
+      502879,
+      "Stephen Langlois",
+      "ca",
+      1,
+      0,
+      718
     ],
     [
       530134,
@@ -1172,6 +1480,14 @@
       1,
       0,
       632
+    ],
+    [
+      1351285,
+      "Patrick Di Marino",
+      "ca",
+      1,
+      0,
+      629
     ],
     [
       1189113,
