@@ -283,12 +283,22 @@
 </main>
 <script>
   // ── Live Section — fetch from data/live_games.json ───────────────────────
+  // data/live_games.json is written by update_live_games.py every hour.
+  // It contains: games[], waitlist[], tournament (or null), timestamp, error, stale.
+  // All rendering is done client-side — the HTML file itself never changes.
   (function () {
+
+    // Escape user-supplied strings before inserting into innerHTML.
+    // Required for any text that comes from the JSON (game names, limits, etc.)
+    // to prevent XSS if the data source were ever compromised.
     function esc(s) {
       return String(s)
         .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
         .replace(/"/g,'&quot;');
     }
+
+    // Build a single row used in both the Live Games and Waiting Lists cards.
+    // countClass controls styling: 'ltr-count' (green) for tables, 'ltr-waiting-count' (amber) for waitlist.
     function tableRow(name, limits, countVal, countLabel, countClass) {
       var limDiv = limits ? '<div class="ltr-limits">'+esc(limits)+'</div>' : '';
       return (
@@ -301,18 +311,27 @@
         '</div>'
       );
     }
+
+    // Live Games card — renders a table card for each active game.
+    // Falls back to an "No active games" message when the array is empty.
     function liveCard(games) {
       var rows = (!games || !games.length)
         ? '<div class="live-table-row empty"><div class="ltr-game ltr-empty-label">No active games</div></div>'
         : games.map(function(g){ return tableRow(g.name,g.limits,g.tables,'Tables','ltr-count'); }).join('');
       return '<div class="live-table-card"><div class="live-table-card-header"><span class="lh-icon">🟢</span> Live Games</div>'+rows+'</div>';
     }
+
+    // Waiting Lists card — same structure as liveCard but shows player counts.
+    // "Table Change" entries are filtered out by update_live_games.py before writing JSON.
     function waitlistCard(waitlist) {
       var rows = (!waitlist || !waitlist.length)
         ? '<div class="live-table-row empty"><div class="ltr-game ltr-empty-label">No waiting lists</div></div>'
         : waitlist.map(function(w){ return tableRow(w.name,w.limits,w.waiting,'Waiting','ltr-waiting-count'); }).join('');
       return '<div class="live-table-card"><div class="live-table-card-header"><span class="lh-icon">📋</span> Waiting Lists</div>'+rows+'</div>';
     }
+
+    // Error card — shown when data.error === true (scrape failed) or on a network fetch error.
+    // Directs users to the poker room phone number and Bravo app as alternatives.
     function errorCard() {
       return (
         '<div class="live-table-card live-error-full">'+
@@ -326,10 +345,18 @@
         '</div>'
       );
     }
+
+    // Live Tournament card — rendered below the games/waitlist grid when a
+    // tournament is actively running. Data comes from Bravo's clock API
+    // (scraped by update_live_games.py via /api/clocks/FALL).
+    // Fields: level (e.g. "4" or "3 – Break"), blinds, time_left (MM:SS),
+    //         clock_state ('R'=running, 'P'=paused), num_entrants, num_remaining, prize_pool.
     function tournamentCard(t) {
       if (!t) return '';
       var name = t.name || '';
+      // Append tournament name to the card header if Bravo provided one
       var nameSuffix = name ? '<span class="lt-sep"> · </span><span class="lt-subtitle">'+esc(name)+'</span>' : '';
+      // Always show level, blinds, time remaining; add entrants/remaining/prize if available
       var stats = [['🎯 Level',t.level],['Blinds',t.blinds],['⏱ Time Left',t.time_left]];
       if (t.num_entrants) stats.push(['Total Entries', t.num_entrants.toLocaleString()]);
       if (t.num_remaining) stats.push(['Players Left', t.num_remaining.toLocaleString()]);
@@ -337,6 +364,7 @@
       var statHtml = stats.map(function(p){
         return '<div class="tc-clock-stat"><span class="tc-clock-val">'+esc(String(p[1]))+'</span><span class="tc-clock-label">'+esc(p[0])+'</span></div>';
       }).join('');
+      // Show a PAUSED badge when the tournament clock is stopped (e.g. during a break)
       var paused = (t.clock_state==='P') ? ' <span class="tc-paused-badge">⏸ PAUSED</span>' : '';
       return (
         '<div class="live-tournament-wrapper">'+
@@ -347,6 +375,10 @@
         '</div>'
       );
     }
+
+    // Assemble the full live section from data fields.
+    // data.stale === true means the last scrape failed and we're showing the
+    // previous good result — flagged in yellow so users know it may be outdated.
     function renderSection(data) {
       var gridHtml = data.error ? errorCard() : liveCard(data.games)+waitlistCard(data.waitlist);
       var tourneyHtml = data.tournament ? tournamentCard(data.tournament) : '';
@@ -362,12 +394,17 @@
         tourneyHtml
       );
     }
+
     var container = document.getElementById('live-section-container');
     if (!container) return;
+
+    // cache: 'no-cache' ensures we always get the latest JSON — without it,
+    // browsers may serve a cached copy and show stale game data.
     fetch('data/live_games.json', {cache: 'no-cache'})
       .then(function(r){ return r.json(); })
       .then(function(data){ container.innerHTML = renderSection(data); })
       .catch(function(){
+        // Network failure (e.g. offline, GitHub Pages unreachable) — show error card
         container.innerHTML = (
           '<div class="live-section-header">'+
             '<p class="section-title">Live Right Now</p>'+
@@ -379,6 +416,8 @@
   })();
 
   // ── BBJ Amount — fetch from data/badbeat.json ─────────────────────────────
+  // Pulls only the summary object (currentJackpot, currentDate, currentTime).
+  // The full data array is only needed on badbeat.html — not fetched here.
   (function () {
     fetch('data/badbeat.json', {cache: 'no-cache'})
       .then(function(r){ return r.json(); })
@@ -389,6 +428,7 @@
         var asofEl = document.getElementById('bbj-amount-asof');
         if (valEl && s.currentJackpot != null) {
           valEl.style.opacity = '';
+          // Format as Canadian dollars, always 2 decimal places
           valEl.textContent = '$' + s.currentJackpot.toLocaleString('en-CA', {minimumFractionDigits:2, maximumFractionDigits:2});
         }
         if (asofEl) {
@@ -398,6 +438,7 @@
         }
       })
       .catch(function() {
+        // Show an em dash if the JSON can't be fetched
         var el = document.getElementById('bbj-amount-val');
         if (el) { el.style.opacity = ''; el.textContent = '\u2014'; }
       });
