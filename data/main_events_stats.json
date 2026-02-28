@@ -1,6 +1,23 @@
 {
-  "last_updated": "2026-02-26",
+  "last_updated": "2026-02-28",
   "results": [
+    {
+      "date_iso": "2026-02-17",
+      "date": "Feb 17",
+      "date_end": "2026-02-19",
+      "festival_name": "Casino Niagara Winter Main Event 2026",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1290061",
+      "tournament": "$1,200 Winter Main Event 2026",
+      "type": "main",
+      "buy_in": "$1,200",
+      "entries": 678,
+      "prize_pool": "$690,543",
+      "first_place": "$127,264",
+      "winner_name": "Brett Goodall",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=432173",
+      "season": "winter"
+    },
     {
       "date_iso": "2025-10-14",
       "date": "Oct 14",
@@ -143,8 +160,8 @@
       "icon": "🏆",
       "title": "Most Cashes",
       "country_code": "ca",
-      "detail": "5 cashes across 8 main events",
-      "tooltip": "Most total cashes in Casino Niagara main events",
+      "detail": "5 cashes across 9 main events (3-way tie)",
+      "tooltip": "Most total cashes in Casino Niagara main events — Manish Ralh, Jason James, Michael Arcaro all tied at 5",
       "winner_name": "Manish Ralh",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=787199"
     },
@@ -152,37 +169,37 @@
       "icon": "💰",
       "title": "Most Money Won",
       "country_code": "ca",
-      "detail": "$98,940 across 2 cashes",
+      "detail": "$127,264 across 1 cash",
       "tooltip": "Highest total prize money earned in main events",
-      "winner_name": "Behnam Esfahanizadeh",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=583015"
+      "winner_name": "Brett Goodall",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=432173"
     },
     {
       "icon": "🎯",
       "title": "Biggest Single Score",
       "country_code": "ca",
-      "detail": "$96,362 — Aug 6 Summer Multi-Day 2024",
+      "detail": "$127,264 — Feb 17 Winter Main Event 2026",
       "tooltip": "Highest single-event cash in a main event",
-      "winner_name": "Alexander Butko",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=596081"
+      "winner_name": "Brett Goodall",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=432173"
     },
     {
       "icon": "💐",
       "title": "Always the Bridesmaid",
-      "country_code": "",
-      "detail": "$75,876 total · 3 cashes · 0 wins",
+      "country_code": "ca",
+      "detail": "$89,225 total · 1 cash · 0 wins",
       "tooltip": "Most money won without ever winning a main event",
-      "winner_name": "Chun Kwan",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1192571"
+      "winner_name": "Anderson Frank-Graham",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=420637"
     },
     {
       "icon": "📈",
       "title": "Best Average Cash",
       "country_code": "ca",
-      "detail": "$49,470 avg · 2 cashes",
+      "detail": "$36,433 avg · 2 cashes",
       "tooltip": "Highest average prize per cash (min. 2 cashes)",
-      "winner_name": "Behnam Esfahanizadeh",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=583015"
+      "winner_name": "Trieu Hong",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=107066"
     },
     {
       "icon": "🎪",
@@ -197,28 +214,36 @@
       "icon": "📋",
       "title": "Largest Field Conquered",
       "country_code": "ca",
-      "detail": "Won with 623 entries — Aug 6 Summer Multi-Day 2024",
+      "detail": "Won with 678 entries — Feb 17 Winter Main Event 2026",
       "tooltip": "Won the main event with the largest field",
-      "winner_name": "Alexander Butko",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=596081"
+      "winner_name": "Brett Goodall",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=432173"
     }
   ],
   "players": [
     [
+      432173,
+      "Brett Goodall",
+      "ca",
+      1,
+      1,
+      127264
+    ],
+    [
       583015,
       "Behnam Esfahanizadeh",
       "ca",
-      2,
+      3,
       1,
-      98940
+      101267
     ],
     [
       596081,
       "Alexander Butko",
       "ca",
-      2,
+      3,
       1,
-      98618
+      100489
     ],
     [
       1337931,
@@ -227,6 +252,22 @@
       1,
       1,
       94360
+    ],
+    [
+      420637,
+      "Anderson Frank-Graham",
+      "ca",
+      1,
+      0,
+      89225
+    ],
+    [
+      339823,
+      "Tedde Ballanger",
+      "ca",
+      3,
+      0,
+      79482
     ],
     [
       229433,
@@ -261,20 +302,20 @@
       66167
     ],
     [
+      471226,
+      "Jordan Grant",
+      "ca",
+      3,
+      1,
+      65561
+    ],
+    [
       1355795,
       "Jason Morneau-Powell",
       "ca",
       1,
       1,
       63370
-    ],
-    [
-      471226,
-      "Jordan Grant",
-      "ca",
-      2,
-      1,
-      62198
     ],
     [
       531719,
@@ -285,12 +326,28 @@
       59896
     ],
     [
+      1198783,
+      "Xuan Vu",
+      "ca",
+      2,
+      0,
+      59792
+    ],
+    [
       294737,
       "Senthuran Vijayaratnam",
       "ca",
       4,
       0,
       59335
+    ],
+    [
+      695855,
+      "Timothy Baiden",
+      "ca",
+      2,
+      0,
+      56087
     ],
     [
       525284,
@@ -301,12 +358,12 @@
       55924
     ],
     [
-      339823,
-      "Tedde Ballanger",
+      562115,
+      "Joshua James",
       "ca",
-      2,
+      3,
       0,
-      47303
+      47107
     ],
     [
       244487,
@@ -365,6 +422,14 @@
       39950
     ],
     [
+      573059,
+      "Kevin Wright",
+      "ca",
+      3,
+      0,
+      38421
+    ],
+    [
       787199,
       "Manish Ralh",
       "ca",
@@ -373,28 +438,12 @@
       36018
     ],
     [
-      695855,
-      "Timothy Baiden",
-      "ca",
-      1,
-      0,
-      34791
-    ],
-    [
       65059,
       "Tu Dao",
       "ca",
       2,
       0,
       34084
-    ],
-    [
-      573059,
-      "Kevin Wright",
-      "ca",
-      2,
-      0,
-      33560
     ],
     [
       1198769,
@@ -421,6 +470,14 @@
       26985
     ],
     [
+      1442033,
+      "Fanhao Kong",
+      "ca",
+      1,
+      0,
+      25709
+    ],
+    [
       1267555,
       "Adnan Glavas",
       "ca",
@@ -437,6 +494,22 @@
       23817
     ],
     [
+      558962,
+      "Andrew Fahey",
+      "ca",
+      3,
+      0,
+      23753
+    ],
+    [
+      177076,
+      "Victor Adams",
+      "ca",
+      4,
+      0,
+      23211
+    ],
+    [
       582970,
       "Igor Tregoubov",
       "ca",
@@ -445,20 +518,20 @@
       22012
     ],
     [
+      329676,
+      "Paolo Zambito",
+      "ca",
+      3,
+      0,
+      21721
+    ],
+    [
       406680,
       "Michael Tieu",
       "ca",
       2,
       0,
       21083
-    ],
-    [
-      177076,
-      "Victor Adams",
-      "ca",
-      3,
-      0,
-      20262
     ],
     [
       562112,
@@ -493,14 +566,6 @@
       19178
     ],
     [
-      329676,
-      "Paolo Zambito",
-      "ca",
-      2,
-      0,
-      18772
-    ],
-    [
       280877,
       "Richard Block",
       "us",
@@ -533,6 +598,14 @@
       17513
     ],
     [
+      681703,
+      "Jeremy Stunt",
+      "ca",
+      1,
+      0,
+      16953
+    ],
+    [
       1253285,
       "Matthew Woods",
       "ca",
@@ -547,6 +620,14 @@
       1,
       0,
       15780
+    ],
+    [
+      136819,
+      "Jason James",
+      "ca",
+      5,
+      0,
+      14685
     ],
     [
       890331,
@@ -645,6 +726,22 @@
       12420
     ],
     [
+      19650,
+      "Jason Sagle",
+      "ca",
+      4,
+      0,
+      11887
+    ],
+    [
+      471233,
+      "Michael Arcaro",
+      "ca",
+      5,
+      0,
+      11699
+    ],
+    [
       379101,
       "Dustin Melanson",
       "ca",
@@ -677,14 +774,6 @@
       11087
     ],
     [
-      558962,
-      "Andrew Fahey",
-      "ca",
-      2,
-      0,
-      11026
-    ],
-    [
       1198779,
       "Vladimir Perovic",
       "ca",
@@ -701,12 +790,20 @@
       10609
     ],
     [
-      136819,
-      "Jason James",
+      530131,
+      "Tarik Rehou",
       "ca",
-      4,
+      1,
       0,
-      10576
+      10565
+    ],
+    [
+      716253,
+      "Denver Geelen",
+      "ca",
+      1,
+      0,
+      10565
     ],
     [
       329644,
@@ -723,6 +820,14 @@
       1,
       0,
       9973
+    ],
+    [
+      715169,
+      "Eric Shwarcer",
+      "ca",
+      3,
+      0,
+      9640
     ],
     [
       582510,
@@ -757,20 +862,12 @@
       9307
     ],
     [
-      19650,
-      "Jason Sagle",
+      189596,
+      "Peter DeSantis Jr.",
       "ca",
-      3,
+      2,
       0,
-      9284
-    ],
-    [
-      471233,
-      "Michael Arcaro",
-      "ca",
-      4,
-      0,
-      9096
+      9021
     ],
     [
       1050585,
@@ -805,6 +902,38 @@
       8469
     ],
     [
+      1476865,
+      "Sebastian Zenta",
+      "ca",
+      1,
+      0,
+      8438
+    ],
+    [
+      145858,
+      "Ray Carter",
+      "ca",
+      1,
+      0,
+      8438
+    ],
+    [
+      790655,
+      "Fawaz Siddiqui",
+      "ca",
+      2,
+      0,
+      8415
+    ],
+    [
+      283403,
+      "Kevin Blake",
+      "ca",
+      2,
+      0,
+      8397
+    ],
+    [
       545399,
       "Craig oliver",
       "ca",
@@ -837,6 +966,14 @@
       7961
     ],
     [
+      1413839,
+      "Sabbir Ahmed",
+      "ca",
+      2,
+      0,
+      7894
+    ],
+    [
       205260,
       "Alex Visbisky",
       "us",
@@ -861,12 +998,28 @@
       7849
     ],
     [
+      338432,
+      "Rodney Lawrence",
+      "ca",
+      2,
+      0,
+      7730
+    ],
+    [
       1296653,
       "Shobhit Seth",
       "ca",
       1,
       0,
       7684
+    ],
+    [
+      638244,
+      "Christine Do",
+      "ca",
+      2,
+      0,
+      7666
     ],
     [
       87133,
@@ -885,12 +1038,36 @@
       7289
     ],
     [
+      1198777,
+      "Sinh Ho",
+      "ca",
+      2,
+      0,
+      7268
+    ],
+    [
       1157481,
       "Aaron Hall",
       "ca",
       2,
       0,
       7084
+    ],
+    [
+      95020,
+      "David Cloutier",
+      "ca",
+      1,
+      0,
+      7023
+    ],
+    [
+      1476867,
+      "Jameel Alidina",
+      "ca",
+      1,
+      0,
+      7023
     ],
     [
       748791,
@@ -957,14 +1134,6 @@
       6359
     ],
     [
-      790655,
-      "Fawaz Siddiqui",
-      "ca",
-      1,
-      0,
-      6343
-    ],
-    [
       165472,
       "Scott Diver",
       "ca",
@@ -1005,12 +1174,12 @@
       6281
     ],
     [
-      715169,
-      "Eric Shwarcer",
+      220604,
+      "Medhat Ramzy",
       "ca",
-      2,
+      3,
       0,
-      6277
+      6279
     ],
     [
       313952,
@@ -1019,14 +1188,6 @@
       3,
       0,
       6096
-    ],
-    [
-      1413839,
-      "Sabbir Ahmed",
-      "ca",
-      1,
-      0,
-      6023
     ],
     [
       485243,
@@ -1101,12 +1262,36 @@
       5240
     ],
     [
+      188271,
+      "Van Pham",
+      "ca",
+      2,
+      0,
+      5191
+    ],
+    [
+      494133,
+      "Sladjana Micevski",
+      "ca",
+      2,
+      0,
+      5143
+    ],
+    [
       582978,
       "Lam Lam",
       "ca",
       2,
       0,
       5121
+    ],
+    [
+      1235695,
+      "Bryan Bowes",
+      "ca",
+      2,
+      0,
+      5099
     ],
     [
       1350319,
@@ -1133,14 +1318,6 @@
       5075
     ],
     [
-      562115,
-      "Joshua James",
-      "ca",
-      2,
-      0,
-      5046
-    ],
-    [
       936763,
       "Bin Hua",
       "ca",
@@ -1165,12 +1342,44 @@
       5040
     ],
     [
+      1316903,
+      "Kin Wong",
+      "ca",
+      2,
+      0,
+      4914
+    ],
+    [
       406710,
       "Thanh Tran",
       "ca",
       2,
       0,
       4887
+    ],
+    [
+      108653,
+      "Mauro Lupo",
+      "ca",
+      1,
+      0,
+      4861
+    ],
+    [
+      1476869,
+      "Dennis Shamroni",
+      "ca",
+      1,
+      0,
+      4861
+    ],
+    [
+      286856,
+      "William Schuster",
+      "ca",
+      2,
+      0,
+      4721
     ],
     [
       493016,
@@ -1229,6 +1438,14 @@
       4467
     ],
     [
+      1230691,
+      "Federic Tassinari",
+      "ca",
+      2,
+      0,
+      4360
+    ],
+    [
       329674,
       "Dejan Kovinic",
       "ca",
@@ -1269,14 +1486,6 @@
       4303
     ],
     [
-      638244,
-      "Christine Do",
-      "ca",
-      1,
-      0,
-      4303
-    ],
-    [
       592180,
       "Darren Chow",
       "ca",
@@ -1309,6 +1518,14 @@
       4248
     ],
     [
+      527891,
+      "Christopher Turnbull",
+      "ca",
+      2,
+      0,
+      4207
+    ],
+    [
       0,
       "Todd Soluri",
       "us",
@@ -1333,6 +1550,14 @@
       4110
     ],
     [
+      1476871,
+      "Robert Spoljaric",
+      "ca",
+      1,
+      0,
+      4109
+    ],
+    [
       490924,
       "Jeremy Felicetti",
       "us",
@@ -1347,6 +1572,14 @@
       1,
       0,
       4077
+    ],
+    [
+      244023,
+      "Peter Bodnar",
+      "ca",
+      2,
+      0,
+      4046
     ],
     [
       1215745,
@@ -1371,6 +1604,22 @@
       2,
       0,
       3978
+    ],
+    [
+      167736,
+      "Daniel Kirsch",
+      "ca",
+      2,
+      0,
+      3840
+    ],
+    [
+      530167,
+      "Maurizio Russo",
+      "ca",
+      2,
+      0,
+      3818
     ],
     [
       1267559,
@@ -1429,14 +1678,6 @@
       3697
     ],
     [
-      220604,
-      "Medhat Ramzy",
-      "ca",
-      2,
-      0,
-      3676
-    ],
-    [
       580447,
       "Osbert Liu",
       "ca",
@@ -1459,6 +1700,14 @@
       1,
       0,
       3673
+    ],
+    [
+      1310641,
+      "David Knight",
+      "us",
+      2,
+      0,
+      3617
     ],
     [
       410715,
@@ -1493,6 +1742,30 @@
       3370
     ],
     [
+      1476873,
+      "Anne Walker",
+      "ca",
+      1,
+      0,
+      3363
+    ],
+    [
+      571088,
+      "Kenneth Wasik",
+      "us",
+      1,
+      0,
+      3363
+    ],
+    [
+      354652,
+      "Patrick Tardif",
+      "ca",
+      1,
+      0,
+      3363
+    ],
+    [
       1040381,
       "Allen Shen",
       "ca",
@@ -1515,14 +1788,6 @@
       2,
       0,
       3164
-    ],
-    [
-      1198777,
-      "Sinh Ho",
-      "ca",
-      1,
-      0,
-      3159
     ],
     [
       59089,
@@ -1589,6 +1854,46 @@
       2961
     ],
     [
+      1227151,
+      "Navid Ismaili",
+      "ca",
+      1,
+      0,
+      2949
+    ],
+    [
+      88538,
+      "Mike Leah",
+      "ca",
+      1,
+      0,
+      2949
+    ],
+    [
+      205790,
+      "Jason Clarke",
+      "ca",
+      1,
+      0,
+      2949
+    ],
+    [
+      1097925,
+      "Omar Kanaan",
+      "ca",
+      1,
+      0,
+      2949
+    ],
+    [
+      725567,
+      "Daniel Deluca",
+      "ca",
+      1,
+      0,
+      2949
+    ],
+    [
       82379,
       "Ayed Shweihat",
       "us",
@@ -1645,14 +1950,6 @@
       2645
     ],
     [
-      283403,
-      "Kevin Blake",
-      "ca",
-      1,
-      0,
-      2645
-    ],
-    [
       135435,
       "Andy Asihwardji",
       "ca",
@@ -1693,12 +1990,36 @@
       2611
     ],
     [
-      188271,
-      "Van Pham",
+      546777,
+      "Sanharib Mikhaiel",
       "ca",
       1,
       0,
-      2588
+      2603
+    ],
+    [
+      1097957,
+      "Joel Kogan",
+      "ca",
+      1,
+      0,
+      2603
+    ],
+    [
+      421250,
+      "Gagandeep Singh",
+      "ca",
+      1,
+      0,
+      2603
+    ],
+    [
+      1252153,
+      "Daniel Ferguson",
+      "ca",
+      1,
+      0,
+      2603
     ],
     [
       1294853,
@@ -1707,14 +2028,6 @@
       1,
       0,
       2588
-    ],
-    [
-      1316903,
-      "Kin Wong",
-      "ca",
-      1,
-      0,
-      2587
     ],
     [
       1259287,
@@ -1789,20 +2102,52 @@
       2520
     ],
     [
-      286856,
-      "William Schuster",
-      "ca",
-      1,
-      0,
-      2394
-    ],
-    [
       75465,
       "Michael Benson",
       "us",
       1,
       0,
       2394
+    ],
+    [
+      456439,
+      "Carlos Gerones",
+      "ca",
+      1,
+      0,
+      2327
+    ],
+    [
+      658567,
+      "James Brown",
+      "ca",
+      1,
+      0,
+      2327
+    ],
+    [
+      1207317,
+      "Hoa Van Nguyen",
+      "ca",
+      1,
+      0,
+      2327
+    ],
+    [
+      107539,
+      "Richard Lontok",
+      "ca",
+      1,
+      0,
+      2327
+    ],
+    [
+      967375,
+      "Wayne Morrison",
+      "ca",
+      1,
+      0,
+      2327
     ],
     [
       530161,
@@ -1901,14 +2246,6 @@
       2277
     ],
     [
-      1198783,
-      "Xuan Vu",
-      "ca",
-      1,
-      0,
-      2256
-    ],
-    [
       1192555,
       "Guy Richard",
       "ca",
@@ -2005,6 +2342,62 @@
       2081
     ],
     [
+      1314715,
+      "Zihan Kang",
+      "us",
+      1,
+      0,
+      2072
+    ],
+    [
+      1270523,
+      "Anan Tan",
+      "ca",
+      1,
+      0,
+      2072
+    ],
+    [
+      613302,
+      "Ian Monahoyios",
+      "ca",
+      1,
+      0,
+      2072
+    ],
+    [
+      732715,
+      "Aaron Benton",
+      "ca",
+      1,
+      0,
+      2072
+    ],
+    [
+      110543,
+      "Wing-Yat Yeung",
+      "ca",
+      1,
+      0,
+      2072
+    ],
+    [
+      623042,
+      "Obaidullah Habibi",
+      "ca",
+      1,
+      0,
+      2072
+    ],
+    [
+      675002,
+      "David Rott",
+      "us",
+      1,
+      0,
+      2072
+    ],
+    [
       406702,
       "Robert Cicchelli",
       "ca",
@@ -2015,14 +2408,6 @@
     [
       330309,
       "Dave Graham",
-      "ca",
-      1,
-      0,
-      1998
-    ],
-    [
-      189596,
-      "Peter DeSantis Jr.",
       "ca",
       1,
       0,
@@ -2069,14 +2454,6 @@
       1978
     ],
     [
-      338432,
-      "Rodney Lawrence",
-      "ca",
-      1,
-      0,
-      1978
-    ],
-    [
       154139,
       "Adam Foster",
       "us",
@@ -2111,14 +2488,6 @@
     [
       1266361,
       "Lucas Strkalj",
-      "ca",
-      1,
-      0,
-      1969
-    ],
-    [
-      167736,
-      "Daniel Kirsch",
       "ca",
       1,
       0,
@@ -2189,16 +2558,48 @@
       1962
     ],
     [
-      582439,
-      "John Huynh",
+      282957,
+      "Christian Paradis",
       "ca",
       1,
       0,
-      1780
+      1871
     ],
     [
-      494133,
-      "Sladjana Micevski",
+      89315,
+      "Ian McKinley",
+      "ca",
+      1,
+      0,
+      1871
+    ],
+    [
+      758257,
+      "Joseph Balsano",
+      "ca",
+      1,
+      0,
+      1871
+    ],
+    [
+      1280161,
+      "Jiajun Mei",
+      "ca",
+      1,
+      0,
+      1871
+    ],
+    [
+      703307,
+      "Van Bui",
+      "ca",
+      1,
+      0,
+      1871
+    ],
+    [
+      582439,
+      "John Huynh",
       "ca",
       1,
       0,
@@ -2229,14 +2630,6 @@
       1780
     ],
     [
-      1230691,
-      "Federic Tassinari",
-      "ca",
-      1,
-      0,
-      1757
-    ],
-    [
       147835,
       "Raymond Williams",
       "us",
@@ -2261,14 +2654,6 @@
       1746
     ],
     [
-      1310641,
-      "David Knight",
-      "us",
-      1,
-      0,
-      1746
-    ],
-    [
       164101,
       "Mark Defaria",
       "ca",
@@ -2279,14 +2664,6 @@
     [
       327526,
       "Jonathan Rothman",
-      "ca",
-      1,
-      0,
-      1746
-    ],
-    [
-      530167,
-      "Maurizio Russo",
       "ca",
       1,
       0,
@@ -2317,14 +2694,6 @@
       1736
     ],
     [
-      1235695,
-      "Bryan Bowes",
-      "ca",
-      1,
-      0,
-      1736
-    ],
-    [
       1183647,
       "Steve Csankovszky",
       "ca",
@@ -2347,14 +2716,6 @@
       1,
       0,
       1736
-    ],
-    [
-      244023,
-      "Peter Bodnar",
-      "ca",
-      1,
-      0,
-      1719
     ],
     [
       620054,
@@ -2531,6 +2892,38 @@
       1,
       0,
       1673
+    ],
+    [
+      252774,
+      "Demo Kiriopoulos",
+      "ca",
+      1,
+      0,
+      1671
+    ],
+    [
+      587659,
+      "Zeeshan Peervani",
+      "ca",
+      1,
+      0,
+      1671
+    ],
+    [
+      308144,
+      "Cuong Le",
+      "ca",
+      1,
+      0,
+      1671
+    ],
+    [
+      1364947,
+      "Jason Rimmer",
+      "ca",
+      1,
+      0,
+      1671
     ],
     [
       1115487,
@@ -2871,14 +3264,6 @@
     [
       707625,
       "John Macdonald",
-      "ca",
-      1,
-      0,
-      1258
-    ],
-    [
-      527891,
-      "Christopher Turnbull",
       "ca",
       1,
       0,
