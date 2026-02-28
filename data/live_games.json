@@ -1,5 +1,5 @@
 {
-  "timestamp": "5:10 PM · Feb 28, 2026",
+  "timestamp": "6:10 PM · Feb 28, 2026",
   "error": false,
   "stale": false,
   "stale_reason": "",
@@ -8,33 +8,33 @@
       "name": "1/3 NL Hold’em",
       "limits": "$100–$300 Buy-in",
       "tables": "5"
+    },
+    {
+      "name": "1/3 PLO (Match the Stack)",
+      "limits": "",
+      "tables": "1"
     }
   ],
   "waitlist": [
     {
       "name": "1/3 PLO (Match the Stack)",
       "limits": "",
-      "waiting": "12"
-    },
-    {
-      "name": "1/3 NL Hold’em",
-      "limits": "$100–$300 Buy-in",
-      "waiting": "15"
+      "waiting": "6"
     },
     {
       "name": "1/3 NL (Match the Stack)",
       "limits": "",
-      "waiting": "6"
+      "waiting": "7"
+    },
+    {
+      "name": "1/3 NL Hold’em",
+      "limits": "$100–$300 Buy-in",
+      "waiting": "17"
     },
     {
       "name": "2/5 NL Hold’em",
       "limits": "$200–$1000 Buy-in",
-      "waiting": "8"
-    },
-    {
-      "name": "2/5 NL (Match the Stack)",
-      "limits": "",
-      "waiting": "2"
+      "waiting": "13"
     }
   ],
   "tournament": null
