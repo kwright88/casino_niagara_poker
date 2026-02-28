@@ -7,6 +7,8 @@ __pycache__/
 
 # Secrets
 .env
+bravo_accounts.json
+data/bravo_accounts.json
 
 # macOS metadata
 .DS_Store
