@@ -52,10 +52,6 @@ var ResultsTable = (function () {
 
   function buildRow(ev, showYear) {
     var color = TYPE_COLOR[ev.type] || 'var(--wed)';
-    if (ev.type === 'main') {
-      var seasonColor = getSeasonColor(ev);
-      if (seasonColor) color = seasonColor;
-    }
     var entriesTd = ev.entries
       ? '<td class="rt-entries">' + esc(String(ev.entries)) + '</td>'
       : '<td class="rt-unknown">\u2014</td>';
