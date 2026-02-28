@@ -1,5 +1,5 @@
 {
-  "timestamp": "1:10 AM · Feb 28, 2026",
+  "timestamp": "2:10 AM · Feb 28, 2026",
   "error": false,
   "stale": false,
   "stale_reason": "",
@@ -7,7 +7,7 @@
     {
       "name": "1/3 NL Hold’em",
       "limits": "$100–$300 Buy-in",
-      "tables": "6"
+      "tables": "4"
     },
     {
       "name": "1/3 PLO (Match the Stack)",
@@ -19,6 +19,11 @@
     {
       "name": "1/3 PLO (Match the Stack)",
       "limits": "",
+      "waiting": "1"
+    },
+    {
+      "name": "1/3 NL Hold’em",
+      "limits": "$100–$300 Buy-in",
       "waiting": "1"
     }
   ],
