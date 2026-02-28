@@ -276,6 +276,16 @@
       gap: 8px;
     }
     .live-section-header .section-title { margin-bottom: 0; }
+    .live-call-cta {
+      text-transform: none;
+      font-family: var(--font-body, 'Inter', sans-serif);
+      font-size: 11px;
+      letter-spacing: 0.3px;
+      color: var(--muted);
+      font-weight: 400;
+    }
+    .live-call-cta a { color: var(--gold3); text-decoration: none; }
+    .live-call-cta a:hover { text-decoration: underline; }
     .live-timestamp {
       font-size: 11px;
       color: var(--muted);
