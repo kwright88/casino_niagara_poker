@@ -267,12 +267,13 @@ fetch('../../data/main_events_stats.json', {cache: 'no-cache'})
   // Stats page: only show recurring tournament types (exclude main/festival events)
   var RECURRING = {main:1};
   ResultsTable.init({
-    tbodyId:     'results-tbody',
-    tableId:     'results-table',
-    timestampId: 'stats-ts-results',
-    dataUrl:     '../../data/main_events_stats.json',
-    showYear:    true,
-    filterFn:    function(ev) { return RECURRING[ev.type] === 1; },
+    tbodyId:      'results-tbody',
+    tableId:      'results-table',
+    timestampId:  'stats-ts-results',
+    dataUrl:      '../../data/main_events_stats.json',
+    showYear:     true,
+    seasonColors: true,
+    filterFn:     function(ev) { return RECURRING[ev.type] === 1; },
     onLoad:      function(data) {
       var ts2 = document.getElementById('stats-ts-footer');
       if (ts2) ts2.textContent = data.last_updated || '\u2013';

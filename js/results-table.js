@@ -50,8 +50,12 @@ var ResultsTable = (function () {
     return season ? (SEASON_COLOR[season] || null) : null;
   }
 
-  function buildRow(ev, showYear) {
+  function buildRow(ev, showYear, useSeasonColors) {
     var color = TYPE_COLOR[ev.type] || 'var(--wed)';
+    if (useSeasonColors && ev.type === 'main') {
+      var seasonColor = getSeasonColor(ev);
+      if (seasonColor) color = seasonColor;
+    }
     var entriesTd = ev.entries
       ? '<td class="rt-entries">' + esc(String(ev.entries)) + '</td>'
       : '<td class="rt-unknown">\u2014</td>';
@@ -101,13 +105,14 @@ var ResultsTable = (function () {
   }
 
   function init(opts) {
-    var tbodyId    = opts.tbodyId;
-    var tableId    = opts.tableId || null;
-    var tsId       = opts.timestampId || null;
-    var dataUrl    = opts.dataUrl;
-    var filterFn   = opts.filterFn || null;
-    var onLoad     = opts.onLoad || null;
-    var showYear   = opts.showYear || false;
+    var tbodyId         = opts.tbodyId;
+    var tableId         = opts.tableId || null;
+    var tsId            = opts.timestampId || null;
+    var dataUrl         = opts.dataUrl;
+    var filterFn        = opts.filterFn || null;
+    var onLoad          = opts.onLoad || null;
+    var showYear        = opts.showYear || false;
+    var useSeasonColors = opts.seasonColors || false;
 
     var sortCol = 'date';
     var sortDir = 1; // 1 = desc for date (newest first by default)
@@ -166,7 +171,7 @@ var ResultsTable = (function () {
         var tbody = document.getElementById(tbodyId);
         if (tbody) {
           tbody.innerHTML = results.length
-            ? results.map(function(ev) { return buildRow(ev, showYear); }).join('')
+            ? results.map(function(ev) { return buildRow(ev, showYear, useSeasonColors); }).join('')
             : '<tr><td colspan="6" style="text-align:center;color:var(--muted);padding:20px;">No results yet</td></tr>';
 
           var trs = Array.prototype.slice.call(tbody.querySelectorAll('tr'));

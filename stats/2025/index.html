@@ -267,12 +267,13 @@ fetch('../../data/stats_2025.json', {cache: 'no-cache'})
   // Stats page: only show recurring tournament types (exclude main/festival events)
   var RECURRING = {wed:1, sun:1, sun550:1, wed275:1, fri240:1, mon175:1, tue225:1, fri_bounty:1};
   ResultsTable.init({
-    tbodyId:     'results-tbody',
-    tableId:     'results-table',
-    timestampId: 'stats-ts-results',
-    dataUrl:     '../../data/stats_2025.json',
-    showYear:    false,
-    filterFn:    function(ev) { return RECURRING[ev.type] === 1; },
+    tbodyId:      'results-tbody',
+    tableId:      'results-table',
+    timestampId:  'stats-ts-results',
+    dataUrl:      '../../data/stats_2025.json',
+    showYear:     false,
+    seasonColors: true,
+    filterFn:     function(ev) { return RECURRING[ev.type] === 1; },
     onLoad:      function(data) {
       var ts2 = document.getElementById('stats-ts-footer');
       if (ts2) ts2.textContent = data.last_updated || '\u2013';
