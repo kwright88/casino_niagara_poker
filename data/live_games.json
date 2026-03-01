@@ -1,5 +1,5 @@
 {
-  "timestamp": "4:15 PM · Mar 1, 2026",
+  "timestamp": "4:30 PM · Mar 1, 2026",
   "error": false,
   "stale": false,
   "stale_reason": "",
@@ -31,9 +31,9 @@
     "name": "",
     "level": "10",
     "blinds": "1,000 / 2,000 · Ante 2,000",
-    "time_left": "30:00",
+    "time_left": "15:12",
     "num_entrants": 94,
-    "num_remaining": 34,
+    "num_remaining": 32,
     "prize_pool": "32369",
     "clock_state": "R"
   }
