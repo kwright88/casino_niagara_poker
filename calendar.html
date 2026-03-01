@@ -398,7 +398,8 @@
       const pills = cell.events.map(ev => {
         const dimAttr    = ev.dim     ? ' style="opacity:0.65"' : '';
         const blackoutCl = ev.blackout ? ' blackout' : '';
-        return `<span class="tourney ${ev.type}${blackoutCl}"${dimAttr}>${ev.label}<br>` +
+        const tipAttr    = ev.blackout ? ' data-tip="Events on this date are cancelled"' : '';
+        return `<span class="tourney ${ev.type}${blackoutCl}"${dimAttr}${tipAttr}>${ev.label}<br>` +
                `<span class="time">${ev.sub}</span></span>`;
       }).join('');
 
@@ -536,6 +537,14 @@
           getResultRows(t).forEach(r => r.classList.add('hl-pinned'));
         }
       });
+
+      // Blackout tooltip: show briefly on tap (mobile)
+      if (el.classList.contains('blackout')) {
+        el.addEventListener('touchstart', () => {
+          el.classList.add('show-tip');
+          setTimeout(() => el.classList.remove('show-tip'), 2200);
+        }, { passive: true });
+      }
     });
   }
 
