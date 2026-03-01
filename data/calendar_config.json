@@ -9,5 +9,5 @@
     "2026-05-21": [{"type": "main", "label": "Spring Main Event", "sub": "Day 2 · 12:30 PM"}],
     "2026-05-22": [{"type": "main", "label": "Spring Main Event", "sub": "Day 3 (if needed)", "dim": true}]
   },
-  "blackout_dates": []
+  "blackout_dates": ["2026-05-13"]
 }
