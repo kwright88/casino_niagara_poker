@@ -80,7 +80,7 @@ var ResultsTable = (function () {
     var dateText = esc(ev.date);
     if (showYear && ev.date_iso) dateText += ' \'' + esc(ev.date_iso.slice(2, 4));
     return (
-      '<tr>' +
+      '<tr data-type="' + esc(ev.type || '') + '">' +
         '<td class="td-l rt-date">' + dateText + '</td>' +
         '<td class="td-l"><span class="rt-type">' +
           '<span class="rt-dot" style="background:' + color + '"></span>' +

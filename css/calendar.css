@@ -282,6 +282,20 @@
     .tourney.hl-pinned     { opacity: 1 !important; filter: brightness(1.5); box-shadow: 0 0 0 2px currentColor, 0 0 18px rgba(255,255,255,0.3); }
     .detail-card.hl-pinned { opacity: 1 !important; }
 
+    /* Results table rows — highlight / dim / glow (mirrors pill + card system) */
+    #results-tbody tr[data-type]          { transition: opacity 0.18s, background 0.18s, outline 0.18s; }
+    #results-tbody tr[data-type].hl-dim   { opacity: 0.2; }
+    #results-tbody tr[data-type].hl-active { outline: 1px solid transparent; outline-offset: -1px; }
+    #results-tbody tr[data-type="wed"].hl-active    { background: rgba(37,99,168,0.12);   outline-color: rgba(37,99,168,0.5); }
+    #results-tbody tr[data-type="sun"].hl-active    { background: rgba(176,125,44,0.12);  outline-color: rgba(176,125,44,0.5); }
+    #results-tbody tr[data-type="sun550"].hl-active { background: rgba(46,125,82,0.12);   outline-color: rgba(46,125,82,0.5); }
+    #results-tbody tr[data-type="main"].hl-active   { background: rgba(139,32,32,0.15);   outline-color: rgba(139,32,32,0.6); }
+    #results-tbody tr[data-type].hl-pinned          { opacity: 1 !important; }
+    #results-tbody tr[data-type="wed"].hl-pinned    { background: rgba(37,99,168,0.22);   outline: 1px solid rgba(37,99,168,0.75);  outline-offset: -1px; }
+    #results-tbody tr[data-type="sun"].hl-pinned    { background: rgba(176,125,44,0.22);  outline: 1px solid rgba(176,125,44,0.75); outline-offset: -1px; }
+    #results-tbody tr[data-type="sun550"].hl-pinned { background: rgba(46,125,82,0.22);   outline: 1px solid rgba(46,125,82,0.75);  outline-offset: -1px; }
+    #results-tbody tr[data-type="main"].hl-pinned   { background: rgba(139,32,32,0.28);   outline: 1px solid rgba(139,32,32,0.85);  outline-offset: -1px; }
+
     /* ── 2026 Results table ── */
     .results-section { margin-top: 48px; }
     .results-section h2 {

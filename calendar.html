@@ -462,8 +462,12 @@
   function getCard(type) {
     return document.querySelector(`.detail-card[data-type="${type}"]`);
   }
+  // Get all results table rows of a given type
+  function getResultRows(type) {
+    return document.querySelectorAll(`#results-tbody tr[data-type="${type}"]`);
+  }
 
-  // Highlight the active type and dim all others (both pills and detail cards)
+  // Highlight the active type and dim all others (pills, detail cards, and results rows)
   function applyHighlight(type) {
     TYPES.forEach(t => {
       const dim = t !== type;
@@ -476,11 +480,19 @@
         card.classList.toggle('hl-active', !dim);
         card.classList.toggle('hl-dim',    dim);
       }
+      // Results table rows
+      getResultRows(t).forEach(el => {
+        el.classList.toggle('hl-active', !dim);
+        el.classList.toggle('hl-dim',    dim);
+      });
     });
   }
 
   function clearHighlight() {
     document.querySelectorAll('.tourney, .detail-card').forEach(el => {
+      el.classList.remove('hl-active', 'hl-dim', 'hl-pinned');
+    });
+    document.querySelectorAll('#results-tbody tr[data-type]').forEach(el => {
       el.classList.remove('hl-active', 'hl-dim', 'hl-pinned');
     });
   }
@@ -521,6 +533,7 @@
           getPills(t).forEach(p => p.classList.add('hl-pinned'));
           const card = getCard(t);
           if (card) card.classList.add('hl-pinned');
+          getResultRows(t).forEach(r => r.classList.add('hl-pinned'));
         }
       });
     });
@@ -553,6 +566,7 @@
         getPills(t).forEach(p => p.classList.add('hl-pinned'));
         const card = getCard(t);
         if (card) card.classList.add('hl-pinned');
+        getResultRows(t).forEach(r => r.classList.add('hl-pinned'));
       }
     });
   });
@@ -776,6 +790,39 @@
     tbodyId:     'results-tbody',
     timestampId: 'results-last-updated',
     dataUrl:     'data/results_2026.json',
+    onLoad: function() {
+      // Wire up hover/click on results rows for bidirectional highlighting with
+      // calendar pills and detail cards. Rows already have data-type from results-table.js.
+      document.querySelectorAll('#results-tbody tr[data-type]').forEach(function(row) {
+        row.style.cursor = 'pointer';
+        row.addEventListener('mouseenter', function() {
+          if (pinnedType) return;
+          var t = row.dataset.type;
+          if (t) applyHighlight(t);
+        });
+        row.addEventListener('mouseleave', function() {
+          if (pinnedType) return;
+          clearHighlight();
+        });
+        row.addEventListener('click', function(e) {
+          e.stopPropagation();
+          var t = row.dataset.type;
+          if (!t) return;
+          if (pinnedType === t) {
+            pinnedType = null;
+            clearHighlight();
+          } else {
+            pinnedType = t;
+            clearHighlight();
+            applyHighlight(t);
+            getPills(t).forEach(function(p) { p.classList.add('hl-pinned'); });
+            var card = getCard(t);
+            if (card) card.classList.add('hl-pinned');
+            getResultRows(t).forEach(function(r) { r.classList.add('hl-pinned'); });
+          }
+        });
+      });
+    },
   });
 
   // ── JSON-LD Event schema — dynamically generated for upcoming 60 days ─────
