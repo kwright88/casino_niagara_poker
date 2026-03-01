@@ -494,8 +494,10 @@
     @media (max-width: 600px) {
       .games-grid { grid-template-columns: 1fr; }
       .live-tables-grid { grid-template-columns: 1fr; }
-      .hero-stats { flex-direction: column; }
-      .hero-stat { border-right: none; border-bottom: 1px solid var(--border); }
-      .hero-stat:last-child { border-bottom: none; }
+      /* 2×2 grid on phones */
+      .hero-stats { display: grid; grid-template-columns: 1fr 1fr; flex-direction: unset; }
+      .hero-stat { border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 16px 10px; }
+      .hero-stat:nth-child(even)  { border-right: none; }
+      .hero-stat:nth-child(n+3)   { border-bottom: none; }
       .tc-clock-grid { grid-template-columns: repeat(3, 1fr); }
     }
