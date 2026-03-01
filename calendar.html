@@ -562,11 +562,7 @@
   })();
 
   function showBlackoutTip(pill) {
-    const rect = pill.getBoundingClientRect();
     _bTip.textContent = pill.dataset.tip || 'Events on this date are cancelled';
-    // Centre horizontally over the pill; position just above it (CSS transform shifts up by 100%)
-    _bTip.style.left = (rect.left + rect.width / 2) + 'px';
-    _bTip.style.top  = (rect.top - 8) + 'px';
     _bTip.classList.add('visible');
   }
 
