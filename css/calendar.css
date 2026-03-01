@@ -257,13 +257,10 @@
       text-shadow: 0 0 8px rgba(255,26,26,0.8), 0 2px 6px rgba(0,0,0,0.6);
       pointer-events: none;
     }
-    /* Tooltip shown on hover (desktop) and .show-tip class (mobile tap) */
-    .tourney.blackout::before {
-      content: attr(data-tip);
-      position: absolute;
-      bottom: calc(100% + 7px);
-      left: 50%;
-      transform: translateX(-50%);
+    /* Blackout tooltip — body-level div, never clipped by parent overflow */
+    #blackout-tip {
+      position: fixed;
+      transform: translate(-50%, -100%);
       background: rgba(20, 5, 5, 0.95);
       color: #fff;
       font-size: 11px;
@@ -275,12 +272,9 @@
       pointer-events: none;
       opacity: 0;
       transition: opacity 0.15s;
-      z-index: 200;
+      z-index: 9999;
     }
-    .tourney.blackout:hover::before,
-    .tourney.blackout.show-tip::before {
-      opacity: 1;
-    }
+    #blackout-tip.visible { opacity: 1; }
 
     .tourney        { transition: opacity 0.18s, box-shadow 0.18s, filter 0.18s; }
     .detail-card    { transition: opacity 0.18s, box-shadow 0.18s, border-color 0.18s; }

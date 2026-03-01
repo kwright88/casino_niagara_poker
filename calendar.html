@@ -538,14 +538,40 @@
         }
       });
 
-      // Blackout tooltip: show briefly on tap (mobile)
+      // Blackout tooltip: body-level div positioned via getBoundingClientRect()
+      // Avoids overflow clipping from parent grid cells on mobile.
       if (el.classList.contains('blackout')) {
+        el.addEventListener('mouseenter', () => showBlackoutTip(el));
+        el.addEventListener('mouseleave', hideBlackoutTip);
         el.addEventListener('touchstart', () => {
-          el.classList.add('show-tip');
-          setTimeout(() => el.classList.remove('show-tip'), 2200);
+          showBlackoutTip(el);
+          setTimeout(hideBlackoutTip, 2200);
         }, { passive: true });
       }
     });
+  }
+
+  // ── Blackout tooltip ──────────────────────────────────────────────────────────
+  // A single <div> appended to <body> and repositioned on demand.
+  // Using a body-level element means it's never clipped by parent overflow:hidden.
+  const _bTip = (() => {
+    const el = document.createElement('div');
+    el.id = 'blackout-tip';
+    document.body.appendChild(el);
+    return el;
+  })();
+
+  function showBlackoutTip(pill) {
+    const rect = pill.getBoundingClientRect();
+    _bTip.textContent = pill.dataset.tip || 'Events on this date are cancelled';
+    // Centre horizontally over the pill; position just above it (CSS transform shifts up by 100%)
+    _bTip.style.left = (rect.left + rect.width / 2) + 'px';
+    _bTip.style.top  = (rect.top - 8) + 'px';
+    _bTip.classList.add('visible');
+  }
+
+  function hideBlackoutTip() {
+    _bTip.classList.remove('visible');
   }
 
   // Detail card hover/click — same highlight behaviour as pills, but cards are static DOM
