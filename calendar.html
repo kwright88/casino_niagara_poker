@@ -538,15 +538,23 @@
         }
       });
 
-      // Blackout tooltip: body-level div positioned via getBoundingClientRect()
-      // Avoids overflow clipping from parent grid cells on mobile.
+      // Blackout tooltip: body-level div, shown on hover (desktop) or tap (mobile).
+      // Desktop uses mouseenter/mouseleave. Mobile-only devices skip those entirely —
+      // mobile browsers fire a simulated mouseleave on tap which immediately hides the
+      // toast. The (hover:hover) media query gates the mouse listeners to real pointers only.
       if (el.classList.contains('blackout')) {
-        el.addEventListener('mouseenter', () => showBlackoutTip(el));
-        el.addEventListener('mouseleave', hideBlackoutTip);
-        el.addEventListener('touchstart', () => {
-          showBlackoutTip(el);
-          setTimeout(hideBlackoutTip, 2200);
-        }, { passive: true });
+        if (window.matchMedia('(hover: hover)').matches) {
+          el.addEventListener('mouseenter', () => showBlackoutTip(el));
+          el.addEventListener('mouseleave', hideBlackoutTip);
+        } else {
+          // Touch device: delay so the toast appears after the tap highlight settles
+          el.addEventListener('touchstart', () => {
+            setTimeout(() => {
+              showBlackoutTip(el);
+              setTimeout(hideBlackoutTip, 2200);
+            }, 350);
+          }, { passive: true });
+        }
       }
     });
   }
