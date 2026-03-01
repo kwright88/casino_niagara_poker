@@ -387,7 +387,7 @@
         : '';
       return (
         '<div class="live-section-header">'+
-          '<p class="section-title">Live Right Now <span class="live-call-cta">\u2014 Call <a href="tel:+19053537000">(905) 353-7000</a> to add yourself to the list</span></p>'+
+          '<p class="section-title">Live Right Now <span class="live-call-cta">\u2014 Call <a href="tel:+19053537000">(905) 353-7000</a> to get on the list</span></p>'+
           '<span class="live-timestamp"><span class="live-dot"></span>As of '+esc(data.timestamp||'–')+staleBadge+'</span>'+
         '</div>'+
         '<div class="live-tables-grid">'+gridHtml+'</div>'+
@@ -407,7 +407,7 @@
         // Network failure (e.g. offline, GitHub Pages unreachable) — show error card
         container.innerHTML = (
           '<div class="live-section-header">'+
-            '<p class="section-title">Live Right Now <span class="live-call-cta">\u2014 Call <a href="tel:+19053537000">(905) 353-7000</a> to add yourself to the list</span></p>'+
+            '<p class="section-title">Live Right Now <span class="live-call-cta">\u2014 Call <a href="tel:+19053537000">(905) 353-7000</a> to get on the list</span></p>'+
             '<span class="live-timestamp" style="opacity:0.5">Unavailable</span>'+
           '</div>'+
           '<div class="live-tables-grid">'+errorCard()+'</div>'
