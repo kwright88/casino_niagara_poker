@@ -1,5 +1,5 @@
 {
-  "timestamp": "10:45 PM · Mar 1, 2026",
+  "timestamp": "11:00 PM · Mar 1, 2026",
   "error": false,
   "stale": false,
   "stale_reason": "",
@@ -19,7 +19,7 @@
     {
       "name": "1/3 PLO (Match the Stack)",
       "limits": "",
-      "waiting": "4"
+      "waiting": "3"
     },
     {
       "name": "1/3 NL Hold’em",
@@ -31,9 +31,9 @@
     "name": "$400 Sunday",
     "level": "21",
     "blinds": "20,000 / 40,000 · Ante 40,000",
-    "time_left": "22:48",
+    "time_left": "07:17",
     "num_entrants": 94,
-    "num_remaining": 5,
+    "num_remaining": 4,
     "prize_pool": "32369",
     "clock_state": "R"
   }
