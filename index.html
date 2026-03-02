@@ -355,7 +355,7 @@
       if (!t) return '';
       var name = t.name || '';
       // Append tournament name to the card header if Bravo provided one
-      var nameSuffix = name ? '<span class="lt-sep"> · </span><span class="lt-subtitle">'+esc(name)+'</span>' : '';
+      var nameSuffix = name ? '<span class="lt-sep"> - </span><span class="lt-subtitle">'+esc(name)+'</span>' : '';
       // Always show level, blinds, time remaining; add entrants/remaining/prize if available
       var stats = [['🎯 Level',t.level],['Blinds',t.blinds],['⏱ Time Left',t.time_left]];
       if (t.num_entrants) stats.push(['Total Entries', t.num_entrants.toLocaleString()]);
