@@ -1,8 +1,8 @@
 {
-  "timestamp": "5:30 AM · Mar 2, 2026",
+  "timestamp": "6:00 AM · Mar 2, 2026",
   "error": false,
-  "stale": true,
-  "stale_reason": "Page.wait_for_selector: Timeout 10000ms exceeded.\nCall log:\n  - waiting for locator(\"input[name=\\\"Email\\\"]\") to be visible\n",
+  "stale": false,
+  "stale_reason": "",
   "games": [],
   "waitlist": [],
   "tournament": null
