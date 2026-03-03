@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-03 12:21 am",
+  "last_updated": "2026-03-03 12:36 am",
   "results": [
     {
       "date_iso": "2018-12-18",
@@ -7,7 +7,7 @@
       "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=517952",
       "tournament": "NLH $150",
       "type": "main",
-      "entries": "",
+      "entries": null,
       "prize_pool": "",
       "first_place": "$8,882",
       "winner_name": "Marlon Singh",
@@ -20,7 +20,7 @@
       "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=517938",
       "tournament": "NLH $150",
       "type": "main",
-      "entries": "",
+      "entries": null,
       "prize_pool": "",
       "first_place": "$8,193",
       "winner_name": "Michael Giles",
@@ -35,7 +35,7 @@
       "type": "main",
       "entries": 165,
       "prize_pool": "",
-      "first_place": "",
+      "first_place": null,
       "winner_name": "",
       "country_code": "",
       "winner_url": ""
@@ -46,7 +46,7 @@
       "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=517902",
       "tournament": "NLH $150",
       "type": "main",
-      "entries": "",
+      "entries": null,
       "prize_pool": "$28,669",
       "first_place": "$7,408",
       "winner_name": "David Quang",
