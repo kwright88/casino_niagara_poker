@@ -1,0 +1,1021 @@
+{
+  "last_updated": "2026-03-03",
+  "results": [
+    {
+      "date": "Jan 6",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=653241",
+      "tournament": "Tuesday $225 NLH",
+      "type": "tue225",
+      "entries": 89,
+      "prize_pool": "$16,834",
+      "first_place": "$5,341",
+      "winner_name": "",
+      "country_code": "",
+      "winner_url": ""
+    },
+    {
+      "date": "Jan 13",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=657805",
+      "tournament": "Tuesday $225 NLH",
+      "type": "tue225",
+      "entries": 87,
+      "prize_pool": "$16,456",
+      "first_place": "$5,307",
+      "winner_name": "Eric Shapiro",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=719957"
+    },
+    {
+      "date": "Jan 20",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=657811",
+      "tournament": "Tuesday $225 NLH",
+      "type": "tue225",
+      "entries": 89,
+      "prize_pool": "$16,834",
+      "first_place": "$5,341",
+      "winner_name": "Filip Savovski",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=676205"
+    },
+    {
+      "date": "Jan 27",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=659689",
+      "tournament": "Tuesday $225 NLH",
+      "type": "tue225",
+      "entries": 127,
+      "prize_pool": "$24,022",
+      "first_place": "$6,967",
+      "winner_name": "Wilfred Mohabir",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=753467"
+    },
+    {
+      "date": "Feb 3",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=659695",
+      "tournament": "Tuesday $225 NLH",
+      "type": "tue225",
+      "entries": 127,
+      "prize_pool": "$24,022",
+      "first_place": "$6,967",
+      "winner_name": "",
+      "country_code": "",
+      "winner_url": ""
+    },
+    {
+      "date": "Feb 10",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=664183",
+      "tournament": "Tuesday $225 NLH",
+      "type": "tue225",
+      "entries": 126,
+      "prize_pool": "$23,833",
+      "first_place": "$6,911",
+      "winner_name": "Giovanni LaMarca",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=783811"
+    },
+    {
+      "date": "Mar 2",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=822637",
+      "tournament": "Tuesday $225 NLH",
+      "type": "tue225",
+      "entries": 93,
+      "prize_pool": "$17,591",
+      "first_place": "$5,581",
+      "winner_name": "",
+      "country_code": "",
+      "winner_url": ""
+    },
+    {
+      "date": "Mar 9",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=822633",
+      "tournament": "Tuesday $225 NLH",
+      "type": "tue225",
+      "entries": 101,
+      "prize_pool": "$19,104",
+      "first_place": "$5,827",
+      "winner_name": "Giovanni La Marca",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=729411"
+    }
+  ],
+  "awards": [
+    {
+      "icon": "🏆",
+      "title": "Most Cashes",
+      "winner_name": "Marlon Singh",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=671588",
+      "country_code": "ca",
+      "detail": "4 cashes in 2020",
+      "tooltip": "Most total cashes in 2020 recurring tournaments",
+      "active": true
+    },
+    {
+      "icon": "💰",
+      "title": "Most Money Won",
+      "winner_name": "Wilfred Mohabir",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=753467",
+      "country_code": "ca",
+      "detail": "$6,967 across 1 cash",
+      "tooltip": "Highest total prize money earned in 2020",
+      "active": true
+    },
+    {
+      "icon": "💐",
+      "title": "Always the Bridesmaid",
+      "winner_name": "David Conron",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=148758",
+      "country_code": "us",
+      "detail": "$6,906 total · 2 cashes · 0 wins",
+      "tooltip": "Most money won without ever winning a tournament",
+      "active": true
+    },
+    {
+      "icon": "🎯",
+      "title": "Biggest Single Score",
+      "winner_name": "Wilfred Mohabir",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=753467",
+      "country_code": "ca",
+      "detail": "$6,967 — Jan 27 Tuesday $225 NLH",
+      "tooltip": "Highest single-tournament cash in 2020",
+      "active": true
+    },
+    {
+      "icon": "📈",
+      "title": "Best Average Cash",
+      "winner_name": "David Conron",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=148758",
+      "country_code": "us",
+      "detail": "$3,453 avg · 2 cashes",
+      "tooltip": "Highest average prize per cash (min. 2 cashes)",
+      "active": true
+    },
+    {
+      "icon": "💪",
+      "title": "Still Swinging",
+      "winner_name": "Daniele Scalini",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=487047",
+      "country_code": "ca",
+      "detail": "Lowest avg cash: $499 · 2 cashes",
+      "tooltip": "Lowest average cash (min. 2 cashes)",
+      "active": true
+    },
+    {
+      "icon": "🎪",
+      "title": "Final Tablist",
+      "winner_name": "Marlon Singh",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=671588",
+      "country_code": "ca",
+      "detail": "4 final tables in 2020 (top-9 finishes)",
+      "tooltip": "Most final table appearances (top-9 finishes) in 2020",
+      "active": true
+    },
+    {
+      "icon": "📋",
+      "title": "Largest Field Conquered",
+      "winner_name": "Wilfred Mohabir",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=753467",
+      "country_code": "ca",
+      "detail": "Won with 127 entries — Jan 27",
+      "tooltip": "Won the tournament with the most entries in 2020",
+      "active": true
+    },
+    {
+      "icon": "🔥",
+      "title": "Longest Cash Streak",
+      "winner_name": "David Conron",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=148758",
+      "country_code": "us",
+      "detail": "2 in a row · Jan 27 & Feb 3 · Won tiebreaker ($6,906)",
+      "tooltip": "Longest consecutive run of cashing in recurring tournaments",
+      "active": true
+    },
+    {
+      "icon": "⚡",
+      "title": "Longest Final Table Streak",
+      "winner_name": "David Conron",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=148758",
+      "country_code": "us",
+      "detail": "2 consecutive top-9 finishes · Jan 27 & Feb 3 · Won tiebreaker ($6,906)",
+      "tooltip": "Longest consecutive run of top-9 finishes",
+      "active": true
+    },
+    {
+      "icon": "❄️",
+      "title": "Champ of January",
+      "winner_name": "Wilfred Mohabir",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=753467",
+      "country_code": "ca",
+      "detail": "$6,967 in January · 1 cash",
+      "tooltip": "Most prize money earned in January across all recurring tournaments",
+      "active": true
+    },
+    {
+      "icon": "💙",
+      "title": "Champ of February",
+      "winner_name": "Giovanni LaMarca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=783811",
+      "country_code": "ca",
+      "detail": "$6,911 in February · 1 cash",
+      "tooltip": "Most prize money earned in February across all recurring tournaments",
+      "active": true
+    },
+    {
+      "icon": "🌱",
+      "title": "Champ of March",
+      "winner_name": "Giovanni La Marca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=729411",
+      "country_code": "ca",
+      "detail": "$5,827 in March · 1 cash",
+      "tooltip": "Most prize money earned in March across all recurring tournaments",
+      "active": true
+    },
+    {
+      "icon": "🌸",
+      "title": "Champ of April",
+      "winner_name": "—",
+      "winner_url": "",
+      "country_code": "",
+      "detail": "No results yet",
+      "tooltip": "Most prize money earned in April across all recurring tournaments",
+      "active": false
+    },
+    {
+      "icon": "🌺",
+      "title": "Champ of May",
+      "winner_name": "—",
+      "winner_url": "",
+      "country_code": "",
+      "detail": "No results yet",
+      "tooltip": "Most prize money earned in May across all recurring tournaments",
+      "active": false
+    },
+    {
+      "icon": "☀️",
+      "title": "Champ of June",
+      "winner_name": "—",
+      "winner_url": "",
+      "country_code": "",
+      "detail": "No results yet",
+      "tooltip": "Most prize money earned in June across all recurring tournaments",
+      "active": false
+    },
+    {
+      "icon": "🌊",
+      "title": "Champ of July",
+      "winner_name": "—",
+      "winner_url": "",
+      "country_code": "",
+      "detail": "No results yet",
+      "tooltip": "Most prize money earned in July across all recurring tournaments",
+      "active": false
+    },
+    {
+      "icon": "🌻",
+      "title": "Champ of August",
+      "winner_name": "—",
+      "winner_url": "",
+      "country_code": "",
+      "detail": "No results yet",
+      "tooltip": "Most prize money earned in August across all recurring tournaments",
+      "active": false
+    },
+    {
+      "icon": "🍂",
+      "title": "Champ of September",
+      "winner_name": "—",
+      "winner_url": "",
+      "country_code": "",
+      "detail": "No results yet",
+      "tooltip": "Most prize money earned in September across all recurring tournaments",
+      "active": false
+    },
+    {
+      "icon": "🎃",
+      "title": "Champ of October",
+      "winner_name": "—",
+      "winner_url": "",
+      "country_code": "",
+      "detail": "No results yet",
+      "tooltip": "Most prize money earned in October across all recurring tournaments",
+      "active": false
+    },
+    {
+      "icon": "🍁",
+      "title": "Champ of November",
+      "winner_name": "—",
+      "winner_url": "",
+      "country_code": "",
+      "detail": "No results yet",
+      "tooltip": "Most prize money earned in November across all recurring tournaments",
+      "active": false
+    },
+    {
+      "icon": "🎄",
+      "title": "Champ of December",
+      "winner_name": "—",
+      "winner_url": "",
+      "country_code": "",
+      "detail": "No results yet",
+      "tooltip": "Most prize money earned in December across all recurring tournaments",
+      "active": false
+    }
+  ],
+  "players": [
+    [
+      753467,
+      "Wilfred Mohabir",
+      "ca",
+      1,
+      1,
+      6967
+    ],
+    [
+      783811,
+      "Giovanni LaMarca",
+      "ca",
+      1,
+      1,
+      6911
+    ],
+    [
+      148758,
+      "David Conron",
+      "us",
+      2,
+      0,
+      6906
+    ],
+    [
+      671588,
+      "Marlon Singh",
+      "ca",
+      4,
+      0,
+      6586
+    ],
+    [
+      729411,
+      "Giovanni La Marca",
+      "ca",
+      2,
+      1,
+      6361
+    ],
+    [
+      719957,
+      "Eric Shapiro",
+      "ca",
+      2,
+      1,
+      6100
+    ],
+    [
+      676205,
+      "Filip Savovski",
+      "ca",
+      2,
+      1,
+      6024
+    ],
+    [
+      783767,
+      "Ranjeev Dhillon",
+      "ca",
+      1,
+      0,
+      4324
+    ],
+    [
+      936767,
+      "Vyacheslav Litvenenko",
+      "ca",
+      1,
+      0,
+      3582
+    ],
+    [
+      790655,
+      "Fawaz Siddiqui",
+      "ca",
+      1,
+      0,
+      3342
+    ],
+    [
+      775877,
+      "Tserendash Battulga",
+      "ca",
+      1,
+      0,
+      3199
+    ],
+    [
+      767615,
+      "Joao Pereira",
+      "ca",
+      1,
+      0,
+      3199
+    ],
+    [
+      489696,
+      "Evan Shapiro",
+      "ca",
+      2,
+      0,
+      3087
+    ],
+    [
+      697699,
+      "Trung Nguyen",
+      "ca",
+      2,
+      0,
+      2913
+    ],
+    [
+      695917,
+      "Marco Leonelli",
+      "ca",
+      1,
+      0,
+      2582
+    ],
+    [
+      154521,
+      "Andrew Talbot",
+      "ca",
+      1,
+      0,
+      2197
+    ],
+    [
+      589798,
+      "Vincent Laise",
+      "ca",
+      1,
+      0,
+      2111
+    ],
+    [
+      729377,
+      "Divon Ramrup",
+      "ca",
+      1,
+      0,
+      2020
+    ],
+    [
+      782139,
+      "Dimitry Rubinshtein",
+      "ca",
+      1,
+      0,
+      1995
+    ],
+    [
+      531711,
+      "Darcy Rickert",
+      "us",
+      2,
+      0,
+      1698
+    ],
+    [
+      414194,
+      "Ryan Phan",
+      "us",
+      2,
+      0,
+      1654
+    ],
+    [
+      370249,
+      "Ali Keshavarz",
+      "ca",
+      1,
+      0,
+      1621
+    ],
+    [
+      783769,
+      "Michael Lefevre",
+      "ca",
+      1,
+      0,
+      1621
+    ],
+    [
+      654298,
+      "Omid Mahmoudi-Kashani",
+      "ca",
+      2,
+      0,
+      1541
+    ],
+    [
+      443832,
+      "Peter Chien",
+      "ca",
+      1,
+      0,
+      1433
+    ],
+    [
+      44951,
+      "Eric Young",
+      "ca",
+      1,
+      0,
+      1363
+    ],
+    [
+      501740,
+      "Trevor Grove",
+      "ca",
+      2,
+      0,
+      1353
+    ],
+    [
+      267796,
+      "Todd Saffron",
+      "us",
+      1,
+      0,
+      1349
+    ],
+    [
+      620054,
+      "Hayden Toole",
+      "ca",
+      1,
+      0,
+      1305
+    ],
+    [
+      342271,
+      "Harpreet Padda",
+      "ca",
+      1,
+      0,
+      1305
+    ],
+    [
+      767619,
+      "Ragendra Sankar",
+      "ca",
+      2,
+      0,
+      1221
+    ],
+    [
+      195128,
+      "Bruce Kraemer",
+      "ca",
+      1,
+      0,
+      1201
+    ],
+    [
+      779791,
+      "Sean Anderson",
+      "ca",
+      1,
+      0,
+      1201
+    ],
+    [
+      562115,
+      "Joshua James",
+      "ca",
+      1,
+      0,
+      1192
+    ],
+    [
+      692323,
+      "Vincenzo Gallucci",
+      "ca",
+      1,
+      0,
+      1118
+    ],
+    [
+      782131,
+      "Charles Grapes",
+      "ca",
+      1,
+      0,
+      1055
+    ],
+    [
+      687285,
+      "George Vigelette",
+      "us",
+      1,
+      0,
+      1033
+    ],
+    [
+      244487,
+      "Donovan Obrien",
+      "ca",
+      1,
+      0,
+      1033
+    ],
+    [
+      765601,
+      "Andrea DiManno",
+      "ca",
+      1,
+      0,
+      1029
+    ],
+    [
+      487047,
+      "Daniele Scalini",
+      "ca",
+      2,
+      0,
+      999
+    ],
+    [
+      502159,
+      "Cole Neufeld",
+      "ca",
+      1,
+      0,
+      895
+    ],
+    [
+      581957,
+      "Richard Book",
+      "ca",
+      1,
+      0,
+      888
+    ],
+    [
+      227285,
+      "Edward Reid",
+      "ca",
+      1,
+      0,
+      836
+    ],
+    [
+      282957,
+      "Christian Paradis",
+      "ca",
+      1,
+      0,
+      800
+    ],
+    [
+      474141,
+      "William Whalen",
+      "us",
+      1,
+      0,
+      800
+    ],
+    [
+      531044,
+      "David Ho",
+      "ca",
+      1,
+      0,
+      793
+    ],
+    [
+      671510,
+      "Archimedes Arenas",
+      "ca",
+      1,
+      0,
+      786
+    ],
+    [
+      695895,
+      "Paul Robinson",
+      "ca",
+      1,
+      0,
+      704
+    ],
+    [
+      671586,
+      "Jolan Mancini",
+      "ca",
+      1,
+      0,
+      697
+    ],
+    [
+      744859,
+      "Latchman Ramoutar",
+      "ca",
+      1,
+      0,
+      673
+    ],
+    [
+      202928,
+      "Zoran Andric",
+      "ca",
+      1,
+      0,
+      659
+    ],
+    [
+      165472,
+      "Scott Diver",
+      "ca",
+      1,
+      0,
+      616
+    ],
+    [
+      570510,
+      "Karla Bow",
+      "us",
+      1,
+      0,
+      613
+    ],
+    [
+      708991,
+      "Jimmy Faulkner",
+      "ca",
+      1,
+      0,
+      613
+    ],
+    [
+      163860,
+      "Francesco Maltese",
+      "ca",
+      1,
+      0,
+      613
+    ],
+    [
+      732713,
+      "Kirk Sorensen",
+      "ca",
+      1,
+      0,
+      613
+    ],
+    [
+      210664,
+      "James Jackson",
+      "ca",
+      1,
+      0,
+      613
+    ],
+    [
+      582969,
+      "Vinash Luthra",
+      "ca",
+      1,
+      0,
+      608
+    ],
+    [
+      576558,
+      "Ilias Kallinis",
+      "ca",
+      1,
+      0,
+      608
+    ],
+    [
+      583015,
+      "Behnam Esfahanizadeh",
+      "ca",
+      1,
+      0,
+      589
+    ],
+    [
+      725575,
+      "Mihir Patel",
+      "ca",
+      1,
+      0,
+      583
+    ],
+    [
+      782141,
+      "David Conran",
+      "ca",
+      1,
+      0,
+      576
+    ],
+    [
+      936763,
+      "Bin Hua",
+      "ca",
+      1,
+      0,
+      558
+    ],
+    [
+      463271,
+      "Zuhair Pachachi",
+      "us",
+      1,
+      0,
+      534
+    ],
+    [
+      188244,
+      "David Quang",
+      "ca",
+      1,
+      0,
+      534
+    ],
+    [
+      671470,
+      "Scott Roland",
+      "ca",
+      1,
+      0,
+      534
+    ],
+    [
+      953299,
+      "Michael DAmato",
+      "ca",
+      1,
+      0,
+      534
+    ],
+    [
+      783775,
+      "James Gress",
+      "ca",
+      1,
+      0,
+      534
+    ],
+    [
+      783771,
+      "Jaiden Charron",
+      "ca",
+      1,
+      0,
+      534
+    ],
+    [
+      444478,
+      "Sandy Lam",
+      "ca",
+      1,
+      0,
+      530
+    ],
+    [
+      338431,
+      "John Tabago",
+      "ca",
+      1,
+      0,
+      530
+    ],
+    [
+      199807,
+      "David Kozak",
+      "ca",
+      1,
+      0,
+      525
+    ],
+    [
+      716247,
+      "Jamie Hooley",
+      "ca",
+      1,
+      0,
+      525
+    ],
+    [
+      295565,
+      "Onur Demirci",
+      "us",
+      1,
+      0,
+      510
+    ],
+    [
+      436733,
+      "Blake Lazowski",
+      "ca",
+      1,
+      0,
+      494
+    ],
+    [
+      582552,
+      "Scott Cook",
+      "ca",
+      1,
+      0,
+      488
+    ],
+    [
+      463763,
+      "Glenn Lowson",
+      "ca",
+      1,
+      0,
+      488
+    ],
+    [
+      349520,
+      "Shawn Taplin",
+      "ca",
+      1,
+      0,
+      478
+    ],
+    [
+      582568,
+      "Timmy Vaillancourt",
+      "ca",
+      1,
+      0,
+      475
+    ],
+    [
+      666594,
+      "Eric Abrokwah",
+      "ca",
+      1,
+      0,
+      468
+    ],
+    [
+      783773,
+      "Stephen Dewhirst",
+      "ca",
+      1,
+      0,
+      468
+    ],
+    [
+      782143,
+      "Igor Rozenboim",
+      "ca",
+      1,
+      0,
+      461
+    ],
+    [
+      164854,
+      "Natalya Goldis",
+      "ca",
+      1,
+      0,
+      455
+    ],
+    [
+      767633,
+      "Sasa Cvetanovic",
+      "ca",
+      1,
+      0,
+      455
+    ],
+    [
+      936765,
+      "Coty Campbell",
+      "ca",
+      1,
+      0,
+      440
+    ],
+    [
+      775879,
+      "Diego Jenkins",
+      "ca",
+      1,
+      0,
+      421
+    ],
+    [
+      218966,
+      "Viken Hanessian",
+      "ca",
+      1,
+      0,
+      421
+    ]
+  ]
+}
