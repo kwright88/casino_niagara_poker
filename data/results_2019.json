@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-03 12:11 am",
+  "last_updated": "2026-03-03 12:21 am",
   "results": [
     {
       "date_iso": "2019-12-17",
@@ -137,9 +137,9 @@
       "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=636211",
       "tournament": "Tuesday $225 NLH",
       "type": "tue225",
-      "entries": "",
-      "prize_pool": "",
-      "first_place": "",
+      "entries": 116,
+      "prize_pool": "$22,504",
+      "first_place": "$6,640",
       "winner_name": "Dwayne Langelaan",
       "country_code": "us",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=460290"
@@ -150,9 +150,9 @@
       "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=636209",
       "tournament": "NLH $385",
       "type": "main",
-      "entries": "",
-      "prize_pool": "",
-      "first_place": "",
+      "entries": 80,
+      "prize_pool": "$27,160",
+      "first_place": "$9,234",
       "winner_name": "Jason Wright",
       "country_code": "ca",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=598309"
@@ -306,9 +306,9 @@
       "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=627715",
       "tournament": "NLH $385",
       "type": "main",
-      "entries": "",
+      "entries": 69,
       "prize_pool": "",
-      "first_place": "",
+      "first_place": "$8,199",
       "winner_name": "Victor Adams",
       "country_code": "ca",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=177076"
@@ -319,9 +319,9 @@
       "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=627713",
       "tournament": "NLH $165",
       "type": "main",
-      "entries": "",
+      "entries": 139,
       "prize_pool": "",
-      "first_place": "",
+      "first_place": "$5,652",
       "winner_name": "Eddi Miklavcic",
       "country_code": "ca",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=450690"
@@ -332,9 +332,9 @@
       "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=627711",
       "tournament": "Tuesday $225 NLH",
       "type": "tue225",
-      "entries": "",
+      "entries": 131,
       "prize_pool": "",
-      "first_place": "",
+      "first_place": "$7,181",
       "winner_name": "Maximilian Droege",
       "country_code": "ca",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=288913"
@@ -1360,8 +1360,8 @@
       "tournament": "NLH $385",
       "type": "main",
       "entries": "",
-      "prize_pool": "",
-      "first_place": "",
+      "prize_pool": "$22,335",
+      "first_place": "$9,162",
       "winner_name": "Shane Rawlins",
       "country_code": "ca",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=681715"
@@ -1373,8 +1373,8 @@
       "tournament": "NLH $165",
       "type": "main",
       "entries": "",
-      "prize_pool": "",
-      "first_place": "",
+      "prize_pool": "$40,061",
+      "first_place": "$11,818",
       "winner_name": "James Witkowski",
       "country_code": "ca",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=82110"
