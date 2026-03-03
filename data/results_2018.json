@@ -1,0 +1,70 @@
+{
+  "last_updated": "2026-03-03 12:11 am",
+  "results": [
+    {
+      "date_iso": "2018-12-18",
+      "date": "Dec 18",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=517952",
+      "tournament": "NLH $150",
+      "type": "main",
+      "entries": "",
+      "prize_pool": "",
+      "first_place": "$8,882",
+      "winner_name": "Marlon Singh",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=671588"
+    },
+    {
+      "date_iso": "2018-11-20",
+      "date": "Nov 20",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=517938",
+      "tournament": "NLH $150",
+      "type": "main",
+      "entries": "",
+      "prize_pool": "",
+      "first_place": "$8,193",
+      "winner_name": "Michael Giles",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=734627"
+    },
+    {
+      "date_iso": "2018-10-30",
+      "date": "Oct 30",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=517926",
+      "tournament": "NLH $150",
+      "type": "main",
+      "entries": 165,
+      "prize_pool": "",
+      "first_place": "",
+      "winner_name": "",
+      "country_code": "",
+      "winner_url": ""
+    },
+    {
+      "date_iso": "2018-09-11",
+      "date": "Sep 11",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=517902",
+      "tournament": "NLH $150",
+      "type": "main",
+      "entries": "",
+      "prize_pool": "$28,669",
+      "first_place": "$7,408",
+      "winner_name": "David Quang",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=188244"
+    },
+    {
+      "date_iso": "2018-07-17",
+      "date": "Jul 17",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=517900",
+      "tournament": "NLH $165",
+      "type": "main",
+      "entries": 158,
+      "prize_pool": "$22,989",
+      "first_place": "$6,178",
+      "winner_name": "Ian Wright",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=272146"
+    }
+  ]
+}
