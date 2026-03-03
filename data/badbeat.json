@@ -135,11 +135,19 @@
       "change": 1520.0,
       "collected": 1900.0,
       "nextBBJ": 190.0
+    },
+    {
+      "date": "2026-03-03",
+      "time": "10:18 AM",
+      "jackpot": 24585.3,
+      "change": 699.2,
+      "collected": 874.0,
+      "nextBBJ": 87.4
     }
   ],
   "summary": {
-    "currentJackpot": 23886.1,
-    "currentDate": "2026-03-02",
+    "currentJackpot": 24585.3,
+    "currentDate": "2026-03-03",
     "currentTime": "10:18 AM",
     "lastHitDate": "2026-02-16",
     "lastHitAmount": 129841.1
