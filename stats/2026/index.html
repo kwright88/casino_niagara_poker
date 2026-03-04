@@ -80,7 +80,7 @@
 
   <!-- Results -->
   <p class="section-title">2026 Results</p>
-  <div class="results-wrap">
+  <div class="results-wrap card">
     <table class="results-table" id="results-table">
       <thead>
         <tr>
@@ -111,7 +111,7 @@
       <input id="lb-search" class="lb-search" type="search" placeholder="Search player" aria-label="Search player leaderboard by name" autocomplete="off" spellcheck="false">
     </div>
   </div>
-  <div class="lb-wrap">
+  <div class="lb-wrap card">
     <table id="lb-table">
       <thead>
         <tr>
@@ -227,7 +227,7 @@ function buildAwardCard(award) {
       : name;
     winnerHtml = `${flag}${inner}`;
   }
-  return `<div class="award-card"${tip}><div class="award-icon">${award.icon}</div><div class="award-title">${escH(award.title)}</div><div class="award-winner">${winnerHtml}</div><div class="award-detail">${escH(award.detail)}</div></div>`;
+  return `<div class="award-card card"${tip}><div class="award-icon">${award.icon}</div><div class="award-title">${escH(award.title)}</div><div class="award-winner">${winnerHtml}</div><div class="award-detail">${escH(award.detail)}</div></div>`;
 }
 
 // ── Init ──────────────────────────────────────────────────────────────────

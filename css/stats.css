@@ -11,21 +11,14 @@
     .header-note { text-align: center; font-size: 12px; color: var(--muted); font-style: italic; margin-top: 12px; letter-spacing: 0.3px; }
 
     /* ── Results table ── */
-    .results-wrap { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); overflow-x: auto; backdrop-filter: blur(8px); box-shadow: 0 8px 40px rgba(0,0,0,0.5); margin-bottom: 8px; }
-    .results-table { width: 100%; border-collapse: collapse; font-size: 13px; }
-    .results-table thead tr { background: rgba(212,175,55,0.1); border-bottom: 1px solid var(--border); }
-    .results-table thead th { padding: 12px 16px; font-family: 'Oswald', sans-serif; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); white-space: nowrap; text-align: right; }
-    .results-table thead th.th-l { text-align: left; }
-    .results-table thead th[data-col] { cursor: pointer; user-select: none; transition: background 0.15s; position: relative; }
-    .results-table thead th[data-col]:hover { background: rgba(212,175,55,0.08); }
-    .results-table thead th[data-col].sort-asc::after  { content: ' ▲'; font-size: 9px; color: var(--gold2); }
-    .results-table thead th[data-col].sort-desc::after { content: ' ▼'; font-size: 9px; color: var(--gold2); }
+    /* .results-table structure + sort indicators → now in styles.css */
+    .results-wrap { /* background/border/border-radius → .card utility */ overflow-x: auto; backdrop-filter: blur(8px); box-shadow: 0 8px 40px rgba(0,0,0,0.5); margin-bottom: 8px; }
     /* ── Awards tiebreak note ── */
     .awards-tiebreak { font-size: 12px; color: var(--muted); margin-bottom: 14px; font-style: italic; }
 
     /* ── Awards ── */
     .awards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; margin-bottom: 40px; }
-    .award-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; display: flex; flex-direction: column; gap: 6px; transition: border-color 0.2s, box-shadow 0.2s; }
+    .award-card { /* background/border/border-radius → .card utility */ padding: 20px; display: flex; flex-direction: column; gap: 6px; transition: border-color 0.2s, box-shadow 0.2s; }
     .award-card:hover { border-color: rgba(212,175,55,0.45); box-shadow: 0 0 20px rgba(212,175,55,0.1); }
     .award-icon { font-size: 26px; line-height: 1; margin-bottom: 4px; }
     .award-title { font-family: 'Oswald', sans-serif; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); }
@@ -51,14 +44,13 @@
     }
     .lb-search:focus { border-color: var(--gold); box-shadow: 0 0 0 2px rgba(212,175,55,0.18); }
     .lb-search::placeholder { color: var(--muted); }
-    .lb-wrap { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); overflow-x: auto; backdrop-filter: blur(8px); box-shadow: 0 8px 40px rgba(0,0,0,0.5); }
+    .lb-wrap { /* background/border/border-radius → .card utility */ overflow-x: auto; backdrop-filter: blur(8px); box-shadow: 0 8px 40px rgba(0,0,0,0.5); }
     #lb-table { width: 100%; border-collapse: collapse; font-size: 13px; }
     #lb-table thead tr { background: rgba(212,175,55,0.1); border-bottom: 1px solid var(--border); }
     #lb-table thead th { padding: 12px 16px; font-family: 'Oswald', sans-serif; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); white-space: nowrap; cursor: pointer; user-select: none; transition: background 0.15s; position: relative; text-align: right; }
     #lb-table thead th.th-l { text-align: left; }
     #lb-table thead th:hover { background: rgba(212,175,55,0.08); }
-    #lb-table thead th.sort-asc::after  { content: ' ▲'; font-size: 9px; color: var(--gold2); }
-    #lb-table thead th.sort-desc::after { content: ' ▼'; font-size: 9px; color: var(--gold2); }
+    /* #lb-table sort indicators → now in styles.css */
     #lb-table tbody tr { border-bottom: 1px solid rgba(255,255,255,0.04); transition: background 0.15s; }
     #lb-table tbody tr:last-child { border-bottom: none; }
     #lb-table tbody tr:hover { background: rgba(255,255,255,0.035); }

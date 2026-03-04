@@ -79,6 +79,13 @@ main {
   padding: 40px 16px 60px;
 }
 
+/* ── Card utility ── */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
 /* ── Sticky nav ── */
 .site-nav {
   position: sticky;
@@ -186,6 +193,26 @@ header h1 {
 .flag-img { width: 20px; height: 15px; border-radius: 2px; vertical-align: middle; position: relative; top: -1px; object-fit: cover; }
 
 /* ── Results table (shared by calendar.html and tournamentstats.html) ── */
+.results-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.results-table thead tr { background: rgba(212,175,55,0.1); border-bottom: 1px solid var(--border); }
+.results-table thead th {
+  padding: 12px 16px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  white-space: nowrap;
+  text-align: right;
+}
+/* Support both naming conventions used across pages */
+.results-table thead th.th-l,
+.results-table thead th.th-left { text-align: left; }
+/* Sortable columns */
+.results-table thead th[data-col] { cursor: pointer; user-select: none; transition: background 0.15s; position: relative; }
+.results-table thead th[data-col]:hover { background: rgba(212,175,55,0.08); }
+.results-table thead th[data-col].sort-asc::after  { content: ' ▲'; font-size: 9px; color: var(--gold2); }
+.results-table thead th[data-col].sort-desc::after { content: ' ▼'; font-size: 9px; color: var(--gold2); }
 .results-table tbody tr { border-bottom: 1px solid rgba(255,255,255,0.04); transition: background 0.15s; }
 .results-table tbody tr:last-child { border-bottom: none; }
 .results-table tbody tr:hover { background: rgba(255,255,255,0.035); }
@@ -206,6 +233,9 @@ header h1 {
 .results-source       { font-size: 11px; color: var(--muted); text-align: right; margin-top: 10px; font-style: italic; }
 .results-source a      { color: var(--gold3); text-decoration: none; }
 .results-source a:hover { text-decoration: underline; }
+/* Sort indicators for leaderboard table */
+#lb-table thead th.sort-asc::after  { content: ' ▲'; font-size: 9px; color: var(--gold2); }
+#lb-table thead th.sort-desc::after { content: ' ▼'; font-size: 9px; color: var(--gold2); }
 
 /* ── Footer ── */
 footer { text-align: center; font-size: 12px; color: var(--muted); }

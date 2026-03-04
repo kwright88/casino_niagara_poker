@@ -81,7 +81,7 @@
   </div>
 
   <!-- Calendar carousel -->
-  <div class="cal-wrapper">
+  <div class="cal-wrapper card">
     <div class="month-header">
       <div>
         <div class="month-title" id="cal-month-title">Loading…</div>
@@ -113,7 +113,7 @@
     <h2>Tournament Details</h2>
     <div class="detail-grid">
 
-      <div class="detail-card wed-card" data-type="wed">
+      <div class="detail-card wed-card card" data-type="wed">
         <div class="dc-top">
           <span class="dc-dot" style="background:var(--wed)"></span>
           <h3>Wednesday NL Hold'em</h3>
@@ -129,7 +129,7 @@
         </div>
       </div>
 
-      <div class="detail-card sun-card" data-type="sun">
+      <div class="detail-card sun-card card" data-type="sun">
         <div class="dc-top">
           <span class="dc-dot" style="background:var(--sun)"></span>
           <h3>Sunday NL Hold'em</h3>
@@ -145,7 +145,7 @@
         </div>
       </div>
 
-      <div class="detail-card sun550-card" data-type="sun550">
+      <div class="detail-card sun550-card card" data-type="sun550">
         <div class="dc-top">
           <span class="dc-dot" style="background:var(--sun550)"></span>
           <h3>Last Sunday of Month</h3>
@@ -167,7 +167,7 @@
 
       <!-- @@SEASON_CARD_START@@ -->
       <!-- SPRING MAIN EVENT — dates: May 19–22 2026 -->
-      <div class="detail-card main-card" data-type="main">
+      <div class="detail-card main-card card" data-type="main">
         <div class="dc-top">
           <span class="dc-dot" style="background:var(--main)"></span>
           <h3>Spring Main Event</h3>
@@ -187,7 +187,7 @@
 <!-- @@SEASON_CARD_END@@ -->
 
       <!-- SPRING MAIN EVENT — dates: May 19–22 2026
-      <div class="detail-card main-card" data-type="main">
+      <div class="detail-card main-card card" data-type="main">
         <div class="dc-top">
           <span class="dc-dot" style="background:var(--main)"></span>
           <h3>Spring Main Event</h3>
@@ -207,7 +207,7 @@
       -->
 
       <!-- SUMMER MAIN EVENT — dates TBA
-      <div class="detail-card main-card" data-type="main">
+      <div class="detail-card main-card card" data-type="main">
         <div class="dc-top">
           <span class="dc-dot" style="background:var(--main)"></span>
           <h3>Summer Main Event</h3>
@@ -227,7 +227,7 @@
       -->
 
       <!-- FALL MAIN EVENT — dates TBA
-      <div class="detail-card main-card" data-type="main">
+      <div class="detail-card main-card card" data-type="main">
         <div class="dc-top">
           <span class="dc-dot" style="background:var(--main)"></span>
           <h3>Fall Main Event</h3>
@@ -252,7 +252,7 @@
   <!-- 2026 Results -->
   <div class="results-section" id="results-section-container">
     <h2>2026 Results</h2>
-    <div class="results-table-wrap">
+    <div class="results-table-wrap card">
       <table class="results-table">
         <thead>
           <tr>
@@ -811,7 +811,7 @@
       const todayEv = getTournamentForDay(now.getFullYear(), now.getMonth(), now.getDate());
       const name    = _liveTourName || (todayEv ? todayEv.label : 'Tournament');
       const type    = todayEv ? todayEv.type : '';
-      html += `<div class="countdown-box cd-running-card">
+      html += `<div class="countdown-box cd-running-card card">
         <div class="cd-live-row"><span class="cd-live-dot"></span><span class="cd-live-label">Live</span></div>
         <div class="cd-live-name ${_esc(type)}">${_esc(name)}</div>
         <div class="cd-running-text">Running now!</div>
@@ -824,7 +824,7 @@
     const diff = next.start - now;
     if (diff <= 0) { outer.style.display = 'none'; _cdState = null; return; }
     const s = Math.floor(diff / 1000);
-    html += `<div class="countdown-box cd-countdown-card">
+    html += `<div class="countdown-box cd-countdown-card card">
       <div class="cd-eyebrow">Next Tournament</div>
       <div class="cd-name ${_esc(next.event.type)}">${_esc(next.event.label)}</div>
       <div class="cd-units">

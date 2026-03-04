@@ -70,7 +70,7 @@
   </header>
 
   <!-- Hero -->
-  <div class="hero-card">
+  <div class="hero-card card">
     <p class="hero-label">Current Jackpot</p>
     <div class="jackpot-amount" id="hero-amount" style="opacity:0.4">Loading…</div>
     <p class="as-of">As of <strong id="hero-date">–</strong> at <strong id="hero-time"></strong></p>
@@ -78,13 +78,13 @@
 
   <!-- Stats -->
   <div class="stats-grid two-col">
-    <div class="stat-card highlight">
+    <div class="stat-card highlight card">
       <span class="stat-icon">🎰</span>
       <p class="stat-label">Last BBJ Hit</p>
       <p class="stat-value" id="stat-hit-amount">Loading…</p>
       <p class="stat-sub" id="stat-hit-date"></p>
     </div>
-    <div class="stat-card">
+    <div class="stat-card card">
       <span class="stat-icon">📈</span>
       <p class="stat-label">Avg Daily Increase Since Last Hit</p>
       <p class="stat-value" id="stat-avg-daily">Loading…</p>
@@ -93,7 +93,7 @@
   </div>
 
   <!-- Chart -->
-  <div class="chart-card">
+  <div class="chart-card card">
     <h2>📈 Jackpot History</h2>
     <div class="chart-wrapper">
       <canvas id="jackpotChart"></canvas>
@@ -101,7 +101,7 @@
   </div>
 
   <!-- Daily history (hidden by default) -->
-  <div class="history-section">
+  <div class="history-section card">
     <button class="history-toggle" aria-expanded="false" onclick="toggleHistory(this)">
       <span>Daily Data Log</span>
       <span class="toggle-icon">▼</span>

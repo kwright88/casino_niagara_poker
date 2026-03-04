@@ -3,9 +3,7 @@
 
     /* ── Hero jackpot card ── */
     .hero-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
+      /* background/border/border-radius → .card utility */
       padding: 48px 36px;
       text-align: center;
       margin-bottom: 28px;
@@ -59,9 +57,7 @@
       margin-right: auto;
     }
     .stat-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
+      /* background/border/border-radius → .card utility */
       padding: 24px 20px;
       text-align: center;
       backdrop-filter: blur(8px);
@@ -102,9 +98,7 @@
 
     /* ── Chart ── */
     .chart-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
+      /* background/border/border-radius → .card utility */
       padding: 28px 24px;
       margin-bottom: 28px;
       backdrop-filter: blur(8px);
@@ -122,9 +116,7 @@
 
     /* ── History toggle ── */
     .history-section {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
+      /* background/border/border-radius → .card utility */
       overflow: hidden;
       backdrop-filter: blur(8px);
       box-shadow: 0 4px 20px rgba(0,0,0,0.35);
