@@ -1,5 +1,5 @@
 {
-  "timestamp": "12:30 PM · Mar 4, 2026",
+  "timestamp": "12:45 PM · Mar 4, 2026",
   "error": false,
   "stale": false,
   "stale_reason": "",
@@ -14,7 +14,7 @@
     {
       "name": "1/3 NL Hold’em",
       "limits": "$100–$300 Buy-in",
-      "waiting": "6"
+      "waiting": "5"
     },
     {
       "name": "2/5 NL Hold’em",
@@ -26,10 +26,10 @@
     "name": "$300 Wednesday",
     "level": "1",
     "blinds": "100 / 100",
-    "time_left": "20:00",
-    "num_entrants": 41,
-    "num_remaining": 41,
-    "prize_pool": "10141",
-    "clock_state": "P"
+    "time_left": "05:21",
+    "num_entrants": 56,
+    "num_remaining": 53,
+    "prize_pool": "13851",
+    "clock_state": "R"
   }
 }
