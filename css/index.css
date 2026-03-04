@@ -421,6 +421,51 @@
       line-height: 1.65;
       margin-bottom: 16px;
     }
+    /* ── Kitchen hours dropdown ── */
+    .kitchen-hours {
+      margin-bottom: 14px;
+    }
+    .kitchen-hours summary {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: var(--muted);
+      cursor: pointer;
+      user-select: none;
+      list-style: none;
+      padding: 4px 0;
+      transition: color 0.2s;
+    }
+    .kitchen-hours summary::-webkit-details-marker { display: none; }
+    .kitchen-hours summary::after {
+      content: '▾';
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    .kitchen-hours[open] summary::after { transform: rotate(-180deg); }
+    .kitchen-hours summary:hover { color: var(--gold); }
+    .kitchen-hours ul {
+      list-style: none;
+      margin-top: 10px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .kitchen-hours li {
+      display: flex;
+      justify-content: space-between;
+      padding: 7px 14px;
+      font-size: 13px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .kitchen-hours li:last-child { border-bottom: none; }
+    .kitchen-hours li span:first-child { color: var(--text); }
+    .kitchen-hours li span:last-child  { color: var(--muted); }
+
     .menu-links {
       display: flex;
       flex-wrap: wrap;
