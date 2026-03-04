@@ -554,12 +554,13 @@
       });
 
       // Blackout tooltip: body-level div, shown on hover (desktop) or tap (mobile).
-      // Desktop uses mouseenter/mouseleave. Mobile-only devices skip those entirely —
-      // mobile browsers fire a simulated mouseleave on tap which immediately hides the
-      // toast. The (hover:hover) media query gates the mouse listeners to real pointers only.
+      // Desktop: tooltip follows the mouse cursor (near-mouse mode).
+      // Mobile: tap shows a fixed bottom-centre toast and auto-hides after 2.2s.
+      // The (hover:hover) media query gates the mouse listeners to real pointers only.
       if (el.classList.contains('blackout')) {
         if (window.matchMedia('(hover: hover)').matches) {
-          el.addEventListener('mouseenter', () => showBlackoutTip(el));
+          el.addEventListener('mouseenter', (e) => showBlackoutTipNearMouse(e));
+          el.addEventListener('mousemove',  (e) => positionTipNearMouse(e));
           el.addEventListener('mouseleave', hideBlackoutTip);
         } else {
           // Touch device: delay so the toast appears after the tap highlight settles
@@ -584,13 +585,39 @@
     return el;
   })();
 
+  // Mobile / tap: fixed bottom-centre
   function showBlackoutTip(pill) {
     _bTip.textContent = pill.dataset.tip || 'Events on this date are cancelled';
+    _bTip.classList.remove('near-mouse');
+    _bTip.style.left = '';
+    _bTip.style.top  = '';
     _bTip.classList.add('visible');
   }
 
+  // Desktop: appears near the cursor and follows it
+  function showBlackoutTipNearMouse(e) {
+    _bTip.textContent = e.currentTarget.dataset.tip || 'Events on this date are cancelled';
+    _bTip.classList.add('near-mouse');
+    positionTipNearMouse(e);
+    _bTip.classList.add('visible');
+  }
+
+  function positionTipNearMouse(e) {
+    const pad  = 14;
+    const tipW = _bTip.offsetWidth  || 220;
+    const tipH = _bTip.offsetHeight || 36;
+    let x = e.clientX + pad;
+    let y = e.clientY + pad;
+    if (x + tipW > window.innerWidth  - 8) x = e.clientX - tipW - pad;
+    if (y + tipH > window.innerHeight - 8) y = e.clientY - tipH - pad;
+    _bTip.style.left = x + 'px';
+    _bTip.style.top  = y + 'px';
+  }
+
   function hideBlackoutTip() {
-    _bTip.classList.remove('visible');
+    _bTip.classList.remove('visible', 'near-mouse');
+    _bTip.style.left = '';
+    _bTip.style.top  = '';
   }
 
   // Detail card hover/click — same highlight behaviour as pills, but cards are static DOM
