@@ -37,14 +37,29 @@
   <link rel="stylesheet" href="../../css/stats.css">
 </head>
 <body>
-<main>
-
-  <!-- Nav links -->
-  <div class="nav-links">
+<nav class="site-nav" id="site-nav">
+  <div class="site-nav__inner">
     <a class="nav-link" href="/">🃏 Poker Room</a>
     <a class="nav-link" href="/badbeat">🎰 Bad Beat Tracker</a>
     <a class="nav-link" href="/calendar">📅 Tournament Calendar</a>
+    <a class="nav-link nav-link--active" href="/stats" aria-current="page">📊 Tournament Stats</a>
   </div>
+</nav>
+<script>
+  (function () {
+    var nav = document.getElementById('site-nav');
+    var scrolled = false;
+    window.addEventListener('scroll', function () {
+      var now = window.scrollY > 10;
+      if (now !== scrolled) {
+        nav.classList.toggle('scrolled', now);
+        scrolled = now;
+      }
+    }, { passive: true });
+  })();
+</script>
+
+<main>
 
   <!-- Header -->
   <header>
