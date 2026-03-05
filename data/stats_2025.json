@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-26",
+  "last_updated": "2026-03-05",
   "results": [
     {
       "date": "Jan 3",
@@ -45,9 +45,9 @@
       "entries": 132,
       "prize_pool": "$30,089",
       "first_place": "$8,502",
-      "winner_name": "",
+      "winner_name": null,
       "country_code": "",
-      "winner_url": ""
+      "winner_url": null
     },
     {
       "date": "Jan 17",
@@ -453,9 +453,9 @@
       "entries": 89,
       "prize_pool": "$20,288",
       "first_place": "$6,435",
-      "winner_name": "",
+      "winner_name": null,
       "country_code": "",
-      "winner_url": ""
+      "winner_url": null
     },
     {
       "date": "May 16",
@@ -465,9 +465,9 @@
       "entries": 58,
       "prize_pool": "$17,052",
       "first_place": "$4,050",
-      "winner_name": "",
+      "winner_name": null,
       "country_code": "",
-      "winner_url": ""
+      "winner_url": null
     },
     {
       "date": "May 21",
@@ -513,9 +513,9 @@
       "entries": 104,
       "prize_pool": "$237,070",
       "first_place": "$7,231",
-      "winner_name": "",
+      "winner_name": null,
       "country_code": "",
-      "winner_url": ""
+      "winner_url": null
     },
     {
       "date": "May 30",
@@ -681,9 +681,9 @@
       "entries": 70,
       "prize_pool": "$20,580",
       "first_place": "$4,753",
-      "winner_name": "",
+      "winner_name": null,
       "country_code": "",
-      "winner_url": ""
+      "winner_url": null
     },
     {
       "date": "Jul 16",
@@ -705,9 +705,9 @@
       "entries": 87,
       "prize_pool": "$25,578",
       "first_place": "$5,444",
-      "winner_name": "",
+      "winner_name": null,
       "country_code": "",
-      "winner_url": ""
+      "winner_url": null
     },
     {
       "date": "Jul 23",
@@ -981,9 +981,9 @@
       "entries": 85,
       "prize_pool": "$21,025",
       "first_place": "$6,780",
-      "winner_name": "",
+      "winner_name": null,
       "country_code": "",
-      "winner_url": ""
+      "winner_url": null
     },
     {
       "date": "Oct 26",
@@ -1053,9 +1053,9 @@
       "entries": 81,
       "prize_pool": "$20,035",
       "first_place": "$6,462",
-      "winner_name": "",
+      "winner_name": null,
       "country_code": "",
-      "winner_url": ""
+      "winner_url": null
     },
     {
       "date": "Nov 16",
@@ -2122,6 +2122,14 @@
       7802
     ],
     [
+      1366065,
+      "Thi Nguyen",
+      "ca",
+      7,
+      0,
+      7786
+    ],
+    [
       502879,
       "Stephen Langlois",
       "ca",
@@ -2320,14 +2328,6 @@
       4,
       0,
       5883
-    ],
-    [
-      1366065,
-      "Thi Nguyen",
-      "ca",
-      5,
-      0,
-      5873
     ],
     [
       767639,
@@ -3480,14 +3480,6 @@
       1,
       0,
       1915
-    ],
-    [
-      1389599,
-      "Thi Nguyen",
-      "ca",
-      2,
-      0,
-      1913
     ],
     [
       1140875,
