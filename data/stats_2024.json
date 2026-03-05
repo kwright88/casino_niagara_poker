@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-26",
+  "last_updated": "2026-03-05",
   "results": [
     {
       "date": "Jan 8",
@@ -21,9 +21,9 @@
       "entries": 139,
       "prize_pool": "$24,944",
       "first_place": "$6,973",
-      "winner_name": "",
+      "winner_name": null,
       "country_code": "",
-      "winner_url": ""
+      "winner_url": null
     },
     {
       "date": "Jan 10",
@@ -81,9 +81,9 @@
       "entries": 102,
       "prize_pool": "$13,852",
       "first_place": "$4,225",
-      "winner_name": "",
+      "winner_name": null,
       "country_code": "",
-      "winner_url": ""
+      "winner_url": null
     },
     {
       "date": "Jan 23",
@@ -465,9 +465,9 @@
       "entries": 125,
       "prize_pool": "$28,494",
       "first_place": "$8,263",
-      "winner_name": "",
+      "winner_name": null,
       "country_code": "",
-      "winner_url": ""
+      "winner_url": null
     },
     {
       "date": "Apr 22",
@@ -3540,7 +3540,7 @@
     [
       1266363,
       "Jonathan Miranda",
-      "ca",
+      "mx",
       1,
       1,
       2934
