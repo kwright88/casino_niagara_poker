@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-03 12:21 am",
+  "last_updated": "2026-03-05 5:10 pm",
   "results": [
     {
       "date_iso": "2026-02-25",
@@ -63,7 +63,7 @@
       "prize_pool": "$33,393",
       "first_place": "$9,432",
       "winner_name": null,
-      "country_code": "",
+      "country_code": null,
       "winner_url": null
     },
     {

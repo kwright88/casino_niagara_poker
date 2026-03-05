@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-03 12:21 am",
+  "last_updated": "2026-03-05 5:10 pm",
   "results": [
     {
       "date_iso": "2024-12-20",
@@ -868,9 +868,9 @@
       "entries": 125,
       "prize_pool": "$28,494",
       "first_place": "$8,263",
-      "winner_name": "",
-      "country_code": "",
-      "winner_url": ""
+      "winner_name": null,
+      "country_code": null,
+      "winner_url": null
     },
     {
       "date_iso": "2024-04-16",
@@ -1284,9 +1284,9 @@
       "entries": 102,
       "prize_pool": "$13,852",
       "first_place": "$4,225",
-      "winner_name": "",
-      "country_code": "",
-      "winner_url": ""
+      "winner_name": null,
+      "country_code": null,
+      "winner_url": null
     },
     {
       "date_iso": "2024-01-17",
@@ -1349,9 +1349,9 @@
       "entries": 139,
       "prize_pool": "$24,944",
       "first_place": "$6,973",
-      "winner_name": "",
-      "country_code": "",
-      "winner_url": ""
+      "winner_name": null,
+      "country_code": null,
+      "winner_url": null
     },
     {
       "date_iso": "2024-01-08",

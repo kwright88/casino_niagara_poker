@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-03 12:21 am",
+  "last_updated": "2026-03-05 5:10 pm",
   "results": [
     {
       "date_iso": "2025-12-21",
@@ -153,9 +153,9 @@
       "entries": 81,
       "prize_pool": "$20,035",
       "first_place": "$6,462",
-      "winner_name": "",
-      "country_code": "",
-      "winner_url": ""
+      "winner_name": null,
+      "country_code": null,
+      "winner_url": null
     },
     {
       "date_iso": "2025-11-09",
@@ -231,9 +231,9 @@
       "entries": 85,
       "prize_pool": "$21,025",
       "first_place": "$6,780",
-      "winner_name": "",
-      "country_code": "",
-      "winner_url": ""
+      "winner_name": null,
+      "country_code": null,
+      "winner_url": null
     },
     {
       "date_iso": "2025-10-19",
@@ -530,9 +530,9 @@
       "entries": 87,
       "prize_pool": "$25,578",
       "first_place": "$5,444",
-      "winner_name": "",
-      "country_code": "",
-      "winner_url": ""
+      "winner_name": null,
+      "country_code": null,
+      "winner_url": null
     },
     {
       "date_iso": "2025-07-16",
@@ -556,9 +556,9 @@
       "entries": 70,
       "prize_pool": "$20,580",
       "first_place": "$4,753",
-      "winner_name": "",
-      "country_code": "",
-      "winner_url": ""
+      "winner_name": null,
+      "country_code": null,
+      "winner_url": null
     },
     {
       "date_iso": "2025-07-09",
@@ -738,9 +738,9 @@
       "entries": 104,
       "prize_pool": "$237,070",
       "first_place": "$7,231",
-      "winner_name": "",
-      "country_code": "",
-      "winner_url": ""
+      "winner_name": null,
+      "country_code": null,
+      "winner_url": null
     },
     {
       "date_iso": "2025-05-25",
@@ -790,9 +790,9 @@
       "entries": 58,
       "prize_pool": "$17,052",
       "first_place": "$4,050",
-      "winner_name": "",
-      "country_code": "",
-      "winner_url": ""
+      "winner_name": null,
+      "country_code": null,
+      "winner_url": null
     },
     {
       "date_iso": "2025-05-14",
@@ -803,9 +803,9 @@
       "entries": 89,
       "prize_pool": "$20,288",
       "first_place": "$6,435",
-      "winner_name": "",
-      "country_code": "",
-      "winner_url": ""
+      "winner_name": null,
+      "country_code": null,
+      "winner_url": null
     },
     {
       "date_iso": "2025-05-09",
@@ -1245,9 +1245,9 @@
       "entries": 132,
       "prize_pool": "$30,089",
       "first_place": "$8,502",
-      "winner_name": "",
-      "country_code": "",
-      "winner_url": ""
+      "winner_name": null,
+      "country_code": null,
+      "winner_url": null
     },
     {
       "date_iso": "2025-01-10",

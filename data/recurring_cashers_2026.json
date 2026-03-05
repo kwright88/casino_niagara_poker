@@ -1,0 +1,2359 @@
+{
+  "last_updated": "2026-03-05 5:10 pm",
+  "cashers_by_event": {
+    "https://pokerdb.thehendonmob.com/event.php?a=r&n=1290061": [
+      {
+        "id": 432173,
+        "name": "Brett Goodall",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=432173",
+        "position": 1,
+        "prize_cad": 127264
+      },
+      {
+        "id": 420637,
+        "name": "Anderson Frank-Graham",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=420637",
+        "position": 2,
+        "prize_cad": 89225
+      },
+      {
+        "id": 1198783,
+        "name": "Xuan Vu",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1198783",
+        "position": 3,
+        "prize_cad": 57536
+      },
+      {
+        "id": 562115,
+        "name": "Joshua James",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=562115",
+        "position": 4,
+        "prize_cad": 42061
+      },
+      {
+        "id": 339823,
+        "name": "Tedde Ballanger",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=339823",
+        "position": 5,
+        "prize_cad": 32179
+      },
+      {
+        "id": 1442033,
+        "name": "Fanhao Kong",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1442033",
+        "position": 6,
+        "prize_cad": 25709
+      },
+      {
+        "id": 695855,
+        "name": "Timothy Baiden",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=695855",
+        "position": 7,
+        "prize_cad": 21296
+      },
+      {
+        "id": 681703,
+        "name": "Jeremy Stunt",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=681703",
+        "position": 8,
+        "prize_cad": 16953
+      },
+      {
+        "id": 558962,
+        "name": "Andrew Fahey",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=558962",
+        "position": 9,
+        "prize_cad": 12727
+      },
+      {
+        "id": 530131,
+        "name": "Tarik Rehou",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=530131",
+        "position": 11,
+        "prize_cad": 10565
+      },
+      {
+        "id": 716253,
+        "name": "Denver Geelen",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=716253",
+        "position": 12,
+        "prize_cad": 10565
+      },
+      {
+        "id": 1476865,
+        "name": "Sebastian Zenta",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1476865",
+        "position": 14,
+        "prize_cad": 8438
+      },
+      {
+        "id": 145858,
+        "name": "Ray Carter",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=145858",
+        "position": 15,
+        "prize_cad": 8438
+      },
+      {
+        "id": 189596,
+        "name": "Peter DeSantis Jr.",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=189596",
+        "position": 16,
+        "prize_cad": 7023
+      },
+      {
+        "id": 95020,
+        "name": "David Cloutier",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=95020",
+        "position": 17,
+        "prize_cad": 7023
+      },
+      {
+        "id": 1476867,
+        "name": "Jameel Alidina",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1476867",
+        "position": 18,
+        "prize_cad": 7023
+      },
+      {
+        "id": 283403,
+        "name": "Kevin Blake",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=283403",
+        "position": 19,
+        "prize_cad": 5752
+      },
+      {
+        "id": 338432,
+        "name": "Rodney Lawrence",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=338432",
+        "position": 21,
+        "prize_cad": 5752
+      },
+      {
+        "id": 573059,
+        "name": "Kevin Wright",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=573059",
+        "position": 22,
+        "prize_cad": 4861
+      },
+      {
+        "id": 108653,
+        "name": "Mauro Lupo",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=108653",
+        "position": 23,
+        "prize_cad": 4861
+      },
+      {
+        "id": 1476869,
+        "name": "Dennis Shamroni",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1476869",
+        "position": 24,
+        "prize_cad": 4861
+      },
+      {
+        "id": 1476871,
+        "name": "Robert Spoljaric",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1476871",
+        "position": 25,
+        "prize_cad": 4109
+      },
+      {
+        "id": 1198777,
+        "name": "Sinh Ho",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1198777",
+        "position": 26,
+        "prize_cad": 4109
+      },
+      {
+        "id": 136819,
+        "name": "Jason James",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=136819",
+        "position": 27,
+        "prize_cad": 4109
+      },
+      {
+        "id": 1235695,
+        "name": "Bryan Bowes",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1235695",
+        "position": 28,
+        "prize_cad": 3363
+      },
+      {
+        "id": 1476873,
+        "name": "Anne Walker",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1476873",
+        "position": 29,
+        "prize_cad": 3363
+      },
+      {
+        "id": 471226,
+        "name": "Jordan Grant",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=471226",
+        "position": 30,
+        "prize_cad": 3363
+      },
+      {
+        "id": 715169,
+        "name": "Eric Shwarcer",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=715169",
+        "position": 31,
+        "prize_cad": 3363
+      },
+      {
+        "id": 571088,
+        "name": "Kenneth Wasik",
+        "country": "United States",
+        "country_code": "us",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=571088",
+        "position": 32,
+        "prize_cad": 3363
+      },
+      {
+        "id": 638244,
+        "name": "Christine Do",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=638244",
+        "position": 33,
+        "prize_cad": 3363
+      },
+      {
+        "id": 494133,
+        "name": "Sladjana Micevski",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=494133",
+        "position": 34,
+        "prize_cad": 3363
+      },
+      {
+        "id": 354652,
+        "name": "Patrick Tardif",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=354652",
+        "position": 35,
+        "prize_cad": 3363
+      },
+      {
+        "id": 527891,
+        "name": "Christopher Turnbull",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=527891",
+        "position": 37,
+        "prize_cad": 2949
+      },
+      {
+        "id": 1227151,
+        "name": "Navid Ismaili",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1227151",
+        "position": 38,
+        "prize_cad": 2949
+      },
+      {
+        "id": 88538,
+        "name": "Mike Leah",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=88538",
+        "position": 39,
+        "prize_cad": 2949
+      },
+      {
+        "id": 205790,
+        "name": "Jason Clarke",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=205790",
+        "position": 40,
+        "prize_cad": 2949
+      },
+      {
+        "id": 1097925,
+        "name": "Omar Kanaan",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1097925",
+        "position": 42,
+        "prize_cad": 2949
+      },
+      {
+        "id": 177076,
+        "name": "Victor Adams",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=177076",
+        "position": 43,
+        "prize_cad": 2949
+      },
+      {
+        "id": 329676,
+        "name": "Paolo Zambito",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=329676",
+        "position": 44,
+        "prize_cad": 2949
+      },
+      {
+        "id": 725567,
+        "name": "Daniel Deluca",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=725567",
+        "position": 45,
+        "prize_cad": 2949
+      },
+      {
+        "id": 19650,
+        "name": "Jason Sagle",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=19650",
+        "position": 46,
+        "prize_cad": 2603
+      },
+      {
+        "id": 1230691,
+        "name": "Federic Tassinari",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1230691",
+        "position": 47,
+        "prize_cad": 2603
+      },
+      {
+        "id": 546777,
+        "name": "Sanharib Mikhaiel",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=546777",
+        "position": 48,
+        "prize_cad": 2603
+      },
+      {
+        "id": 1097957,
+        "name": "Joel Kogan",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1097957",
+        "position": 49,
+        "prize_cad": 2603
+      },
+      {
+        "id": 220604,
+        "name": "Medhat Ramzy",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=220604",
+        "position": 50,
+        "prize_cad": 2603
+      },
+      {
+        "id": 471233,
+        "name": "Michael Arcaro",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=471233",
+        "position": 51,
+        "prize_cad": 2603
+      },
+      {
+        "id": 421250,
+        "name": "Gagandeep Singh",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=421250",
+        "position": 52,
+        "prize_cad": 2603
+      },
+      {
+        "id": 1252153,
+        "name": "Daniel Ferguson",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1252153",
+        "position": 53,
+        "prize_cad": 2603
+      },
+      {
+        "id": 188271,
+        "name": "Van Pham",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=188271",
+        "position": 54,
+        "prize_cad": 2603
+      },
+      {
+        "id": 456439,
+        "name": "Carlos Gerones",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=456439",
+        "position": 55,
+        "prize_cad": 2327
+      },
+      {
+        "id": 583015,
+        "name": "Behnam Esfahanizadeh",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=583015",
+        "position": 56,
+        "prize_cad": 2327
+      },
+      {
+        "id": 658567,
+        "name": "James Brown",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=658567",
+        "position": 57,
+        "prize_cad": 2327
+      },
+      {
+        "id": 1316903,
+        "name": "Kin Wong",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1316903",
+        "position": 58,
+        "prize_cad": 2327
+      },
+      {
+        "id": 286856,
+        "name": "William Schuster",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=286856",
+        "position": 59,
+        "prize_cad": 2327
+      },
+      {
+        "id": 1207317,
+        "name": "Hoa Van Nguyen",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1207317",
+        "position": 60,
+        "prize_cad": 2327
+      },
+      {
+        "id": 107539,
+        "name": "Richard Lontok",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=107539",
+        "position": 61,
+        "prize_cad": 2327
+      },
+      {
+        "id": 244023,
+        "name": "Peter Bodnar",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=244023",
+        "position": 62,
+        "prize_cad": 2327
+      },
+      {
+        "id": 967375,
+        "name": "Wayne Morrison",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=967375",
+        "position": 63,
+        "prize_cad": 2327
+      },
+      {
+        "id": 1314715,
+        "name": "Zihan Kang",
+        "country": "United States",
+        "country_code": "us",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1314715",
+        "position": 64,
+        "prize_cad": 2072
+      },
+      {
+        "id": 1270523,
+        "name": "Anan Tan",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1270523",
+        "position": 65,
+        "prize_cad": 2072
+      },
+      {
+        "id": 613302,
+        "name": "Ian Monahoyios",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=613302",
+        "position": 66,
+        "prize_cad": 2072
+      },
+      {
+        "id": 530167,
+        "name": "Maurizio Russo",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=530167",
+        "position": 67,
+        "prize_cad": 2072
+      },
+      {
+        "id": 732715,
+        "name": "Aaron Benton",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=732715",
+        "position": 68,
+        "prize_cad": 2072
+      },
+      {
+        "id": 110543,
+        "name": "Wing-Yat Yeung",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=110543",
+        "position": 69,
+        "prize_cad": 2072
+      },
+      {
+        "id": 623042,
+        "name": "Obaidullah Habibi",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=623042",
+        "position": 70,
+        "prize_cad": 2072
+      },
+      {
+        "id": 675002,
+        "name": "David Rott",
+        "country": "United States",
+        "country_code": "us",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=675002",
+        "position": 71,
+        "prize_cad": 2072
+      },
+      {
+        "id": 790655,
+        "name": "Fawaz Siddiqui",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=790655",
+        "position": 72,
+        "prize_cad": 2072
+      },
+      {
+        "id": 596081,
+        "name": "Alexander Butko",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=596081",
+        "position": 73,
+        "prize_cad": 1871
+      },
+      {
+        "id": 282957,
+        "name": "Christian Paradis",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=282957",
+        "position": 74,
+        "prize_cad": 1871
+      },
+      {
+        "id": 89315,
+        "name": "Ian McKinley",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=89315",
+        "position": 75,
+        "prize_cad": 1871
+      },
+      {
+        "id": 167736,
+        "name": "Daniel Kirsch",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=167736",
+        "position": 76,
+        "prize_cad": 1871
+      },
+      {
+        "id": 1310641,
+        "name": "David Knight",
+        "country": "United States",
+        "country_code": "us",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1310641",
+        "position": 77,
+        "prize_cad": 1871
+      },
+      {
+        "id": 758257,
+        "name": "Joseph Balsano",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=758257",
+        "position": 78,
+        "prize_cad": 1871
+      },
+      {
+        "id": 1280161,
+        "name": "Jiajun Mei",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1280161",
+        "position": 79,
+        "prize_cad": 1871
+      },
+      {
+        "id": 703307,
+        "name": "Van Bui",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=703307",
+        "position": 80,
+        "prize_cad": 1871
+      },
+      {
+        "id": 1413839,
+        "name": "Sabbir Ahmed",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1413839",
+        "position": 81,
+        "prize_cad": 1871
+      },
+      {
+        "id": 252774,
+        "name": "Demo Kiriopoulos",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=252774",
+        "position": 82,
+        "prize_cad": 1671
+      },
+      {
+        "id": 587659,
+        "name": "Zeeshan Peervani",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=587659",
+        "position": 83,
+        "prize_cad": 1671
+      },
+      {
+        "id": 308144,
+        "name": "Cuong Le",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=308144",
+        "position": 84,
+        "prize_cad": 1671
+      },
+      {
+        "id": 1364947,
+        "name": "Jason Rimmer",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1364947",
+        "position": 85,
+        "prize_cad": 1671
+      }
+    ],
+    "https://pokerdb.thehendonmob.com/event.php?a=r&n=1292253": [
+      {
+        "id": 1204167,
+        "name": "Kenneth Ranalli",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1204167",
+        "position": 1,
+        "prize_cad": 9225
+      },
+      {
+        "id": 678721,
+        "name": "Glenn Grandy",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=678721",
+        "position": 2,
+        "prize_cad": 5836
+      },
+      {
+        "id": 1476879,
+        "name": "Kahaan Shah",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1476879",
+        "position": 3,
+        "prize_cad": 3461
+      },
+      {
+        "id": 725567,
+        "name": "Daniel Deluca",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=725567",
+        "position": 4,
+        "prize_cad": 2122
+      },
+      {
+        "id": 244298,
+        "name": "Brian Bond",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=244298",
+        "position": 5,
+        "prize_cad": 1616
+      },
+      {
+        "id": 1244465,
+        "name": "Jonathan Mazur",
+        "country": "United States",
+        "country_code": "us",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1244465",
+        "position": 6,
+        "prize_cad": 1371
+      },
+      {
+        "id": 1476881,
+        "name": "Chris Seventikidis",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1476881",
+        "position": 7,
+        "prize_cad": 1192
+      },
+      {
+        "id": 295099,
+        "name": "Renmei Liu",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=295099",
+        "position": 8,
+        "prize_cad": 1045
+      },
+      {
+        "id": 1266361,
+        "name": "Lucas Strkalj",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1266361",
+        "position": 9,
+        "prize_cad": 922
+      },
+      {
+        "id": 1068823,
+        "name": "Andrew Schneider",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1068823",
+        "position": 10,
+        "prize_cad": 816
+      },
+      {
+        "id": 675002,
+        "name": "David Rott",
+        "country": "United States",
+        "country_code": "us",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=675002",
+        "position": 11,
+        "prize_cad": 816
+      },
+      {
+        "id": 364709,
+        "name": "Gerard Maurice",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=364709",
+        "position": 12,
+        "prize_cad": 816
+      },
+      {
+        "id": 1227151,
+        "name": "Navid Ismaili",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1227151",
+        "position": 13,
+        "prize_cad": 718
+      },
+      {
+        "id": 460290,
+        "name": "Dwayne Langelaan",
+        "country": "United States",
+        "country_code": "us",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=460290",
+        "position": 14,
+        "prize_cad": 718
+      },
+      {
+        "id": 502879,
+        "name": "Stephen Langlois",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=502879",
+        "position": 15,
+        "prize_cad": 718
+      },
+      {
+        "id": 695885,
+        "name": "Richard Wilkinson",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=695885",
+        "position": 16,
+        "prize_cad": 629
+      },
+      {
+        "id": 1351285,
+        "name": "Patrick Di Marino",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1351285",
+        "position": 17,
+        "prize_cad": 629
+      }
+    ],
+    "https://pokerdb.thehendonmob.com/event.php?a=r&n=1330307": [
+      {
+        "id": 294737,
+        "name": "Senthuran Vijayaratnam",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=294737",
+        "position": 1,
+        "prize_cad": 10651
+      },
+      {
+        "id": 471233,
+        "name": "Michael Arcaro",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=471233",
+        "position": 2,
+        "prize_cad": 6257
+      },
+      {
+        "id": 144560,
+        "name": "Daniel Lebel",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=144560",
+        "position": 3,
+        "prize_cad": 3920
+      },
+      {
+        "id": 767639,
+        "name": "Dmytro Kachin",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=767639",
+        "position": 4,
+        "prize_cad": 2663
+      },
+      {
+        "id": 1466295,
+        "name": "Johnny Pham",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1466295",
+        "position": 5,
+        "prize_cad": 2071
+      },
+      {
+        "id": 1183651,
+        "name": "Benjamin Smith",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1183651",
+        "position": 6,
+        "prize_cad": 1627
+      },
+      {
+        "id": 695855,
+        "name": "Timothy Baiden",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=695855",
+        "position": 7,
+        "prize_cad": 1331
+      },
+      {
+        "id": 513483,
+        "name": "Terence Caulcutt",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=513483",
+        "position": 8,
+        "prize_cad": 1065
+      }
+    ],
+    "https://pokerdb.thehendonmob.com/event.php?a=r&n=1330309": [
+      {
+        "id": 339823,
+        "name": "Tedde Ballanger",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=339823",
+        "position": 1,
+        "prize_cad": 18570
+      },
+      {
+        "id": 283212,
+        "name": "Scott Hosbach",
+        "country": "United States",
+        "country_code": "us",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=283212",
+        "position": 2,
+        "prize_cad": 11694
+      },
+      {
+        "id": 571088,
+        "name": "Kenneth Wasik",
+        "country": "United States",
+        "country_code": "us",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=571088",
+        "position": 3,
+        "prize_cad": 6944
+      },
+      {
+        "id": 1310641,
+        "name": "David Knight",
+        "country": "United States",
+        "country_code": "us",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1310641",
+        "position": 4,
+        "prize_cad": 4186
+      },
+      {
+        "id": 1230069,
+        "name": "Kam Yu",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1230069",
+        "position": 5,
+        "prize_cad": 3256
+      },
+      {
+        "id": 1059921,
+        "name": "Maroun Diab",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1059921",
+        "position": 6,
+        "prize_cad": 2724
+      },
+      {
+        "id": 456439,
+        "name": "Carlos Gerones",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=456439",
+        "position": 7,
+        "prize_cad": 2359
+      },
+      {
+        "id": 175662,
+        "name": "Thi Nguyen",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=175662",
+        "position": 8,
+        "prize_cad": 2096
+      },
+      {
+        "id": 530735,
+        "name": "Matthew Osorio",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=530735",
+        "position": 9,
+        "prize_cad": 1857
+      },
+      {
+        "id": 1354763,
+        "name": "Hossein Sazgarnejad",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1354763",
+        "position": 10,
+        "prize_cad": 1628
+      },
+      {
+        "id": 1476877,
+        "name": "Davendra Roshundatt",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1476877",
+        "position": 11,
+        "prize_cad": 1628
+      },
+      {
+        "id": 790655,
+        "name": "Fawaz Siddiqui",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=790655",
+        "position": 12,
+        "prize_cad": 1628
+      },
+      {
+        "id": 571097,
+        "name": "Tyler Seibert",
+        "country": "United States",
+        "country_code": "us",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=571097",
+        "position": 13,
+        "prize_cad": 1412
+      },
+      {
+        "id": 924057,
+        "name": "Charbel Boujaoude",
+        "country": "United States",
+        "country_code": "us",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=924057",
+        "position": 14,
+        "prize_cad": 1412
+      },
+      {
+        "id": 582967,
+        "name": "Rostyslav Kozak",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=582967",
+        "position": 15,
+        "prize_cad": 1412
+      },
+      {
+        "id": 167736,
+        "name": "Daniel Kirsch",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=167736",
+        "position": 16,
+        "prize_cad": 1213
+      },
+      {
+        "id": 530131,
+        "name": "Tarik Rehou",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=530131",
+        "position": 17,
+        "prize_cad": 1213
+      },
+      {
+        "id": 326160,
+        "name": "Yan Kaznachey",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=326160",
+        "position": 18,
+        "prize_cad": 1213
+      }
+    ],
+    "https://pokerdb.thehendonmob.com/event.php?a=r&n=1330323": [
+      {
+        "id": 1368085,
+        "name": "Ronald Smith",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1368085",
+        "position": 1,
+        "prize_cad": 9439
+      },
+      {
+        "id": 1183651,
+        "name": "Benjamin Smith",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1183651",
+        "position": 2,
+        "prize_cad": 5708
+      },
+      {
+        "id": 59527,
+        "name": "Art Demmerley",
+        "country": "United States",
+        "country_code": "us",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=59527",
+        "position": 3,
+        "prize_cad": 3549
+      },
+      {
+        "id": 695885,
+        "name": "Richard Wilkinson",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=695885",
+        "position": 4,
+        "prize_cad": 2400
+      },
+      {
+        "id": 1366065,
+        "name": "Thi Nguyen",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1366065",
+        "position": 5,
+        "prize_cad": 1829
+      },
+      {
+        "id": 724141,
+        "name": "Daniel Losowski",
+        "country": "United States",
+        "country_code": "us",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=724141",
+        "position": 7,
+        "prize_cad": 1215
+      },
+      {
+        "id": 1463849,
+        "name": "Lokesh Mehta",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1463849",
+        "position": 8,
+        "prize_cad": 1024
+      },
+      {
+        "id": 450690,
+        "name": "Eddi Miklavcic",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=450690",
+        "position": 9,
+        "prize_cad": 944
+      },
+      {
+        "id": 1463851,
+        "name": "James St-Germain",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1463851",
+        "position": 10,
+        "prize_cad": 878
+      },
+      {
+        "id": 709439,
+        "name": "Robert Patterson",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=709439",
+        "position": 11,
+        "prize_cad": 820
+      }
+    ],
+    "https://pokerdb.thehendonmob.com/event.php?a=r&n=1330325": [
+      {
+        "id": 1207295,
+        "name": "Alfredo Matira",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1207295",
+        "position": 1,
+        "prize_cad": 7065
+      },
+      {
+        "id": 530167,
+        "name": "Maurizio Russo",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=530167",
+        "position": 2,
+        "prize_cad": 4151
+      },
+      {
+        "id": 1464389,
+        "name": "Lucas Silvestri",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1464389",
+        "position": 3,
+        "prize_cad": 2601
+      },
+      {
+        "id": 282655,
+        "name": "Walter Metella",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=282655",
+        "position": 4,
+        "prize_cad": 1767
+      },
+      {
+        "id": 1464391,
+        "name": "Macon Doublet",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1464391",
+        "position": 5,
+        "prize_cad": 1374
+      },
+      {
+        "id": 494133,
+        "name": "Sladjana Micevski",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=494133",
+        "position": 6,
+        "prize_cad": 1080
+      },
+      {
+        "id": 1112429,
+        "name": "Faiz Sattar",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1112429",
+        "position": 7,
+        "prize_cad": 883
+      },
+      {
+        "id": 530134,
+        "name": "Gregory March",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=530134",
+        "position": 8,
+        "prize_cad": 707
+      }
+    ],
+    "https://pokerdb.thehendonmob.com/event.php?a=r&n=1330327": [
+      {
+        "id": 329676,
+        "name": "Paolo Zambito",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=329676",
+        "position": 1,
+        "prize_cad": 7135
+      },
+      {
+        "id": 1198779,
+        "name": "Vladimir Perovic",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1198779",
+        "position": 2,
+        "prize_cad": 4242
+      },
+      {
+        "id": 582970,
+        "name": "Igor Tregoubov",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=582970",
+        "position": 3,
+        "prize_cad": 2603
+      },
+      {
+        "id": 1463849,
+        "name": "Lokesh Mehta",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1463849",
+        "position": 4,
+        "prize_cad": 1832
+      },
+      {
+        "id": 1464385,
+        "name": "Mark Pellegrino",
+        "country": "United States",
+        "country_code": "us",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1464385",
+        "position": 5,
+        "prize_cad": 1446
+      },
+      {
+        "id": 544450,
+        "name": "Lin Cui",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=544450",
+        "position": 6,
+        "prize_cad": 1157
+      },
+      {
+        "id": 497795,
+        "name": "Zahir Gilani",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=497795",
+        "position": 7,
+        "prize_cad": 868
+      }
+    ],
+    "https://pokerdb.thehendonmob.com/event.php?a=r&n=1330329": [
+      {
+        "id": 744397,
+        "name": "Dmytro Klimov",
+        "country": "Ukraine",
+        "country_code": "ua",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=744397",
+        "position": 1,
+        "prize_cad": 9015
+      },
+      {
+        "id": 244298,
+        "name": "Brian Bond",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=244298",
+        "position": 2,
+        "prize_cad": 5170
+      },
+      {
+        "id": 1376555,
+        "name": "Wuji Zhang",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1376555",
+        "position": 3,
+        "prize_cad": 3235
+      },
+      {
+        "id": 1183651,
+        "name": "Benjamin Smith",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1183651",
+        "position": 4,
+        "prize_cad": 2187
+      },
+      {
+        "id": 787189,
+        "name": "Samir Khail",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=787189",
+        "position": 5,
+        "prize_cad": 1657
+      },
+      {
+        "id": 1118021,
+        "name": "Georgees Zero",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1118021",
+        "position": 6,
+        "prize_cad": 1326
+      },
+      {
+        "id": 189596,
+        "name": "Peter DeSantis Jr.",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=189596",
+        "position": 7,
+        "prize_cad": 1167
+      },
+      {
+        "id": 1187569,
+        "name": "Glenn McCleary",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1187569",
+        "position": 8,
+        "prize_cad": 1061
+      },
+      {
+        "id": 295099,
+        "name": "Renmei Liu",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=295099",
+        "position": 9,
+        "prize_cad": 902
+      },
+      {
+        "id": 108593,
+        "name": "Leo Bourgeois",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=108593",
+        "position": 10,
+        "prize_cad": 795
+      }
+    ],
+    "https://pokerdb.thehendonmob.com/event.php?a=r&n=1330331": [
+      {
+        "id": 169432,
+        "name": "Curtis Medina",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=169432",
+        "position": 1,
+        "prize_cad": 6753
+      },
+      {
+        "id": 1193375,
+        "name": "James Haupert",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1193375",
+        "position": 2,
+        "prize_cad": 4015
+      },
+      {
+        "id": 1204167,
+        "name": "Kenneth Ranalli",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1204167",
+        "position": 3,
+        "prize_cad": 2464
+      },
+      {
+        "id": 144560,
+        "name": "Daniel Lebel",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=144560",
+        "position": 4,
+        "prize_cad": 1734
+      },
+      {
+        "id": 1474193,
+        "name": "Justin Barnes",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1474193",
+        "position": 5,
+        "prize_cad": 1369
+      },
+      {
+        "id": 491633,
+        "name": "Theodore Papageorgiou",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=491633",
+        "position": 7,
+        "prize_cad": 821
+      }
+    ],
+    "https://pokerdb.thehendonmob.com/event.php?a=r&n=1330333": [
+      {
+        "id": 709439,
+        "name": "Robert Patterson",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=709439",
+        "position": 1,
+        "prize_cad": 10923
+      },
+      {
+        "id": 494133,
+        "name": "Sladjana Micevski",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=494133",
+        "position": 2,
+        "prize_cad": 6715
+      },
+      {
+        "id": 671476,
+        "name": "Roberto Bussi",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=671476",
+        "position": 3,
+        "prize_cad": 4118
+      },
+      {
+        "id": 204116,
+        "name": "Kevin Brown",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=204116",
+        "position": 4,
+        "prize_cad": 2686
+      },
+      {
+        "id": 573059,
+        "name": "Kevin Wright",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=573059",
+        "position": 5,
+        "prize_cad": 2095
+      },
+      {
+        "id": 329676,
+        "name": "Paolo Zambito",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=329676",
+        "position": 6,
+        "prize_cad": 1674
+      },
+      {
+        "id": 87133,
+        "name": "Rajiv Khanna",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=87133",
+        "position": 7,
+        "prize_cad": 1424
+      },
+      {
+        "id": 39302,
+        "name": "Eric Nuss",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=39302",
+        "position": 8,
+        "prize_cad": 1236
+      },
+      {
+        "id": 1476875,
+        "name": "James Forler",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1476875",
+        "position": 9,
+        "prize_cad": 1092
+      },
+      {
+        "id": 582970,
+        "name": "Igor Tregoubov",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=582970",
+        "position": 10,
+        "prize_cad": 985
+      },
+      {
+        "id": 1059921,
+        "name": "Maroun Diab",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1059921",
+        "position": 11,
+        "prize_cad": 985
+      },
+      {
+        "id": 297537,
+        "name": "John Ribeiro",
+        "country": "United States",
+        "country_code": "us",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=297537",
+        "position": 12,
+        "prize_cad": 985
+      },
+      {
+        "id": 1365939,
+        "name": "Thanh Tran",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1365939",
+        "position": 13,
+        "prize_cad": 895
+      }
+    ],
+    "https://pokerdb.thehendonmob.com/event.php?a=r&n=1330335": [
+      {
+        "id": 695855,
+        "name": "Timothy Baiden",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=695855",
+        "position": 1,
+        "prize_cad": 7533
+      },
+      {
+        "id": 339823,
+        "name": "Tedde Ballanger",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=339823",
+        "position": 2,
+        "prize_cad": 4512
+      },
+      {
+        "id": 1207295,
+        "name": "Alfredo Matira",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1207295",
+        "position": 3,
+        "prize_cad": 2849
+      },
+      {
+        "id": 295099,
+        "name": "Renmei Liu",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=295099",
+        "position": 4,
+        "prize_cad": 1840
+      },
+      {
+        "id": 1183651,
+        "name": "Benjamin Smith",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1183651",
+        "position": 5,
+        "prize_cad": 1425
+      },
+      {
+        "id": 17495,
+        "name": "Bruce Librock",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=17495",
+        "position": 6,
+        "prize_cad": 1128
+      },
+      {
+        "id": 101664,
+        "name": "Domenic Salciccia",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=101664",
+        "position": 7,
+        "prize_cad": 950
+      },
+      {
+        "id": 1157481,
+        "name": "Aaron Hall",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1157481",
+        "position": 8,
+        "prize_cad": 831
+      },
+      {
+        "id": 1434647,
+        "name": "Mohammad Ali",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1434647",
+        "position": 9,
+        "prize_cad": 753
+      },
+      {
+        "id": 136819,
+        "name": "Jason James",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=136819",
+        "position": 10,
+        "prize_cad": 689
+      },
+      {
+        "id": 954183,
+        "name": "Xavier Ochangco",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=954183",
+        "position": 11,
+        "prize_cad": 641
+      },
+      {
+        "id": 1417289,
+        "name": "Shane Papa",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1417289",
+        "position": 12,
+        "prize_cad": 594
+      }
+    ],
+    "https://pokerdb.thehendonmob.com/event.php?a=r&n=1330337": [
+      {
+        "id": 406680,
+        "name": "Michael Tieu",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=406680",
+        "position": 1,
+        "prize_cad": 7866
+      },
+      {
+        "id": 790655,
+        "name": "Fawaz Siddiqui",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=790655",
+        "position": 2,
+        "prize_cad": 4851
+      },
+      {
+        "id": 366591,
+        "name": "Joshua Wittenberg",
+        "country": "United States",
+        "country_code": "us",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=366591",
+        "position": 3,
+        "prize_cad": 2910
+      },
+      {
+        "id": 286856,
+        "name": "William Schuster",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=286856",
+        "position": 4,
+        "prize_cad": 1901
+      },
+      {
+        "id": 1038147,
+        "name": "Mukul Puri",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1038147",
+        "position": 5,
+        "prize_cad": 1468
+      },
+      {
+        "id": 1341541,
+        "name": "Robert Schram",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1341541",
+        "position": 6,
+        "prize_cad": 1206
+      },
+      {
+        "id": 1183629,
+        "name": "Ryan Gal",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1183629",
+        "position": 8,
+        "prize_cad": 891
+      },
+      {
+        "id": 671526,
+        "name": "Domenico Greco",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=671526",
+        "position": 9,
+        "prize_cad": 787
+      },
+      {
+        "id": 729407,
+        "name": "Francis Schunk",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=729407",
+        "position": 11,
+        "prize_cad": 695
+      },
+      {
+        "id": 295099,
+        "name": "Renmei Liu",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=295099",
+        "position": 13,
+        "prize_cad": 616
+      },
+      {
+        "id": 1464387,
+        "name": "Karl Santiago",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1464387",
+        "position": 14,
+        "prize_cad": 616
+      }
+    ],
+    "https://pokerdb.thehendonmob.com/event.php?a=r&n=1330339": [
+      {
+        "id": 144560,
+        "name": "Daniel Lebel",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=144560",
+        "position": 1,
+        "prize_cad": 6984
+      },
+      {
+        "id": 108593,
+        "name": "Leo Bourgeois",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=108593",
+        "position": 2,
+        "prize_cad": 4183
+      },
+      {
+        "id": 767639,
+        "name": "Dmytro Kachin",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=767639",
+        "position": 3,
+        "prize_cad": 2642
+      },
+      {
+        "id": 929191,
+        "name": "Peter Napolitano",
+        "country": "United States",
+        "country_code": "us",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=929191",
+        "position": 4,
+        "prize_cad": 1706
+      },
+      {
+        "id": 260634,
+        "name": "Anesti Kocini",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=260634",
+        "position": 5,
+        "prize_cad": 1321
+      },
+      {
+        "id": 1434647,
+        "name": "Mohammad Ali",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1434647",
+        "position": 6,
+        "prize_cad": 1046
+      },
+      {
+        "id": 1023583,
+        "name": "Kiril Gadzovski",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1023583",
+        "position": 7,
+        "prize_cad": 881
+      },
+      {
+        "id": 329676,
+        "name": "Paolo Zambito",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=329676",
+        "position": 8,
+        "prize_cad": 770
+      },
+      {
+        "id": 340617,
+        "name": "Robert Forbes",
+        "country": "United States",
+        "country_code": "us",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=340617",
+        "position": 9,
+        "prize_cad": 699
+      },
+      {
+        "id": 1468435,
+        "name": "Minsu Kim",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1468435",
+        "position": 10,
+        "prize_cad": 638
+      },
+      {
+        "id": 373931,
+        "name": "Ryan Martin",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=373931",
+        "position": 11,
+        "prize_cad": 594
+      },
+      {
+        "id": 1196115,
+        "name": "Sarah Boyle",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1196115",
+        "position": 12,
+        "prize_cad": 551
+      }
+    ],
+    "https://pokerdb.thehendonmob.com/event.php?a=r&n=1330341": [
+      {
+        "id": 1341541,
+        "name": "Robert Schram",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1341541",
+        "position": 1,
+        "prize_cad": 7393
+      },
+      {
+        "id": 681711,
+        "name": "Scott Macewen",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=681711",
+        "position": 2,
+        "prize_cad": 4545
+      },
+      {
+        "id": 787189,
+        "name": "Samir Khail",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=787189",
+        "position": 3,
+        "prize_cad": 2788
+      },
+      {
+        "id": 1413839,
+        "name": "Sabbir Ahmed",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1413839",
+        "position": 4,
+        "prize_cad": 1818
+      },
+      {
+        "id": 88255,
+        "name": "Colin Hughes",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=88255",
+        "position": 5,
+        "prize_cad": 1418
+      },
+      {
+        "id": 697951,
+        "name": "Joshua Greville",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=697951",
+        "position": 6,
+        "prize_cad": 1133
+      },
+      {
+        "id": 147835,
+        "name": "Raymond Williams",
+        "country": "United States",
+        "country_code": "us",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=147835",
+        "position": 7,
+        "prize_cad": 964
+      },
+      {
+        "id": 790655,
+        "name": "Fawaz Siddiqui",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=790655",
+        "position": 8,
+        "prize_cad": 836
+      },
+      {
+        "id": 308144,
+        "name": "Cuong Le",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=308144",
+        "position": 9,
+        "prize_cad": 739
+      },
+      {
+        "id": 692323,
+        "name": "Vincenzo Gallucci",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=692323",
+        "position": 10,
+        "prize_cad": 667
+      },
+      {
+        "id": 418665,
+        "name": "Brad Copestake",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=418665",
+        "position": 11,
+        "prize_cad": 667
+      },
+      {
+        "id": 286856,
+        "name": "William Schuster",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=286856",
+        "position": 12,
+        "prize_cad": 667
+      },
+      {
+        "id": 1189113,
+        "name": "Fkadu Zeremariam",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1189113",
+        "position": 13,
+        "prize_cad": 606
+      }
+    ],
+    "https://pokerdb.thehendonmob.com/event.php?a=r&n=1330343": [
+      {
+        "id": 244023,
+        "name": "Peter Bodnar",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=244023",
+        "position": 1,
+        "prize_cad": 9678
+      },
+      {
+        "id": 1193375,
+        "name": "James Haupert",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1193375",
+        "position": 2,
+        "prize_cad": 6095
+      },
+      {
+        "id": 244487,
+        "name": "Donovan Obrien",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=244487",
+        "position": 3,
+        "prize_cad": 3619
+      },
+      {
+        "id": 1215745,
+        "name": "Adam Poitras",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1215745",
+        "position": 4,
+        "prize_cad": 2182
+      },
+      {
+        "id": 147835,
+        "name": "Raymond Williams",
+        "country": "United States",
+        "country_code": "us",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=147835",
+        "position": 5,
+        "prize_cad": 1697
+      },
+      {
+        "id": 678721,
+        "name": "Glenn Grandy",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=678721",
+        "position": 6,
+        "prize_cad": 1420
+      },
+      {
+        "id": 1085449,
+        "name": "Than Tran",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1085449",
+        "position": 7,
+        "prize_cad": 1229
+      },
+      {
+        "id": 562112,
+        "name": "Omar Nasrallah",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=562112",
+        "position": 8,
+        "prize_cad": 1093
+      },
+      {
+        "id": 695855,
+        "name": "Timothy Baiden",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=695855",
+        "position": 9,
+        "prize_cad": 968
+      },
+      {
+        "id": 340611,
+        "name": "David Wiles",
+        "country": "United States",
+        "country_code": "us",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=340611",
+        "position": 11,
+        "prize_cad": 848
+      },
+      {
+        "id": 1464387,
+        "name": "Karl Santiago",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1464387",
+        "position": 12,
+        "prize_cad": 848
+      },
+      {
+        "id": 671526,
+        "name": "Domenico Greco",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=671526",
+        "position": 13,
+        "prize_cad": 736
+      },
+      {
+        "id": 445636,
+        "name": "Joseph Biamonte",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=445636",
+        "position": 14,
+        "prize_cad": 736
+      },
+      {
+        "id": 1316903,
+        "name": "Kin Wong",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1316903",
+        "position": 15,
+        "prize_cad": 736
+      },
+      {
+        "id": 167034,
+        "name": "William Hamilton",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=167034",
+        "position": 16,
+        "prize_cad": 632
+      },
+      {
+        "id": 1474195,
+        "name": "Mark Vona",
+        "country": "United States",
+        "country_code": "us",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1474195",
+        "position": 17,
+        "prize_cad": 632
+      },
+      {
+        "id": 1193367,
+        "name": "Alice Rooney",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1193367",
+        "position": 18,
+        "prize_cad": 632
+      }
+    ],
+    "https://pokerdb.thehendonmob.com/event.php?a=r&n=1344701": [
+      {
+        "id": 692343,
+        "name": "Alan Nacinovic",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=692343",
+        "position": 2,
+        "prize_cad": 5969
+      },
+      {
+        "id": 936763,
+        "name": "Bin Hua",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=936763",
+        "position": 3,
+        "prize_cad": 3540
+      },
+      {
+        "id": 708995,
+        "name": "Dale Green",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=708995",
+        "position": 4,
+        "prize_cad": 2170
+      },
+      {
+        "id": 1124737,
+        "name": "Evan Driscoll",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1124737",
+        "position": 5,
+        "prize_cad": 1653
+      },
+      {
+        "id": 244298,
+        "name": "Brian Bond",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=244298",
+        "position": 6,
+        "prize_cad": 1402
+      },
+      {
+        "id": 423005,
+        "name": "Mardy Fransen",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=423005",
+        "position": 7,
+        "prize_cad": 1219
+      },
+      {
+        "id": 108593,
+        "name": "Leo Bourgeois",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=108593",
+        "position": 8,
+        "prize_cad": 1069
+      },
+      {
+        "id": 260634,
+        "name": "Anesti Kocini",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=260634",
+        "position": 9,
+        "prize_cad": 943
+      },
+      {
+        "id": 68784,
+        "name": "Jair Beltran",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=68784",
+        "position": 10,
+        "prize_cad": 835
+      },
+      {
+        "id": 1474197,
+        "name": "Michael Schiavo",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1474197",
+        "position": 11,
+        "prize_cad": 835
+      },
+      {
+        "id": 1040379,
+        "name": "Kevin Hendriks",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1040379",
+        "position": 12,
+        "prize_cad": 835
+      },
+      {
+        "id": 1068823,
+        "name": "Andrew Schneider",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1068823",
+        "position": 13,
+        "prize_cad": 735
+      },
+      {
+        "id": 1468435,
+        "name": "Minsu Kim",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1468435",
+        "position": 14,
+        "prize_cad": 735
+      },
+      {
+        "id": 530167,
+        "name": "Maurizio Russo",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=530167",
+        "position": 15,
+        "prize_cad": 735
+      },
+      {
+        "id": 557512,
+        "name": "Brian Lee",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=557512",
+        "position": 16,
+        "prize_cad": 643
+      },
+      {
+        "id": 695631,
+        "name": "John Cayley",
+        "country": "Canada",
+        "country_code": "ca",
+        "player_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=695631",
+        "position": 17,
+        "prize_cad": 643
+      }
+    ]
+  }
+}
