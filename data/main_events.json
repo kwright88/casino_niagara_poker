@@ -2,6 +2,22 @@
   "last_updated": "2026-03-05",
   "results": [
     {
+      "date_iso": "2026-02-17",
+      "date": "Feb 17",
+      "date_end": "2026-02-19",
+      "festival_name": "Winter Main Event 2026",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1290061",
+      "tournament": "Winter Main Event 2026",
+      "type": "main",
+      "buy_in": "",
+      "entries": 678,
+      "prize_pool": "$690,543",
+      "first_place": "$127,264",
+      "winner_name": "Brett Goodall",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=432173"
+    },
+    {
       "date_iso": "2025-10-14",
       "date": "Oct 14",
       "date_end": "2025-10-16",
