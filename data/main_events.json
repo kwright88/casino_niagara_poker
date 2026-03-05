@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-26",
+  "last_updated": "2026-03-05",
   "results": [
     {
       "date_iso": "2025-10-14",
@@ -7,16 +7,15 @@
       "date_end": "2025-10-16",
       "festival_name": "Fall Main Event 2025",
       "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249191",
-      "tournament": "$1,000 Fall Main Event 2025",
+      "tournament": "Fall Main Event 2025",
       "type": "main",
-      "buy_in": "$1,000",
+      "buy_in": "",
       "entries": 342,
       "prize_pool": "$281,979",
       "first_place": "$60,236",
       "winner_name": "Jordan Grant",
       "country_code": "ca",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=471226",
-      "season": "fall"
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=471226"
     },
     {
       "date_iso": "2025-08-05",
@@ -24,16 +23,15 @@
       "date_end": "2025-08-07",
       "festival_name": "Summer Main Event 2025",
       "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1249021",
-      "tournament": "$1,000 Summer Main Event 2025",
+      "tournament": "Summer Main Event 2025",
       "type": "main",
-      "buy_in": "$1,000",
+      "buy_in": "",
       "entries": 366,
       "prize_pool": "$301,767",
       "first_place": "$63,370",
       "winner_name": "Jason Morneau-Powell",
       "country_code": "ca",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1355795",
-      "season": "summer"
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1355795"
     },
     {
       "date_iso": "2025-04-22",
@@ -41,16 +39,15 @@
       "date_end": "2025-04-25",
       "festival_name": "Spring Main Event 2025",
       "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1198097",
-      "tournament": "$1,000 Spring Main Event 2025",
+      "tournament": "Spring Main Event 2025",
       "type": "main",
-      "buy_in": "$1,000",
+      "buy_in": "",
       "entries": 340,
       "prize_pool": "$280,330",
       "first_place": "$59,896",
       "winner_name": "Samuel Labenski",
       "country_code": "ca",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=531719",
-      "season": "spring"
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=531719"
     },
     {
       "date_iso": "2025-02-18",
@@ -58,16 +55,15 @@
       "date_end": "2025-02-21",
       "festival_name": "Winter Main Event 2025",
       "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1157117",
-      "tournament": "$1,000 Winter Main Event 2025",
+      "tournament": "Winter Main Event 2025",
       "type": "main",
-      "buy_in": "$1,000",
+      "buy_in": "",
       "entries": 607,
       "prize_pool": "$500,472",
       "first_place": "$94,360",
       "winner_name": "Mayuran Jeyabalan",
       "country_code": "ca",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1337931",
-      "season": "winter"
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1337931"
     },
     {
       "date_iso": "2024-10-15",
@@ -75,16 +71,15 @@
       "date_end": "2024-10-17",
       "festival_name": "Fall Multi-Day 2024",
       "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1102949",
-      "tournament": "$1,000 Fall Multi-Day 2024",
+      "tournament": "Fall Multi-Day 2024",
       "type": "main",
-      "buy_in": "$1,000",
+      "buy_in": "",
       "entries": 472,
       "prize_pool": "$389,164",
       "first_place": "$77,357",
       "winner_name": "Charbel Kanterjian",
       "country_code": "ca",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=229433",
-      "season": "fall"
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=229433"
     },
     {
       "date_iso": "2024-08-06",
@@ -92,16 +87,15 @@
       "date_end": "2024-08-09",
       "festival_name": "Summer Multi-Day 2024",
       "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1083971",
-      "tournament": "$1,000 Summer Multi-Day 2024",
+      "tournament": "Summer Multi-Day 2024",
       "type": "main",
-      "buy_in": "$1,000",
+      "buy_in": "",
       "entries": 623,
       "prize_pool": "$513,664",
       "first_place": "$96,362",
       "winner_name": "Alexander Butko",
       "country_code": "ca",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=596081",
-      "season": "summer"
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=596081"
     },
     {
       "date_iso": "2024-04-02",
@@ -109,16 +103,15 @@
       "date_end": "2024-04-05",
       "festival_name": "Spring Multi-Day 2024",
       "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1042883",
-      "tournament": "$1,000 Spring Multi-Day 2024",
+      "tournament": "Spring Multi-Day 2024",
       "type": "main",
-      "buy_in": "$1,000",
+      "buy_in": "",
       "entries": 318,
       "prize_pool": "$262,191",
-      "first_place": "$56,967",
+      "first_place": "",
       "winner_name": "",
       "country_code": "",
-      "winner_url": "",
-      "season": "spring"
+      "winner_url": ""
     },
     {
       "date_iso": "2024-02-20",
@@ -126,16 +119,15 @@
       "date_end": "2024-02-23",
       "festival_name": "Winter Multi-Day 2024",
       "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1042881",
-      "tournament": "$1,000 Winter Multi-Day 2024",
+      "tournament": "Winter Multi-Day 2024",
       "type": "main",
-      "buy_in": "$1,000",
+      "buy_in": "",
       "entries": 615,
       "prize_pool": "$507,068",
       "first_place": "$95,359",
       "winner_name": "Behnam Esfahanizadeh",
       "country_code": "ca",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=583015",
-      "season": "winter"
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=583015"
     }
   ]
 }
