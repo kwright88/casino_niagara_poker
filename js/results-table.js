@@ -68,7 +68,7 @@ var ResultsTable = (function () {
     var winnerTd;
     if (ev.winner_name && ev.winner_name.toLowerCase() !== 'unknown') {
       var flag = ev.country_code
-        ? '<img class="flag-img" src="' + getBase() + 'flags/' + esc(ev.country_code) + '.png" alt="' + esc(ev.country_code.toUpperCase()) + '" onerror="this.src=\'https://flagcdn.com/20x15/\'+this.alt.toLowerCase()+\'.png\';this.onerror=null"> '
+        ? '<img class="flag-img" src="' + getBase() + 'flags/' + esc(ev.country_code) + '.png" alt="' + esc(ev.country_code.toUpperCase()) + '" onerror="this.src=\'https://flagcdn.com/20x15/\'+this.alt.toLowerCase()+\'.png\';this.onerror=function(){this.style.display=\'none\'}"> '
         : '';
       var nameInner = ev.winner_url
         ? '<a class="rt-winner-link" href="' + esc(ev.winner_url) + '" target="_blank">' + esc(ev.winner_name) + '</a>'

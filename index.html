@@ -35,6 +35,15 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/index.css">
+  <noscript>
+    <style>
+      .live-section, #cd-outer, #cal-grid, #awards-grid-container, #lb-table tbody, #results-tbody, #data-tbody { display: none !important; }
+    </style>
+    <style>
+      .noscript-msg { background: rgba(212,175,55,0.1); border: 1px solid rgba(212,175,55,0.4); border-radius: 14px; padding: 20px; text-align: center; color: #e8e0cf; font-size: 14px; margin: 24px auto; max-width: 600px; }
+      .noscript-msg a { color: #d4af37; }
+    </style>
+  </noscript>
 </head>
 <body>
 <nav class="site-nav" id="site-nav">
@@ -68,9 +77,10 @@
     <p class="disclaimer"><strong>No affiliation with Casino Niagara or Mohegan Sun</strong></p>
     <div class="divider"><span>♠</span></div>
   </header>
+  <noscript><div class="noscript-msg">This site requires JavaScript to display live data. Please enable JavaScript or visit <a href="https://casinoniagara.com/playing/poker.html">casinoniagara.com</a> directly.</div></noscript>
 
   <!-- Hero stats -->
-  <div class="hero-stats card">
+  <div class="hero-stats">
     <div class="hero-stat">
       <span class="hs-icon">🃏</span>
       <span class="hs-val">18 Tables</span>
@@ -106,11 +116,11 @@
       <span class="live-timestamp" style="opacity:0.5">Loading…</span>
     </div>
     <div class="live-tables-grid" style="opacity:0.4">
-      <div class="live-table-card card">
+      <div class="live-table-card">
         <div class="live-table-card-header"><span class="lh-icon">🟢</span> Live Games</div>
         <div class="live-table-row empty"><div class="ltr-game ltr-empty-label">Loading…</div></div>
       </div>
-      <div class="live-table-card card">
+      <div class="live-table-card">
         <div class="live-table-card-header"><span class="lh-icon">📋</span> Waiting Lists</div>
         <div class="live-table-row empty"><div class="ltr-game ltr-empty-label">Loading…</div></div>
       </div>
@@ -122,7 +132,7 @@
   <div class="games-section">
     <div class="games-grid">
 
-      <div class="game-group card">
+      <div class="game-group">
         <div class="game-group-header">No Limit Hold'em</div>
         <div class="game-row"><span class="game-stakes">1/3 NLH</span><span class="avail-badge always">Always</span></div>
         <div class="game-row"><span class="game-stakes">2/5 NLH</span><span class="avail-badge often">Often</span></div>
@@ -131,21 +141,21 @@
         <div class="game-row"><span class="game-stakes">25/50 · 50/100 NLH</span><span class="avail-badge demand">On Demand</span></div>
       </div>
 
-      <div class="game-group card">
+      <div class="game-group">
         <div class="game-group-header">Pot Limit Omaha</div>
         <div class="game-row"><span class="game-stakes">1/3 PLO</span><span class="avail-badge often">Often</span></div>
         <div class="game-row"><span class="game-stakes">2/5 PLO</span><span class="avail-badge demand">On Demand</span></div>
         <div class="game-row"><span class="game-stakes">5/10 · 10/25 · 25/50 PLO</span><span class="avail-badge demand">On Demand</span></div>
       </div>
 
-      <div class="game-group card">
+      <div class="game-group">
         <div class="game-group-header">Round by Round</div>
         <div class="game-row"><span class="game-stakes">1/3 Round by Round</span><span class="avail-badge demand">On Demand</span></div>
         <div class="game-row"><span class="game-stakes">2/5 Round by Round</span><span class="avail-badge demand">On Demand</span></div>
         <div class="game-row"><span class="game-stakes">25/50 Round by Round</span><span class="avail-badge demand">On Demand</span></div>
       </div>
 
-      <div class="game-group card">
+      <div class="game-group">
         <div class="game-group-header">Other Games</div>
         <div class="game-row"><span class="game-stakes">Match the Stack</span><span class="avail-badge often">Often</span></div>
         <div class="game-row"><span class="game-stakes">20/40 · 50/100 · 100/200 Limit</span><span class="avail-badge demand">On Demand</span></div>
@@ -159,7 +169,7 @@
   <div class="tournaments-section">
     <div class="tourney-grid">
 
-      <div class="tourney-card card">
+      <div class="tourney-card">
         <div class="tc-stripe wed-stripe"></div>
         <div class="tc-body">
           <div class="tc-day">Every Wednesday</div>
@@ -170,7 +180,7 @@
         </div>
       </div>
 
-      <div class="tourney-card card">
+      <div class="tourney-card">
         <div class="tc-stripe sun-stripe"></div>
         <div class="tc-body">
           <div class="tc-day">Every Sunday</div>
@@ -181,7 +191,7 @@
         </div>
       </div>
 
-      <div class="tourney-card card">
+      <div class="tourney-card">
         <div class="tc-stripe sun550-stripe"></div>
         <div class="tc-body">
           <div class="tc-day">Last Sunday of the Month</div>
@@ -192,7 +202,7 @@
         </div>
       </div>
 
-      <div class="tourney-card featured-card card">
+      <div class="tourney-card featured-card">
         <div class="tc-stripe main-stripe"></div>
         <div class="tc-body">
           <div class="tc-day">Seasonal · Multi-Day</div>
@@ -211,7 +221,7 @@
 
   <!-- Waitlist -->
   <p class="section-title">Join the Waitlist</p>
-  <div class="waitlist-card card">
+  <div class="waitlist-card">
     <div class="waitlist-icon">📋</div>
     <div class="waitlist-content">
       <h3>Reserve Your Spot</h3>
@@ -227,7 +237,7 @@
 
   <!-- LEV2L Restaurant -->
   <p class="section-title">LEV2L Restaurant</p>
-  <div class="lev2l-card card">
+  <div class="lev2l-card">
     <div class="lev2l-icon">🍔</div>
     <div class="lev2l-content">
       <h3>LEV2L Sports Bar &amp; Restaurant</h3>
@@ -255,27 +265,27 @@
   <!-- Amenities -->
   <p class="section-title">Room Amenities</p>
   <div class="amenities-grid">
-    <div class="amenity-card card">
+    <div class="amenity-card">
       <span class="am-icon">📱</span>
       <span class="am-label">Free WiFi</span>
     </div>
-    <div class="amenity-card card">
+    <div class="amenity-card">
       <span class="am-icon">🔋</span>
       <span class="am-label">Phone Charger at Every Seat</span>
     </div>
-    <div class="amenity-card card">
+    <div class="amenity-card">
       <span class="am-icon">🥤</span>
       <span class="am-label">Self-Serve Beverage Station (Non-Alcoholic)</span>
     </div>
-    <div class="amenity-card card">
+    <div class="amenity-card">
       <span class="am-icon">🏈</span>
       <span class="am-label">Sportsbook Access</span>
     </div>
-    <div class="amenity-card card">
+    <div class="amenity-card">
       <span class="am-icon">💵</span>
       <span class="am-label">No Tax Withholding on Winnings</span>
     </div>
-    <div class="amenity-card card">
+    <div class="amenity-card">
       <span class="am-icon">🔄</span>
       <span class="am-label">Re-Buys Handled In-Room</span>
     </div>
@@ -283,7 +293,7 @@
 
   <!-- Bad Beat Jackpot -->
   <p class="section-title">Bad Beat Jackpot</p>
-  <div class="bbj-card card">
+  <div class="bbj-card">
     <h3>🎰 Bad Beat Jackpot</h3>
     <!-- BBJ amount — populated by JS from data/badbeat.json -->
     <div class="bbj-amount-display">
@@ -308,169 +318,9 @@
 
   <div class="copyright">Copyright &copy; 2026 Kevin Wright. All rights reserved.</div>
 </main>
-<script>
-  // ── Live Section — fetch from data/live_games.json ───────────────────────
-  // data/live_games.json is written by update_live_games.py every hour.
-  // It contains: games[], waitlist[], tournament (or null), timestamp, error, stale.
-  // All rendering is done client-side — the HTML file itself never changes.
-  (function () {
-
-    // Escape user-supplied strings before inserting into innerHTML.
-    // Required for any text that comes from the JSON (game names, limits, etc.)
-    // to prevent XSS if the data source were ever compromised.
-    function esc(s) {
-      return String(s)
-        .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
-        .replace(/"/g,'&quot;');
-    }
-
-    // Build a single row used in both the Live Games and Waiting Lists cards.
-    // countClass controls styling: 'ltr-count' (green) for tables, 'ltr-waiting-count' (amber) for waitlist.
-    function tableRow(name, limits, countVal, countLabel, countClass) {
-      var limDiv = limits ? '<div class="ltr-limits">'+esc(limits)+'</div>' : '';
-      return (
-        '<div class="live-table-row">'+
-          '<div><div class="ltr-game">'+esc(name)+'</div>'+limDiv+'</div>'+
-          '<div class="ltr-right">'+
-            '<div class="'+countClass+'">'+esc(String(countVal))+'</div>'+
-            '<div class="ltr-count-label">'+countLabel+'</div>'+
-          '</div>'+
-        '</div>'
-      );
-    }
-
-    // Live Games card — renders a table card for each active game.
-    // Falls back to an "No active games" message when the array is empty.
-    function liveCard(games) {
-      var rows = (!games || !games.length)
-        ? '<div class="live-table-row empty"><div class="ltr-game ltr-empty-label">No active games</div></div>'
-        : games.map(function(g){ return tableRow(g.name,g.limits,g.tables,'Tables','ltr-count'); }).join('');
-      return '<div class="live-table-card card"><div class="live-table-card-header"><span class="lh-icon">🟢</span> Live Games</div>'+rows+'</div>';
-    }
-
-    // Waiting Lists card — same structure as liveCard but shows player counts.
-    // "Table Change" entries are filtered out by update_live_games.py before writing JSON.
-    function waitlistCard(waitlist) {
-      var rows = (!waitlist || !waitlist.length)
-        ? '<div class="live-table-row empty"><div class="ltr-game ltr-empty-label">No waiting lists</div></div>'
-        : waitlist.map(function(w){ return tableRow(w.name,w.limits,w.waiting,'Waiting','ltr-waiting-count'); }).join('');
-      return '<div class="live-table-card card"><div class="live-table-card-header"><span class="lh-icon">📋</span> Waiting Lists</div>'+rows+'</div>';
-    }
-
-    // Error card — shown when data.error === true (scrape failed) or on a network fetch error.
-    // Directs users to the poker room phone number and Bravo app as alternatives.
-    function errorCard() {
-      return (
-        '<div class="live-table-card live-error-full card">'+
-          '<div class="live-table-card-header"><span class="lh-icon">⚠️</span> Live Data Unavailable</div>'+
-          '<div class="live-table-row"><div class="live-error-body">'+
-            '<div class="ltr-game">Unable to retrieve live game data</div>'+
-            '<div class="ltr-limits">Contact the poker room directly for up-to-date table info:</div>'+
-            '<div class="ltr-limits ltr-note"><a href="tel:+19053537000" class="ltr-contact-link">(905) 353-7000</a></div>'+
-            '<div class="ltr-limits ltr-note">or check the <a href="https://www.bravopokerlive.com/venues/casino-niagara/" target="_blank" class="ltr-contact-link">Bravo Poker App or Website</a></div>'+
-          '</div></div>'+
-        '</div>'
-      );
-    }
-
-    // Live Tournament card — rendered below the games/waitlist grid when a
-    // tournament is actively running. Data comes from Bravo's clock API
-    // (scraped by update_live_games.py via /api/clocks/FALL).
-    // Fields: level (e.g. "4" or "3 – Break"), blinds, time_left (MM:SS),
-    //         clock_state ('R'=running, 'P'=paused), num_entrants, num_remaining, prize_pool.
-    function tournamentCard(t) {
-      if (!t) return '';
-      var name = t.name || '';
-      // Append tournament name to the card header if Bravo provided one
-      var nameSuffix = name ? '<span class="lt-sep"> - </span><span class="lt-subtitle">'+esc(name)+'</span>' : '';
-      // Always show level, blinds, time remaining; add entrants/remaining/prize if available
-      var stats = [['🎯 Level',t.level],['Blinds',t.blinds],['⏱ Time Left',t.time_left]];
-      if (t.num_entrants) stats.push(['Total Entries', t.num_entrants.toLocaleString()]);
-      if (t.num_remaining) stats.push(['Players Left', t.num_remaining.toLocaleString()]);
-      if (t.prize_pool != null) stats.push(['Prize Pool','$'+parseInt(t.prize_pool).toLocaleString()]);
-      var statHtml = stats.map(function(p){
-        return '<div class="tc-clock-stat"><span class="tc-clock-val">'+esc(String(p[1]))+'</span><span class="tc-clock-label">'+esc(p[0])+'</span></div>';
-      }).join('');
-      // Show a PAUSED badge when the tournament clock is stopped (e.g. during a break)
-      var paused = (t.clock_state==='P') ? ' <span class="tc-paused-badge">⏸ PAUSED</span>' : '';
-      return (
-        '<div class="live-tournament-wrapper">'+
-          '<div class="live-table-card live-tournament-card card">'+
-            '<div class="live-table-card-header"><span class="lh-icon">🏆</span> Live Tournament'+paused+nameSuffix+'</div>'+
-            '<div class="tc-clock-grid">'+statHtml+'</div>'+
-          '</div>'+
-        '</div>'
-      );
-    }
-
-    // Assemble the full live section from data fields.
-    // data.stale === true means the last scrape failed and we're showing the
-    // previous good result — flagged in yellow so users know it may be outdated.
-    function renderSection(data) {
-      var gridHtml = data.error ? errorCard() : liveCard(data.games)+waitlistCard(data.waitlist);
-      var tourneyHtml = data.tournament ? tournamentCard(data.tournament) : '';
-      var staleBadge = data.stale
-        ? ' <span style="color:#f4b400;font-weight:700;">(Stale)</span>'
-        : '';
-      return (
-        '<div class="live-section-header">'+
-          '<p class="section-title">Live Right Now <span class="live-call-cta">\u2014 Call <a href="tel:+19053537000">(905) 353-7000</a> to get on the list</span></p>'+
-          '<span class="live-timestamp"><span class="live-dot"></span>As of '+esc(data.timestamp||'–')+staleBadge+'</span>'+
-        '</div>'+
-        '<div class="live-tables-grid">'+gridHtml+'</div>'+
-        tourneyHtml
-      );
-    }
-
-    var container = document.getElementById('live-section-container');
-    if (!container) return;
-
-    // cache: 'no-cache' ensures we always get the latest JSON — without it,
-    // browsers may serve a cached copy and show stale game data.
-    fetch('data/live_games.json', {cache: 'no-cache'})
-      .then(function(r){ return r.json(); })
-      .then(function(data){ container.innerHTML = renderSection(data); })
-      .catch(function(){
-        // Network failure (e.g. offline, GitHub Pages unreachable) — show error card
-        container.innerHTML = (
-          '<div class="live-section-header">'+
-            '<p class="section-title">Live Right Now <span class="live-call-cta">\u2014 Call <a href="tel:+19053537000">(905) 353-7000</a> to get on the list</span></p>'+
-            '<span class="live-timestamp" style="opacity:0.5">Unavailable</span>'+
-          '</div>'+
-          '<div class="live-tables-grid">'+errorCard()+'</div>'
-        );
-      });
-  })();
-
-  // ── BBJ Amount — fetch from data/badbeat.json ─────────────────────────────
-  // Pulls only the summary object (currentJackpot, currentDate, currentTime).
-  // The full data array is only needed on badbeat.html — not fetched here.
-  (function () {
-    fetch('data/badbeat.json', {cache: 'no-cache'})
-      .then(function(r){ return r.json(); })
-      .then(function(d) {
-        var s = d.summary;
-        if (!s) return;
-        var valEl  = document.getElementById('bbj-amount-val');
-        var asofEl = document.getElementById('bbj-amount-asof');
-        if (valEl && s.currentJackpot != null) {
-          valEl.style.opacity = '';
-          // Format as Canadian dollars, always 2 decimal places
-          valEl.textContent = '$' + s.currentJackpot.toLocaleString('en-CA', {minimumFractionDigits:2, maximumFractionDigits:2});
-        }
-        if (asofEl) {
-          var asof = s.currentDate || '';
-          if (s.currentTime) asof += ' at ' + s.currentTime;
-          asofEl.textContent = asof ? 'as of ' + asof : '';
-        }
-      })
-      .catch(function() {
-        // Show an em dash if the JSON can't be fetched
-        var el = document.getElementById('bbj-amount-val');
-        if (el) { el.style.opacity = ''; el.textContent = '\u2014'; }
-      });
-  })();
-</script>
+<script src="js/live-section.js"></script>
+<script src="js/badbeat-summary.js"></script>
+<script src="js/index.js"></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -491,7 +341,7 @@
       "latitude": 43.0896,
       "longitude": -79.0849
     },
-    "openingHours": "Mo-Su 10:00-04:00",
+    "openingHours": "Mo-Su 12:00-03:45",
     "amenityFeature": [
       { "@type": "LocationFeatureSpecification", "name": "Poker Tables", "value": "18" },
       { "@type": "LocationFeatureSpecification", "name": "Games", "value": "1/3 NL Hold'em, 2/5 NL Hold'em" }
