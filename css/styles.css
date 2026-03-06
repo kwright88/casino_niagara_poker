@@ -80,7 +80,18 @@ main {
 }
 
 /* ── Card utility ── */
-.card {
+/* Keep .card utility, but also protect key card-like components in case
+   class="card" is accidentally omitted in generated HTML. */
+.card,
+.hero-stats,
+.live-table-card,
+.game-group,
+.tourney-card,
+.waitlist-card,
+.lev2l-card,
+.amenity-card,
+.bbj-card,
+.award-card {
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: var(--radius);
