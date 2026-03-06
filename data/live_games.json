@@ -1,5 +1,5 @@
 {
-  "timestamp": "6:15 PM · Mar 6, 2026",
+  "timestamp": "6:30 PM · Mar 6, 2026",
   "error": false,
   "stale": false,
   "stale_reason": "",
@@ -19,7 +19,7 @@
     {
       "name": "1/3 PLO (Match the Stack)",
       "limits": "",
-      "waiting": "9"
+      "waiting": "11"
     },
     {
       "name": "1/3 NL Hold’em",
@@ -29,7 +29,7 @@
     {
       "name": "2/5 NL (Match the Stack)",
       "limits": "",
-      "waiting": "3"
+      "waiting": "4"
     }
   ],
   "tournament": null
