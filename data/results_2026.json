@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-05 5:10 pm",
+  "last_updated": "2026-03-06 1:04 am",
   "results": [
     {
       "date_iso": "2026-02-25",
@@ -26,19 +26,6 @@
       "winner_name": "Tedde Ballanger",
       "country_code": "ca",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=339823"
-    },
-    {
-      "date_iso": "2026-02-19",
-      "date": "Feb 19",
-      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1290061",
-      "tournament": "$1,200 Winter Main Event 2026",
-      "type": "main",
-      "entries": 678,
-      "prize_pool": "$690,543",
-      "first_place": "$127,264",
-      "winner_name": "Brett Goodall",
-      "country_code": "ca",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=432173"
     },
     {
       "date_iso": "2026-02-15",
