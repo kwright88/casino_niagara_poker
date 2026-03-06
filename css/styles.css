@@ -91,6 +91,16 @@ main {
 .lev2l-card,
 .amenity-card,
 .bbj-card,
+.cal-wrapper,
+.detail-card,
+.results-table-wrap,
+.countdown-box,
+.hero-card,
+.stat-card,
+.chart-card,
+.history-section,
+.results-wrap,
+.lb-wrap,
 .award-card {
   background: var(--card-bg);
   border: 1px solid var(--border);
