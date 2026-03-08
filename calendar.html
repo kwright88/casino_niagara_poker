@@ -259,9 +259,9 @@
     </div>
   </div>
 
-  <!-- 2026 Results -->
+  <!-- Results (year set dynamically from calendar_table_results.json) -->
   <div class="results-section" id="results-section-container">
-    <h2>2026 Results</h2>
+    <h2 id="results-title">RESULTS</h2>
     <div class="results-table-wrap">
       <table class="results-table">
         <thead>
@@ -298,7 +298,13 @@
     tbodyId:     'results-tbody',
     timestampId: 'results-last-updated',
     dataUrl:     'data/calendar_table_results.json',
-    onLoad: function() {
+    onLoad: function(data) {
+      // Set results section title dynamically from JSON year field
+      var titleEl = document.getElementById('results-title');
+      if (titleEl) {
+        var year = (data && data.year) ? data.year : new Date().getFullYear();
+        titleEl.textContent = year + ' RESULTS';
+      }
       // Wire up hover/click on results rows for bidirectional highlighting with
       // calendar pills and detail cards. Rows already have data-type from results-table.js.
       document.querySelectorAll('#results-tbody tr[data-type]').forEach(function(row) {
