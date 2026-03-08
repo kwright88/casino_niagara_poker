@@ -1,5 +1,5 @@
 {
-  "timestamp": "4:15 PM · Mar 8, 2026",
+  "timestamp": "4:30 PM · Mar 8, 2026",
   "error": false,
   "stale": false,
   "stale_reason": "",
@@ -19,7 +19,7 @@
     {
       "name": "1/3 NL Hold’em",
       "limits": "$100–$300 Buy-in",
-      "waiting": "4"
+      "waiting": "3"
     },
     {
       "name": "1/3 PLO",
@@ -39,7 +39,7 @@
     {
       "name": "2/5 NL Hold’em",
       "limits": "$200–$1000 Buy-in",
-      "waiting": "5"
+      "waiting": "6"
     },
     {
       "name": "2/5 NL (Match the Stack)",
@@ -49,11 +49,11 @@
   ],
   "tournament": {
     "name": "$400 Sunday",
-    "level": "9",
-    "blinds": "800 / 1,600 · Ante 1,600",
-    "time_left": "00:58",
+    "level": "10",
+    "blinds": "1,000 / 2,000 · Ante 2,000",
+    "time_left": "15:57",
     "num_entrants": 78,
-    "num_remaining": 29,
+    "num_remaining": 26,
     "prize_pool": "26860",
     "clock_state": "R"
   }
