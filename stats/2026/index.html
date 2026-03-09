@@ -37,7 +37,12 @@
   <link rel="stylesheet" href="../../css/stats.css">
   <noscript>
     <style>
-      .live-section, #cd-outer, #cal-grid, #awards-grid-container, #lb-table tbody, #results-tbody, #data-tbody { display: none !important; }
+      /* Hide all JS-dependent sections when JavaScript is disabled.
+         Static content (nav, header, footer, tournament cards, amenities) still shows. */
+      .live-section, #cd-outer, #cal-grid, .results-section, .results-table-wrap,
+      #awards-grid-container, #lb-table tbody, #results-tbody, #data-tbody,
+      .chart-card, .stats-grid, .history-section, .hero-stats,
+      .bbj-amount-display, .hero-card .jackpot-amount { display: none !important; }
     </style>
     <style>
       .noscript-msg { background: rgba(212,175,55,0.1); border: 1px solid rgba(212,175,55,0.4); border-radius: 14px; padding: 20px; text-align: center; color: #e8e0cf; font-size: 14px; margin: 24px auto; max-width: 600px; }
@@ -65,6 +70,15 @@
         scrolled = now;
       }
     }, { passive: true });
+
+    // Mobile scroll indicator: hide right-edge gradient when scrolled to end.
+    // REVERT NOTE: remove this block + CSS .scrolled-end rules to undo.
+    document.querySelectorAll('.results-table-wrap, .results-wrap, .lb-wrap').forEach(function (el) {
+      el.addEventListener('scroll', function () {
+        var atEnd = el.scrollLeft + el.clientWidth >= el.scrollWidth - 4;
+        el.classList.toggle('scrolled-end', atEnd);
+      }, { passive: true });
+    });
   })();
 </script>
 
@@ -195,7 +209,7 @@ function renderTable() {
     const wins = p[4] > 0 ? `<span class="lb-wins">${p[4]}</span>` : '<span class="lb-wins zero">—</span>';
     return `<tr>
       <td class="td-l lb-rank">${i + 1}</td>
-      <td class="td-l"><span class="lb-name-cell"><img class="flag-img" src="${BASE}flags/${p[2]}.png" alt="${p[2].toUpperCase()}" onerror="this.src='https://flagcdn.com/20x15/'+this.alt.toLowerCase()+'.png';this.onerror=function(){this.style.display='none'}"><a class="lb-name-link" href="${url}" target="_blank">${p[1]}</a></span></td>
+      <td class="td-l"><span class="lb-name-cell"><img class="flag-img" src="${BASE}flags/${p[2]}.png" alt="${p[2].toUpperCase()}" onerror="this.src='https://flagcdn.com/20x15/'+this.alt.toLowerCase()+'.png';this.onerror=function(){this.style.display='none'}"><a class="lb-name-link" href="${url}" target="_blank" rel="noopener noreferrer">${p[1]}</a></span></td>
       <td class="lb-cashes">${p[3]}</td>
       <td>${wins}</td>
       <td class="lb-money">${fmtMoney(p[5])}</td>
@@ -233,7 +247,7 @@ function buildAwardCard(award) {
       ? `<img class="flag-img" src="${BASE}flags/${escH(cc)}.png" alt="${escH(cc.toUpperCase())}" onerror="this.src='https://flagcdn.com/20x15/'+this.alt.toLowerCase()+'.png';this.onerror=function(){this.style.display='none'}"> `
       : '';
     const inner = award.winner_url
-      ? `<a href="${escH(award.winner_url)}" target="_blank">${name}</a>`
+      ? `<a href="${escH(award.winner_url)}" target="_blank" rel="noopener noreferrer">${name}</a>`
       : name;
     winnerHtml = `${flag}${inner}`;
   }
@@ -241,6 +255,7 @@ function buildAwardCard(award) {
 }
 
 // ── Init ──────────────────────────────────────────────────────────────────
+// Leaderboard sorting + filtering logic is intentionally client-side for snappy UI.
 function initPage(data) {
   // Leaderboard
   PLAYERS = data.players || [];
@@ -280,7 +295,7 @@ function initPage(data) {
 
 // ── Fetch awards + leaderboard ─────────────────────────────────────────────
 fetch('../../data/stats_2026.json', {cache: 'no-cache'})
-  .then(r => r.json())
+  .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
   .then(initPage)
   .catch(function() {
     const grid = document.getElementById('awards-grid-container');

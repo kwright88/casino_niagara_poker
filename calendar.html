@@ -37,7 +37,12 @@
   <link rel="stylesheet" href="css/calendar.css">
   <noscript>
     <style>
-      .live-section, #cd-outer, #cal-grid, #awards-grid-container, #lb-table tbody, #results-tbody, #data-tbody { display: none !important; }
+      /* Hide all JS-dependent sections when JavaScript is disabled.
+         Static content (nav, header, footer, tournament cards, amenities) still shows. */
+      .live-section, #cd-outer, #cal-grid, .results-section, .results-table-wrap,
+      #awards-grid-container, #lb-table tbody, #results-tbody, #data-tbody,
+      .chart-card, .stats-grid, .history-section, .hero-stats,
+      .bbj-amount-display, .hero-card .jackpot-amount { display: none !important; }
     </style>
     <style>
       .noscript-msg { background: rgba(212,175,55,0.1); border: 1px solid rgba(212,175,55,0.4); border-radius: 14px; padding: 20px; text-align: center; color: #e8e0cf; font-size: 14px; margin: 24px auto; max-width: 600px; }
@@ -65,6 +70,15 @@
         scrolled = now;
       }
     }, { passive: true });
+
+    // Mobile scroll indicator: hide right-edge gradient when scrolled to end.
+    // REVERT NOTE: remove this block + CSS .scrolled-end rules to undo.
+    document.querySelectorAll('.results-table-wrap, .results-wrap, .lb-wrap').forEach(function (el) {
+      el.addEventListener('scroll', function () {
+        var atEnd = el.scrollLeft + el.clientWidth >= el.scrollWidth - 4;
+        el.classList.toggle('scrolled-end', atEnd);
+      }, { passive: true });
+    });
   })();
 </script>
 
@@ -135,7 +149,7 @@
         <div class="dc-row"><strong>Starting Stack:</strong> 20,000 chips</div>
         <div class="dc-row"><strong>Levels:</strong> 20 / 30 min</div>
         <div class="dc-row" style="margin-top:8px;">
-          <a href="https://casinoniagara.com/content/dam/niagara/PDF/poker/F26_Wednesday_%24300_Structure_Sheet.pdf" target="_blank">Blind Structure ↗</a>
+          <a href="https://casinoniagara.com/content/dam/niagara/PDF/poker/F26_Wednesday_%24300_Structure_Sheet.pdf" target="_blank" rel="noopener noreferrer">Blind Structure ↗</a>
         </div>
       </div>
 
@@ -151,7 +165,7 @@
         <div class="dc-row"><strong>Starting Stack:</strong> 25,000 chips</div>
         <div class="dc-row"><strong>Levels:</strong> 20 / 30 min</div>
         <div class="dc-row" style="margin-top:8px;">
-          <a href="https://casinoniagara.com/content/dam/niagara/PDF/poker/F26_Sunday_%24400_Structure_Sheet.pdf" target="_blank">Blind Structure ↗</a>
+          <a href="https://casinoniagara.com/content/dam/niagara/PDF/poker/F26_Sunday_%24400_Structure_Sheet.pdf" target="_blank" rel="noopener noreferrer">Blind Structure ↗</a>
         </div>
       </div>
 
@@ -166,7 +180,7 @@
         <div class="dc-row"><strong>Starting Stack:</strong> 30,000 chips</div>
         <div class="dc-row"><strong>Levels:</strong> 30 min</div>
         <div class="dc-row" style="margin-top:8px;">
-          <a href="https://casinoniagara.com/content/dam/niagara/PDF/poker/F26_Last_Sunday_of_the_Month_550_Structure_Sheet.pdf" target="_blank">Blind Structure ↗</a>
+          <a href="https://casinoniagara.com/content/dam/niagara/PDF/poker/F26_Last_Sunday_of_the_Month_550_Structure_Sheet.pdf" target="_blank" rel="noopener noreferrer">Blind Structure ↗</a>
         </div>
       </div>
 
@@ -191,7 +205,7 @@
         <div class="dc-row"><strong>Starting Stack:</strong> 35,000 chips</div>
         <div class="dc-row"><strong>Levels:</strong> 30 min (Day 1) · 40 min (Day 2+)</div>
         <div class="dc-row" style="margin-top:8px;">
-          <a href="https://casinoniagara.com/content/dam/niagara/PDF/poker/F26_1200_Main_Event_Structure_Sheet.pdf" target="_blank">Blind Structure ↗</a>
+          <a href="https://casinoniagara.com/content/dam/niagara/PDF/poker/F26_1200_Main_Event_Structure_Sheet.pdf" target="_blank" rel="noopener noreferrer">Blind Structure ↗</a>
         </div>
       </div>
 <!-- @@SEASON_CARD_END@@ -->
@@ -211,7 +225,7 @@
         <div class="dc-row"><strong>Starting Stack:</strong> 35,000 chips</div>
         <div class="dc-row"><strong>Levels:</strong> 30 min (Day 1) · 40 min (Day 2+)</div>
         <div class="dc-row" style="margin-top:8px;">
-          <a href="https://casinoniagara.com/content/dam/niagara/PDF/poker/F26_1200_Main_Event_Structure_Sheet.pdf" target="_blank">Blind Structure ↗</a>
+          <a href="https://casinoniagara.com/content/dam/niagara/PDF/poker/F26_1200_Main_Event_Structure_Sheet.pdf" target="_blank" rel="noopener noreferrer">Blind Structure ↗</a>
         </div>
       </div>
       -->
@@ -231,7 +245,7 @@
         <div class="dc-row"><strong>Starting Stack:</strong> 35,000 chips</div>
         <div class="dc-row"><strong>Levels:</strong> 30 min (Day 1) · 40 min (Day 2+)</div>
         <div class="dc-row" style="margin-top:8px;">
-          <a href="#" target="_blank">Blind Structure ↗</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Blind Structure ↗</a>
         </div>
       </div>
       -->
@@ -251,7 +265,7 @@
         <div class="dc-row"><strong>Starting Stack:</strong> 35,000 chips</div>
         <div class="dc-row"><strong>Levels:</strong> 30 min (Day 1) · 40 min (Day 2+)</div>
         <div class="dc-row" style="margin-top:8px;">
-          <a href="#" target="_blank">Blind Structure ↗</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Blind Structure ↗</a>
         </div>
       </div>
       -->
@@ -281,7 +295,7 @@
   </div>
 
   <footer>
-    <p>Source: <a href="https://casinoniagara.com/playing/poker.html" target="_blank">casinoniagara.com/playing/poker.html</a></p>
+    <p>Source: <a href="https://casinoniagara.com/playing/poker.html" target="_blank" rel="noopener noreferrer">casinoniagara.com/playing/poker.html</a></p>
     <p>Blackout dates may apply · Casino Niagara reserves the right to modify or cancel tournaments at any time</p>
   </footer>
 
@@ -350,6 +364,11 @@
     const horizon = new Date(today);
     horizon.setDate(horizon.getDate() + 60);
 
+    // Detect EST vs EDT for each date — Niagara Falls is America/Toronto (UTC-5 / UTC-4 DST)
+    const jan = new Date(today.getFullYear(), 0, 1);
+    const jul = new Date(today.getFullYear(), 6, 1);
+    const stdOffset = Math.max(jan.getTimezoneOffset(), jul.getTimezoneOffset());
+
     for (let d = new Date(today); d <= horizon; d.setDate(d.getDate() + 1)) {
       const dow = d.getDay();
       const yyyy = d.getFullYear();
@@ -370,11 +389,15 @@
       }
       if (!name) continue; // not a tournament day
 
+      // DST-aware offset: -04:00 during EDT (summer), -05:00 during EST (winter)
+      const isDST = d.getTimezoneOffset() < stdOffset;
+      const tzOff = isDST ? '-04:00' : '-05:00';
+
       events.push({
         "@type": "Event",
         "name": name,
-        "startDate": ds + "T12:30:00-05:00",
-        "endDate":   ds + "T17:30:00-05:00", // estimated end; tournaments vary
+        "startDate": ds + "T12:30:00" + tzOff,
+        "endDate":   ds + "T17:30:00" + tzOff, // estimated end; tournaments vary
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
         "eventStatus": "https://schema.org/EventScheduled",
         "location": {

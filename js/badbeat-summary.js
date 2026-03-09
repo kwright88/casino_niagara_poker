@@ -2,7 +2,7 @@ window.initBadBeatSummary = function initBadBeatSummary() {
   // ── BBJ Amount — fetch from data/badbeat.json ─────────────────────────────
   (function () {
     fetch('data/badbeat.json', {cache: 'no-cache'})
-      .then(function(r){ return r.json(); })
+      .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
       .then(function(d) {
         var s = d.summary;
         if (!s) return;

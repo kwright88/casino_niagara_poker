@@ -407,7 +407,7 @@
   // Called on init and then every 5 minutes via setInterval.
   function fetchLiveState() {
     fetch('data/live_games.json', {cache: 'no-cache'})
-      .then(r => r.json())
+      .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .then(d => {
         if (d.error) { _liveFetchOk = false; return; } // scrape failed — don't trust tournament field
         const t = d.tournament;
@@ -569,7 +569,7 @@
   //  If the fetch fails, the calendar renders with no blackouts/specials (graceful degradation).
   // ─────────────────────────────────────────────────────────────────────────────
   fetch('data/calendar_config.json', {cache: 'no-cache'})
-    .then(r => r.json())
+    .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(cfg => {
       BLACKOUT_DATES = new Set(cfg.blackout_dates || []);
       SPECIAL_EVENTS = cfg.special_events || {};

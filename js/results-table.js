@@ -71,7 +71,7 @@ var ResultsTable = (function () {
         ? '<img class="flag-img" src="' + getBase() + 'flags/' + esc(ev.country_code) + '.png" alt="' + esc(ev.country_code.toUpperCase()) + '" onerror="this.src=\'https://flagcdn.com/20x15/\'+this.alt.toLowerCase()+\'.png\';this.onerror=function(){this.style.display=\'none\'}"> '
         : '';
       var nameInner = ev.winner_url
-        ? '<a class="rt-winner-link" href="' + esc(ev.winner_url) + '" target="_blank">' + esc(ev.winner_name) + '</a>'
+        ? '<a class="rt-winner-link" href="' + esc(ev.winner_url) + '" target="_blank" rel="noopener noreferrer">' + esc(ev.winner_name) + '</a>'
         : esc(ev.winner_name);
       winnerTd = '<td class="td-l rt-winner">' + flag + nameInner + '</td>';
     } else {
@@ -84,7 +84,7 @@ var ResultsTable = (function () {
         '<td class="td-l rt-date">' + dateText + '</td>' +
         '<td class="td-l"><span class="rt-type">' +
           '<span class="rt-dot" style="background:' + color + '"></span>' +
-          '<a class="rt-link" href="' + esc(ev.event_url) + '" target="_blank">' + esc(ev.tournament) + '</a>' +
+          '<a class="rt-link" href="' + esc(ev.event_url) + '" target="_blank" rel="noopener noreferrer">' + esc(ev.tournament) + '</a>' +
         '</span></td>' +
         entriesTd + poolTd + firstTd + winnerTd +
       '</tr>'
@@ -115,7 +115,7 @@ var ResultsTable = (function () {
     var useSeasonColors = opts.seasonColors || false;
 
     var sortCol = 'date';
-    var sortDir = 1; // 1 = desc for date (newest first by default)
+    var sortDir = -1; // -1 = descending (newest first), 1 = ascending (oldest first)
     var rows = [];
 
     function render() {
@@ -141,7 +141,7 @@ var ResultsTable = (function () {
       table.querySelectorAll('thead th[data-col]').forEach(function (th) {
         th.classList.remove('sort-asc', 'sort-desc');
         if (th.dataset.col === sortCol) {
-          th.classList.add(sortDir === 1 ? 'sort-asc' : 'sort-desc');
+          th.classList.add(sortDir === 1 ? 'sort-asc' : 'sort-desc');  // ▲ = ascending, ▼ = descending
         }
       });
     }
@@ -154,7 +154,7 @@ var ResultsTable = (function () {
           th.addEventListener('click', function () {
             var col = th.dataset.col;
             if (col === sortCol) { sortDir *= -1; }
-            else { sortCol = col; sortDir = ['date','tournament','winner'].includes(col) ? 1 : -1; }
+            else { sortCol = col; sortDir = ['tournament','winner'].includes(col) ? 1 : -1; }
             updateHeaders();
             render();
           });
@@ -163,7 +163,7 @@ var ResultsTable = (function () {
     }
 
     fetch(dataUrl, {cache: 'no-cache'})
-      .then(function (r) { return r.json(); })
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .then(function (data) {
         var results = data.results || [];
         if (filterFn) results = results.filter(filterFn);

@@ -42,7 +42,7 @@ window.initLiveSection = function initLiveSection() {
             '<div class="ltr-game">Unable to retrieve live game data</div>'+
             '<div class="ltr-limits">Contact the poker room directly for up-to-date table info:</div>'+
             '<div class="ltr-limits ltr-note"><a href="tel:+19053537000" class="ltr-contact-link">(905) 353-7000</a></div>'+
-            '<div class="ltr-limits ltr-note">or check the <a href="https://www.bravopokerlive.com/venues/casino-niagara/" target="_blank" class="ltr-contact-link">Bravo Poker App or Website</a></div>'+
+            '<div class="ltr-limits ltr-note">or check the <a href="https://www.bravopokerlive.com/venues/casino-niagara/" target="_blank" rel="noopener noreferrer" class="ltr-contact-link">Bravo Poker App or Website</a></div>'+
           '</div></div>'+
         '</div>'
       );
@@ -90,7 +90,7 @@ window.initLiveSection = function initLiveSection() {
     if (!container) return;
 
     fetch('data/live_games.json', {cache: 'no-cache'})
-      .then(function(r){ return r.json(); })
+      .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
       .then(function(data){ container.innerHTML = renderSection(data); })
       .catch(function(){
         container.innerHTML = (

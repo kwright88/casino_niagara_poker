@@ -261,6 +261,43 @@ header h1 {
 #lb-table thead th.sort-asc::after  { content: ' ▲'; font-size: 9px; color: var(--gold2); }
 #lb-table thead th.sort-desc::after { content: ' ▼'; font-size: 9px; color: var(--gold2); }
 
+/* ── Mobile scroll indicator for tables ──
+   Adds a fading gradient on the right edge of scrollable table wrappers
+   on narrow screens to hint that the table scrolls horizontally.
+   REVERT NOTE: remove this block + .scroll-hint class to undo. */
+.results-table-wrap,
+.results-wrap,
+.lb-wrap {
+  position: relative;
+}
+.results-table-wrap::after,
+.results-wrap::after,
+.lb-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 28px;
+  pointer-events: none;
+  background: linear-gradient(to right, transparent, rgba(13, 27, 42, 0.85));
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+@media (max-width: 700px) {
+  .results-table-wrap::after,
+  .results-wrap::after,
+  .lb-wrap::after {
+    opacity: 1;
+  }
+  /* Hide the gradient once the user has scrolled to the end */
+  .results-table-wrap.scrolled-end::after,
+  .results-wrap.scrolled-end::after,
+  .lb-wrap.scrolled-end::after {
+    opacity: 0;
+  }
+}
+
 /* ── Footer ── */
 footer { text-align: center; font-size: 12px; color: var(--muted); }
 footer a { color: var(--gold3); text-decoration: none; }

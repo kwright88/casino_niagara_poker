@@ -207,7 +207,7 @@
   // ── Fetch data/badbeat.json then initialize ────────────────────────────────
   // cache: 'no-cache' ensures the latest data is always fetched, not a browser-cached copy.
   fetch('data/badbeat.json', {cache: 'no-cache'})
-    .then(r => r.json())
+    .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(d => {
       DATA = d.data;
       SUMMARY = d.summary;
