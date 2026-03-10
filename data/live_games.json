@@ -1,5 +1,5 @@
 {
-  "timestamp": "4:30 PM · Mar 10, 2026",
+  "timestamp": "4:45 PM · Mar 10, 2026",
   "error": false,
   "stale": false,
   "stale_reason": "",
@@ -19,17 +19,17 @@
     {
       "name": "1/3 NL (Match the Stack)",
       "limits": "",
-      "waiting": "1"
+      "waiting": "2"
     },
     {
       "name": "2/5 NL Hold’em",
       "limits": "$200–$1000 Buy-in",
-      "waiting": "3"
+      "waiting": "4"
     },
     {
       "name": "2/5 NL (Match the Stack)",
       "limits": "",
-      "waiting": "1"
+      "waiting": "2"
     }
   ],
   "tournament": null
