@@ -1,5 +1,5 @@
 {
-  "timestamp": "6:30 PM · Mar 11, 2026",
+  "timestamp": "6:45 PM · Mar 11, 2026",
   "error": false,
   "stale": false,
   "stale_reason": "",
@@ -29,16 +29,16 @@
     {
       "name": "2/5 NL Hold’em",
       "limits": "$200–$1000 Buy-in",
-      "waiting": "8"
+      "waiting": "10"
     }
   ],
   "tournament": {
     "name": "$300 Wednesday",
-    "level": "13",
-    "blinds": "2,000 / 4,000 · Ante 4,000",
-    "time_left": "01:17",
+    "level": "14",
+    "blinds": "3,000 / 6,000 · Ante 6,000",
+    "time_left": "16:06",
     "num_entrants": 140,
-    "num_remaining": 28,
+    "num_remaining": 24,
     "prize_pool": "34629",
     "clock_state": "R"
   }
