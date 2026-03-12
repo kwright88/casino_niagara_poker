@@ -1,5 +1,5 @@
 {
-  "timestamp": "12:00 AM · Mar 12, 2026",
+  "timestamp": "12:15 AM · Mar 12, 2026",
   "error": false,
   "stale": false,
   "stale_reason": "",
@@ -34,7 +34,7 @@
     {
       "name": "2/5 NL (Match the Stack)",
       "limits": "",
-      "waiting": "7"
+      "waiting": "6"
     }
   ],
   "tournament": null
