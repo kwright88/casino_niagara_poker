@@ -1,5 +1,5 @@
 {
-  "timestamp": "9:00 PM · Mar 11, 2026",
+  "timestamp": "9:15 PM · Mar 11, 2026",
   "error": false,
   "stale": false,
   "stale_reason": "",
@@ -34,7 +34,7 @@
     {
       "name": "1/3 NL (Match the Stack)",
       "limits": "",
-      "waiting": "3"
+      "waiting": "2"
     },
     {
       "name": "2/5 NL (Match the Stack)",
@@ -46,9 +46,9 @@
     "name": "$300 Wednesday",
     "level": "18",
     "blinds": "8,000 / 16,000 · Ante 16,000",
-    "time_left": "20:58",
+    "time_left": "06:27",
     "num_entrants": 140,
-    "num_remaining": 8,
+    "num_remaining": 7,
     "prize_pool": "34629",
     "clock_state": "R"
   }
