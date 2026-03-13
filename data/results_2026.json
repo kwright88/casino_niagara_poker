@@ -1,6 +1,58 @@
 {
-  "last_updated": "2026-03-06 1:04 am",
+  "last_updated": "2026-03-13 1:53 pm",
   "results": [
+    {
+      "date_iso": "2026-03-11",
+      "date": "Mar 11",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1349993",
+      "tournament": "Wednesday $300 NLH",
+      "type": "wed",
+      "entries": 140,
+      "prize_pool": "$34,629",
+      "first_place": "$9,678",
+      "winner_name": "Domenico Olivo",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=498460"
+    },
+    {
+      "date_iso": "2026-03-08",
+      "date": "Mar 8",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1349979",
+      "tournament": "Sunday $400 NLH",
+      "type": "sun",
+      "entries": 78,
+      "prize_pool": "$28,659",
+      "first_place": "$9,132",
+      "winner_name": "Jubin Joy",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1183627"
+    },
+    {
+      "date_iso": "2026-03-04",
+      "date": "Mar 4",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1349991",
+      "tournament": "Wednesday $300 NLH",
+      "type": "wed",
+      "entries": 122,
+      "prize_pool": "$30,177",
+      "first_place": "$8,751",
+      "winner_name": "Walter Hasselman",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=697715"
+    },
+    {
+      "date_iso": "2026-03-01",
+      "date": "Mar 1",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1349977",
+      "tournament": "Sunday $400 NLH",
+      "type": "sun",
+      "entries": 94,
+      "prize_pool": "$32,369",
+      "first_place": "$10,268",
+      "winner_name": "Scott Macewen",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=681711"
+    },
     {
       "date_iso": "2026-02-25",
       "date": "Feb 25",
