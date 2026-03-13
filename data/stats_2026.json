@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-06",
+  "last_updated": "2026-03-13",
   "results": [
     {
       "date": "Jan 4",
@@ -180,16 +180,64 @@
       "winner_name": "Kenneth Ranalli",
       "country_code": "ca",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1204167"
+    },
+    {
+      "date": "Mar 1",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1349977",
+      "tournament": "Sunday $400 NLH",
+      "type": "sun",
+      "entries": 94,
+      "prize_pool": "$32,369",
+      "first_place": "$10,268",
+      "winner_name": "Scott Macewen",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=681711"
+    },
+    {
+      "date": "Mar 4",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1349991",
+      "tournament": "Wednesday $300 NLH",
+      "type": "wed",
+      "entries": 122,
+      "prize_pool": "$30,177",
+      "first_place": "$8,751",
+      "winner_name": "Walter Hasselman",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=697715"
+    },
+    {
+      "date": "Mar 8",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1349979",
+      "tournament": "Sunday $400 NLH",
+      "type": "sun",
+      "entries": 78,
+      "prize_pool": "$28,659",
+      "first_place": "$9,132",
+      "winner_name": "Jubin Joy",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1183627"
+    },
+    {
+      "date": "Mar 11",
+      "event_url": "https://pokerdb.thehendonmob.com/event.php?a=r&n=1349993",
+      "tournament": "Wednesday $300 NLH",
+      "type": "wed",
+      "entries": 140,
+      "prize_pool": "$34,629",
+      "first_place": "$9,678",
+      "winner_name": "Domenico Olivo",
+      "country_code": "ca",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=498460"
     }
   ],
   "awards": [
     {
       "icon": "🏆",
       "title": "Most Cashes",
-      "winner_name": "Benjamin Smith",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1183651",
+      "winner_name": "Fawaz Siddiqui",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=790655",
       "country_code": "ca",
-      "detail": "4 cashes in 2026",
+      "detail": "5 cashes in 2026",
       "tooltip": "Most total cashes in 2026 recurring tournaments",
       "active": true
     },
@@ -199,7 +247,7 @@
       "winner_name": "Tedde Ballanger",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=339823",
       "country_code": "ca",
-      "detail": "$23,082 across 2 cashes",
+      "detail": "$28,059 across 4 cashes",
       "tooltip": "Highest total prize money earned in 2026",
       "active": true
     },
@@ -226,10 +274,10 @@
     {
       "icon": "📈",
       "title": "Best Average Cash",
-      "winner_name": "Tedde Ballanger",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=339823",
+      "winner_name": "Scott Macewen",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=681711",
       "country_code": "ca",
-      "detail": "$11,541 avg · 2 cashes, 1 win",
+      "detail": "$7,406 avg · 2 cashes, 1 win",
       "tooltip": "Highest average prize per cash (min. 2 cashes)",
       "active": true
     },
@@ -246,10 +294,10 @@
     {
       "icon": "🎪",
       "title": "Final Tablist",
-      "winner_name": "Benjamin Smith",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1183651",
+      "winner_name": "Tedde Ballanger",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=339823",
       "country_code": "ca",
-      "detail": "4 final tables in 2026 (top-9 finishes)",
+      "detail": "4 final tables (top-9 finishes)",
       "tooltip": "Most final table appearances (top-9 finishes) in 2026",
       "active": true
     },
@@ -259,7 +307,7 @@
       "winner_name": "Peter Bodnar",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=244023",
       "country_code": "ca",
-      "detail": "Won with 140 entries — Feb 4",
+      "detail": "Won with 140 entries — Feb 4 Wednesday $300 NLH",
       "tooltip": "Won the tournament with the most entries in 2026",
       "active": true
     },
@@ -269,7 +317,7 @@
       "winner_name": "Dmytro Klimov",
       "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=744397",
       "country_code": "ua",
-      "detail": "Only Ukraine winner in 2026",
+      "detail": "First non-Canadian winner (Ukraine)",
       "tooltip": "First non-Canadian player to win a recurring tournament in 2026",
       "active": true
     },
@@ -286,20 +334,20 @@
     {
       "icon": "🔥",
       "title": "Longest Cash Streak",
-      "winner_name": "Daniel Lebel",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=144560",
+      "winner_name": "Kenneth Ranalli",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1204167",
       "country_code": "ca",
-      "detail": "2 in a row · Jan 21 & Jan 25 · Won tiebreaker ($12,638)",
+      "detail": "2 in a row · Feb 25 & Mar 1 · Won tiebreaker ($13,227)",
       "tooltip": "Longest consecutive run of cashing in recurring tournaments",
       "active": true
     },
     {
       "icon": "⚡",
       "title": "Longest Final Table Streak",
-      "winner_name": "Daniel Lebel",
-      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=144560",
+      "winner_name": "Kenneth Ranalli",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=1204167",
       "country_code": "ca",
-      "detail": "2 consecutive top-9 finishes · Jan 21 & Jan 25 · Won tiebreaker ($12,638)",
+      "detail": "2 consecutive top-9 finishes · Feb 25 & Mar 1 · Won tiebreaker ($13,227)",
       "tooltip": "Longest consecutive run of top-9 finishes",
       "active": true
     },
@@ -326,12 +374,12 @@
     {
       "icon": "🌱",
       "title": "Champ of March",
-      "winner_name": "—",
-      "winner_url": "",
-      "country_code": "",
-      "detail": "No results yet",
+      "winner_name": "Scott Macewen",
+      "winner_url": "https://pokerdb.thehendonmob.com/player.php?a=r&n=681711",
+      "country_code": "ca",
+      "detail": "$10,268 in March · 1 cash",
       "tooltip": "Most prize money earned in March across all recurring tournaments",
-      "active": false
+      "active": true
     },
     {
       "icon": "🌸",
@@ -429,9 +477,25 @@
       339823,
       "Tedde Ballanger",
       "ca",
+      4,
+      1,
+      28059
+    ],
+    [
+      681711,
+      "Scott Macewen",
+      "ca",
       2,
       1,
-      23082
+      14813
+    ],
+    [
+      1204167,
+      "Kenneth Ranalli",
+      "ca",
+      3,
+      1,
+      13227
     ],
     [
       144560,
@@ -458,20 +522,28 @@
       11694
     ],
     [
-      1204167,
-      "Kenneth Ranalli",
-      "ca",
-      2,
-      1,
-      11689
-    ],
-    [
       1183651,
       "Benjamin Smith",
       "ca",
       4,
       0,
       10947
+    ],
+    [
+      329676,
+      "Paolo Zambito",
+      "ca",
+      4,
+      1,
+      10874
+    ],
+    [
+      790655,
+      "Fawaz Siddiqui",
+      "ca",
+      5,
+      0,
+      10691
     ],
     [
       294737,
@@ -506,6 +578,14 @@
       9832
     ],
     [
+      692343,
+      "Alan Nacinovic",
+      "ca",
+      3,
+      0,
+      9776
+    ],
+    [
       244023,
       "Peter Bodnar",
       "ca",
@@ -514,12 +594,12 @@
       9678
     ],
     [
-      329676,
-      "Paolo Zambito",
+      498460,
+      "Domenico Olivo",
       "ca",
-      3,
       1,
-      9579
+      1,
+      9678
     ],
     [
       1368085,
@@ -530,12 +610,36 @@
       9439
     ],
     [
+      936763,
+      "Bin Hua",
+      "ca",
+      3,
+      0,
+      9410
+    ],
+    [
+      1183627,
+      "Jubin Joy",
+      "ca",
+      1,
+      1,
+      9132
+    ],
+    [
       744397,
       "Dmytro Klimov",
       "ua",
       1,
       1,
       9015
+    ],
+    [
+      697715,
+      "Walter Hasselman",
+      "ca",
+      1,
+      1,
+      8751
     ],
     [
       1341541,
@@ -570,14 +674,6 @@
       7795
     ],
     [
-      790655,
-      "Fawaz Siddiqui",
-      "ca",
-      3,
-      0,
-      7315
-    ],
-    [
       678721,
       "Glenn Grandy",
       "ca",
@@ -610,6 +706,22 @@
       6257
     ],
     [
+      1335077,
+      "Jesse Hylkema",
+      "ca",
+      1,
+      0,
+      6150
+    ],
+    [
+      1482039,
+      "Kyle Decambre",
+      "ca",
+      1,
+      0,
+      6095
+    ],
+    [
       108593,
       "Leo Bourgeois",
       "ca",
@@ -618,12 +730,12 @@
       6047
     ],
     [
-      692343,
-      "Alan Nacinovic",
+      418666,
+      "William Overdevest",
       "ca",
       1,
       0,
-      5969
+      5432
     ],
     [
       767639,
@@ -634,6 +746,14 @@
       5305
     ],
     [
+      695885,
+      "Richard Wilkinson",
+      "ca",
+      3,
+      0,
+      5211
+    ],
+    [
       530167,
       "Maurizio Russo",
       "ca",
@@ -642,12 +762,12 @@
       4886
     ],
     [
-      681711,
-      "Scott Macewen",
+      1059921,
+      "Maroun Diab",
       "ca",
-      1,
+      3,
       0,
-      4545
+      4648
     ],
     [
       787189,
@@ -664,6 +784,14 @@
       4,
       0,
       4403
+    ],
+    [
+      248710,
+      "Anthony Schneider",
+      "us",
+      2,
+      0,
+      4389
     ],
     [
       1198779,
@@ -690,14 +818,6 @@
       4118
     ],
     [
-      1059921,
-      "Maroun Diab",
-      "ca",
-      2,
-      0,
-      3709
-    ],
-    [
       244487,
       "Donovan Obrien",
       "ca",
@@ -722,14 +842,6 @@
       3549
     ],
     [
-      936763,
-      "Bin Hua",
-      "ca",
-      1,
-      0,
-      3540
-    ],
-    [
       1476879,
       "Kahaan Shah",
       "ca",
@@ -746,6 +858,14 @@
       3256
     ],
     [
+      184783,
+      "Jean Rene Plante",
+      "ca",
+      1,
+      0,
+      3244
+    ],
+    [
       1376555,
       "Wuji Zhang",
       "ca",
@@ -754,12 +874,12 @@
       3235
     ],
     [
-      695885,
-      "Richard Wilkinson",
+      260634,
+      "Anesti Kocini",
       "ca",
-      2,
+      3,
       0,
-      3029
+      3232
     ],
     [
       366591,
@@ -802,12 +922,28 @@
       2601
     ],
     [
+      571097,
+      "Tyler Seibert",
+      "us",
+      2,
+      0,
+      2594
+    ],
+    [
       286856,
       "William Schuster",
       "ca",
       2,
       0,
       2568
+    ],
+    [
+      1118021,
+      "Georgees Zero",
+      "ca",
+      2,
+      0,
+      2400
     ],
     [
       456439,
@@ -818,12 +954,28 @@
       2359
     ],
     [
-      260634,
-      "Anesti Kocini",
+      582967,
+      "Rostyslav Kozak",
       "ca",
       2,
       0,
-      2264
+      2260
+    ],
+    [
+      1482049,
+      "Adam Kroetsch",
+      "ca",
+      1,
+      0,
+      2216
+    ],
+    [
+      88255,
+      "Colin Hughes",
+      "ca",
+      2,
+      0,
+      2188
     ],
     [
       1215745,
@@ -840,6 +992,22 @@
       1,
       0,
       2170
+    ],
+    [
+      1038147,
+      "Mukul Puri",
+      "ca",
+      2,
+      0,
+      2139
+    ],
+    [
+      697951,
+      "Joshua Greville",
+      "ca",
+      2,
+      0,
+      2129
     ],
     [
       725567,
@@ -872,6 +1040,22 @@
       1,
       0,
       2071
+    ],
+    [
+      1211093,
+      "Hrishikesh Yadav",
+      "ca",
+      1,
+      0,
+      1942
+    ],
+    [
+      213523,
+      "Alexander Kover",
+      "ca",
+      2,
+      0,
+      1860
     ],
     [
       530735,
@@ -914,6 +1098,14 @@
       1767
     ],
     [
+      1316903,
+      "Kin Wong",
+      "ca",
+      2,
+      0,
+      1763
+    ],
+    [
       929191,
       "Peter Napolitano",
       "us",
@@ -946,6 +1138,22 @@
       1628
     ],
     [
+      675002,
+      "David Rott",
+      "us",
+      2,
+      0,
+      1626
+    ],
+    [
+      530134,
+      "Gregory March",
+      "ca",
+      2,
+      0,
+      1581
+    ],
+    [
       1068823,
       "Andrew Schneider",
       "ca",
@@ -962,12 +1170,20 @@
       1523
     ],
     [
-      1038147,
-      "Mukul Puri",
+      1097945,
+      "Louis-Philippe Roy",
       "ca",
       1,
       0,
-      1468
+      1509
+    ],
+    [
+      1482045,
+      "Cory Sheldon",
+      "ca",
+      2,
+      0,
+      1506
     ],
     [
       1464387,
@@ -994,33 +1210,17 @@
       1424
     ],
     [
-      88255,
-      "Colin Hughes",
+      744847,
+      "Yasser Shakir",
       "ca",
       1,
       0,
-      1418
-    ],
-    [
-      571097,
-      "Tyler Seibert",
-      "us",
-      1,
-      0,
-      1412
+      1420
     ],
     [
       924057,
       "Charbel Boujaoude",
       "us",
-      1,
-      0,
-      1412
-    ],
-    [
-      582967,
-      "Rostyslav Kozak",
-      "ca",
       1,
       0,
       1412
@@ -1058,12 +1258,12 @@
       1369
     ],
     [
-      1118021,
-      "Georgees Zero",
+      1234035,
+      "Leonard Yungblut",
       "ca",
       1,
       0,
-      1326
+      1343
     ],
     [
       39302,
@@ -1076,6 +1276,14 @@
     [
       1085449,
       "Than Tran",
+      "ca",
+      1,
+      0,
+      1229
+    ],
+    [
+      1482041,
+      "Keith Boyd",
       "ca",
       1,
       0,
@@ -1146,9 +1354,9 @@
       1157
     ],
     [
-      697951,
-      "Joshua Greville",
-      "ca",
+      75465,
+      "Michael Benson",
+      "us",
       1,
       0,
       1133
@@ -1226,6 +1434,14 @@
       922
     ],
     [
+      92446,
+      "Giuseppe Galuzzo",
+      "ca",
+      1,
+      0,
+      913
+    ],
+    [
       1365939,
       "Thanh Tran",
       "ca",
@@ -1266,6 +1482,14 @@
       878
     ],
     [
+      1248765,
+      "Brian Custodio",
+      "ca",
+      1,
+      0,
+      875
+    ],
+    [
       497795,
       "Zahir Gilani",
       "ca",
@@ -1277,6 +1501,22 @@
       340611,
       "David Wiles",
       "us",
+      1,
+      0,
+      848
+    ],
+    [
+      732765,
+      "Mark Elder",
+      "ca",
+      1,
+      0,
+      848
+    ],
+    [
+      1482043,
+      "Carmine Lofaro",
+      "ca",
       1,
       0,
       848
@@ -1322,20 +1562,20 @@
       821
     ],
     [
-      675002,
-      "David Rott",
-      "us",
-      1,
-      0,
-      816
-    ],
-    [
       364709,
       "Gerard Maurice",
       "ca",
       1,
       0,
       816
+    ],
+    [
+      594735,
+      "Kevin Gomez",
+      "ca",
+      1,
+      0,
+      806
     ],
     [
       308144,
@@ -1354,8 +1594,8 @@
       736
     ],
     [
-      1316903,
-      "Kin Wong",
+      582439,
+      "John Huynh",
       "ca",
       1,
       0,
@@ -1386,14 +1626,6 @@
       718
     ],
     [
-      530134,
-      "Gregory March",
-      "ca",
-      1,
-      0,
-      707
-    ],
-    [
       340617,
       "Robert Forbes",
       "us",
@@ -1416,6 +1648,22 @@
       1,
       0,
       689
+    ],
+    [
+      1226919,
+      "William Hoover",
+      "ca",
+      1,
+      0,
+      671
+    ],
+    [
+      694429,
+      "Karen Bond",
+      "ca",
+      1,
+      0,
+      671
     ],
     [
       692323,
@@ -1482,6 +1730,22 @@
       632
     ],
     [
+      69596,
+      "Gerald Selby",
+      "ca",
+      1,
+      0,
+      632
+    ],
+    [
+      1482047,
+      "Tyler Starr",
+      "us",
+      1,
+      0,
+      632
+    ],
+    [
       1351285,
       "Patrick Di Marino",
       "ca",
@@ -1512,6 +1776,14 @@
       1,
       0,
       594
+    ],
+    [
+      1482051,
+      "Sharuk Khadka",
+      "ca",
+      1,
+      0,
+      588
     ],
     [
       1196115,
