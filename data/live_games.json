@@ -1,5 +1,5 @@
 {
-  "timestamp": "2:30 AM · Mar 14, 2026",
+  "timestamp": "2:45 AM · Mar 14, 2026",
   "error": false,
   "stale": false,
   "stale_reason": "",
@@ -20,17 +20,6 @@
       "tables": "1"
     }
   ],
-  "waitlist": [
-    {
-      "name": "1/3 PLO (Match the Stack)",
-      "limits": "",
-      "waiting": "2"
-    },
-    {
-      "name": "2/5 NL (Match the Stack)",
-      "limits": "",
-      "waiting": "1"
-    }
-  ],
+  "waitlist": [],
   "tournament": null
 }
