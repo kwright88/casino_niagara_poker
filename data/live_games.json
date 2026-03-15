@@ -1,5 +1,5 @@
 {
-  "timestamp": "6:45 PM · Mar 15, 2026",
+  "timestamp": "7:00 PM · Mar 15, 2026",
   "error": false,
   "stale": false,
   "stale_reason": "",
@@ -41,9 +41,9 @@
     "name": "$400 Sunday",
     "level": "14",
     "blinds": "3,000 / 6,000 · Ante 6,000",
-    "time_left": "21:07",
+    "time_left": "06:17",
     "num_entrants": 65,
-    "num_remaining": 8,
+    "num_remaining": 7,
     "prize_pool": "22382",
     "clock_state": "R"
   }
