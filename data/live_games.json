@@ -1,9 +1,18 @@
 {
-  "timestamp": "4:45 AM · Mar 15, 2026",
+  "timestamp": "12:00 PM · Mar 15, 2026",
   "error": false,
   "stale": false,
   "stale_reason": "",
   "games": [],
   "waitlist": [],
-  "tournament": null
+  "tournament": {
+    "name": "$400 Sunday",
+    "level": "1",
+    "blinds": "100 / 100",
+    "time_left": "20:00",
+    "num_entrants": 4,
+    "num_remaining": 4,
+    "prize_pool": "1377",
+    "clock_state": "P"
+  }
 }
