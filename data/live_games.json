@@ -1,5 +1,5 @@
 {
-  "timestamp": "9:45 PM · Mar 15, 2026",
+  "timestamp": "10:00 PM · Mar 15, 2026",
   "error": false,
   "stale": false,
   "stale_reason": "",
@@ -13,11 +13,6 @@
       "name": "1/3 PLO (Match the Stack)",
       "limits": "",
       "tables": "1"
-    },
-    {
-      "name": "2/5 NL Hold’em",
-      "limits": "$200–$1000 Buy-in",
-      "tables": "1"
     }
   ],
   "waitlist": [
@@ -29,11 +24,6 @@
     {
       "name": "1/3 PLO (Match the Stack)",
       "limits": "",
-      "waiting": "2"
-    },
-    {
-      "name": "2/5 NL Hold’em",
-      "limits": "$200–$1000 Buy-in",
       "waiting": "2"
     }
   ],
